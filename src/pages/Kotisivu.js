@@ -5,12 +5,12 @@ import Palveluitamme from '../components/Palveluitamme'
 
 const Kotisivu = () => {
   return (
-    <>
+    <div style={{overflow:'hidden' }}>
     <Navbar/>
     <Header/>
     <Palveluitamme/>
     
-    </>
+    </div>
   )
 }
 

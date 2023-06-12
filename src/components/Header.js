@@ -8,7 +8,7 @@ import talo from '../images/taloheader.png'
 
 const Header = () => {
   return (
-    <Box className="banner">
+    <Box className="banner" sx={{ flexGrow: 1}}>
   
         <img src={talo} alt="talo" className='banner_img'/>
         <Box className="banner-text-holder">

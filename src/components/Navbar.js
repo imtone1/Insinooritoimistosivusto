@@ -10,13 +10,13 @@ import phone_volume_icon from '../images/phone-volume_icon.png'
 
 const Navbar = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-    <AppBar position='sticky' style={{ background: COLORS.light_gray , height:106, width:'100%,' ,justifyContent:'center', color:'black'}}>
+    <Box sx={{ flexGrow: 1}}>
+    <AppBar position='sticky' style={{ background: COLORS.light_gray , height:70, width:'100%,' ,justifyContent:'center', color:'black'}}>
         <Toolbar>
      
       <Box sx={{ flexGrow: 1}} >
            <Link to="/">   
- <img src={logo_SA1} alt="SapAir logo" width="233" style={{flexGrow:1}}/>
+ <img src={logo_SA1} alt="SapAir logo" width="150" />
 
             </Link>
            
@@ -39,12 +39,12 @@ const Navbar = () => {
                 Palvelut
             </Typography>
             <Typography variant='h6' component='div' sx={{flexGrow:1}} >
-                Pyydä tarjous
+                Meistä
             </Typography>
             <Typography variant='h6' component='div' sx={{flexGrow:1}} >
                 Yhteystiedot
             </Typography>
-            <Stack direction={{ lg: 'row', md: 'column' }} gap={2} display={{xs:'none', sm:'flex'}} alignItems={'center'} >
+            <Stack direction={'row'} gap={2} display={{xs:'none', sm:'flex'}} alignItems={'center'} >
             <img src={phone_volume_icon} alt="phone volume icon" width="33" style={{flexGrow:1}}/>
             <Typography variant='h6' component='div' sx={{flexGrow:1, fontWeight:600}} >
             040 6772400
