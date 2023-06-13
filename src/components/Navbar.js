@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {AppBar,Toolbar, Typography,Stack, Box} from "@mui/material"
 import {COLORS} from '../values/colors'
 
-import Menu from '../components/Menu'
+import Menu from './Menuni'
 
 import logo_SA1 from '../images/logo_SA1.png'
 import phone_volume_icon from '../images/phone-volume_icon.png'

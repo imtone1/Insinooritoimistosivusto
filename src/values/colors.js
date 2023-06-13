@@ -4,5 +4,6 @@ export const COLORS ={
     brown: '#22171D',
     white: '#ffffff',
     light_gray: '#D9D9D9',
+    beige1: '#F5F5F5',
     
     }

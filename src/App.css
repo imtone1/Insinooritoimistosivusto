@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
   scroll-behavior:smooth;
+  color:#22171D;
 }
 
 .banner{
@@ -92,6 +93,17 @@
  font-weight: 600;
 }
 
+.talo_kuva{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+
+}
+
+.lupaukset{
+  max-width: 33%;
+  padding: 2;
+}
 
 /* Media Queries */
 @media screen and (min-width: 280px) {
@@ -104,6 +116,9 @@
   }
   .banner-button{
     font-size: 2vw;
+  }
+  .lupaukset{
+    max-width: 90%;
   }
 }
 
@@ -125,6 +140,10 @@
   .banner-text2 {
     font-size: 5vw;
   }
+  .lupaukset{
+    max-width: 90%;
+    padding: 2 0 2 0;
+  }
 }
 
 @media screen and (min-width: 870px) {
@@ -135,15 +154,20 @@
   .banner-text2 {
     font-size: 4vw;
   }
+  
 }
 
 @media screen and (min-width: 1024px) {
   .banner-text {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
   .banner-text2 {
-    font-size: 2vw;
+    font-size: 1.5vw;
+  }
+  .lupaukset{
+    max-width: 60%;
+   
   }
 }
 
