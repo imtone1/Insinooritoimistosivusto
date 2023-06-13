@@ -4,9 +4,9 @@ import {AppBar,Toolbar, Typography,Stack, Box} from "@mui/material"
 import {COLORS} from '../values/colors'
 
 import Menu from './Menuni'
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
 import logo_SA1 from '../images/logo_SA1.png'
-import phone_volume_icon from '../images/phone-volume_icon.png'
 
 const Navbar = () => {
   return (
@@ -41,11 +41,14 @@ const Navbar = () => {
             <Typography variant='h6' component='div' sx={{flexGrow:1}} >
                 Meistä
             </Typography>
-            <Typography variant='h6' component='div' sx={{flexGrow:1}} >
-                Yhteystiedot
-            </Typography>
+            <Link to={'/yhteystiedot'}>
+                <Typography variant='h6' component='div' sx={{flexGrow:1}} >
+                    Yhteystiedot
+                </Typography>
+            </Link>
             <Stack direction={'row'} gap={2} display={{xs:'none', sm:'flex'}} alignItems={'center'} >
-            <img src={phone_volume_icon} alt="phone volume icon" width="33" style={{flexGrow:1}}/>
+            <PhoneInTalkIcon />
+
             <Typography variant='h6' component='div' sx={{flexGrow:1, fontWeight:600}} >
             040 6772400
             </Typography>

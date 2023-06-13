@@ -5,6 +5,7 @@ import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
 import { COLORS } from '../values/colors'
 import BasicModal from './BasicModal';
 import Talokuva from './Talokuva';
+import Paaotsikko from '../otsikot/Paaotsikko';
 
 const customTheme = createTheme({
   palette: {
@@ -57,20 +58,9 @@ const Palveluitamme = () => {
   const handleOpenKVV = () => setOpenKVV(true);
   return (
     <Box className="boxit" sx={{backgroundColor:COLORS.grey, zindex:100, position:'relative'}}>
-        <Stack direction={'column'} alignItems={'center'} p={{md:2, xs:1}}>
-          
-        <Typography variant='h3' sx={{textShadow: '1px 1px rgb(99, 99, 99)', textTransform:'uppercase', fontWeight:'600' , fontSize:'200%', pb:'20px'}}>Palveluitamme</Typography>
-        
-        <Typography p={{md:3, xs:2}} marginLeft={'2%'} marginRight={'2%'} >
-        Rakennuksen käyttö- ja elinkaarikustannukset riippuvat täysin LVI-suunnittelun onnistumisesta.
-        </Typography>
-        {/* <svg xmlns="http://www.w3.org/2000/svg" width="139" height="6" style={{transform:'translateY(40px)'}}>
-  <line x1="2" y1="0.5" x2="139" y2="0.5" stroke="black" strokeWidth="6" />
-</svg> */}
 
-
-      
-        </Stack>
+      <Paaotsikko otsikko={'Palveluitamme'} teksti={'Rakennuksen käyttö- ja elinkaarikustannukset riippuvat täysin LVI-suunnittelun onnistumisesta.'} />
+  
        <Box sx={{ textAlign:'right',transform:'translateX(-80px) translateY(10px)', }}>
      <svg xmlns="http://www.w3.org/2000/svg" width="240" height="6">
   <line x1="2" y1="0.5" x2="240" y2="0.5" stroke="black" strokeWidth="6"  />

@@ -2,24 +2,26 @@ import React from 'react'
 import { Stack, Typography, Box } from '@mui/material'
 import {COLORS} from '../values/colors'
 
-const Polkuitemoik = ({kuva}) => {
+const Polkuitemoik = ({kuva, numero,otsikko, teksti }) => {
+
+
   return (
-    <Stack component={'div'} direction={{xs:'column-reverse', md:'row'}} sx={{width:'80%', gap:3}} >
+    <Stack component={'div'} direction={{xs:'column-reverse', md:'row'}} sx={{width:'80%', gap:3 ,borderRight:`3px solid ${COLORS.brown}`, padding:3}} >
         
         <Box>
-<img src={kuva} alt="meeting" width={'100%'} />
+<img src={kuva} alt="meeting" width={'70%'} />
 </Box>
     <Typography variant="h3" sx={{fontWeight:'800' , fontSize:'400%'}}>
-        1.
+        {numero}
     </Typography>
    
     <Stack direction={'column'} >
     
     <Typography variant='h5' sx={{ fontWeight:'600' , pb:'20px' }}>
-        Aloitamme aina projektipalaverilla
+        {otsikko}
     </Typography>
     <Typography>
-    Istumme alas asiakkaan kanssa ja kuuntelemme tarkasti heidän ajatuksiaan käyttötarkoituksesta rakennukselle. Haluamme ymmärtää, millaisia tavoitteita heillä on ja mitä he haluavat saavuttaa.
+    {teksti}
     </Typography>
 
     </Stack>

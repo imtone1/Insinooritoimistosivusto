@@ -2,19 +2,13 @@ import React from 'react'
 import { Box, Stack, Typography } from '@mui/material'
 import Rivitys from '../otsikot/Rivitys'
 import {COLORS} from '../values/colors'
+import Paaotsikko from '../otsikot/Paaotsikko'
 
 const Lupauksemme = () => {
   return (
    <Box className="boxit" sx={{backgroundColor: COLORS.beige1 }}>
 
- <Stack direction={'column'} alignItems={'center'} p={{md:2, xs:2}} >
-          
-          <Typography variant='h3' sx={{textShadow: '1px 1px rgb(99, 99, 99)', textTransform:'uppercase', fontWeight:'600' , fontSize:'200%', pb:'20px'}}>Lupauksemme</Typography>
-          
-          <Typography p={{md:3, xs:2}} maxWidth={800} textAlign={'center'} >
-          Luottamuksenne on arvokkain voimavaramme! Sitoudumme tinkimättömään laatuun ja asiakkaan tyytyväisyyteen jokaisessa kohtaamisessa.
-          </Typography>
-          </Stack>
+<Paaotsikko otsikko={'Lupauksemme'} teksti={'Asiakkaiden luottamus on arvokkain voimavaramme! Sitoudumme tinkimättömään laatuun ja asiakkaan tyytyväisyyteen jokaisessa kohtaamisessa.'} />
 
 <Box sx={{maxWidth:'80%', margin:'auto', justifyContent:"center",
   alignItems:{xs:'flex-start', md:"center"}}}>
@@ -29,7 +23,7 @@ const Lupauksemme = () => {
     </Stack>
     <Stack direction={'column'} p={{md:2, xs:2}} className='lupaukset'>
     <Typography variant='body2' sx={{border:3, padding:3, maxWidth:300, boxShadow:'2px 3px'}}>
-    Luottamuksenne on arvokkain voimavaramme! Sitoudumme tinkimättömään laatuun ja asiakkaan tyytyväisyyteen jokaisessa kohtaamisessa.
+    Asiakkaiden luottamus on arvokkain voimavaramme! Sitoudumme tinkimättömään laatuun ja asiakkaan tyytyväisyyteen jokaisessa kohtaamisessa.
     </Typography>
     </Stack>
 
