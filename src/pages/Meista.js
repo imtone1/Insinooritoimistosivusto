@@ -52,6 +52,12 @@ Panostamme jatkuvaan opiskeluun ja itsensä kehittämiseen
   <Accordions/>
 </Stack>
 
+<Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
+  Referenssit
+</Typography>
+<Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
+  Sertifikaatit
+</Typography>
   </Box>
   )
 }

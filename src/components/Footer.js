@@ -14,9 +14,15 @@ const Footer = () => {
     <Box className='boxit' sx={{backgroundColor: COLORS.beige1, overflow:'hidden'}}>
 
         <Stack direction={{xs:'column', md:'row'}} gap={{xs: 5,md:10,lg:20}} alignItems={'center'}>
-        <Box sx={{padding:{xs:2, lg:10}}}>
+        <Link to={'/'} onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }}><Box sx={{padding:{xs:2, lg:10}}}>
             <img src={logo_SA1} alt="logo" style={{width:'200px'}}/>
-        </Box>
+        </Box></Link>
         <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5}>
         <Link to={'/meista'} onClick={() => {
     window.scroll({
