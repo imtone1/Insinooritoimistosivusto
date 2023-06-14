@@ -6,6 +6,7 @@ import { COLORS } from '../values/colors'
 import BasicModal from './BasicModal';
 import Talokuva from './Talokuva';
 import Paaotsikko from '../otsikot/Paaotsikko';
+import { Link } from 'react-router-dom';
 
 const customTheme = createTheme({
   palette: {
@@ -136,7 +137,15 @@ const Palveluitamme = () => {
 <StyledButton>
 
 <Box sx={{border:'solid 4px', p:2, width:'101px',   margin:'auto'}}>
+<Link to={'/palvelut'} onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }}>
 <Typography variant='body2' >Lue lisää</Typography>
+</Link>
 </Box>
 
 </StyledButton>

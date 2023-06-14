@@ -35,17 +35,35 @@ const Navbar = () => {
                 Ammattilaisille
             </Typography>
 
-            <Link to={'/palvelut'}>
+            <Link to={'/palvelut'} onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }}>
                 <Typography variant='h6' component='div' sx={{flexGrow:1}} >
                     Palvelut
                 </Typography>
             </Link>
-            <Link to={'/meista'}>
+            <Link to={'/meista'} onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }}>
                 <Typography variant='h6' component='div' sx={{flexGrow:1}} >
                     Meistä
                 </Typography>
             </Link>
-            <Link to={'/yhteystiedot'}>
+            <Link to={'/yhteystiedot'} onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }}>
                 <Typography variant='h6' component='div' sx={{flexGrow:1}} >
                     Yhteystiedot
                 </Typography>

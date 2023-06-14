@@ -12,7 +12,7 @@ const style = {
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
-  p: 4,
+  p: 4
 };
 
 export default function BasicModal({open, setOpen, text, otsikko}) {
@@ -32,7 +32,7 @@ export default function BasicModal({open, setOpen, text, otsikko}) {
           <Typography id="modal-modal-title" variant="h5" component="h2">
             {otsikko}
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 , color:'red' }}>
             {text}
           </Typography>
         </Box>

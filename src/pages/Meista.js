@@ -4,10 +4,12 @@ import Paaotsikko from '../otsikot/Paaotsikko'
 
 import {COLORS} from '../values/colors'
 import Konsta from '../images/Konsta-Sappinen.png'
+import Accordions from '../components/Accordions'
+import Koulutusaccordion from '../components/Koulutusaccordion'
 
 const Meista = () => {
   return (
-    <Box className="boxit" sx={{backgroundColor:COLORS.grey  }}>
+    <Box className="boxit" sx={{backgroundColor:COLORS.grey, overflow:'hidden'  }}>
     <Paaotsikko otsikko={'Meistä'} teksti={'Asiantunteva LVIA-suunnittelija palveluksessasi'}/>
 
     <Stack direction={'column'} sx={{gap:2, justifyContent:'center', alignItems:'center', width:'70%', margin:'auto'}}>
@@ -32,82 +34,22 @@ Panostamme jatkuvaan opiskeluun ja itsensä kehittämiseen
 
     </Stack>
 <Stack direction={'column'} sx={{gap:3, justifyContent:'center', alignItems:'center'}}>
-<Typography variant='h3'>
+<Typography variant='h3' sx={{p:{xs:4}}}>
   Konsta Sappinen
 </Typography>
-<Box sx={{width:400}}>
+<Box sx={{maxwidth:400}}>
   <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} />
 </Box>
-<Typography variant='h5'>
-  Koulutus
-  </Typography>
-  <Stack>
-  <Typography>
-  Kone- ja tuotantotekniikan koulutusohjelma, insinööri (AMK), suuntautuminen LVI-tekniikkaan, Turun AMK
-  </Typography>
-  <Typography>
-  2013-2016
-  </Typography>
-  </Stack>
+<Koulutusaccordion/>
 
-  <Stack>
-  <Typography>
-  Työteknikko, RastorCollege
-  </Typography>
-  <Typography>
-  2011-2013
-  </Typography>
-  </Stack>
+</Stack>
 
 
-
-  <Typography variant='h5'>
-  Jatkokoulutus/Pätevyydet/Erikoisosaaminen
-  </Typography>
- 
-  <Typography>
-  Jatkuvat maalämpöjärjestelmien valmistajien laitekoulutukset
-  </Typography>
-
- 
-
-  <Stack>
-  <Typography>
-  Älykkäät ja kestävät kiinteistöjen energiaratkaisut (5op) YAMK, Metropolia
-  </Typography>
-  <Typography>
-  2021
-  </Typography>
-  </Stack>
-
-  <Stack>
-  <Typography>
-  Poikkeuksellisen vaativat kohteet ja erikoisjärjestelmät (5op) YAMK, Metropolia
-  </Typography>
-  <Typography>
-  2020
-  </Typography>
-  </Stack>
-
-  <Stack>
-  <Typography>
-  KVV- ja IV työnjohtajakoulutus, TuLVI
-  </Typography>
-  <Typography>
-  2018
-  </Typography>
-  </Stack>
-
-  <Stack>
-  <Typography>
-  Sisäilmaopinnot IV-suunnittelijoille ja -asiantuntijoille (3op) AMK, Metropolia
-  </Typography>
-  <Typography>
-  2017
-  </Typography>
-  </Stack>
-
-
+<Stack sx={{width:{xs:'100%', lg:'900px'}, margin: 'auto'}}>
+  <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
+  Arvojamme
+</Typography>
+  <Accordions/>
 </Stack>
 
   </Box>

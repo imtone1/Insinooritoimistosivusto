@@ -1,6 +1,6 @@
 import React from 'react'
-import { Stack, Typography, Box } from '@mui/material'
-import {COLORS} from '../values/colors'
+import {Typography, Box } from '@mui/material'
+
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 
 
@@ -9,9 +9,8 @@ const Palaute = ({teksti}) => {
     <Box sx={{maxwidth:600}}>
     <Box sx={{textAlign:'left'}}>
       <FormatQuoteIcon sx={{}}/>
-{/* <img src={quotyla} alt="double_quotes_left_icon" width={'5%'} /> */}
 </Box>
-<Typography  sx={{ padding:3 }}>
+<Typography  sx={{ padding:1 }}>
 {teksti}
 </Typography>
 

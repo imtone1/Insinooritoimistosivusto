@@ -5,6 +5,7 @@ import logo_SA1 from '../images/logo_SA1.png'
 import jasenyritys from '../images/jasenyritys_2022.png'
 import LK_valkoinen from '../images/LK_valkoinen.png'
 import tietosuoja from '../documents/Tietosuojaseloste.pdf'
+import {ReactComponent as Asiakastietologo}  from '../images/LOGO_SILVER_STANDING_BLACK_FI_433955.svg'
 
 import {COLORS} from '../values/colors'
 
@@ -71,8 +72,12 @@ const Footer = () => {
         </Link>
         </Stack>
         <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5}>
-            <img src={jasenyritys} alt="jasenyritys" style={{width:'150px'}}/>
-            <img src={LK_valkoinen} alt="LK_valkoinen" style={{width:'150px'}}/>
+          <Box sx={{width:'150px'}}>
+            <img src={jasenyritys} alt="jasenyritys" style={{width:'100%'}}/>
+           </Box>
+           <Box sx={{width:'150px'}}>
+           <img src={LK_valkoinen} alt="LK_valkoinen" style={{width:'100%'}} />
+          </Box>  <Asiakastietologo style={{width:'150px'}}/>
             </Stack>
         </Stack>
      
