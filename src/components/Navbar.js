@@ -35,12 +35,16 @@ const Navbar = () => {
                 Ammattilaisille
             </Typography>
 
-            <Typography variant='h6' component='div' sx={{flexGrow:1}} >
-                Palvelut
-            </Typography>
-            <Typography variant='h6' component='div' sx={{flexGrow:1}} >
-                Meistä
-            </Typography>
+            <Link to={'/palvelut'}>
+                <Typography variant='h6' component='div' sx={{flexGrow:1}} >
+                    Palvelut
+                </Typography>
+            </Link>
+            <Link to={'/meista'}>
+                <Typography variant='h6' component='div' sx={{flexGrow:1}} >
+                    Meistä
+                </Typography>
+            </Link>
             <Link to={'/yhteystiedot'}>
                 <Typography variant='h6' component='div' sx={{flexGrow:1}} >
                     Yhteystiedot

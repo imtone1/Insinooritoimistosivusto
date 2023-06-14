@@ -1,47 +1,65 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 import { Box, Stack, Typography } from '@mui/material'
 import logo_SA1 from '../images/logo_SA1.png'
 import jasenyritys from '../images/jasenyritys_2022.png'
 import LK_valkoinen from '../images/LK_valkoinen.png'
+import tietosuoja from '../documents/Tietosuojaseloste.pdf'
 
 import {COLORS} from '../values/colors'
 
 const Footer = () => {
   return (
-    <Box className='boxit' sx={{backgroundColor: COLORS.beige1}}>
+    <Box className='boxit' sx={{backgroundColor: COLORS.beige1, overflow:'hidden'}}>
 
-        <Stack direction={{xs:'column', md:'row'}} gap={{xs: 5,md:20}} alignItems={'center'}>
+        <Stack direction={{xs:'column', md:'row'}} gap={{xs: 5,md:10,lg:20}} alignItems={'center'}>
         <Box sx={{padding:{xs:2, lg:10}}}>
             <img src={logo_SA1} alt="logo" style={{width:'200px'}}/>
         </Box>
-        <Stack direction={'column'} gap={5}>
-        <Typography >
-            Meistä
-        </Typography>
+        <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5}>
+        <Link to={'/meista'}>
+            <Typography >
+                Meistä
+            </Typography>
+        </Link>
         <Typography>
             Referenssit
         </Typography>
-        <Typography>
-            Yhteystiedot
-        </Typography>
+        <Link to={'/yhteystiedot'}>
+            <Typography>
+                Yhteystiedot
+            </Typography>
+        </Link>
         </Stack>
-        <Stack direction={'column'} gap={5}>
-        <Typography >
-            Palvelut
-        </Typography>
+        <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5}>
+        <Link to={'palvelut'}>
+            <Typography >
+                Palvelut
+            </Typography>
+        </Link>
         <Typography >
             Ammattilaisille
         </Typography>
-        <Typography >
-            Laskutus
-        </Typography>
+        <Link to={'yhteystiedot'}>
+            <Typography >
+                Laskutus
+            </Typography>
+        </Link>
         </Stack>
-        <Stack direction={'column'} gap={5}>
+        <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5}>
             <img src={jasenyritys} alt="jasenyritys" style={{width:'150px'}}/>
             <img src={LK_valkoinen} alt="LK_valkoinen" style={{width:'150px'}}/>
             </Stack>
         </Stack>
+     
+          
+            <a href={tietosuoja} target="_blank"
+                    rel="noreferrer">
+                     <Typography sx={{textAlign:'center', paddingTop:5}} >
+                Tietosuojaseloste
+            </Typography>
+                </a>
+       
 <Typography sx={{textAlign:'center', paddingTop:5}}>
     SapAir Oy | Y-tunnus: 3245203-6 | Osoite Helmikuja 3, 21310 Vahto
     </Typography>
