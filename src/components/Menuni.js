@@ -4,6 +4,7 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Box, IconButton } from '@mui/material';
 import {COLORS} from '../values/colors'
+import { Link } from 'react-router-dom';
 
 export default function Menuni() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -37,10 +38,27 @@ export default function Menuni() {
         
       >
         <div style={{ backgroundColor: COLORS.beige}}>
-        <MenuItem onClick={handleClose} >Palvelut</MenuItem>
-        <MenuItem onClick={handleClose}>Yhteystiedot</MenuItem>
-        <MenuItem onClick={handleClose}>Meistä</MenuItem>
-        <MenuItem onClick={handleClose}>Pyydä tarjous</MenuItem>
+        <Link to={'/palvelut'} onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }}><MenuItem onClick={handleClose} >Palvelut</MenuItem></Link> 
+        <Link to={'/yhteystiedot'} onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }}><MenuItem onClick={handleClose}>Yhteystiedot</MenuItem></Link> 
+        <Link to={'/meista'} onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }}> <MenuItem onClick={handleClose}>Meistä</MenuItem></Link>
         <MenuItem onClick={handleClose}>Ammattilaisille</MenuItem>
         <MenuItem onClick={handleClose}>Referenssit</MenuItem>
         </div>

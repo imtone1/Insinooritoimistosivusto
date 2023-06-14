@@ -17,7 +17,13 @@ const Footer = () => {
             <img src={logo_SA1} alt="logo" style={{width:'200px'}}/>
         </Box>
         <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5}>
-        <Link to={'/meista'}>
+        <Link to={'/meista'} onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }}>
             <Typography >
                 Meistä
             </Typography>
@@ -25,14 +31,26 @@ const Footer = () => {
         <Typography>
             Referenssit
         </Typography>
-        <Link to={'/yhteystiedot'}>
+        <Link to={'/yhteystiedot'} onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }}>
             <Typography>
                 Yhteystiedot
             </Typography>
         </Link>
         </Stack>
         <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5}>
-        <Link to={'palvelut'}>
+        <Link to={'palvelut'} onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }}>
             <Typography >
                 Palvelut
             </Typography>
@@ -40,7 +58,13 @@ const Footer = () => {
         <Typography >
             Ammattilaisille
         </Typography>
-        <Link to={'yhteystiedot'}>
+        <Link to={'yhteystiedot'} onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }}>
             <Typography >
                 Laskutus
             </Typography>
