@@ -8,6 +8,8 @@ import Konsta from '../images/Konsta-Sappinen.png'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import MailIcon from '@mui/icons-material/Mail';
 import ReceiptIcon from '@mui/icons-material/Receipt';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
 
 const Yhteystiedot = () => {
   return (
@@ -17,9 +19,12 @@ const Yhteystiedot = () => {
   <Stack>
     <Stack direction={{xs:'column', sm:'row'}} justifyContent={'center'} alignItems={'center'}>
       <Stack direction={'column'} gap={3} p={2}>
+        <Stack direction={'row'} alignItems='center'>
         <Typography variant='h3'>
           Konsta Sappinen
         </Typography>
+        <LinkedInIcon fontSize='large' onClick={event =>  window.location.href='https://www.linkedin.com/in/konsta-sappinen-364ba575/'} />
+        </Stack>
         <Typography variant='h5'>
         Vastaava LVIA-suunnittelija
           </Typography>
@@ -41,6 +46,7 @@ const Yhteystiedot = () => {
               </Stack>
     
           </Stack>
+
     </Stack>
         <Box sx={{width:'50%'}}>
           <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} />
