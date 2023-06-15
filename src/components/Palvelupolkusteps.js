@@ -17,6 +17,7 @@ import gearapp from '../images/mobile-development.png'
 import { styled } from '@mui/material/styles';
 import { lightGreen } from '@mui/material/colors';
 import Paaotsikko from '../otsikot/Paaotsikko';
+import {COLORS} from '../values/colors'
 
 export default function Palvelupolkusteps() {
 
@@ -51,7 +52,7 @@ export default function Palvelupolkusteps() {
   }));
 
   return (
-    <Box className="boxit"  >
+    <Box className="boxit" sx={{backgroundColor:COLORS.grey}}  >
         <Box sx={{ maxWidth: 800 , margin:'auto'}}>
           <Paaotsikko otsikko={'Palvelupolku'} teksti={'Palvelupolkumme on suunniteltu niin, että asiakkaan tavoite pysyy aina kaikille kirkkaana mielessä.'}/>
           <Stepper activeStep={activeStep} orientation="vertical" completed={true.toString()} sx={{paddingLeft:2}}>
@@ -194,7 +195,7 @@ export default function Palvelupolkusteps() {
               </Step>
           </Stepper>
           {activeStep === 5 && (
-            <Paper square elevation={0} sx={{ p: 3 }}>
+            <Paper square elevation={0} sx={{ p: 3 ,backgroundColor:COLORS.grey}}>
                  <Stack component={'div'} direction={{xs:'column-reverse', md:'row'}} sx={{width:'80%', gap:3 , padding:3, justifyContent:'center', alignItems:'center'}} >
         
             <Box sx={{width:{xs:'100%',md:'140%'}, marginRight:2}}>
