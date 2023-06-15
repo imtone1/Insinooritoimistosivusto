@@ -12,13 +12,14 @@ const Polkuitem = ({kuva, numero, otsikko1, otsikko2, teksti}) => {
     </Typography> */}
     <Stack direction={'column'} >
     <Rivitys osa1={otsikko1} osa2={otsikko2} varianti={'h5'}/>
+    
  
     <Typography sx={{width:'100%'}}>
     {teksti}
     </Typography>
 
     </Stack>
-    <Box sx={{width:{xs:'50%',md:'100%'}}}>
+    <Box sx={{width:{xs:'50%', sm:'30%',lg:'100%'}, alignSelf:'center', pb:2}}>
 <img src={kuva} alt="meeting" width={'100%'} />
 </Box>
 </Stack>

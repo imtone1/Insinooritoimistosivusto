@@ -198,7 +198,7 @@ export default function Palvelupolkusteps() {
             <Paper square elevation={0} sx={{ p: 3 ,backgroundColor:COLORS.grey}}>
                  <Stack component={'div'} direction={{xs:'column-reverse', md:'row'}} sx={{width:'80%', gap:3 , padding:3, justifyContent:'center', alignItems:'center'}} >
         
-            <Box sx={{width:{xs:'100%',md:'140%'}, marginRight:2}}>
+            <Box sx={{width:{xs:'80%',sm:'50%',md:'140%'}, marginRight:2}}>
         <img src={finish} alt="finish" width={'100%'}  />
         </Box>
         
