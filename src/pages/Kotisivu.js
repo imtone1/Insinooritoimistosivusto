@@ -3,9 +3,10 @@ import Header from '../components/Header'
 import Palveluitamme from '../components/Palveluitamme'
 import Lupauksemme from '../components/Lupauksemme'
 import Talopalvelu from '../components/Talopalvelu'
-import Palvelupolku from '../components/Palvelupolku'
+
 import Meistasanottua from '../components/Meistasanottua'
 import Otayhteytta from '../components/Otayhteytta'
+import Palvelupolkusteps from '../components/Palvelupolkusteps'
 
 
 const Kotisivu = () => {
@@ -15,7 +16,8 @@ const Kotisivu = () => {
     <Palveluitamme/>
     <Lupauksemme/>
     <Talopalvelu/>
-    <Palvelupolku/>
+    <Palvelupolkusteps/>
+
     <Meistasanottua/>
     <Otayhteytta/>
 

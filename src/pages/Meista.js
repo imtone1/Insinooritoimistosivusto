@@ -52,12 +52,38 @@ Panostamme jatkuvaan opiskeluun ja itsensä kehittämiseen
   <Accordions/>
 </Stack>
 
-<Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
-  Referenssit
-</Typography>
-<Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
+<Stack direction={'column'} sx={{width:600, margin:'auto', gap:2}}>
+  <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
+    Referenssit
+  </Typography>
+  
+  <Typography>
+  Asuinkerrostalot ja hoivakodit
+    </Typography>
+    <Typography>
+    Toimistorakennukset
+    </Typography>
+    <Typography>
+    Myymälät
+    </Typography>
+    <Typography>
+    Omakotitalot
+    </Typography>
+    <Typography>
+    Mökit ja huvilat, myös suojellut rakennukset
+    </Typography>
+    <Typography>
+    Kirkot
+    </Typography>
+    <Typography>
+    Pyynnöstä voimme toimittaa tarkemman referenssiluettelon suunnittelemastamme kohteista.
+    </Typography>
+</Stack>
+  
+  <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
   Sertifikaatit
 </Typography>
+
   </Box>
   )
 }

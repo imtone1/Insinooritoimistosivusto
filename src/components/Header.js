@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Box} from "@mui/material"
-
+import { Link } from 'react-router-dom'
 
 import talo from '../images/taloheader.png'
 
@@ -21,11 +21,19 @@ const Header = () => {
         Ammattitaitoisesti, selkeästi ja luotettavasti
     </h3>
     </Box>
+    <Link to={'/yhteystiedot'} onClick={() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }}>
     <Box className="banner-button-holder">
     <h3 className="banner-button">
         Ota yhteyttä
     </h3>
     </Box>
+    </Link>
     </Box>
   )
 }

@@ -20,10 +20,10 @@ const Talopalvelu = () => {
 </svg>
 </Box> */}
        <Stack direction={'column'} gap={2} pl={6}>
-         <Typography variant='h3' sx={{textShadow: '1px 1px rgb(99, 99, 99)', textTransform:'uppercase', fontWeight:'600' , fontSize:'200%', textAlign:'left'}}>Haluamme taata sinulle toivomasi palvelun</Typography>
-         <Typography>
+         <Typography variant='h6' sx={{textShadow: '1px 1px rgb(99, 99, 99)', textTransform:'uppercase', fontWeight:'600' ,  textAlign:'left'}}>Haluamme taata asiakkaille heidän toivoman palvelun</Typography>
+         {/* <Typography>
               Palvelupolkumme on suunniteltu niin, että tavoitteesi pysyy aina kaikille kirkkaana mielessä.
-              </Typography>
+              </Typography> */}
        </Stack>
 
         </Stack>
