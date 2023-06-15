@@ -3,7 +3,7 @@ import React from 'react'
 import { Box} from "@mui/material"
 import { Link } from 'react-router-dom'
 
-import talo from '../images/taloheader.png'
+import talo from '../images/poyta.jpg'
 
 
 const Header = () => {
