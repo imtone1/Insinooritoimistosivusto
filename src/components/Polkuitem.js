@@ -1,6 +1,5 @@
 import React from 'react'
 import { Stack, Typography, Box } from '@mui/material'
-import {COLORS} from '../values/colors'
 import Rivitys from '../otsikot/Rivitys'
 
 const Polkuitem = ({kuva, numero, otsikko1, otsikko2, teksti}) => {
