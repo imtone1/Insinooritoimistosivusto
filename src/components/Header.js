@@ -28,8 +28,8 @@ const Header = () => {
       behavior: "instant",
     });
   }}>
-    <Box className="banner-button-holder">
-    <h3 className="banner-button">
+    <Box className="banner-button-holder" >
+    <h3 className="banner-button" style={{boxShadow:'3px 5px 8px #888888'}}>
         Ota yhteyttä
     </h3>
     </Box>

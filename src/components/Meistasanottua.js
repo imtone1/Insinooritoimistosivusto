@@ -8,7 +8,7 @@ import Palaute from './Palaute'
 
 const Meistasanottua = () => {
   return (
-   <Box className="boxit"  sx={{backgroundColor: COLORS.beige1, alignItems:'center', justifyContent:'center'}}>
+   <Box className="boxit"  sx={{backgroundColor:COLORS.grey, alignItems:'center', justifyContent:'center'}}>
     <Box sx={{margin:'auto', width:'80%'}}> 
     <Paaotsikko otsikko={'Meistä sanottua'} teksti={'Asiakastyytyväisyys on meille kunnia-asia.'} />
 

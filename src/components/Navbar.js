@@ -11,7 +11,7 @@ import logo_SA1 from '../images/logo_SA1.png'
 const Navbar = () => {
   return (
     <Box sx={{ flexGrow: 1}}>
-    <AppBar position='sticky' style={{ background: COLORS.light_gray , height:70, width:'100%,' ,justifyContent:'center', color:'black'}}>
+    <AppBar position='sticky' style={{ background: COLORS.grey , height:70, width:'100%,' ,justifyContent:'center', color:'black'}}>
         <Toolbar>
      
       <Box sx={{ flexGrow: 1}} >
