@@ -3,12 +3,13 @@ import Paaotsikko from '../otsikot/Paaotsikko'
 import { Stack, Box } from '@mui/material'
 import {COLORS} from '../values/colors'
 import Palaute from './Palaute'
+import tablelasit from '../images/tablelasit.jpg'
 
 
 
 const Meistasanottua = () => {
   return (
-   <Box className="boxit"  sx={{backgroundColor:COLORS.grey, alignItems:'center', justifyContent:'center'}}>
+   <Box className="boxit"  sx={{backgroundImage: `url(${tablelasit})`, backgroundRepeat: 'no-repeat', backgroundSize:'cover' ,alignItems:'center', justifyContent:'center'}}>
     <Box sx={{margin:'auto', width:'80%'}}> 
     <Paaotsikko otsikko={'Meistä sanottua'} teksti={'Asiakastyytyväisyys on meille kunnia-asia.'} />
 
