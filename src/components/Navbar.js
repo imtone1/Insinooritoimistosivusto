@@ -31,9 +31,9 @@ const Navbar = () => {
             </IconButton>
             </Box> */}
             <Stack direction={'row'} gap={2} display={{xs:'none', md:'flex'}} alignItems={'center'}  >
-            <Typography variant='h6' component='div' sx={{flexGrow:1}} >
+            {/* <Typography variant='h6' component='div' sx={{flexGrow:1}} >
                 Ammattilaisille
-            </Typography>
+            </Typography> */}
 
             <Link to={'/palvelut'} onClick={() => {
     window.scroll({

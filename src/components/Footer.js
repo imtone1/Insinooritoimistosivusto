@@ -31,7 +31,7 @@ const Footer = () => {
       behavior: "instant",
     });
   }}>
-            <Typography sx={{width:{xs:106, sm:'inherit'}}}>
+            <Typography>
                 Meistä
             </Typography>
         </Link>
@@ -58,13 +58,13 @@ const Footer = () => {
       behavior: "instant",
     });
   }}>
-            <Typography >
+            <Typography  sx={{width:{xs:89, sm:'inherit'}}}>
                 Palvelut
             </Typography>
         </Link>
-        <Typography >
+        {/* <Typography >
             Ammattilaisille
-        </Typography>
+        </Typography> */}
         <Link to={'yhteystiedot'} onClick={() => {
     window.scroll({
       top: 0,

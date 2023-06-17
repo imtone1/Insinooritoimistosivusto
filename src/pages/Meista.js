@@ -57,7 +57,7 @@ Panostamme jatkuvaan opiskeluun ja itsensä kehittämiseen
 <Typography variant='h3' sx={{p:{xs:4}}}>
   Konsta Sappinen
 </Typography>
-<Box sx={{maxwidth:400}}>
+<Box sx={{maxwidth:400}} className='konstakuva'>
   <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} />
 </Box>
 <Koulutusaccordion/>

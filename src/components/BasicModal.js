@@ -32,7 +32,7 @@ export default function BasicModal({open, setOpen, text, otsikko}) {
           <Typography id="modal-modal-title" variant="h5" component="h2">
             {otsikko}
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 , color:'red' }}>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             {text}
           </Typography>
         </Box>

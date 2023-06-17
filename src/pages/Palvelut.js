@@ -9,7 +9,7 @@ import ListItem from '@mui/material/ListItem';
 
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-
+import coffee from '../images/coffee.png'
 
 import RoofingIcon from '@mui/icons-material/Roofing';
 
@@ -32,8 +32,26 @@ const Palvelut = () => {
 
        
   return (
-    <Box className="boxit" sx={{backgroundColor:COLORS.grey  }}>
-    <Paaotsikko otsikko={'Palvelut'} teksti={'Tarjoamamme  palvelut:'}/>
+    <Box  sx={{backgroundColor:COLORS.grey  }}>
+      <section className="layers" >
+  <div className="layers__container" style={{height:'30vh', minHeight:200}} >
+    <div className="layers__item layer-1" style={{backgroundImage: `url(${coffee})`, transform: 'translateZ(95px) scale(0.90)'}}></div>
+    
+    <div className="layers__item layer-3" style={{transform: 'translateZ(180px) scale(.8)'}}>
+      <div className="otsikko2-content">
+        <h1>Palvelut</h1>
+        <div className="otsikko2-content__p">Palvelemme asiakkaita niin tavanomaisissa, kuin vaativissakin projekteissa. </div>
+        
+        
+      </div>
+    </div>
+    {/* <div className="layers__item layer-4">
+      <canvas className="rain"></canvas>
+    </div> */}
+    
+  </div>
+</section>
+   
     <Stack direction={'column'} sx={{alignItems:'center'}}>
 
               <List dense={dense}>
