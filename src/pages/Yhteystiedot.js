@@ -9,15 +9,32 @@ import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import MailIcon from '@mui/icons-material/Mail';
 import ReceiptIcon from '@mui/icons-material/Receipt';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
+import coffee from '../images/coffee.png'
 
 const Yhteystiedot = () => {
   return (
-    <Box className="boxit" sx={{backgroundColor:COLORS.grey  }}>
-    <Paaotsikko otsikko={'Yhteystiedot'} teksti={'Voit ottaa yhteyttä sinulle sopivammalla tavalla. Vastaamme päivästä riippumatta.'}/>
+    <Box  sx={{backgroundColor:COLORS.grey}}>
+   
+    <section className="layers" >
+  <div className="layers__container" style={{height:'30vh', minHeight:200}} >
+    <div className="layers__item layer-1" style={{backgroundImage: `url(${coffee})`, transform: 'translateZ(95px) scale(0.90)'}}></div>
+    
+    <div className="layers__item layer-3" style={{transform: 'translateZ(180px) scale(.8)'}}>
+      <div className="otsikko2-content">
+        <h1>Yhteystiedot</h1>
+        <div className="otsikko2-content__p">Voit ottaa yhteyttä sinulle sopivammalla tavalla. </div>
+        <div className="otsikko2-content__p">Vastaamme päivästä riippumatta.</div>
+        
+      </div>
+    </div>
+    {/* <div className="layers__item layer-4">
+      <canvas className="rain"></canvas>
+    </div> */}
+    
+  </div>
+</section>
   
-  <Stack>
-    <Stack direction={{xs:'column', sm:'row'}} justifyContent={'center'} alignItems={'center'}>
+    <Stack direction={{xs:'column-reverse', sm:'row'}} justifyContent={'center'} alignItems={'center'}>
       <Stack direction={'column'} gap={3} p={2}>
         <Stack direction={'row'} alignItems='center'>
         <Typography variant='h3'>
@@ -48,7 +65,7 @@ const Yhteystiedot = () => {
           </Stack>
 
     </Stack>
-        <Box sx={{width:'50%'}}>
+        <Box  className='konstakuva'>
           <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} />
         </Box>
         <Stack direction={'column'} gap={3} p={2}>
@@ -91,7 +108,7 @@ const Yhteystiedot = () => {
     </Stack>
         </Stack>
     </Stack>
-  </Stack>
+  
 
   </Box>
   

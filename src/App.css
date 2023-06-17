@@ -21,6 +21,9 @@
 	font-family: merriweather-italic-3d;
 	src: url(./fonts/merriweather-regular-italic.woff2);
 }
+.konstakuva{
+  width: (var(--index) * 0.10);
+}
 
 .logo {
 	--logo-size: calc(var(--index) * 7.8);
@@ -184,6 +187,40 @@
     border-radius: 4px;
     text-align: center  ;
  }
+
+ .layers2 {
+	perspective: 1000px;
+	overflow: hidden;
+}
+.layers__container2 {
+	height: 70vh;
+	min-height: 500px;
+	transform-style: preserve-3d;
+	transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+	will-change: transform;
+	transition: transform var(--transition);
+}
+
+ .otsikko2-content {
+	font-size: calc(var(--index) * 2.0);
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: calc(var(--index) * -.15);
+	line-height: 1.35em;
+	
+}
+.otsikko2-content span {
+	display: block;
+}
+.otsikko2-content__p {
+  padding-top: 10px;
+	text-transform: none;
+	font-family: merriweather-italic-3d;
+	letter-spacing: normal;
+	font-size: calc(var(--index) * 1.00);
+	line-height: 1;
+}
+
 
 .valiotsikko{
   text-shadow: 2px 2px rgb(99, 99, 99);

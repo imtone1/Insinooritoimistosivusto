@@ -6,14 +6,34 @@ import {COLORS} from '../values/colors'
 import Konsta from '../images/Konsta-Sappinen.png'
 import Accordions from '../components/Accordions'
 import Koulutusaccordion from '../components/Koulutusaccordion'
+import tausta from '../images/tablecomp.png'
+import coffee from '../images/coffee.png'
 
 const Meista = () => {
   return (
-    <Box className="boxit" sx={{backgroundColor:COLORS.grey, overflow:'hidden'  }}>
-    <Paaotsikko otsikko={'Meistä'} teksti={'Asiantunteva LVIA-suunnittelija palveluksessasi'}/>
+    <Box sx={{backgroundColor:COLORS.grey, overflow:'hidden'}}>
+ 
+ <section className="layers" >
+  <Box className="layers__container" sx={{height:'20vh', minHeight:200}} >
+    <div className="layers__item layer-1" style={{backgroundImage: `url(${coffee})`, transform: 'translateZ(95px) scale(0.90)'}}></div>
+    
+    <div className="layers__item layer-3" style={{transform: 'translateZ(180px) scale(.8)'}}>
+      <div className="otsikko2-content">
+        <h1>SapAir Oy</h1>
+        <div className="otsikko2-content__p">Asiantunteva LVIA-suunnittelija palveluksessasi</div>
+        
+        
+      </div>
+    </div>
+    {/* <div className="layers__item layer-4">
+      <canvas className="rain"></canvas>
+    </div> */}
+    
+  </Box>
+</section>
 
     <Stack direction={'column'} sx={{gap:2, justifyContent:'center', alignItems:'center', width:'70%', margin:'auto'}}>
-<Typography>
+<Typography className='hero-content__p'>
 SapAir on aloittanut toimintansa vuonna 2015 toiminimellä. Toiminnan kasvaessa olemme siirtyneet osakeyhtiömuotoon syksyllä 2021. Nykyinen nimi on Insinööritoimisto SapAir Oy. Toimialueemme on koko Suomi. 
 </Typography>
 <Typography>

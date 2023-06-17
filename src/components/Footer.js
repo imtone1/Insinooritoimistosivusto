@@ -11,9 +11,9 @@ import {COLORS} from '../values/colors'
 
 const Footer = () => {
   return (
-    <Box className='boxit' sx={{backgroundColor: COLORS.beige1, overflow:'hidden'}}>
+    <Box className='boxit' sx={{backgroundColor: COLORS.beige1, overflow:'hidden', margin:'auto'}}>
 
-        <Stack direction={{xs:'column', md:'row'}} gap={{xs: 5,md:10,lg:20}} alignItems={'center'}>
+        <Stack direction={{xs:'column', md:'row'}} gap={{xs: 5,md:10,lg:20}} alignItems={'center'} justifyContent={'center'}>
         <Link to={'/'} onClick={() => {
     window.scroll({
       top: 0,
@@ -23,7 +23,7 @@ const Footer = () => {
   }}><Box sx={{padding:{xs:2, lg:10}}}>
             <img src={logo_SA1} alt="logo" style={{width:'200px'}}/>
         </Box></Link>
-        <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5}>
+        <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5} >
         <Link to={'/meista'} onClick={() => {
     window.scroll({
       top: 0,
@@ -31,7 +31,7 @@ const Footer = () => {
       behavior: "instant",
     });
   }}>
-            <Typography >
+            <Typography sx={{width:{xs:106, sm:'inherit'}}}>
                 Meistä
             </Typography>
         </Link>
