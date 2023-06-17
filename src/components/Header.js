@@ -51,7 +51,7 @@ const Header = () => {
     
     <div className="layers__item layer-3">
       <div className="hero-content">
-        <h1>LVI-SUUNNITELU</h1>
+        <h1>LVI - SUUNNITELU</h1>
         <div className="hero-content__p">AMMATTITAITOISESTI, SELKEÄSTI, LUOTETTAVASTI</div>
         <Link to={'/yhteystiedot'} onClick={() => {
     window.scroll({

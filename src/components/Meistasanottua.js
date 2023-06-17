@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Paaotsikko from '../otsikot/Paaotsikko'
-import { Stack, Box } from '@mui/material'
-import {COLORS} from '../values/colors'
+import {  Box } from '@mui/material'
 import Palaute from './Palaute'
 import tablelasit from '../images/tablelasit.jpg'
 
