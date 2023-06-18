@@ -59,8 +59,8 @@ export default function Menuni() {
       behavior: "instant",
     });
   }}> <MenuItem onClick={handleClose}>Meistä</MenuItem></Link>
-        <MenuItem onClick={handleClose}>Ammattilaisille</MenuItem>
-        <MenuItem onClick={handleClose}>Referenssit</MenuItem>
+        {/* <MenuItem onClick={handleClose}>Ammattilaisille</MenuItem>
+        <MenuItem onClick={handleClose}>Referenssit</MenuItem> */}
         </div>
       </MenuBasic>
     </Box>

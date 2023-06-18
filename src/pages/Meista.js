@@ -8,6 +8,8 @@ import Accordions from '../components/Accordions'
 import Koulutusaccordion from '../components/Koulutusaccordion'
 import tausta from '../images/tablecomp.png'
 import coffee from '../images/coffee.png'
+import DataTable from '../components/Datatable'
+import Referenssimaara from '../components/Referenssimaara'
 
 const Meista = () => {
   return (
@@ -72,11 +74,13 @@ Panostamme jatkuvaan opiskeluun ja itsensä kehittämiseen
   <Accordions/>
 </Stack>
 
-<Stack direction={'column'} sx={{width:600, margin:'auto', gap:2}}>
+<Stack direction={'column'} sx={{margin:'auto', gap:2}}>
   <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
     Referenssit
   </Typography>
-  
+  <Referenssimaara/>
+  <DataTable/>
+{/*   
   <Typography>
   Asuinkerrostalot ja hoivakodit
     </Typography>
@@ -97,7 +101,7 @@ Panostamme jatkuvaan opiskeluun ja itsensä kehittämiseen
     </Typography>
     <Typography>
     Pyynnöstä voimme toimittaa tarkemman referenssiluettelon suunnittelemastamme kohteista.
-    </Typography>
+    </Typography> */}
 </Stack>
   
   <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
