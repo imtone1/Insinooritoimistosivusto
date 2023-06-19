@@ -89,7 +89,7 @@ const Palveluitamme = () => {
                 <Typography variant='h4' fontWeight={600}  >
                     LVIA-suunnittelu
                 </Typography>
-                <Typography  >
+                <Typography>
                 Meidän insinööritoimistossamme panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi energiankulutuksen, parantaa sisäilman laatua ja takaa kustannustehokkaan toiminnan.
                 </Typography>
             </Stack>
@@ -142,14 +142,14 @@ const Palveluitamme = () => {
 <StyledButton>
 
 <Box sx={{border:'solid 4px', p:2, width:'109px', backgroundColor: COLORS.vihrea,  margin:'auto'}}>
-<Link to={'/palvelut'} onClick={() => {
+<Link to={'/palvelut'} style={{textDecoration:'none'}}onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
       behavior: "instant",
     });
   }}>
-<Typography variant='body2'sx={{backgroundColor: COLORS.vihrea}} >Lisää palveluita</Typography>
+<Typography variant='body2'sx={{backgroundColor: COLORS.vihrea, fontWeight:'bold'}} >Lisää palveluita</Typography>
 </Link>
 </Box>
 

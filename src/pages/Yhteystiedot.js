@@ -1,5 +1,5 @@
 import React from 'react'
-import Paaotsikko from '../otsikot/Paaotsikko'
+
 
 import {COLORS} from '../values/colors'
 

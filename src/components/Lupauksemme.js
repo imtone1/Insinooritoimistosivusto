@@ -6,7 +6,7 @@ import Lupaus from './Lupaus'
 
 const Lupauksemme = () => {
   return (
-   <Box className="boxit" sx={{backgroundColor: COLORS.beige1 }}>
+   <Box className="boxit" sx={{backgroundColor: COLORS.beige1, paddingBottom:0 }}>
 
 <Paaotsikko otsikko={'Miksi valita meidät?'} teksti={'Asiakkaiden luottamus on arvokkain voimavaramme! Sitoudumme tinkimättömään laatuun ja asiakkaan tyytyväisyyteen jokaisessa kohtaamisessa.'} />
 
@@ -22,7 +22,7 @@ const Lupauksemme = () => {
 
    
 </Stack>
-<Stack direction={'column'} sx={{maxWidth:'90%', margin:'auto', gap:3, padding:3}}
+<Stack direction={'column'} sx={{maxWidth:950, margin:'auto', gap:3, padding:3, paddingTop:0, transform:{md:'translateY(-50px)'}}}
    >
 <Lupaus teksti={'Meidän LVI-suunnittelupalvelumme takaavat nopean reagoinnin ja tehokkaan työnkulun. Ammattitaitoinen tiimimme kykenee toimittamaan korkealaatuiset suunnitelmat lyhyessä ajassa, jotta voit aloittaa rakennusprojektisi nopeasti. Säästä aikaa ja vaivaa valitsemalla meidät nopeuden ja laadun yhdistelmän vuoksi.'} otsikko1={'Nopeus'} otsikko2={''}/>
 

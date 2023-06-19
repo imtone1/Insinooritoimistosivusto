@@ -6,6 +6,10 @@ import jasenyritys from '../images/jasenyritys_2022.png'
 import LK_valkoinen from '../images/LK_valkoinen.png'
 import tietosuoja from '../documents/Tietosuojaseloste.pdf'
 import {ReactComponent as Asiakastietologo}  from '../images/LOGO_SILVER_STANDING_BLACK_FI_433955.svg'
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import MailIcon from '@mui/icons-material/Mail';
+import ReceiptIcon from '@mui/icons-material/Receipt';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 import {COLORS} from '../values/colors'
 
@@ -35,9 +39,18 @@ const Footer = () => {
                 Meistä
             </Typography>
         </Link>
+
+        <Link to={'/meista'} onClick={() => {
+    window.scroll({
+      top: 120,
+      left: 0,
+      behavior: "instant",
+    });
+  }}>
         <Typography>
             Referenssit
         </Typography>
+        </Link>
         <Link to={'/yhteystiedot'} onClick={() => {
     window.scroll({
       top: 0,
@@ -51,7 +64,7 @@ const Footer = () => {
         </Link>
         </Stack>
         <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5}>
-        <Link to={'palvelut'} onClick={() => {
+        <Link to={'/palvelut'} onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
@@ -85,18 +98,34 @@ const Footer = () => {
            <img src={LK_valkoinen} alt="LK_valkoinen" style={{width:'100%'}} />
           </Box>  <Asiakastietologo style={{width:'150px'}}/>
             </Stack>
+
+            
+     
         </Stack>
      
-          
+          <Stack direction={{xs:'column', sm:'row'}} sx={{alignItems:'center', justifyContent:'center', gap:2, p:2}}>
+              <Stack direction={'row'} gap={1}>
+                <PhoneInTalkIcon/>
+                <Typography >
+                040 677 24 00
+                </Typography>
+                </Stack>
+                <Stack direction={'row'} gap={1} >
+                <MailIcon/>
+                <Typography >
+                info@sapair.fi
+                </Typography>
+                </Stack>
+            </Stack>
             <a href={tietosuoja} target="_blank"
                     rel="noreferrer">
-                     <Typography sx={{textAlign:'center', paddingTop:5}} >
+                     <Typography sx={{textAlign:'center', paddingTop:2}} >
                 Tietosuojaseloste
             </Typography>
                 </a>
        
 <Typography sx={{textAlign:'center', paddingTop:5}}>
-    SapAir Oy | Y-tunnus: 3245203-6 | Osoite Helmikuja 3, 21310 Vahto
+    SapAir Oy | Y-tunnus: 3245203-6 | Helmikuja 3, 21310 Vahto
     </Typography>
     </Box>
   )

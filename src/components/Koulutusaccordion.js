@@ -25,9 +25,9 @@ export default function Koulutusaccordion() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Stack direction={{xs:'column', sm:'row'}}>
+          <Stack direction={{xs:'column', sm:'row'}} sx={{margin:'auto'}}>
             <SchoolIcon sx={{ justifySelf:'center', alignSelf:'center'}}/>
-            <Typography sx={{  p:2, justifySelf:'center', alignSelf:'center'}}>
+            <Typography sx={{  p:2, textAlign:'center' , fontSize:'190%'}}>
             Koulutus
             </Typography>
             
@@ -64,9 +64,9 @@ export default function Koulutusaccordion() {
           id="panel2bh-header"
           
         >
-          <Stack direction={{xs:'column', sm:'row'}}>
+          <Stack direction={{xs:'column', sm:'row'}} sx={{margin:'auto'}}>
           <HistoryEduIcon sx={{ justifySelf:'center', alignSelf:'center'}}/>
-          <Typography sx={{ p:2 , justifySelf:'center', alignSelf:'center'}}> Jatkokoulutus/ Pätevyydet/ Erikoisosaaminen</Typography>
+          <Typography sx={{ p:2 , justifySelf:'center', alignSelf:'center' , fontSize:'120%'}}> Jatkokoulutus/ Pätevyydet/ Erikoisosaaminen</Typography>
           </Stack>
         </AccordionSummary>
         <AccordionDetails >

@@ -42,7 +42,7 @@ export const PROJECTS = [
 
     Vuosi: 2019, 
 
-    Kiinteiston_nimi: 'Hotelli Doha Lusail (Qatar), Kelluva hotelli', 
+    Kiinteiston_nimi: 'Hotelli Doha Lusail, Kelluva hotelli', 
 
     Tehtava: 'LVIA-suunnittelu + jäähdytysjärjestelmä 620kW', 
 

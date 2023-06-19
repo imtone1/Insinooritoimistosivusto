@@ -36,27 +36,38 @@ const Meista = () => {
 </section>
 
     <Stack direction={'column'} sx={{gap:2, justifyContent:'center', alignItems:'center', width:'70%', margin:'auto'}}>
-<Typography className='hero-content__p'>
+      <Stack sx={{paddingTop:5, gap:3, paddingBottom:5}}>
+<Typography >
 SapAir on aloittanut toimintansa vuonna 2015 toiminimellä. Toiminnan kasvaessa olemme siirtyneet osakeyhtiömuotoon syksyllä 2021. Nykyinen nimi on Insinööritoimisto SapAir Oy. Toimialueemme on koko Suomi. 
 </Typography>
 
 <Typography>
 SapAir palvelee asiakkaita niin tavanomaisissa, kuin vaativissakin projekteissa. Olemme pieni ja ketterä suunnittelutoimisto, jossa asiointi on sujuvaa ja nopeaa.
 </Typography>
-<Typography>
-Suunnittelemme energiatehokkaita rakennuksia, niin yksityisille kuin yrityksille sekä taloyhtiöille. 
-</Typography>
-
+</Stack>
+<Box sx={{ textAlign:'right'}}>
+     <svg xmlns="http://www.w3.org/2000/svg" width="240" height="6">
+  <line x1="2" y1="0.5" x2="240" y2="0.5" stroke="black" strokeWidth="6"  />
+</svg>
+</Box> 
+<p className='otsikko2-content__p'>
+Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyhtiöille. 
+</p>
+<Box sx={{ textAlign:'right', }}>
+     <svg xmlns="http://www.w3.org/2000/svg" width="120" height="6">
+  <line x1="2" y1="0.5" x2="120" y2="0.5" stroke="black" strokeWidth="6"  />
+</svg>
+</Box> 
 
     </Stack>
-<Stack direction={'column'} sx={{gap:3, justifyContent:'center', alignItems:'center'}}>
-<Stack direction={'row'} sx={{ justifyContent:'center', alignItems:'center'}}>
-  <Typography variant='h3' sx={{p:{xs:4}}}>
+<Stack direction={'column'} sx={{gap:3, justifyContent:'center', alignItems:'center', pt:6}}>
+<Stack direction={'row'} sx={{ justifyContent:'center', alignItems:'center',p:{xs:2}}}>
+  <Typography variant='h3' >
     Konsta Sappinen
   </Typography>
   <LinkedInIcon fontSize='large' onClick={event =>  window.location.href='https://www.linkedin.com/in/konsta-sappinen-364ba575/'} />
 </Stack>
-<Typography variant='h5'>
+<Typography variant='h5' sx={{ textAlign:'center'}}>
         Vastaava LVIA-suunnittelija, Toimitusjohtaja
           </Typography>
           <Stack direction={{xs:'column',md:'row'}} gap={2}>
@@ -81,13 +92,13 @@ Suunnittelemme energiatehokkaita rakennuksia, niin yksityisille kuin yrityksille
 
 </Stack>
 
-<Stack direction={'column'} sx={{ gap:2}}>
-  <Stack sx={{ justifySelf:'center', alignSelf:'center', p:10, gap:2}}>
+<Stack direction={'column'} sx={{ gap:3, pt:5}}>
+  <Stack sx={{ justifyContent:'center', alignItems:'center', p:2, gap:3}}>
     <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center'}} >
     Suunnittelijan referenssit
     </Typography>
     <Typography sx={{ justifySelf:'center', alignSelf:'center'}}>
-      Työnjälki puhuu puolestaan. Tutustu alla oleviin suunnittelijan referensseihin ja vakuutu laadusta.
+      Puhutkoon työnjälki puolestaan. Tutustu alla oleviin suunnittelijan referensseihin ja vakuutu laadusta.
     </Typography>
   </Stack>
  
