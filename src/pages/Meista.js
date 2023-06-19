@@ -9,7 +9,10 @@ import Koulutusaccordion from '../components/Koulutusaccordion'
 
 import coffee from '../images/coffee.png'
 import DataTable from '../components/Datatable'
-import Referenssimaara from '../components/Referenssimaara'
+
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
+import MailIcon from '@mui/icons-material/Mail';
 
 const Meista = () => {
   return (
@@ -27,9 +30,7 @@ const Meista = () => {
         
       </div>
     </div>
-    {/* <div className="layers__item layer-4">
-      <canvas className="rain"></canvas>
-    </div> */}
+
     
   </Box>
 </section>
@@ -38,9 +39,7 @@ const Meista = () => {
 <Typography className='hero-content__p'>
 SapAir on aloittanut toimintansa vuonna 2015 toiminimellä. Toiminnan kasvaessa olemme siirtyneet osakeyhtiömuotoon syksyllä 2021. Nykyinen nimi on Insinööritoimisto SapAir Oy. Toimialueemme on koko Suomi. 
 </Typography>
-<Typography>
-Vahvuuksiimme kuuluu asiakaslähtöisyys ja ketteryys.
-</Typography>
+
 <Typography>
 SapAir palvelee asiakkaita niin tavanomaisissa, kuin vaativissakin projekteissa. Olemme pieni ja ketterä suunnittelutoimisto, jossa asiointi on sujuvaa ja nopeaa.
 </Typography>
@@ -51,22 +50,35 @@ Suunnittelemme energiatehokkaita rakennuksia, niin yksityisille kuin yrityksille
 
     </Stack>
 <Stack direction={'column'} sx={{gap:3, justifyContent:'center', alignItems:'center'}}>
-<Typography variant='h3' sx={{p:{xs:4}}}>
-  Konsta Sappinen
-</Typography>
+<Stack direction={'row'} sx={{ justifyContent:'center', alignItems:'center'}}>
+  <Typography variant='h3' sx={{p:{xs:4}}}>
+    Konsta Sappinen
+  </Typography>
+  <LinkedInIcon fontSize='large' onClick={event =>  window.location.href='https://www.linkedin.com/in/konsta-sappinen-364ba575/'} />
+</Stack>
+<Typography variant='h5'>
+        Vastaava LVIA-suunnittelija, Toimitusjohtaja
+          </Typography>
+          <Stack direction={{xs:'column',md:'row'}} gap={2}>
+              <Stack direction={'row'} gap={1}>
+              <PhoneInTalkIcon/>
+              <Typography >
+              044 019 09 87
+              </Typography>
+              </Stack>
+              <Stack direction={'row'} gap={1} >
+              <MailIcon/>
+              <Typography >
+              konsta.sappinen@sapair.fi
+              </Typography>
+              </Stack>
+    
+          </Stack>
 <Box sx={{maxwidth:400}} className='konstakuva'>
   <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} />
 </Box>
 <Koulutusaccordion/>
 
-</Stack>
-
-
-<Stack sx={{width:{xs:'100%', lg:'900px'}, margin: 'auto'}}>
-  <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
-  Arvojamme
-</Typography>
-  <Accordions/>
 </Stack>
 
 <Stack direction={'column'} sx={{ gap:2}}>
@@ -82,33 +94,15 @@ Suunnittelemme energiatehokkaita rakennuksia, niin yksityisille kuin yrityksille
   <Box sx={{width:{xs:'100%',lg:'85%'}, margin:'auto'}}>
   <DataTable/>
   </Box>
-{/*   
-  <Typography>
-  Asuinkerrostalot ja hoivakodit
-    </Typography>
-    <Typography>
-    Toimistorakennukset
-    </Typography>
-    <Typography>
-    Myymälät
-    </Typography>
-    <Typography>
-    Omakotitalot
-    </Typography>
-    <Typography>
-    Mökit ja huvilat, myös suojellut rakennukset
-    </Typography>
-    <Typography>
-    Kirkot
-    </Typography>
-    <Typography>
-    Pyynnöstä voimme toimittaa tarkemman referenssiluettelon suunnittelemastamme kohteista.
-    </Typography> */}
+
 </Stack>
   
+<Stack sx={{width:{xs:'100%', lg:'900px'}, margin: 'auto'}}>
   <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
-  Sertifikaatit
+  Arvojamme
 </Typography>
+  <Accordions/>
+</Stack>
 
   </Box>
   )

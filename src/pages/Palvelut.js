@@ -12,6 +12,7 @@ import ListItemText from '@mui/material/ListItemText';
 import coffee from '../images/coffee.png'
 
 import RoofingIcon from '@mui/icons-material/Roofing';
+import Otayhteytta from '../components/Otayhteytta';
 
 
 const Palvelut = () => {
@@ -70,7 +71,7 @@ const Palvelut = () => {
         </List>
     </Stack>
         
-  
+  <Otayhteytta/>
   </Box>
   )
 }

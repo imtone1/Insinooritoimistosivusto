@@ -131,7 +131,10 @@ export default function Datatable() {
         
         localeText={fiFI.components.MuiDataGrid.defaultProps.localeText} 
        autoHeight
+       initialState={{
         
+        pagination: { paginationModel: { pageSize: 10 } },
+      }}
           columnBuffer={2} columnThreshold={2}
         // initialState={{
         //   pagination: {
@@ -141,8 +144,8 @@ export default function Datatable() {
         getRowClassName={(params) =>
             params.indexRelativeToCurrentPage % 2 === 0 ? 'even' : 'odd'
           }
-        rowsPerPageOptions={[10, 20, 30]}
-       pageSize={20}
+          pageSizeOptions={[10, 30, 50]}
+      
        
         slots={{
             toolbar: GridToolbar,

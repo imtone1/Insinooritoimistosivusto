@@ -25,14 +25,14 @@ const Otayhteytta = () => {
           </Typography>
           </Stack>
           <Stack direction={'column'} gap={2} justifyContent="center" alignItems={'center'} sx={{
-           backgroundColor:{xs:'#ececee', md:'transparent'}, borderRadius:4, padding:1}}>
+           backgroundColor:{xs:'#ececee', md:'transparent'}, boxShadow:'3px 5px 8px #888888',borderRadius:4, padding:1}}>
           <MailIcon sx={{fontSize:'50px'}}/>
           <Typography sx={{fontWeight:700}}>
           info@sapair.fi
           </Typography>
           </Stack>
           <Stack direction={'column'} gap={2} justifyContent="center" alignItems={'center'} sx={{
-           backgroundColor:{xs:'#ececee', md:'transparent'}, borderRadius:4, padding:1}}>
+           backgroundColor:{xs:'#ececee', md:'transparent'}, boxShadow:'3px 5px 8px #888888',borderRadius:4, padding:1}}>
           <WhatsAppIcon sx={{fontSize:'50px'}}/>
           <Typography sx={{fontWeight:700}}>
           044 019 09 87

@@ -17,7 +17,7 @@ export default function Accordions() {
   };
 
   return (
-    <Box  sx={{maxwidth:900, margin:'auto'}}>
+    <Box  sx={{maxwidth:900, margin:'auto', pb:10}}>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{backgroundColor:COLORS.grey  }} >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -25,8 +25,8 @@ export default function Accordions() {
           id="panel1bh-header"
         >
           <Stack direction={{xs:'column', sm:'row'}} sx={{alignItems:'center'}}>
-            <RecyclingIcon sx={{ justifySelf:'center', alignSelf:'center'}}/>
-            <Typography sx={{ width: '33%', p:2}}>
+            <RecyclingIcon sx={{ justifySelf:'center', alignSelf:'center', fontSize:'190%'}}/>
+            <Typography sx={{  p:2, fontSize:'190%'}}>
               Vastuullisuus
             </Typography>
             <Typography sx={{ color: 'text.secondary' }}>Panostamme hiilineutraalisuuteen liiketoiminnassamme suosien uusiutuvaa energiaa ja pyrkien vähentämään energiankulutusta.</Typography>
@@ -38,18 +38,18 @@ export default function Accordions() {
            
             <Typography>
               
-              Suunnittelemme rakennusten LVI-järjestelmiä ja ilmastointia siten, että ne ovat energiateh okkaita ja hyödyntävät uusiutuvia energialähteitä, kuten aurinko- ja maalämpöä.
+              Suunnittelemme rakennusten LVI-järjestelmiä ja ilmastointia siten, että ne ovat energiatehokkaita ja hyödyntävät uusiutuvia energialähteitä, kuten aurinko- ja maalämpöä.
             </Typography>
             
              
             <Typography>
               
-              Suunnittelussa otamme huomioon energiatehokkuus (pitkällä tähtäimellä) rakennuksen elinkaaren mukaisesti. Esitämme asiakkaalle konkreettisia vaihtoehtoja energiatehokkuuden parantamiseksi.
+              Suunnittelussa otamme huomioon energiatehokkuus pitkällä tähtäimellä rakennuksen elinkaaren mukaisesti. Esitämme asiakkaalle konkreettisia vaihtoehtoja energiatehokkuuden parantamiseksi.
               
             </Typography>
 
             <Typography>
-            Pyrimme myös vähentämään materiaalihukkaa ja edistämään kestävää rakentamista. Suunnitteluvaiheessa otamme huomioon materiaalien ominaisuudet (valinnan) ja pyrimme käyttämään ympäristöystävällisiä, kierrätettäviä ja kestäviä materiaaleja. Suosimme energiatehokkaita ja ympäristöystävällisiä ratkaisuja, kuten veden ja energian säästöön tähtääviä järjestelmiä.
+            Pyrimme myös vähentämään materiaalihukkaa ja edistämään kestävää rakentamista. Suunnitteluvaiheessa otamme huomioon materiaalien ominaisuudet ja pyrimme käyttämään ympäristöystävällisiä, kierrätettäviä ja kestäviä materiaaleja. Suosimme energiatehokkaita ja ympäristöystävällisiä ratkaisuja, kuten veden ja energian säästöön tähtääviä järjestelmiä.
             </Typography>
           </Stack> 
         </AccordionDetails>
@@ -62,8 +62,8 @@ export default function Accordions() {
           
         >
           <Stack direction={{xs:'column', sm:'row'}} sx={{alignItems:'center'}}>
-          <HealthAndSafetyIcon sx={{ justifySelf:'center', alignSelf:'center'}}/>
-          <Typography sx={{ width: '33%',  p:2 }}>Terveys</Typography>
+          <HealthAndSafetyIcon sx={{ justifySelf:'center', alignSelf:'center', fontSize:'190%'}}/>
+          <Typography sx={{   p:2 , fontSize:'190%'}}>Terveys</Typography>
           <Typography sx={{ color: 'text.secondary' }}>
           Meille on tärkeää myös rakennusten käyttäjien hyvinvointi ja terveys. 
           </Typography></Stack>
@@ -81,8 +81,8 @@ export default function Accordions() {
           id="panel3bh-header"
         >
           <Stack direction={{xs:'column', sm:'row'}} sx={{alignItems:'center'}}>
-          <VolunteerActivismIcon sx={{ justifySelf:'center', alignSelf:'center'}}/>
-          <Typography sx={{ width: '33%', flexShrink: 0 , p:2}}>
+          <VolunteerActivismIcon sx={{ justifySelf:'center', alignSelf:'center',  fontSize:'190%'}}/>
+          <Typography sx={{  flexShrink: 0 , p:2, fontSize:'190%'}}>
           Välittäminen
           </Typography>
           <Typography sx={{ color: 'text.secondary' }}>

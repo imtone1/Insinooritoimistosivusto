@@ -258,10 +258,7 @@
 
 }
 
-.lupaukset{
-  max-width: 33%;
-  padding: 2;
-}
+
 
 /* Media Queries */
 @media screen and (min-width: 280px) {

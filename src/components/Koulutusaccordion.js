@@ -1,15 +1,13 @@
 import * as React from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
+
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-import { Box, Stack } from '@mui/material';
+import { Box, Stack, Typography, Accordion, AccordionDetails, AccordionSummary, List, ListItem, ListItemText, ListItemIcon } from '@mui/material';
 
-import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
+import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 import { COLORS } from '../values/colors';
 import SchoolIcon from '@mui/icons-material/School';
+import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 
 
 export default function Koulutusaccordion() {
@@ -41,7 +39,7 @@ export default function Koulutusaccordion() {
            
           <Stack>
   <Typography>
-  Kone- ja tuotantotekniikan koulutusohjelma, insinööri (AMK), suuntautuminen LVI-tekniikkaan, Turun AMK
+  Kone- ja tuotantotekniikan insinööri (AMK), suuntautuminen LVI-tekniikkaan, Turun AMK
   </Typography>
   <Typography>
   2013-2016
@@ -67,7 +65,7 @@ export default function Koulutusaccordion() {
           
         >
           <Stack direction={{xs:'column', sm:'row'}}>
-          <HealthAndSafetyIcon sx={{ justifySelf:'center', alignSelf:'center'}}/>
+          <HistoryEduIcon sx={{ justifySelf:'center', alignSelf:'center'}}/>
           <Typography sx={{ p:2 , justifySelf:'center', alignSelf:'center'}}> Jatkokoulutus/ Pätevyydet/ Erikoisosaaminen</Typography>
           </Stack>
         </AccordionSummary>
@@ -75,13 +73,80 @@ export default function Koulutusaccordion() {
           
 <Box sx={{paddingLeft:2}}>
 
-  <ul> 
-  <li>Jatkuvat maalämpöjärjestelmien valmistajien laitekoulutukset</li>
-  <li>Älykkäät ja kestävät kiinteistöjen energiaratkaisut (5op) YAMK, Metropolia, 2021</li>
-  <li>Poikkeuksellisen vaativat kohteet ja erikoisjärjestelmät (5op) YAMK, Metropolia, 2020</li>
-  <li>KVV- ja IV työnjohtajakoulutus, TuLVI, 2018</li>
-  <li>Sisäilmaopinnot IV-suunnittelijoille ja -asiantuntijoille (3op) AMK, Metropolia, 2017</li>
-</ul>  
+<List dense={true}>
+            
+            <ListItem>
+            <ListItemIcon>
+            <AutoAwesomeIcon sx={{fontSize:'small'}}/>
+          </ListItemIcon>
+           
+              <ListItemText
+                primary="Älykkäät ja kestävät kiinteistöjen energiaratkaisut (5 op) YAMK, Metropolia, 2021"
+                
+              />
+            </ListItem>
+            <ListItem>
+            <ListItemIcon>
+            <AutoAwesomeIcon sx={{fontSize:'small'}}/>
+          </ListItemIcon>
+           
+              <ListItemText
+                primary="Kiertotalous (5 op) YAMK, Turun AMK, 2021"
+                
+              />
+            </ListItem>
+            <ListItem>
+            <ListItemIcon>
+            <AutoAwesomeIcon sx={{fontSize:'small'}}/>
+          </ListItemIcon>
+           
+              <ListItemText
+                primary="Poikkeuksellisen vaativat kohteet ja erikoisjärjestelmät (5op) YAMK, Metropolia, 2020"
+                
+              />
+            </ListItem>
+            <ListItem>
+            <ListItemIcon>
+            <AutoAwesomeIcon sx={{fontSize:'small'}}/>
+          </ListItemIcon>
+           <ListItemText
+             primary="Renewable Energy Project Development (5 op) YAMK, Turun AMK, 2020"
+             
+           />
+         </ListItem>
+
+         <ListItem>
+         <ListItemIcon>
+            <AutoAwesomeIcon sx={{fontSize:'small'}}/>
+          </ListItemIcon>
+         <ListItemText
+             primary="Maalämpöratkaisut laitekoulutukset, 2018"
+             
+           />
+         </ListItem>
+
+         <ListItem>
+         <ListItemIcon>
+            <AutoAwesomeIcon sx={{fontSize:'small'}}/>
+          </ListItemIcon>
+         <ListItemText
+             primary="KVV- ja IV työnjohtajakoulutus, TuLVI, 2018"
+             
+           />
+         </ListItem>
+            
+         <ListItem>
+          <ListItemIcon>
+            <AutoAwesomeIcon sx={{fontSize:'small'}}/>
+          </ListItemIcon>
+         <ListItemText
+             primary="Sisäilmaopinnot IV-suunnittelijoille ja -asiantuntijoille (3 op) AMK, Metropolia, 2017"
+             
+           />
+         </ListItem>
+
+        </List>
+ 
 </Box>
   
         </AccordionDetails>
