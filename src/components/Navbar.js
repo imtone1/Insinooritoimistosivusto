@@ -16,7 +16,7 @@ const Navbar = () => {
      
       <Box sx={{ flexGrow: 1}} >
            <Link to="/">   
- <img src={logo_SA1} alt="SapAir logo" width="150" />
+ <img src={logo_SA1} alt="SapAir logo" width="150" height={'auto'} />
 
             </Link>
            
@@ -71,7 +71,7 @@ const Navbar = () => {
             <Stack direction={'row'} gap={2} display={{xs:'none', sm:'flex'}} alignItems={'center'} >
             <PhoneInTalkIcon />
 
-            <Typography variant='h6' component='div' sx={{flexGrow:1, fontWeight:600}} >
+            <Typography variant='body1' component='div' sx={{flexGrow:1, fontWeight:600, fontSize:'120%'}} >
             040 6772400
             </Typography>
             </Stack>

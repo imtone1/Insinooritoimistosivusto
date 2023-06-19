@@ -18,7 +18,7 @@ for (let i = 0; i < PROJECTS.length; i++) {
   }
 }
 // Laske projektien määrä
-const projectCount = PROJECTS.length;
+// const projectCount = PROJECTS.length;
 
 // Laske laajuusarvojen summa
 let sum = 0;

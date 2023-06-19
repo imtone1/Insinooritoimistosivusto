@@ -95,9 +95,7 @@ const Footer = () => {
                 Palvelut
             </Typography>
         </Link>
-        {/* <Typography >
-            Ammattilaisille
-        </Typography> */}
+      
         <Link to={'yhteystiedot'} onClick={() => {
     window.scroll({
       top: 0,
@@ -112,10 +110,10 @@ const Footer = () => {
         </Stack>
         <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5}>
           <Box sx={{width:'150px'}}>
-            <img src={jasenyritys} alt="jasenyritys" style={{width:'100%'}}/>
+            <img src={jasenyritys} alt="jasenyritys" style={{width:'100%', height:'auto'}}/>
            </Box>
            <Box sx={{width:'150px'}}>
-           <img src={LK_valkoinen} alt="LK_valkoinen" style={{width:'100%'}} />
+           <img src={LK_valkoinen} alt="LK_valkoinen" style={{width:'100%', height:'auto'}} />
           </Box>  <Asiakastietologo style={{width:'150px'}}/>
             </Stack>
 

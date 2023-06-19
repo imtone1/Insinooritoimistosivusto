@@ -175,9 +175,9 @@ const Palveluitamme = () => {
         onClose={handleClose}
         onClick={handleClose}
        
-        aria-labelledby="modal-dialog-overflow"
+        aria-labelledby="modal-dialog-overflowLVI-suunnittelu"
 
-        aria-describedby="modal-modal-description"
+        aria-describedby="modal-modal-descriptionLVI-suunnittelu"
       
       > 
       <ModalOverflow>
@@ -189,10 +189,10 @@ const Palveluitamme = () => {
 >
  <ModalClose />
 
-          <Typography id="modal-modal-title" variant="h5" component="h2">
+          <Typography id="modal-modal-titleLVI-suunnittelu" variant="h5" component="h2">
           LVI-suunnittelu
           </Typography>
-          <Box id="modal-dialog-overflow" sx={{ mt: 2 }}>
+          <Box id="modal-dialog-overflowLVI-suunnittelu" sx={{ mt: 2 }}>
             <Stack sx={{gap:2}}>
               <Typography>
               LVI-suunnittelu on olennainen osa rakennuksen talotekniikkaa ja keskeinen tekijä sen elinkaaren aikaisen suorituskyvyn ja asumismukavuuden kannalta. Meidän insinööritoimistossamme panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi energiankulutuksen, parantaa sisäilman laatua ja takaa kustannustehokkaan toiminnan. 
@@ -288,9 +288,9 @@ const Palveluitamme = () => {
         onClose={handleCloseProjekti}
         onClick={handleCloseProjekti}
        
-        aria-labelledby="modal-dialog-overflow"
+        aria-labelledby="modal-dialog-Projektijohto21"
 
-        aria-describedby="modal-modal-description"
+        aria-describedby="modal-modal-descriptionProjektijohto"
       
       > 
       <ModalOverflow>
@@ -302,10 +302,10 @@ const Palveluitamme = () => {
 >
  <ModalClose />
 
-          <Typography id="modal-modal-title" variant="h5" component="h2">
+          <Typography id="modal-modal-titleProjektijohto" variant="h5" component="h2">
           Projektijohto- ja valvontatehtävät
           </Typography>
-          <Box id="modal-dialog-overflow" sx={{ mt: 2 }}>
+          <Box id="modal-dialog-Projektijohto21" sx={{ mt: 2 }}>
             <Typography>
             Tarjoamme projektinjohto- ja rakennuttamistehtäviä, jotka toteutamme hankkeen tarpeiden mukaisesti. 
             </Typography>
@@ -415,9 +415,9 @@ const Palveluitamme = () => {
         onClose={handleCloseKVV}
         onClick={handleCloseKVV}
        
-        aria-labelledby="modal-dialog-overflow"
+        aria-labelledby="modal-dialog-KVV1"
 
-        aria-describedby="modal-modal-description"
+        aria-describedby="modal-modal-KVV2"
       
       > 
       <ModalOverflow>
@@ -429,10 +429,10 @@ const Palveluitamme = () => {
 >
  <ModalClose />
 
-          <Typography id="modal-modal-title" variant="h5" component="h2">
+          <Typography id="modal-modal-title21" variant="h5" component="h2">
           KVV/IV Työnjohto
           </Typography>
-          <Box id="modal-dialog-overflow" sx={{ mt: 2 }}>
+          <Box id="modal-dialog-KVV1" sx={{ mt: 2 }}>
             <Typography>
             KVV- ja IV- vastaava työnjohtaja toimii rakennuttajan edunvalvojana varmistaen, että suunnitelmat ja määräykset toteutetaan työmaalla asianmukaisesti.
             

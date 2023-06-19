@@ -27,9 +27,7 @@ const Yhteystiedot = () => {
         
       </div>
     </div>
-    {/* <div className="layers__item layer-4">
-      <canvas className="rain"></canvas>
-    </div> */}
+
     
   </div>
 </section>
@@ -66,10 +64,10 @@ const Yhteystiedot = () => {
 
     </Stack>
         <Box  className='konstakuva'>
-          <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} />
+          <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} height={'auto'}/>
         </Box>
         <Stack direction={'column'} gap={3} p={2}>
-          <Typography variant='h3'>
+          <Typography variant='h6' sx={{fontSize:'190%'}}>
           Toimisto
           </Typography>
           <Typography>Helmikuja 3, 21310 Vahto</Typography>

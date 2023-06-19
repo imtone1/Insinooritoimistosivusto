@@ -25,14 +25,14 @@ export default function BasicModal({open, setOpen, text, otsikko}) {
       <Modal
         open={open}
         onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        aria-labelledby={`modal-modal-${otsikko}`}
+        aria-describedby={`modal-modal-${otsikko}1`}
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h5" component="h2">
+          <Typography id={`modal-modal-${otsikko}`} variant="h5" component="h2">
             {otsikko}
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography id={`modal-modal-${otsikko}1`} sx={{ mt: 2 }}>
             {text}
           </Typography>
         </Box>

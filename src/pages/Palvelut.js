@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 
 import {COLORS} from '../values/colors'
 import { Modal, ModalDialog, ModalClose, ModalOverflow } from '@mui/joy'
-import Paaotsikko from '../otsikot/Paaotsikko'
+
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import { Box, Stack, Typography, List, ListItem, ListItemText, ListItemIcon} from '@mui/material'
@@ -23,20 +23,6 @@ const Palvelut = () => {
  const handleOpenKVV = () => setOpenKVV(true);
  const handleCloseKVV = () => setOpenKVV(false);
 
-       const [dense, setDense] = React.useState(false);
-        const [secondary, setSecondary] = React.useState(false);
-        const palvelumme = [
-            "LVIA-suunnittelu",
-            "Konsultointipalvelut",
-            "Projektinjohto ja valvontatehtävät",
-            "Maalämpösuunnittelu, valvonta ja rakennuttaminen",
-            "Kuntoarviot",
-            "Selvitykset ja tarkastukset",
-            "Huoneistoremonttivalvontaa",
-            "Asiantuntijalausunnot",
-            "IV / KVV vastaavan työnjohtajapalvelut"
-          ];
-
        
   return (
     <Box  sx={{backgroundColor:COLORS.grey  }}>
@@ -52,24 +38,22 @@ const Palvelut = () => {
         
       </div>
     </div>
-    {/* <div className="layers__item layer-4">
-      <canvas className="rain"></canvas>
-    </div> */}
+  
     
   </div>
 </section>
    
     <Stack direction={'column'} sx={{alignItems:'center'}}>
 
-              <List dense={dense}>
+              <List dense={true}>
           
           <ListItem onClick={() => setopen(true)} >
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={palvelumme[0]}
-              secondary={secondary ? 'Secondary text' : null}
+              primary={'LVIA-suunnittelu'}
+             
             />
              <ListItemIcon>
               <ArrowForwardIosIcon />
@@ -81,7 +65,7 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={palvelumme[8]}
+              primary={'IV / KVV vastaavan työnjohtajapalvelut'}
               secondary={'tavanomaisista eritysvaativiin kohteisiin'}
             />
              <ListItemIcon>
@@ -95,8 +79,8 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={palvelumme[2]}
-              secondary={secondary ? 'Secondary text' : null}
+              primary={'Projektinjohto ja valvontatehtävät'}
+             
             />
              <ListItemIcon>
               <ArrowForwardIosIcon />
@@ -108,8 +92,8 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={palvelumme[3]}
-              secondary={secondary ? 'Secondary text' : null}
+              primary={'Maalämpösuunnittelu, valvonta ja rakennuttaminen'}
+              
             />
              <ListItemIcon>
               <ArrowForwardIosIcon />
@@ -121,8 +105,8 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={palvelumme[4]}
-              secondary={secondary ? 'Secondary text' : null}
+              primary={'Asiantuntijalausunnot'}
+            
             />
           
           </ListItem>
@@ -132,8 +116,8 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={palvelumme[5]}
-              secondary={secondary ? 'Secondary text' : null}
+              primary={'Selvitykset ja tarkastukset'}
+            
             />
            
           </ListItem>
@@ -143,8 +127,8 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={palvelumme[6]}
-              secondary={secondary ? 'Secondary text' : null}
+              primary={'Huoneistoremonttivalvonta'}
+             
             />
              
           </ListItem>
@@ -154,8 +138,8 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={palvelumme[7]}
-              secondary={secondary ? 'Secondary text' : null}
+              primary={'Asiantuntijalausunnot'}
+             
             />
              
           </ListItem>
@@ -165,8 +149,8 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={palvelumme[1]}
-              secondary={secondary ? 'Secondary text' : null}
+              primary={'Konsultointipalvelut'}
+            
             />
            
           </ListItem>
@@ -181,9 +165,9 @@ const Palvelut = () => {
         onClose={handleClose}
         onClick={handleClose}
        
-        aria-labelledby="modal-dialog-overflow"
+        aria-labelledby="modal-dialog-LVI-suunnittelu"
 
-        aria-describedby="modal-modal-description"
+        aria-describedby="modal-modal-LVI-suunnittelu"
       
       > 
       <ModalOverflow>
@@ -195,10 +179,10 @@ const Palvelut = () => {
 >
  <ModalClose />
 
-          <Typography id="modal-modal-title" variant="h5" component="h2">
+          <Typography id="modal-modal-title1" variant="h5" component="h2">
           LVI-suunnittelu
           </Typography>
-          <Box id="modal-dialog-overflow" sx={{ mt: 2 }}>
+          <Box id="modal-dialog-LVI-suunnittelu" sx={{ mt: 2 }}>
             <Stack sx={{gap:2}}>
               <Typography>
               LVI-suunnittelu on olennainen osa rakennuksen talotekniikkaa ja keskeinen tekijä sen elinkaaren aikaisen suorituskyvyn ja asumismukavuuden kannalta. Meidän insinööritoimistossamme panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi energiankulutuksen, parantaa sisäilman laatua ja takaa kustannustehokkaan toiminnan. 
@@ -294,9 +278,9 @@ const Palvelut = () => {
         onClose={handleCloseProjekti}
         onClick={handleCloseProjekti}
        
-        aria-labelledby="modal-dialog-overflow"
+        aria-labelledby="modal-dialog-Projektijohto"
 
-        aria-describedby="modal-modal-description"
+        aria-describedby="modal-modal-Projektijohto"
       
       > 
       <ModalOverflow>
@@ -308,10 +292,10 @@ const Palvelut = () => {
 >
  <ModalClose />
 
-          <Typography id="modal-modal-title" variant="h5" component="h2">
+          <Typography id="modal-modal-title2" variant="h5" component="h2">
           Projektijohto- ja valvontatehtävät
           </Typography>
-          <Box id="modal-dialog-overflow" sx={{ mt: 2 }}>
+          <Box id="modal-dialog-Projektijohto" sx={{ mt: 2 }}>
             <Typography>
             Tarjoamme projektinjohto- ja rakennuttamistehtäviä, jotka toteutamme hankkeen tarpeiden mukaisesti. 
             </Typography>
@@ -421,9 +405,9 @@ const Palvelut = () => {
         onClose={handleCloseKVV}
         onClick={handleCloseKVV}
        
-        aria-labelledby="modal-dialog-overflow"
+        aria-labelledby="modal-dialog-KVV"
 
-        aria-describedby="modal-modal-description"
+        aria-describedby="modal-modal-KVV"
       
       > 
       <ModalOverflow>
@@ -435,10 +419,10 @@ const Palvelut = () => {
 >
  <ModalClose />
 
-          <Typography id="modal-modal-title" variant="h5" component="h2">
+          <Typography id="modal-modal-title3" variant="h5" component="h2">
           KVV/IV Työnjohto
           </Typography>
-          <Box id="modal-dialog-overflow" sx={{ mt: 2 }}>
+          <Box id="modal-dialog-KVV" sx={{ mt: 2 }}>
             <Typography>
             KVV- ja IV- vastaava työnjohtaja toimii rakennuttajan edunvalvojana varmistaen, että suunnitelmat ja määräykset toteutetaan työmaalla asianmukaisesti.
             

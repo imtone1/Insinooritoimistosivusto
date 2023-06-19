@@ -30,7 +30,7 @@ const Palvelupolku = () => {
   <Stack component={'div'} direction={{xs:'column-reverse', md:'row'}} sx={{width:'80%', gap:3 , padding:3, justifyContent:'center', alignItems:'center'}} >
         
         <Box sx={{width:'140%', marginRight:2}}>
-<img src={finish} alt="finish" width={'100%'}  />
+<img src={finish} alt="finish" width={'100%'} height={'auto'} />
 </Box>
     
     <Stack direction={'column'} >

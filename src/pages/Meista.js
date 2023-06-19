@@ -86,7 +86,7 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
     
           </Stack>
 <Box sx={{maxwidth:400}} className='konstakuva'>
-  <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} />
+  <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} height={'auto'}/>
 </Box>
 <Koulutusaccordion/>
 
