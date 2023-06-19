@@ -13,7 +13,7 @@ import Referenssimaara from '../components/Referenssimaara'
 
 const Meista = () => {
   return (
-    <Box sx={{backgroundColor:COLORS.grey, overflow:'hidden'}}>
+    <Box sx={{backgroundColor:COLORS.grey}}>
  
  <section className="layers" >
   <Box className="layers__container" sx={{height:'20vh', minHeight:200}} >
@@ -74,12 +74,14 @@ Panostamme jatkuvaan opiskeluun ja itsensä kehittämiseen
   <Accordions/>
 </Stack>
 
-<Stack direction={'column'} sx={{margin:'auto', gap:2}}>
+<Stack direction={'column'} sx={{ gap:2}}>
   <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
     Referenssit
   </Typography>
   <Referenssimaara/>
+  <Box sx={{width:{xs:'100%',lg:'85%'}, margin:'auto'}}>
   <DataTable/>
+  </Box>
 {/*   
   <Typography>
   Asuinkerrostalot ja hoivakodit

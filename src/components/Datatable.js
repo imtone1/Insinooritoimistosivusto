@@ -121,7 +121,7 @@ export default function Datatable() {
     
 
   return (
-    <div style={{ margin:'auto' }}>
+    <div style={{ justifyContent:'center',width: '100%' }}>
       <StripedDataGrid
      
         rows={projectsWithId}
