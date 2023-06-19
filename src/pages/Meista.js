@@ -1,19 +1,19 @@
 import React from 'react'
 import { Box, Stack, Typography } from '@mui/material'
-import Paaotsikko from '../otsikot/Paaotsikko'
+
 
 import {COLORS} from '../values/colors'
 import Konsta from '../images/Konsta-Sappinen.png'
 import Accordions from '../components/Accordions'
 import Koulutusaccordion from '../components/Koulutusaccordion'
-import tausta from '../images/tablecomp.png'
+
 import coffee from '../images/coffee.png'
 import DataTable from '../components/Datatable'
 import Referenssimaara from '../components/Referenssimaara'
 
 const Meista = () => {
   return (
-    <Box sx={{backgroundColor:COLORS.grey}}>
+    <Box sx={{backgroundColor:COLORS.grey, overflow:'hidden'}}>
  
  <section className="layers" >
   <Box className="layers__container" sx={{height:'20vh', minHeight:200}} >
@@ -42,17 +42,12 @@ SapAir on aloittanut toimintansa vuonna 2015 toiminimellä. Toiminnan kasvaessa 
 Vahvuuksiimme kuuluu asiakaslähtöisyys ja ketteryys.
 </Typography>
 <Typography>
-Palvelemme asiakkaita niin tavanomaisissa, kuin vaativissakin projekteissa. Olemme pieni ja ketterä suunnittelutoimisto, jossa asiointi on sujuvaa ja nopeaa.
-</Typography>
-<Typography>
 SapAir palvelee asiakkaita niin tavanomaisissa, kuin vaativissakin projekteissa. Olemme pieni ja ketterä suunnittelutoimisto, jossa asiointi on sujuvaa ja nopeaa.
 </Typography>
 <Typography>
 Suunnittelemme energiatehokkaita rakennuksia, niin yksityisille kuin yrityksille sekä taloyhtiöille. 
 </Typography>
-<Typography>
-Panostamme jatkuvaan opiskeluun ja itsensä kehittämiseen
-</Typography>
+
 
     </Stack>
 <Stack direction={'column'} sx={{gap:3, justifyContent:'center', alignItems:'center'}}>
@@ -75,9 +70,14 @@ Panostamme jatkuvaan opiskeluun ja itsensä kehittämiseen
 </Stack>
 
 <Stack direction={'column'} sx={{ gap:2}}>
-  <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
-    Referenssit
-  </Typography>
+  <Stack sx={{ justifySelf:'center', alignSelf:'center', p:10, gap:2}}>
+    <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center'}} >
+      Referenssit
+    </Typography>
+    <Typography sx={{ justifySelf:'center', alignSelf:'center'}}>
+      Työnjälki puhuu puolestaan. Tutustu alla oleviin referensseihimme ja huomaa, minkä takia olemme tunnettuja laadusta.
+    </Typography>
+  </Stack>
   <Referenssimaara/>
   <Box sx={{width:{xs:'100%',lg:'85%'}, margin:'auto'}}>
   <DataTable/>

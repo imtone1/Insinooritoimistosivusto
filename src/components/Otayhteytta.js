@@ -35,7 +35,7 @@ const Otayhteytta = () => {
            backgroundColor:{xs:'#ececee', md:'transparent'}, borderRadius:4, padding:1}}>
           <WhatsAppIcon sx={{fontSize:'50px'}}/>
           <Typography sx={{fontWeight:700}}>
-          040 677 24 00
+          044 019 09 87
           </Typography>
           </Stack>
         

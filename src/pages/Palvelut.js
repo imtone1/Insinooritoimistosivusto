@@ -27,7 +27,7 @@ const Palvelut = () => {
             "Selvitykset ja tarkastukset",
             "Huoneistoremonttivalvontaa",
             "Asiantuntijalausunnot",
-            "IV / KVV vastaavan työnjohtajapalvelut"
+            "IV / KVV vastaavan työnjohtajapalvelut (tavanomaisista eritysvaativiin kohteisiin)"
           ];
 
        

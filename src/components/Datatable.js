@@ -107,13 +107,13 @@ const StripedDataGrid = styled(DataGrid)(({ theme }) => ({
     );
   }
 const columns1 = [
-    { field: 'Vuosi',  headerClassName: 'super-app-theme--header',headerName: 'Vuosi',type: 'year', width: 80 },
-    { field: 'Kiinteiston_nimi',  headerClassName: 'super-app-theme--header',headerName: 'Kiinteiston_nimi', width: 200,renderCell: (params) => <ExpandableCell {...params} /> },
-    { field: 'Tehtava',  headerClassName: 'super-app-theme--header',headerName: 'Tehtava', width: 250 ,renderCell: (params) => <ExpandableCell {...params} />},
+    { field: 'Kiinteiston_nimi',  headerClassName: 'super-app-theme--header',headerName: 'Kiinteiston_nimi', width: 200},
+    { field: 'Tehtava',  headerClassName: 'super-app-theme--header',headerName: 'Tehtava', width: 250 },
     { field: 'Vaativuusluokka', headerClassName: 'super-app-theme--header', headerName: 'Vaativuusluokka', width: 150 },
-    { field: 'Rakennustyyppi', headerClassName: 'super-app-theme--header', headerName: 'Rakennustyyppi', width: 150 ,renderCell: (params) => <ExpandableCell {...params} />},
+    { field: 'Rakennustyyppi', headerClassName: 'super-app-theme--header', headerName: 'Rakennustyyppi', width: 150 },
     { field: 'Laajuus', headerClassName: 'super-app-theme--header', headerName: 'Laajuus', type: 'number', width: 120 },
-    { field: 'Paikka', headerClassName: 'super-app-theme--header', headerName: 'Paikka', width: 150 },
+    { field: 'Paikka', headerClassName: 'super-app-theme--header', headerName: 'Paikka', width: 120 },
+    { field: 'Vuosi',  headerClassName: 'super-app-theme--header',headerName: 'Vuosi',type: 'year', width: 80 },
   ];
   
 export default function Datatable() {

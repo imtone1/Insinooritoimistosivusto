@@ -1,33 +1,11 @@
 import React from 'react'
+import CountUp, { useCountUp } from 'react-countup';
 import { PROJECTS } from '../values/referenssi';
 import { Box, Stack, Typography } from '@mui/material'
 import {COLORS} from '../values/colors'
 
 const Referenssimaara = () => {
-var a = 0;
-window.addEventListener('scroll', function() {
-  var counter = document.getElementById('counter');
-  var oTop = counter.offsetTop - window.innerHeight;
-  
-  if (a === 0 && window.scrollY > oTop) {
-    var counterValues = document.querySelectorAll('.counter-value');
-    counterValues.forEach(function(element) {
-      var countTo = element.getAttribute('data-count');
-      var countNum = parseInt(element.textContent);
-      
-      var animation = setInterval(function() {
-        countNum++;
-        element.textContent = Math.floor(countNum);
-        
-        if (countNum === parseInt(countTo)) {
-          clearInterval(animation);
-        }
-      }, 70);
-    });
-    
-    a = 1;
-  }
-});   
+
     // Laske "Vaativa" arvojen määrä
 let count = 0;
 for (let i = 0; i < PROJECTS.length; i++) {
@@ -54,28 +32,35 @@ for (let i = 0; i < PROJECTS.length; i++) {
   }
 }
 
-
-
   return (
     <Box sx={{backgroundColor:COLORS.harmaa}}>
+     
 <Stack direction={{xs:'column',md:'row'}} sx={{textAlign:'center', alignItems:'center', justifyContent: 'space-evenly', padding:5, gap:3}}id="counter">
+    
     <Stack sx={{gap:3}}>
+      <Stack  direction={'row'}>
       
-      <div className='referenssiotsikko counter-value' data-count={sum}>
-          166790
-            </div>
-            <Stack>
-          <h3 >
-          Kokonaislaajuus
-            </h3>
-          
-      </Stack>
+      <CountUp className='referenssiotsikko'
+          end={sum}
+          duration="3"
+          enableScrollSpy={true}
+        />
+        m2</Stack>
+              <Stack>
+            <h3 >
+            Kokonaislaajuus
+              </h3>
+      
+        </Stack>
     </Stack>
+    
     <Stack sx={{gap:3}} >
    
-        <div className='referenssiotsikko counter-value' data-count={count}>
-      0
-        </div>
+    <CountUp className='referenssiotsikko'
+        end={count}
+        duration="3"
+        enableScrollSpy={true}
+      />
         <Stack>
         <h3 >
           Vaativia projekteja
@@ -85,9 +70,13 @@ for (let i = 0; i < PROJECTS.length; i++) {
     </Stack>
     <Stack sx={{gap:3}}>
    
-    <div className='referenssiotsikko counter-value' data-count={projectCount}>
-      0
-        </div>
+    <CountUp className='referenssiotsikko'
+        end={300}
+        duration="3"
+        enableScrollSpy={true}
+      />
+   
+      
         <Stack>
         <h3 >
           Tehtyjä projekteja

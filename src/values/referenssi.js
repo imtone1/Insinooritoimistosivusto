@@ -19,7 +19,7 @@ export const PROJECTS = [
     },
   {
       Vuosi: 2019,
-      Kiinteiston_nimi: 'Hotelli Doha Lusail (Qatar), Kelluva hotelli',
+      Kiinteiston_nimi: 'Hotelli Doha Lusail, Kelluva hotelli',
       Tehtava: 'LVIA-suunnittelu + jäähdytysjärjestelmä 620kW',
       Vaativuusluokka: 'Vaativa',
       Rakennustyyppi: 'Liikerakennus',
@@ -148,7 +148,7 @@ export const PROJECTS = [
     },
     {
       Vuosi: 2022,
-      Kiinteiston_nimi: 'Varppeen päiväkoti 2',
+      Kiinteiston_nimi: 'Varppeen päiväkoti',
       Tehtava: 'Ulkopuoliset putkistot',
       Vaativuusluokka: 'Tavanomainen',
       Rakennustyyppi: 'Uudisrakennus',
@@ -239,7 +239,7 @@ export const PROJECTS = [
   
     {
       Vuosi: 2021,
-      Kiinteiston_nimi: 'TVT Miikkulankuja 2',
+      Kiinteiston_nimi: 'TVT Miikkulankuja',
       Tehtava: 'Maalämpöjärjestelmän hankkeen suunnittelu 90kW ja valvonta',
       Vaativuusluokka: 'Tavanomainen',
       Rakennustyyppi: 'Asuinrakennus',
@@ -511,7 +511,7 @@ export const PROJECTS = [
     },
     {
       Vuosi: 2018,
-      Kiinteiston_nimi: 'As Oy Sydänsimpukka (Turku)',
+      Kiinteiston_nimi: 'As Oy Sydänsimpukka',
       Tehtava: 'MLP + AU hankesuunnittelu 90kW',
       Vaativuusluokka: 'Tavanomainen',
       Rakennustyyppi: 'Asuinrakennus',
@@ -556,7 +556,7 @@ export const PROJECTS = [
     },
     {
       Vuosi: 2017,
-      Kiinteiston_nimi: 'Teollisuuslaitos (Ulvila)',
+      Kiinteiston_nimi: 'Teollisuuslaitos',
       Tehtava: 'Kuntoarviointi',
       Vaativuusluokka: 'Vaativa',
       Rakennustyyppi: 'Teollisuuden rakennus',

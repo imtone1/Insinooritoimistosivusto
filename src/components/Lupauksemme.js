@@ -35,7 +35,7 @@ const Lupauksemme = () => {
   alignItems="center">
 <Lupaus teksti={`Laatu on meille ykkösasia. Tarjoamme LVI-suunnittelupalveluita, joissa huippulaatu on taattu. Kokeneet suunnittelijamme varmistavat, että jokainen suunnitelma on tarkka, kestävä ja toimiva. Käytämme parhaita materiaaleja ja nykyaikaisia suunnittelumenetelmiä varmistaaksemme rakennuksesi pitkäikäisyyden ja toiminnallisuuden. Luota ammattitaitoomme ja valitse laadukas LVI-suunnittelu.`} otsikko1={'Korkea laatu'} otsikko2={''}/>
 
-<Lupaus teksti={'Sinun tarpeesi ovat meille ensisijaisia. Asiakaslähtöinen LVI-suunnittelu on vahvuutemme, ja tavoitteenamme on toteuttaa visiosi juuri sellaisena kuin haluat. Käytämme aikaa kuunnellaksemme tarpeitasi ja ymmärtääksemme projektisi vaatimukset. Tämän avulla pystymme suunnittelemaan LVI-ratkaisuja, jotka vastaavat täysin odotuksiasi. Luota meille ja anna meidän toteuttaa unelmiesi LVI-järjestelmä.'} otsikko1={'Asiakas'} otsikko2={'lähtöisyys'}/>
+<Lupaus teksti={'Sinun tarpeesi ovat meille ensisijaisia. Asiakaslähtöinen LVI-suunnittelu on vahvuutemme, ja tavoitteenamme on toteuttaa visiosi juuri sellaisena kuin haluat. Käytämme aikaa kuunnellaksemme tarpeitasi ja ymmärtääksemme projektisi vaatimukset. Tämän avulla pystymme suunnittelemaan LVI-ratkaisuja, jotka vastaavat täysin odotuksiasi. Luota meihin ja anna meidän toteuttaa unelmiesi LVI-järjestelmä.'} otsikko1={'Asiakas'} otsikko2={'lähtöisyys'}/>
 </Stack>
 </Box>
     </Box>
