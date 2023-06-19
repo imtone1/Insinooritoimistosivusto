@@ -10,7 +10,7 @@ import logo_SA1 from '../images/logo_SA1.png'
 
 const Navbar = () => {
   return (
-    <Box sx={{ flexGrow: 1}}>
+    <nav>
     <AppBar position='sticky' style={{ background: COLORS.grey , height:70, width:'100%,' ,justifyContent:'center', color:'black'}}>
         <Toolbar>
      
@@ -53,7 +53,7 @@ const Navbar = () => {
       behavior: "instant",
     });
   }}>
-                <Typography variant='h6' component='div' sx={{flexGrow:1}} >
+                <Typography variant='h6' component='div' sx={{flexGrow:1}} id='meista'>
                     Meistä
                 </Typography>
             </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
                     Yhteystiedot
                 </Typography>
             </Link>
-            <Stack direction={'row'} gap={2} display={{xs:'none', sm:'flex'}} alignItems={'center'} >
+            <Stack direction={'row'} gap={2} display={{xs:'none', sm:'flex'}} alignItems={'center'} aria-label="SapAir Oy puhelinnumero">
             <PhoneInTalkIcon />
 
             <Typography variant='body1' component='div' sx={{flexGrow:1, fontWeight:600, fontSize:'120%'}} >
@@ -82,7 +82,7 @@ const Navbar = () => {
            
         </Toolbar>
     </AppBar>
-    </Box>
+    </nav>
   )
 }
 

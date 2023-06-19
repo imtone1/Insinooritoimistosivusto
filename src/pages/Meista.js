@@ -65,7 +65,7 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
   <Typography variant='h3' >
     Konsta Sappinen
   </Typography>
-  <LinkedInIcon fontSize='large' onClick={event =>  window.location.href='https://www.linkedin.com/in/konsta-sappinen-364ba575/'} />
+  <LinkedInIcon fontSize='large' onClick={event =>  window.location.href='https://www.linkedin.com/in/konsta-sappinen-364ba575/'} aria-label="Linkki Konsta Sappisen Linkedin-sivulle"/>
 </Stack>
 <Typography variant='h5' sx={{ textAlign:'center'}}>
         Vastaava LVIA-suunnittelija, Toimitusjohtaja

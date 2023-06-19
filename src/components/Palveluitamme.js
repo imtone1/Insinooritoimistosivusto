@@ -85,7 +85,7 @@ const Palveluitamme = () => {
 <ThemeProvider theme={customTheme}>
 <StyledAvatar>
 
-            <Stack direction={'column'}  gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={() => setopen(true)}>
+            <Stack direction={'column'}  gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={() => setopen(true)} role='button'>
                 <Typography variant='h4' fontWeight={600}  >
                     LVIA-suunnittelu
                 </Typography>
@@ -99,7 +99,7 @@ const Palveluitamme = () => {
 <ThemeProvider theme={customTheme}>
 <StyledAvatar>
 
-            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenProjekti}>
+            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenProjekti} role='button'>
                 <Typography variant='h4'  fontWeight={600} >
                 Projektijohto- ja valvonta tehtävät
                 </Typography>
@@ -112,7 +112,7 @@ const Palveluitamme = () => {
 
 <ThemeProvider theme={customTheme}>
 <StyledAvatar>
-            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenKVV}>
+            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenKVV} role='button'>
                 <Typography variant='h4'fontWeight={600} >
                 KVV/IV vastaavan työnjohtajan palvelut
                 </Typography>
@@ -142,7 +142,7 @@ const Palveluitamme = () => {
 <StyledButton>
 
 <Box sx={{border:'solid 4px', p:2, width:'109px', backgroundColor: COLORS.vihrea,  margin:'auto'}}>
-<Link to={'/palvelut'} style={{textDecoration:'none'}}onClick={() => {
+<Link to={'/palvelut'} role='link' style={{textDecoration:'none'}}onClick={() => {
     window.scroll({
       top: 0,
       left: 0,

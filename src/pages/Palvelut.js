@@ -47,7 +47,7 @@ const Palvelut = () => {
 
               <List dense={true}>
           
-          <ListItem onClick={() => setopen(true)} >
+          <ListItem onClick={() => setopen(true)} role='button'>
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>
@@ -60,7 +60,7 @@ const Palvelut = () => {
             </ListItemIcon>
           </ListItem>
            
-          <ListItem  onClick={handleOpenKVV}>
+          <ListItem  onClick={handleOpenKVV} role='button'>
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>
@@ -74,7 +74,7 @@ const Palvelut = () => {
            
           </ListItem>
           
-          <ListItem onClick={handleOpenProjekti} >
+          <ListItem onClick={handleOpenProjekti} role='button'>
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>
@@ -168,7 +168,7 @@ const Palvelut = () => {
         aria-labelledby="modal-dialog-LVI-suunnittelu"
 
         aria-describedby="modal-modal-LVI-suunnittelu"
-      
+      id='LVI-suunnittelu modal'
       > 
       <ModalOverflow>
         <ModalDialog
@@ -274,7 +274,7 @@ const Palvelut = () => {
 
       <Modal
         open={openProjekti}
-      
+      id='Projektijohto modal'
         onClose={handleCloseProjekti}
         onClick={handleCloseProjekti}
        
@@ -401,7 +401,7 @@ const Palvelut = () => {
 
       <Modal
         open={openKVV}
-      
+      id='KVV/IV modal'
         onClose={handleCloseKVV}
         onClick={handleCloseKVV}
        

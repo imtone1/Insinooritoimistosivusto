@@ -16,9 +16,9 @@ const Header = () => {
   })
   return (
 
-  <section className="layers">
+  <section role='columnheader' className="layers">
   <div className="layers__container">
-    <div className="layers__item layer-1" style={{backgroundImage: `url(${talo})`}}></div>
+    <div className="layers__item layer-1" role='img' style={{backgroundImage: `url(${talo})`}}></div>
     
     <div className="layers__item layer-3">
       <div className="hero-content">

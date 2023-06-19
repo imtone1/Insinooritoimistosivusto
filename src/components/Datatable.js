@@ -86,7 +86,7 @@ export default function Datatable() {
     
 
   return (
-    <div style={{ justifyContent:'center',width: '100%' }}>
+    <div style={{ justifyContent:'center',width: '100%' }} role='table'>
       <StripedDataGrid
      
         rows={projectsWithId}
@@ -113,9 +113,9 @@ export default function Datatable() {
           }}
         
 
-         
+         id="datatable"
           slotProps={{ toolbar: {  printOptions: { disableToolbarButton: true },
-          csvOptions: { disableToolbarButton: true }, } }} 
+          csvOptions: { disableToolbarButton: true } } }} 
           sx={{
             '&.MuiDataGrid-root--densityCompact .MuiDataGrid-cell': {
               py: 1,

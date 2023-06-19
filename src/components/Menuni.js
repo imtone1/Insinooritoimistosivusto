@@ -17,7 +17,7 @@ export default function Menuni() {
   };
 
   return (
-    <Box sx={{display:{md:'none', xs:'flex'}, color:COLORS.brown}}>
+    <Box sx={{display:{md:'none', xs:'flex'}, color:COLORS.brown}} role='menubar'>
       <IconButton
         id="basic-button"
         aria-controls={open ? 'basic-menu' : undefined}

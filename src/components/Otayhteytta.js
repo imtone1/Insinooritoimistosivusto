@@ -6,12 +6,12 @@ import MailIcon from '@mui/icons-material/Mail';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 import Paaotsikko from '../otsikot/Paaotsikko'
-import table from '../images/table3.jpg'
+import table from '../images/table3.png'
 
 
 const Otayhteytta = () => {
   return (
-    <Box className="boxit" sx={{backgroundImage: `url(${table})`, backgroundRepeat: 'no-repeat', backgroundSize:'cover' }}>
+    <Box className="boxit" sx={{backgroundImage: `url(${table})`, backgroundRepeat: 'no-repeat', backgroundSize:'contain' }}>
         
         <Box sx={{}}>
           <Paaotsikko otsikko={'Ota yhteyttä'} teksti={'Voit ottaa yhteyttä sinulle sopivammalla tavalla. Vastaamme päivästä riippumatta.'}/>

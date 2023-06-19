@@ -35,7 +35,7 @@ const Footer = () => {
 
       };
   return (
-    <Box className='boxit' sx={{backgroundColor: COLORS.beige1, overflow:'hidden', margin:'auto'}}>
+    <Box className='boxit' sx={{backgroundColor: COLORS.beige1, overflow:'hidden', margin:'auto'}} role='navigation' aria-label='footer'>
 
         <Stack direction={{xs:'column', md:'row'}} gap={{xs: 5,md:10,lg:20}} alignItems={'center'} justifyContent={'center'}>
         <Link to={'/'} onClick={() => {
@@ -136,7 +136,7 @@ const Footer = () => {
                 </Stack>
             </Stack>
             <a href={tietosuoja} target="_blank"
-                    rel="noreferrer">
+                    rel="noreferrer" aria-label="Tietosuojaseloste" > 
                      <Typography sx={{textAlign:'center', paddingTop:2}} >
                 Tietosuojaseloste
             </Typography>
@@ -168,7 +168,7 @@ const Footer = () => {
                 <Typography variant='h6' sx={{pr:1}}>
                     Irina Tatti
                 </Typography>
-                <LinkedInIcon onClick={event =>  window.location.href='https://www.linkedin.com/in/irina-tatti/'}/>
+                <LinkedInIcon role='link' onClick={event =>  window.location.href='https://www.linkedin.com/in/irina-tatti/'} aria-label="Linkki Irina Tatin Linkedin-sivulle"/>
               </Stack>
             </Stack>
             <Typography fontSize={'small'}>
