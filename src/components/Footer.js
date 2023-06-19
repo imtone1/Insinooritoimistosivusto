@@ -45,7 +45,7 @@ const Footer = () => {
       behavior: "instant",
     });
   }}><Box sx={{padding:{xs:2, lg:10}}}>
-            <img src={logo_SA1} alt="logo" style={{width:'200px'}}/>
+            <img src={logo_SA1} alt="SapAir Oy logo" style={{width:'200px'}}/>
         </Box></Link>
         <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5} >
         <Link to={'/meista'} onClick={() => {
@@ -121,7 +121,7 @@ const Footer = () => {
      
         </Stack>
      
-          <Stack direction={{xs:'column', sm:'row'}} sx={{alignItems:'center', justifyContent:'center', gap:2, p:2}}>
+          <Stack direction={{xs:'column', sm:'row'}} sx={{alignItems:'center', justifyContent:'center', gap:2, p:2}} aria-hidden="false">
               <Stack direction={'row'} gap={1}>
                 <PhoneInTalkIcon/>
                 <Typography >
@@ -158,7 +158,7 @@ const Footer = () => {
           <ExpandMoreIcon sx={{color:COLORS.white}}/>
         </ExpandMore>
 
-        <Collapse in={expanded} timeout="auto" unmountOnExit>
+        <Collapse in={expanded} timeout="auto" unmountOnExit aria-hidden="false">
         <Stack direction='column' p={1} pt={3} gap={2} sx={{ alignItems:'flex-start',justifyContent:'flex-start'}}>
             <Stack direction={{xs:'column', md:'row'}}>
               <Typography sx={{pr:1}}>
