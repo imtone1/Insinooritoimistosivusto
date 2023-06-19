@@ -72,13 +72,13 @@ Suunnittelemme energiatehokkaita rakennuksia, niin yksityisille kuin yrityksille
 <Stack direction={'column'} sx={{ gap:2}}>
   <Stack sx={{ justifySelf:'center', alignSelf:'center', p:10, gap:2}}>
     <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center'}} >
-      Referenssit
+    Suunnittelijan referenssit
     </Typography>
     <Typography sx={{ justifySelf:'center', alignSelf:'center'}}>
-      Työnjälki puhuu puolestaan. Tutustu alla oleviin referensseihimme ja huomaa, minkä takia olemme tunnettuja laadusta.
+      Työnjälki puhuu puolestaan. Tutustu alla oleviin suunnittelijan referensseihin ja vakuutu laadusta.
     </Typography>
   </Stack>
-  <Referenssimaara/>
+ 
   <Box sx={{width:{xs:'100%',lg:'85%'}, margin:'auto'}}>
   <DataTable/>
   </Box>

@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
 import { Box, Stack, Typography, List, ListItem, ListItemText, ListItemIcon} from '@mui/material'
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
-import Modal from '@mui/material/Modal';
+import { Modal, ModalDialog, ModalClose, ModalOverflow } from '@mui/joy'
 import { COLORS } from '../values/colors'
-import BasicModal from './BasicModal';
+
 import Talokuva from './Talokuva';
 import Paaotsikko from '../otsikot/Paaotsikko';
 import { Link } from 'react-router-dom';
-import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
+
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 const customTheme = createTheme({
@@ -53,26 +53,15 @@ const StyledButton = styled(Box)`
 `;
 
 const Palveluitamme = () => {
-   const [open, setOpen] = useState(false);
+   const [open, setopen] = useState(false);
    const [openProjekti, setOpenProjekti] = useState(false);
    const [openKVV, setOpenKVV] = useState(false);
-   const handleClose = () => setOpen(false);
-  const handleOpen = () => setOpen(true);
+   const handleClose = () => setopen(false);
+  const handleCloseProjekti = () => setOpenProjekti(false);
   const handleOpenProjekti = () => setOpenProjekti(true);
   const handleOpenKVV = () => setOpenKVV(true);
-  const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    maxwidth:'90%',
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-    marginTop:'90%',
-    overflow:'scroll',
-  };
+  const handleCloseKVV = () => setOpenKVV(false);
+
   return (
     <Box className="boxit" sx={{backgroundColor:COLORS.grey, zindex:100, position:'relative'}}>
 
@@ -96,7 +85,7 @@ const Palveluitamme = () => {
 <ThemeProvider theme={customTheme}>
 <StyledAvatar>
 
-            <Stack direction={'column'}  gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpen}>
+            <Stack direction={'column'}  gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={() => setopen(true)}>
                 <Typography variant='h4' fontWeight={600}  >
                     LVIA-suunnittelu
                 </Typography>
@@ -168,26 +157,51 @@ const Palveluitamme = () => {
 </ThemeProvider>
 </Box>
 <Talokuva/>
+
+{/* <Modal>
+  <ModalDialog
+ 
+    layout="fullscreen"
+    size="lg"
+    variant="soft"
+  >
+    <ModalClose />
+    <Typography id="modal-dialog-overflow" >Modal title</Typography>
+  </ModalDialog>
+</Modal> */}
 <Modal
         open={open}
-        disableScrollLock={false}
+      
         onClose={handleClose}
-        setOpen={setOpen}
         onClick={handleClose}
-        aria-labelledby="modal-modal-title"
+       
+        aria-labelledby="modal-dialog-overflow"
+
         aria-describedby="modal-modal-description"
-        disableRestoreFocus={true}
-        sx={{overflow:'scroll', width:'100%'}}
-      >
-        <Box sx={style}>
+      
+      > 
+      <ModalOverflow>
+        <ModalDialog
+ 
+ layout="fullscreen"
+ size="lg"
+ variant="soft"
+>
+ <ModalClose />
+
           <Typography id="modal-modal-title" variant="h5" component="h2">
           LVI-suunnittelu
           </Typography>
-          <Box id="modal-modal-description" sx={{ mt: 2 }}>
-            <Typography>
-            LVI-suunnittelu on olennainen osa rakennuksen talotekniikkaa ja keskeinen tekijä sen elinkaaren aikaisen suorituskyvyn ja asumismukavuuden kannalta. Meidän insinööritoimistossamme panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi energiankulutuksen, parantaa sisäilman laatua ja takaa kustannustehokkaan toiminnan. Talotekniikan suunnittelussa kiinnitämme erityistä huomiota energiakustannuksiin rakennuksen koko elinkaaren aikana, erityisesti lämmitysjärjestelmissä. Pyrimme suunnittelemaan yksinkertaisia ja toimintavarmoja järjestelmiä, mikä vähentää huollon tarvetta ja parantaa energiatehokkuutta.
-            </Typography>
-            <Typography>Suunnitelmiimme sisältyy mm.</Typography>
+          <Box id="modal-dialog-overflow" sx={{ mt: 2 }}>
+            <Stack sx={{gap:2}}>
+              <Typography>
+              LVI-suunnittelu on olennainen osa rakennuksen talotekniikkaa ja keskeinen tekijä sen elinkaaren aikaisen suorituskyvyn ja asumismukavuuden kannalta. Meidän insinööritoimistossamme panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi energiankulutuksen, parantaa sisäilman laatua ja takaa kustannustehokkaan toiminnan. 
+              </Typography>
+              <Typography>
+              Talotekniikan suunnittelussa kiinnitämme erityistä huomiota energiakustannuksiin rakennuksen koko elinkaaren aikana, erityisesti lämmitysjärjestelmissä. Pyrimme suunnittelemaan yksinkertaisia ja toimintavarmoja järjestelmiä, mikä vähentää huollon tarvetta ja parantaa energiatehokkuutta.
+              </Typography>
+              <Typography>Suunnitelmiimme sisältyy mm.</Typography>
+            </Stack> 
          
 
             <List dense={true}>
@@ -248,33 +262,239 @@ const Palveluitamme = () => {
                   />
                 </ListItem>
             </List>
-            <Typography>
-            Suosittelemme aloittamaan LVI-suunnittelun jo ennen rakennusluvan hakemista, sillä useilla paikkakunnilla lupa-asiakirjojen liitteenä vaaditaan suunnitelma ulkopuolisesta LVI-tekniikasta. Tämän lisäksi on tärkeää huomioida tarvittavat tilavaraukset laitteille, teknisille tiloille ja pääreiteille jo rakennusprojektin alkuvaiheessa. Olemme vastuullinen insinööritoimisto, joka huolehtii siitä, että LVI-suunnitelmat täyttävät rakennusvalvontaviranomaisten vaatimukset. Suunnitelmat toteutetaan aina asiakkaan tarpeiden ja toiveiden pohjalta, mutta tuomme myös omat näkemyksemme esiin, jotta lopputulos on toimiva ja energiatehokas. 
-            </Typography>
-            <Typography>
-            Hyödynnämme asiakkaan toiveesta suunnittelussamme tietomallinnusta (BIM, Building Information Model), joka mahdollistaa rakennuskohteen kolmiulotteisen digitaalisen esittämisen. Tietomallinnus tehostaa LVI-suunnitteluprosessia ja parantaa suunnittelun kustannustehokkuutta. Se mahdollistaa myös jatkuvan päivityksen työmaalta saatujen tietojen perusteella, jolloin asiakkaalle voidaan luovuttaa ajantasainen ja täysin toteutusta vastaava tietomalli rakennuksen valmistuttua.
-            </Typography>
+            <Stack sx={{gap:2}}>
+              <Typography>
+              Suosittelemme aloittamaan LVI-suunnittelun jo ennen rakennusluvan hakemista, sillä useilla paikkakunnilla lupa-asiakirjojen liitteenä vaaditaan suunnitelma ulkopuolisesta LVI-tekniikasta. Tämän lisäksi on tärkeää huomioida tarvittavat tilavaraukset laitteille, teknisille tiloille ja pääreiteille jo rakennusprojektin alkuvaiheessa.
+              </Typography>
+              <Typography>
+               Olemme vastuullinen insinööritoimisto, joka huolehtii siitä, että LVI-suunnitelmat täyttävät rakennusvalvontaviranomaisten vaatimukset. Suunnitelmat toteutetaan aina asiakkaan tarpeiden ja toiveiden pohjalta, mutta tuomme myös omat näkemyksemme esiin, jotta lopputulos on toimiva ja energiatehokas.
+              </Typography>
+              <Typography>
+              Hyödynnämme asiakkaan toiveesta suunnittelussamme tietomallinnusta (BIM, Building Information Model), joka mahdollistaa rakennuskohteen kolmiulotteisen digitaalisen esittämisen. Tietomallinnus tehostaa LVI-suunnitteluprosessia ja parantaa suunnittelun kustannustehokkuutta. Se mahdollistaa myös jatkuvan päivityksen työmaalta saatujen tietojen perusteella, jolloin asiakkaalle voidaan luovuttaa ajantasainen ja täysin toteutusta vastaava tietomalli rakennuksen valmistuttua.
+              </Typography>
+            </Stack>
           </Box>
-        </Box>
+        
+       
+  
+  </ModalDialog>
+  </ModalOverflow>
       </Modal>
-    {/* <BasicModal open={open} setOpen={setOpen} otsikko={"LVI-suunnittelu"} text={`
-LVI-suunnittelu on olennainen osa rakennuksen talotekniikkaa ja keskeinen tekijä sen elinkaaren aikaisen suorituskyvyn ja asumismukavuuden kannalta. Meidän insinööritoimistossamme panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi energiankulutuksen, parantaa sisäilman laatua ja takaa kustannustehokkaan toiminnan. Talotekniikan suunnittelussa kiinnitämme erityistä huomiota energiakustannuksiin rakennuksen koko elinkaaren aikana, erityisesti lämmitysjärjestelmissä. Pyrimme suunnittelemaan yksinkertaisia ja toimintavarmoja järjestelmiä, mikä vähentää huollon tarvetta ja parantaa energiatehokkuutta.  
-
-Suunnitelmiimme sisältyy muun muassa asemapiirustus, ilmanvaihto, vesi- ja viemärijärjestelmät, lämmitys, jäähdytys sekä lämpökaivojen ja lämpöpumppujen mitoitus.
-
-Suosittelemme aloittamaan LVI-suunnittelun jo ennen rakennusluvan hakemista, sillä useilla paikkakunnilla lupa-asiakirjojen liitteenä vaaditaan suunnitelma ulkopuolisesta LVI-tekniikasta. Tämän lisäksi on tärkeää huomioida tarvittavat tilavaraukset laitteille, teknisille tiloille ja pääreiteille jo rakennusprojektin alkuvaiheessa. Olemme vastuullinen insinööritoimisto, joka huolehtii siitä, että LVI-suunnitelmat täyttävät rakennusvalvontaviranomaisten vaatimukset. Suunnitelmat toteutetaan aina asiakkaan tarpeiden ja toiveiden pohjalta, mutta tuomme myös omat näkemyksemme esiin, jotta lopputulos on toimiva ja energiatehokas.  
-
-Hyödynnämme asiakkaan toiveesta suunnittelussamme tietomallinnusta (BIM, Building Information Model), joka mahdollistaa rakennuskohteen kolmiulotteisen digitaalisen esittämisen. Tietomallinnus tehostaa LVI-suunnitteluprosessia ja parantaa suunnittelun kustannustehokkuutta. Se mahdollistaa myös jatkuvan päivityksen työmaalta saatujen tietojen perusteella, jolloin asiakkaalle voidaan luovuttaa ajantasainen ja täysin toteutusta vastaava tietomalli rakennuksen valmistuttua.
-.`}/> */}
-
-<BasicModal open={openProjekti} setOpen={setOpenProjekti} otsikko={"Projektijohto- ja valvontatehtävät, esim. maalämpö"} text={`Tarjoamme projektinjohto- ja rakennuttamistehtäviä, jotka toteutamme hankkeen tarpeiden mukaisesti. Näihin tehtäviin kuuluvat muun muassa hankkeen selvitystyöt, aikatauluttaminen, suunnittelijoiden ja urakoitsijoiden kilpailuttaminen ja valinta, suunnittelun ohjaus ja valvonta, tarjouspyyntöasiakirjojen laadinta, kustannusvertailu, sopimusten laadinta, valvonta sekä vastaanotto ja käyttöönoton ohjaaminen.  
-
-Yksi tällainen esimerkki voi olla maalämpöjärjestelmän hankinta. Tarjoamme konsulttipalvelua, jossa ammattilaisemme vetävät hanketta puolestasi. Me tiedämme, että maalämpöprojekti koostuu monista eri osista ja vaatii huolellista suunnittelua ja projektijohtoa. Siksi lähtökohtamme on nykyisen lämmitysjärjestelmäsi kartoitus ja tulevien remonttien huomioiminen, jotta maalämpöjärjestelmäsi toimii tehokkaasti myös tulevaisuudessa. Meidän tavoitteenamme on tehdä maalämpöjärjestelmän hankinta sinulle mahdollisimman vaivattomaksi. Hoidamme puolestasi urakka-asiakirjojen laadinnan ja kilpailutamme toimijat, jotta sinulle saadaan vertailukelpoisia tarjouksia. Meillä on vahva osaaminen LVI-tekniikasta ja maalämpöjärjestelmistä. Olemme avuksesi koko rakennuttamisprosessin ajan, oli kyseessä sitten pieni tai suuri hanke. Rakennuttamisesta meillä on vankka kokemus, niin pienistä alle 30kW kohteista kuin isoista aina 270 kW saakka. Ota askel kohti kestävää ja tehokasta lämmitysratkaisua. Valitsemalla meidät kumppaniksesi saat ammattitaitoisen ja kokonaisvaltaisen palvelun maalämpöjärjestelmän hankkimiseen. Tarjoamme sinulle ratkaisun, joka tuo säästöjä ja mukavuutta elämääsi. Ota yhteyttä ja anna meidän auttaa sinua maalämpöjärjestelmän hankinnassa.
-
-`}/>
 
 
-<BasicModal open={openKVV} setOpen={setOpenKVV} otsikko={"KVV/IV Työnjohto"} text={`KVV- ja IV- vastaava työnjohtaja toimii rakennuttajan edunvalvojana varmistaen, että suunnitelmat ja määräykset toteutetaan työmaalla asianmukaisesti. Hänen tehtävänsä on valvoa työvaiheiden sujumista, laadun varmistamista ja työn suorittamista oikein. KVV- ja IV- vastaava työnjohtaja ottaa vastuun töistä ja pitää huolen siitä, että kaikki vesi-, viemäri- ja ilmanvaihtotyöt toteutetaan turvallisesti, terveellisesti ja viranomaismääräysten mukaisesti. Hankkimalla työnjohtajan palvelut jo projektin alkuvaiheessa varmistat, että työmaasi etenee sujuvasti, suunnitelmat toteutuvat täydellisesti ja kaikki viranomaismääräykset ovat täytetty. Työnjohtajamme pystyy tarjoamaan arvokkaita neuvoja ja ohjausta, jotka auttavat sinua tekemään oikeita päätöksiä ja välttämään mahdolliset sudenkuopat, joita rakennusprosessi saattaa sisältää. Se puolestaan auttaa sinua välttämään mahdolliset sudenkuopat ja ylimääräiset kustannukset myöhemmin. Varmista, että sinulla on ammattilainen rinnallasi, joka huolehtii siitä, että kaikki sujuu suunnitelmien mukaisesti ja lopputulos on juuri sellainen kuin odotit. Ota yhteyttä ja säästä itsesi turhilta huolilta ja kustannuksilta. KVV- ja IV- vastaava työnjohtajamme pätevyys on erityisvaativa. Toimeksiannoissamme noudatamme konsulttialan yleisiä sopimusehtoja KSE 2013.  `}/>
+      <Modal
+        open={openProjekti}
+      
+        onClose={handleCloseProjekti}
+        onClick={handleCloseProjekti}
+       
+        aria-labelledby="modal-dialog-overflow"
+
+        aria-describedby="modal-modal-description"
+      
+      > 
+      <ModalOverflow>
+        <ModalDialog
+ 
+ layout="fullscreen"
+ size="lg"
+ variant="soft"
+>
+ <ModalClose />
+
+          <Typography id="modal-modal-title" variant="h5" component="h2">
+          Projektijohto- ja valvontatehtävät
+          </Typography>
+          <Box id="modal-dialog-overflow" sx={{ mt: 2 }}>
+            <Typography>
+            Tarjoamme projektinjohto- ja rakennuttamistehtäviä, jotka toteutamme hankkeen tarpeiden mukaisesti. 
+            </Typography>
+            <Typography>Näihin tehtäviin kuuluvat mm.</Typography>
+         
+
+            <List dense={true}>
+            
+                <ListItem>
+                <ListItemIcon>
+                <CheckCircleOutlineIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Hankkeen selvitystyöt"
+                    
+                  />
+                </ListItem>
+                <ListItem>
+                <ListItemIcon>
+                <CheckCircleOutlineIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Aikaatauluttaminen"
+                    
+                  />
+                </ListItem>
+                <ListItem>
+                <ListItemIcon>
+                    <CheckCircleOutlineIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Suunnittelijoiden ja urakoitsijoiden kilpailuttaminen ja valinta"
+                    
+                  />
+                </ListItem>
+                <ListItem>
+                <ListItemIcon>
+                <CheckCircleOutlineIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Suunnittelun ohjaus ja valvonta"
+                    
+                  />
+                </ListItem>
+                <ListItem>
+                <ListItemIcon>
+                <CheckCircleOutlineIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Tarjouspyyntöasiakirjojen laadinta"
+                    
+                  />
+                </ListItem>
+
+                <ListItem>
+                <ListItemIcon>
+                <CheckCircleOutlineIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Kustaannusvertailu"
+                    
+                  />
+                </ListItem>
+
+                <ListItem>
+                <ListItemIcon>
+                <CheckCircleOutlineIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Sopimusen laadinta, valvonta sekä vastaanotto"
+                    
+                  />
+                </ListItem>
+
+                <ListItem>
+                <ListItemIcon>
+                <CheckCircleOutlineIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="käyttöönoton ohjaaminen"
+                    
+                  />
+                </ListItem>
+
+            </List>
+            <Stack sx={{gap:2}}>
+              <Typography>
+              Yksi tällainen esimerkki voi olla maalämpöjärjestelmän hankinta. Tarjoamme konsulttipalvelua, jossa ammattilaisemme vetävät hanketta puolestasi. Me tiedämme, että maalämpöprojekti koostuu monista eri osista ja vaatii huolellista suunnittelua ja projektijohtoa. Siksi lähtökohtamme on nykyisen lämmitysjärjestelmäsi kartoitus ja tulevien remonttien huomioiminen, jotta maalämpöjärjestelmäsi toimii tehokkaasti myös tulevaisuudessa. Meidän tavoitteenamme on tehdä maalämpöjärjestelmän hankinta sinulle mahdollisimman vaivattomaksi. Hoidamme puolestasi urakka-asiakirjojen laadinnan ja kilpailutamme toimijat, jotta sinulle saadaan vertailukelpoisia tarjouksia.
+              </Typography>
+              <Typography>
+              Meillä on vahva osaaminen LVI-tekniikasta ja maalämpöjärjestelmistä. Olemme avuksesi koko rakennuttamisprosessin ajan, oli kyseessä sitten pieni tai suuri hanke. Rakennuttamisesta meillä on vankka kokemus, niin pienistä alle 30kW kohteista kuin isoista aina 270 kW saakka. Ota askel kohti kestävää ja tehokasta lämmitysratkaisua. Valitsemalla meidät kumppaniksesi saat ammattitaitoisen ja kokonaisvaltaisen palvelun maalämpöjärjestelmän hankkimiseen. Tarjoamme sinulle ratkaisun, joka tuo säästöjä ja mukavuutta elämääsi. Ota yhteyttä ja anna meidän auttaa sinua maalämpöjärjestelmän hankinnassa.
+              </Typography>
+            </Stack>
+          </Box>
+        
+       
+  
+  </ModalDialog>
+  </ModalOverflow>
+      </Modal>
+
+
+
+      <Modal
+        open={openKVV}
+      
+        onClose={handleCloseKVV}
+        onClick={handleCloseKVV}
+       
+        aria-labelledby="modal-dialog-overflow"
+
+        aria-describedby="modal-modal-description"
+      
+      > 
+      <ModalOverflow>
+        <ModalDialog
+ 
+ layout="fullscreen"
+ size="lg"
+ variant="soft"
+>
+ <ModalClose />
+
+          <Typography id="modal-modal-title" variant="h5" component="h2">
+          KVV/IV Työnjohto
+          </Typography>
+          <Box id="modal-dialog-overflow" sx={{ mt: 2 }}>
+            <Typography>
+            KVV- ja IV- vastaava työnjohtaja toimii rakennuttajan edunvalvojana varmistaen, että suunnitelmat ja määräykset toteutetaan työmaalla asianmukaisesti.
+            
+            </Typography>
+            <Typography>
+          
+            KVV- ja IV- vastaava työnjohtajamme pätevyys on erityisvaativa. Toimeksiannoissamme noudatamme konsulttialan yleisiä sopimusehtoja KSE 2013. 
+            </Typography>
+            <Typography>KVV- ja IV- vastaava työnjohtajan tehtävä on:</Typography>
+         
+
+            <List dense={true}>
+            
+                <ListItem>
+                <ListItemIcon>
+                <CheckCircleOutlineIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Valvoa työvaiheiden sujumista"
+                    
+                  />
+                </ListItem>
+                <ListItem>
+                <ListItemIcon>
+                <CheckCircleOutlineIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Laadun varmistamista"
+                    
+                  />
+                </ListItem>
+                <ListItem>
+                <ListItemIcon>
+                    <CheckCircleOutlineIcon/>
+                  </ListItemIcon>
+                  <ListItemText
+                    primary="Työn suorittamista oikein"
+                    
+                  />
+                </ListItem>
+                
+
+            </List>
+            <Stack sx={{gap:2}}>
+              <Typography>
+              KVV- ja IV- vastaava työnjohtaja ottaa vastuun töistä ja pitää huolen siitä, että kaikki vesi-, viemäri- ja ilmanvaihtotyöt toteutetaan turvallisesti, terveellisesti ja viranomaismääräysten mukaisesti. 
+              </Typography>
+              <Typography>
+              Hankkimalla työnjohtajan palvelut jo projektin alkuvaiheessa varmistat, että työmaasi etenee sujuvasti, suunnitelmat toteutuvat sovitusti ja kaikki viranomaismääräykset ovat täytetty. Työnjohtajamme pystyy tarjoamaan arvokkaita neuvoja ja ohjausta, jotka auttavat sinua tekemään oikeita päätöksiä ja välttämään mahdolliset sudenkuopat, joita rakennusprosessi saattaa sisältää. Se puolestaan auttaa sinua välttämään mahdolliset sudenkuopat ja ylimääräiset kustannukset myöhemmin.
+              </Typography>
+              <Typography>
+              Varmista, että sinulla on ammattilainen rinnallasi, joka huolehtii siitä, että kaikki sujuu suunnitelmien mukaisesti ja lopputulos on juuri sellainen kuin odotit. Ota yhteyttä ja säästä itsesi turhilta huolilta ja kustannuksilta.
+              </Typography>
+            </Stack>
+          </Box>
+        
+       
+  
+  </ModalDialog>
+  </ModalOverflow>
+      </Modal>
+
     </Box>
   )
 }

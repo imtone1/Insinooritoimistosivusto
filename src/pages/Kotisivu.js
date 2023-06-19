@@ -7,6 +7,7 @@ import Talopalvelu from '../components/Talopalvelu'
 import Meistasanottua from '../components/Meistasanottua'
 import Otayhteytta from '../components/Otayhteytta'
 import Palvelupolkusteps from '../components/Palvelupolkusteps'
+import Referenssimaara from '../components/Referenssimaara'
 
 
 const Kotisivu = () => {
@@ -14,8 +15,10 @@ const Kotisivu = () => {
     <div style={{overflow:'hidden' }}>
     <Header/>
     <Palveluitamme/>
+    <Referenssimaara/>
     <Lupauksemme/>
     <Talopalvelu/>
+    
     <Palvelupolkusteps/>
 
     <Meistasanottua/>

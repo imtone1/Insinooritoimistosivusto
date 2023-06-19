@@ -1,7 +1,7 @@
 import React from 'react'
-import CountUp, { useCountUp } from 'react-countup';
+import CountUp from 'react-countup';
 import { PROJECTS } from '../values/referenssi';
-import { Box, Stack, Typography } from '@mui/material'
+import { Box, Stack} from '@mui/material'
 import {COLORS} from '../values/colors'
 
 const Referenssimaara = () => {
@@ -43,7 +43,8 @@ for (let i = 0; i < PROJECTS.length; i++) {
       <CountUp className='referenssiotsikko'
           end={sum}
           duration="3"
-          enableScrollSpy={true}
+          scrollSpyOnce={true}
+        enableScrollSpy={true}
         />
         m2</Stack>
               <Stack>
@@ -59,7 +60,9 @@ for (let i = 0; i < PROJECTS.length; i++) {
     <CountUp className='referenssiotsikko'
         end={count}
         duration="3"
+        scrollSpyOnce={true}
         enableScrollSpy={true}
+       
       />
         <Stack>
         <h3 >
@@ -73,6 +76,7 @@ for (let i = 0; i < PROJECTS.length; i++) {
     <CountUp className='referenssiotsikko'
         end={300}
         duration="3"
+        scrollSpyOnce={true}
         enableScrollSpy={true}
       />
    
