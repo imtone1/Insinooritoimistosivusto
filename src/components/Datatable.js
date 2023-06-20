@@ -86,7 +86,7 @@ export default function Datatable() {
     
 
   return (
-    <div style={{ justifyContent:'center',width: '100%' }} role='table'>
+    <div style={{ justifyContent:'center',width: '100%' }}>
       <StripedDataGrid
      
         rows={projectsWithId}

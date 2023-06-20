@@ -38,7 +38,7 @@ const Footer = () => {
     <Box className='boxit' sx={{backgroundColor: COLORS.beige1, overflow:'hidden', margin:'auto'}} role='navigation' aria-label='footer'>
 
         <Stack direction={{xs:'column', md:'row'}} gap={{xs: 5,md:10,lg:20}} alignItems={'center'} justifyContent={'center'}>
-        <Link to={'/'} aria-describedby='Linkki SapAir Oy etusivulle' onClick={() => {
+        <Link to={'/'} aria-label='Linkki SapAir Oy etusivulle' onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
@@ -48,62 +48,62 @@ const Footer = () => {
             <img src={logo_SA1} alt="SapAir Oy logo" style={{width:'200px'}}/>
         </Box></Link>
         <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5} >
-        <Link to={'/meista'} role='button' aria-describedby='Linkki SapAir Oy kertovaan sivuston osaan' onClick={() => {
+        <Link to={'/meista'} role='button' aria-describedby='Meista' onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
       behavior: "instant",
     });
   }}>
-            <Typography>
+            <Typography id='Meista'>
                 Meistä
             </Typography>
         </Link>
 
-        <Link to={'/meista'} aria-describedby='Linkki SapAir Oy referensseihin' onClick={() => {
+        <Link to={'/meista'} aria-describedby='Referenssit' onClick={() => {
     window.scroll({
       top: 120,
       left: 0,
       behavior: "instant",
     });
   }}>
-        <Typography>
+        <Typography id='Referenssit'>
             Referenssit
         </Typography>
         </Link>
-        <Link to={'/yhteystiedot'} aria-describedby='Linkki SapAir Oy yhteystietoihin' onClick={() => {
+        <Link to={'/yhteystiedot'} aria-describedby='Yhteystiedot' onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
       behavior: "instant",
     });
   }}>
-            <Typography>
+            <Typography id='yhteystiedot'>
                 Yhteystiedot
             </Typography>
         </Link>
         </Stack>
         <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5}>
-        <Link to={'/palvelut'} aria-describedby='Linkki SapAir Oy palveluihin' onClick={() => {
+        <Link to={'/palvelut'} aria-describedby='Palvelut' onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
       behavior: "instant",
     });
   }}>
-            <Typography  sx={{width:{xs:89, sm:'inherit'}}}>
+            <Typography  sx={{width:{xs:89, sm:'inherit'}}} id='Palvelut'>
                 Palvelut
             </Typography>
         </Link>
       
-        <Link to={'yhteystiedot'}  aria-describedby='Linkki SapAir Oy yhteystietoihin' onClick={() => {
+        <Link to={'yhteystiedot'}  aria-describedby='Laskutus' onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
       behavior: "instant",
     });
   }}>
-            <Typography >
+            <Typography id='Laskutus' >
                 Laskutus
             </Typography>
         </Link>
@@ -135,7 +135,7 @@ const Footer = () => {
                 </Stack></a>
             </Stack>
             <a href={tietosuoja} target="_blank"
-                    rel="noreferrer" aria-label="Tietosuojaseloste" > 
+                    rel="noreferrer" aria-describedby="new-window-1"> 
                      <Typography sx={{textAlign:'center', paddingTop:2}} >
                 Tietosuojaseloste
             </Typography>
@@ -167,7 +167,7 @@ const Footer = () => {
                 <Typography variant='h6' sx={{pr:1}}>
                     Irina Tatti
                 </Typography>
-                <LinkedInIcon role='link' onClick={event =>  window.location.href='https://www.linkedin.com/in/irina-tatti/'} aria-label="Linkki Irina Tatin Linkedin-sivulle"/>
+                <LinkedInIcon role='link' onClick={event =>  window.open('https://www.linkedin.com/in/irina-tatti/')} aria-describedby="new-window-Linkedin"/>
               </Stack>
             </Stack>
             <Typography fontSize={'small'}>

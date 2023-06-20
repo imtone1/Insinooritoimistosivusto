@@ -38,7 +38,9 @@ const Yhteystiedot = () => {
         <Typography variant='h3'>
           Konsta Sappinen
         </Typography>
-        <LinkedInIcon fontSize='large' onClick={event =>  window.location.href='https://www.linkedin.com/in/konsta-sappinen-364ba575/'} />
+        <LinkedInIcon fontSize='large'aria-describedby="new-window-Linkedin" onClick={event => 
+        window.open('https://www.linkedin.com/in/konsta-sappinen-364ba575/')} >
+          </LinkedInIcon>
         </Stack>
         <Typography variant='h5'>
         Vastaava LVIA-suunnittelija

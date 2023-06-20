@@ -18,10 +18,10 @@ const Header = () => {
 
   <section role='banner' aria-label='header' className="layers">
   <div className="layers__container">
-    <div className="layers__item layer-1" role='img' style={{backgroundImage: `url(${talo})`}}></div>
+    <div className="layers__item layer-1" role='img' aria-labelledby='LVI-suunnittelu' style={{backgroundImage: `url(${talo})`}}></div>
     
     <div className="layers__item layer-3">
-      <div className="hero-content">
+      <div className="hero-content" id='LVI-suunnittelu'>
         <h1>LVI - SUUNNITELU</h1>
         <h2 className="hero-content__p">AMMATTITAITOISESTI, SELKEÄSTI, LUOTETTAVASTI</h2>
         <Link to={'/yhteystiedot'} onClick={() => {
@@ -30,7 +30,7 @@ const Header = () => {
       left: 0,
       behavior: "instant",
     });
-  }}> <button className="button-start">Ota yhteyttä</button> </Link>
+  }}> <button className="button-start" type="button">Ota yhteyttä</button> </Link>
       </div>
     </div>
    

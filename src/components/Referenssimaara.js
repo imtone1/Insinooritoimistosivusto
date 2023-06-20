@@ -40,19 +40,19 @@ for (let i = 0; i < PROJECTS.length; i++) {
     <Stack sx={{gap:3}}>
       <Stack  direction={'row'}>
       
-      <CountUp className='referenssiotsikko'
+      <CountUp className='referenssiotsikko' aria-describedby="Kokonaislaajuus"
           end={sum}
           duration="3"
           scrollSpyOnce={true}
         enableScrollSpy={true}
         />
         m2</Stack>
-              <Stack>
-            <h3 >
+              
+            <p id='Kokonaislaajuus'>
             Kokonaislaajuus
-              </h3>
+              </p>
       
-        </Stack>
+       
     </Stack>
     
     <Stack sx={{gap:3}} >
@@ -62,14 +62,15 @@ for (let i = 0; i < PROJECTS.length; i++) {
         duration="3"
         scrollSpyOnce={true}
         enableScrollSpy={true}
+        aria-describedby="Vaativia projekteja"
        
       />
-        <Stack>
-        <h3 >
+        
+        <p id='Vaativia projekteja' >
           Vaativia projekteja
-            </h3>
+            </p>
             
-    </Stack>
+   
     </Stack>
     <Stack sx={{gap:3}}>
    
@@ -78,13 +79,14 @@ for (let i = 0; i < PROJECTS.length; i++) {
         duration="3"
         scrollSpyOnce={true}
         enableScrollSpy={true}
+        aria-describedby="Tehtyjä projekteja"
       />
    
       
         <Stack>
-        <h3 >
+        <p id='Tehtyjä projekteja'>
           Tehtyjä projekteja
-            </h3>
+            </p>
         
     </Stack>
     </Stack>
