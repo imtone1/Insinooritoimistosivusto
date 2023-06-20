@@ -16,7 +16,7 @@ const Header = () => {
   })
   return (
 
-  <section role='columnheader' className="layers">
+  <section role='banner' aria-label='header' className="layers">
   <div className="layers__container">
     <div className="layers__item layer-1" role='img' style={{backgroundImage: `url(${talo})`}}></div>
     

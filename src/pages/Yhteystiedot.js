@@ -47,18 +47,18 @@ const Yhteystiedot = () => {
         Toimitusjohtaja
           </Typography>
           <Stack direction={'column'} gap={2}>
-              <Stack direction={'row'} gap={1}>
+          <a href="tel:0440190987"><Stack direction={'row'} gap={1}>
               <PhoneInTalkIcon/>
               <Typography >
               044 019 09 87
               </Typography>
-              </Stack>
-              <Stack direction={'row'} gap={1} >
+              </Stack></a>
+              <a href="mailto:konsta.sappinen@sapair.fi &subject=Tarjouspyyntö SapAir Oy"><Stack direction={'row'} gap={1} >
               <MailIcon/>
               <Typography >
               konsta.sappinen@sapair.fi
               </Typography>
-              </Stack>
+              </Stack></a>
     
           </Stack>
 
@@ -71,18 +71,18 @@ const Yhteystiedot = () => {
           Toimisto
           </Typography>
           <Typography>Helmikuja 3, 21310 Vahto</Typography>
-          <Stack direction={'row'} gap={1}>
+          <a href="tel:0406772400"><Stack direction={'row'} gap={1}>
               <PhoneInTalkIcon/>
               <Typography >
               040 677 24 00
               </Typography>
-              </Stack>
-              <Stack direction={'row'} gap={1} >
+              </Stack></a> 
+              <a href="mailto:info@sapair.fi &subject=Tarjouspyyntö SapAir Oy">  <Stack direction={'row'} gap={1} >
               <MailIcon/>
               <Typography >
               info@sapair.fi
               </Typography>
-              </Stack>
+              </Stack></a>
       <Stack>
               <Stack direction={'row'} gap={1} >
               <ReceiptIcon/>

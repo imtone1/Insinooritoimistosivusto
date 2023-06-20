@@ -77,7 +77,8 @@ const Palveluitamme = () => {
         {/* <svg width="20%" height="40%" viewBox="0 0 113 336" fill="none" xmlns="http://www.w3.org/2000/svg" >
 <path d="M4.604 1.00008L4.00018 332L112 332.197" stroke="black" strokeWidth="6"/>
 </svg> */}
-<Box sx={{display:{xs:'none', md:'flex',transform:'translateX(-2px)'}}}>
+<Box sx={{display:{xs:'none', md:'flex',transform:'translateX(-2px)'}}}  aria-hidden="true"
+    focusable="false">
 <svg xmlns="http://www.w3.org/2000/svg" width="6" height="350" >
   <line x1="3" y1="0" x2="3" y2="350" stroke="black" strokeWidth="6" />
 </svg>
@@ -85,7 +86,10 @@ const Palveluitamme = () => {
 <ThemeProvider theme={customTheme}>
 <StyledAvatar>
 
-            <Stack direction={'column'}  gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={() => setopen(true)} role='button'>
+            <Stack direction={'column'}  gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={() => setopen(true)} 
+          onKeyUp={() => setopen(true)} role='button' tabIndex='0'>
+         
+
                 <Typography variant='h4' fontWeight={600}  >
                     LVIA-suunnittelu
                 </Typography>
@@ -99,7 +103,7 @@ const Palveluitamme = () => {
 <ThemeProvider theme={customTheme}>
 <StyledAvatar>
 
-            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenProjekti} role='button'>
+            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenProjekti} role='button' tabIndex='0'>
                 <Typography variant='h4'  fontWeight={600} >
                 Projektijohto- ja valvonta tehtävät
                 </Typography>
@@ -112,7 +116,7 @@ const Palveluitamme = () => {
 
 <ThemeProvider theme={customTheme}>
 <StyledAvatar>
-            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenKVV} role='button'>
+            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenKVV} role='button' tabIndex='0'>
                 <Typography variant='h4'fontWeight={600} >
                 KVV/IV vastaavan työnjohtajan palvelut
                 </Typography>
@@ -123,7 +127,8 @@ const Palveluitamme = () => {
 
             </StyledAvatar>
 </ThemeProvider>
-<Box sx={{display:{xs:'none', md:'flex',transform:'translateX(-20px) translateY(-10px)'}}}>
+<Box sx={{display:{xs:'none', md:'flex',transform:'translateX(-20px) translateY(-10px)'}}}  aria-hidden="true"
+    focusable="false">
             <svg xmlns="http://www.w3.org/2000/svg" width="6" height="350" >
   <line x1="3" y1="0" x2="3" y2="350" stroke="black" strokeWidth="6"  />
 </svg>
@@ -131,7 +136,8 @@ const Palveluitamme = () => {
       </Box>
 
         </Stack>
-        <Box sx={{display:{xs:'none', md:'flex',transform:'translateX(40px) translateY(-20px)'}}}>
+        <Box sx={{display:{xs:'none', md:'flex',transform:'translateX(40px) translateY(-20px)'}}}  aria-hidden="true"
+    focusable="false">
            <svg xmlns="http://www.w3.org/2000/svg" width="245" height="6" >
   <line x1="30" y1="0.5" x2="245" y2="0.5" stroke="black" strokeWidth="6"  />
 </svg>
@@ -174,7 +180,7 @@ const Palveluitamme = () => {
       
         onClose={handleClose}
         onClick={handleClose}
-       
+       onKeyUp={handleClose}
         aria-labelledby="modal-dialog-overflowLVI-suunnittelu"
 
         aria-describedby="modal-modal-descriptionLVI-suunnittelu"

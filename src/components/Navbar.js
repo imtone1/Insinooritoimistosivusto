@@ -68,13 +68,13 @@ const Navbar = () => {
                     Yhteystiedot
                 </Typography>
             </Link>
-            <Stack direction={'row'} gap={2} display={{xs:'none', sm:'flex'}} alignItems={'center'} aria-label="SapAir Oy puhelinnumero">
+            <a href="tel:0406772400">  <Stack direction={'row'} gap={2} display={{xs:'none', sm:'flex'}} alignItems={'center'} aria-label="SapAir Oy puhelinnumero">
             <PhoneInTalkIcon />
 
             <Typography variant='body1' component='div' sx={{flexGrow:1, fontWeight:600, fontSize:'120%'}} >
             040 6772400
             </Typography>
-            </Stack>
+            </Stack></a>
             </Stack>
                 
                       
