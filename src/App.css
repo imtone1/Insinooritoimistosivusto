@@ -85,10 +85,16 @@
 	letter-spacing: calc(var(--index) * -.15);
 	line-height: 1.35em;
 	margin-top: calc(var(--index) * 5.5);
+	
 }
-.hero-content span {
+
+.paddingi{
+	padding-left: 9px;
+	padding-right: 9px;
+}
+/* .hero-content span {
 	display: block;
-}
+} */
 .hero-content__p {
   padding-top: 20px;
 	text-transform: none;
@@ -96,6 +102,7 @@
 	letter-spacing: calc(var(--index) * 0.08);
 	font-size: calc(var(--index) * 1.15);
 	line-height: 2;
+	
 }
 .button-start {
 	font-family: Arial;

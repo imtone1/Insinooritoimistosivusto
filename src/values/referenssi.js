@@ -1,6 +1,58 @@
 export const PROJECTS = [ 
 
- 
+  {
+
+    Vuosi: 2023,
+
+    Kiinteiston_nimi: 'Uudenkaupungin sivistys ja hyvinvointikeskus',
+    
+    Tehtava: ' KVV työnjohtajan palvelut',
+    
+    Vaativuusluokka: 'Poikkeuksellisen vaativa',
+    
+    Rakennustyyppi: 'Hyvinvointikeskus',
+    
+    Laajuus: 56163,
+    
+    Paikka: 'Uusikaupunki'
+    
+    },
+    
+    {
+    
+    Vuosi: 2023,
+    
+    Kiinteiston_nimi: 'As Oy Skanssin Polaris',
+    
+    Tehtava: ' KVV työnjohtajan palvelut',
+    
+    Vaativuusluokka: 'Tavanomainen +',
+    
+    Rakennustyyppi: 'Asuinrakennus',
+    
+    Laajuus: 2098,
+    
+    Paikka: 'Turku'
+    
+    },
+    
+    {
+    
+    Vuosi: 2023,
+    
+    Kiinteiston_nimi: ' TA-Asumiskeskus Oy',
+    
+    Tehtava: ' KVV työnjohtajan palvelut',
+    
+    Vaativuusluokka: 'Tavanomainen +',
+    
+    Rakennustyyppi: 'Asuinrakennus',
+    
+    Laajuus: 3902,
+    
+    Paikka: 'Naantali'
+
+  },
 
   { 
 
@@ -1250,7 +1302,7 @@ Laajuus: null,
 
     Rakennustyyppi: 'Asuinrakennus', 
 
-Laajuus: null, 
+    Laajuus: null, 
 
     Paikka: 'Turku' 
 
@@ -1273,5 +1325,6 @@ Laajuus: null,
     Paikka: 'Turku' 
 
   } 
+  
 
 ]; 

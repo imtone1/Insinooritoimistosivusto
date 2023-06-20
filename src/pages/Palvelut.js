@@ -47,7 +47,7 @@ const Palvelut = () => {
 
               <List dense={true}>
           
-          <ListItem onClick={() => setopen(true)} role='button'>
+          <ListItem onClick={() => setopen(true)} role='button' >
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>

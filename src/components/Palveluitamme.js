@@ -86,7 +86,7 @@ const Palveluitamme = () => {
 <StyledAvatar>
 
             <Stack direction={'column'}  gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={() => setopen(true)} 
-          onKeyUp={() => setopen(true)} role='button' aria-labelledby='LVIA-suunnittelua' tabIndex='0'>
+          onKeyUp={() => setopen(true)} role='button' type='button' aria-labelledby='LVIA-suunnittelua' tabIndex='0'>
          
 
                 <Typography variant='h4' fontWeight={600} id='LVIA-suunnittelua' >
@@ -102,7 +102,7 @@ const Palveluitamme = () => {
 <ThemeProvider theme={customTheme}>
 <StyledAvatar>
 
-            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenProjekti} role='button' aria-labelledby='ja valvonta tehtävät' tabIndex='0'>
+            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenProjekti} role='button' type='button' aria-labelledby='ja valvonta tehtävät' tabIndex='0'>
                 <Typography variant='h4'  fontWeight={600} id='ja valvonta tehtävät'>
                 Projektijohto- ja valvonta tehtävät
                 </Typography>
@@ -115,7 +115,7 @@ const Palveluitamme = () => {
 
 <ThemeProvider theme={customTheme}>
 <StyledAvatar>
-            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenKVV} role='button' tabIndex='0' aria-labelledby='KVV/IV työnjohtajan palvelut'>
+            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenKVV} role='button'  type='button' tabIndex='0' aria-labelledby='KVV/IV työnjohtajan palvelut'>
                 <Typography variant='h4' fontWeight={600} id='KVV/IV työnjohtajan palvelut'>
                 KVV/IV työnjohtajan palvelut
                 </Typography>

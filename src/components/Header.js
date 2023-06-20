@@ -22,8 +22,8 @@ const Header = () => {
     
     <div className="layers__item layer-3">
       <div className="hero-content" >
-        <h1 id='LVI-suunnittelu'>LVI - SUUNNITELU</h1>
-        <h2 className="hero-content__p">AMMATTITAITOISESTI, SELKEÄSTI, LUOTETTAVASTI</h2>
+        <h1 className='paddingi' id='LVI-suunnittelu'>LVI - SUUNNITELU</h1>
+        <h2 className="hero-content__p paddingi">AMMATTITAITOISESTI, SELKEÄSTI, LUOTETTAVASTI</h2>
         <Link to={'/yhteystiedot'} onClick={() => {
     window.scroll({
       top: 0,
