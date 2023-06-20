@@ -69,7 +69,7 @@ const Yhteystiedot = () => {
           <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} height={'auto'}/>
         </Box>
         <Stack direction={'column'} gap={3} p={2}>
-          <Typography variant='h6' sx={{fontSize:'190%'}}>
+          <Typography variant='body1' sx={{fontSize:'190%'}}>
           Toimisto
           </Typography>
           <Typography>Helmikuja 3, 21310 Vahto</Typography>

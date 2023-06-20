@@ -34,7 +34,7 @@ const Meistasanottua = () => {
 <Box className="boxit"  sx={{backgroundImage: `url(${tablelasit})`, backgroundRepeat: 'no-repeat', backgroundSize:'cover' ,alignItems:'center', justifyContent:'center'}}>
 <Box sx={{margin:{xs:'auto', sm:5, lg:'auto'}, width:{xs:'80%', md:500}, maxwidth:600}} className='palautebox'> 
  <Paaotsikko otsikko={'Meistä sanottua'} teksti={'Asiakastyytyväisyys on meille kunnia-asia.'} />
-<Carousel autoPlay stopOnHover infiniteLoop centerMode showStatus={false} interval={5000}  showThumbs={false} centerSlidePercentage={100}>
+<Carousel autoPlay stopOnHover infiniteLoop centerMode showStatus={false} interval={5000}  showThumbs={false} showIndicators={false} centerSlidePercentage={100}>
 <Palaute teksti={'SapAir Oy ja Konsta olivat todella hyvä yhteistyökumppani meidän kohteessa. Vaikka rakennusvalvonta asetti mitä ihmeellisimpiä ehtoja ja vaatimuksia, jaksoi Konsta neuvotella, suunnitella ja opastaa. Maallikkona oli ilo työskennellä hänen kanssaan, kun ymmärsin mitä puhutaan.Yhteistyö jatkuu tulevissa projekteissa!'} rating={5}/>
 
 <Palaute teksti={'Ammattitaitoista, tehokasta ja joustavaa sekä hyvin ystävällistä toimintaa kaikenkaikkiaan. Myös asiakkaan toiveita ja ajatuksia kuunnellen. Suosittelen lämpimästi!'} rating={5} />

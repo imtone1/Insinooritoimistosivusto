@@ -48,7 +48,7 @@ const Footer = () => {
             <img src={logo_SA1} alt="SapAir Oy logo" style={{width:'200px'}}/>
         </Box></Link>
         <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5} >
-        <Link to={'/meista'} role='button' aria-describedby='Meista' onClick={() => {
+        <Link to={'/meista'} aria-describedby='Meista' onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
@@ -78,7 +78,7 @@ const Footer = () => {
       behavior: "instant",
     });
   }}>
-            <Typography id='yhteystiedot'>
+            <Typography id='Yhteystiedot'>
                 Yhteystiedot
             </Typography>
         </Link>
@@ -167,7 +167,7 @@ const Footer = () => {
                 <Typography variant='h6' sx={{pr:1}}>
                     Irina Tatti
                 </Typography>
-                <LinkedInIcon role='link' onClick={event =>  window.open('https://www.linkedin.com/in/irina-tatti/')} aria-describedby="new-window-Linkedin"/>
+                <LinkedInIcon onClick={event =>  window.open('https://www.linkedin.com/in/irina-tatti/')} aria-describedby="new-window-Linkedin"/>
               </Stack>
             </Stack>
             <Typography fontSize={'small'}>

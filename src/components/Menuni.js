@@ -19,8 +19,9 @@ export default function Menuni() {
   return (
     <Box sx={{display:{md:'none', xs:'flex'}, color:COLORS.brown}} role='menubar'>
       <IconButton
-        id="basic-button"
-        aria-controls={open ? 'basic-menu' : undefined}
+        id="MenuButton"
+        type='button'
+        aria-controls={open ? 'navigaatio menu' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
@@ -28,31 +29,32 @@ export default function Menuni() {
        <MenuIcon/>
       </IconButton>
       <MenuBasic
-        id="basic-menu"
+        id="navigaatio menu"
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
         MenuListProps={{
           'aria-labelledby': 'Navigation button',
+          role:'menu'
         }}
         
       >
         <div style={{ backgroundColor: COLORS.beige}}>
-        <Link to={'/palvelut'} onClick={() => {
+        <Link role='menuitem' to={'/palvelut'} onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
       behavior: "instant",
     });
   }}><MenuItem onClick={handleClose} >Palvelut</MenuItem></Link> 
-        <Link to={'/yhteystiedot'} onClick={() => {
+        <Link role='menuitem' to={'/yhteystiedot'} onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
       behavior: "instant",
     });
   }}><MenuItem onClick={handleClose}>Yhteystiedot</MenuItem></Link> 
-        <Link to={'/meista'} onClick={() => {
+        <Link role='menuitem' to={'/meista'} onClick={() => {
     window.scroll({
       top: 0,
       left: 0,

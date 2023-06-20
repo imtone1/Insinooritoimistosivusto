@@ -24,8 +24,8 @@ const Meista = () => {
     
     <div className="layers__item layer-3" style={{transform: 'translateZ(180px) scale(.8)'}}>
       <div className="otsikko2-content">
-        <h1>SapAir Oy</h1>
-        <div className="otsikko2-content__p">Asiantunteva LVIA-suunnittelija palveluksessasi</div>
+        <h2>SapAir Oy</h2>
+        <h3 className="otsikko2-content__p">Asiantunteva LVIA-suunnittelija palveluksessasi</h3>
         
         
       </div>

@@ -21,8 +21,8 @@ export default function Accordions() {
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{backgroundColor:COLORS.grey  }} >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1bh-content"
-          id="panel1bh-header"
+          aria-controls="vastuullisuus-content"
+          id="vastuullisuus-header"
         >
           <Stack direction={{xs:'column', sm:'row'}} sx={{alignItems:'center'}}>
             <RecyclingIcon sx={{ justifySelf:'center', alignSelf:'center', fontSize:'190%'}}/>
@@ -57,8 +57,8 @@ export default function Accordions() {
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}  sx={{backgroundColor:COLORS.grey  }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2bh-content"
-          id="panel2bh-header"
+          aria-controls="Terveys-content"
+          id="Terveys-header"
           
         >
           <Stack direction={{xs:'column', sm:'row'}} sx={{alignItems:'center'}}>
@@ -77,8 +77,8 @@ export default function Accordions() {
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}  sx={{backgroundColor:COLORS.grey  }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel3bh-content"
-          id="panel3bh-header"
+          aria-controls="valittaminen-content"
+          id="valittaminen-header"
         >
           <Stack direction={{xs:'column', sm:'row'}} sx={{alignItems:'center'}}>
           <VolunteerActivismIcon sx={{ justifySelf:'center', alignSelf:'center',  fontSize:'190%'}}/>

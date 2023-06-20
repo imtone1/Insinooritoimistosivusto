@@ -4,7 +4,6 @@ import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
 import { Modal, ModalDialog, ModalClose, ModalOverflow } from '@mui/joy'
 import { COLORS } from '../values/colors'
 
-import Talokuva from './Talokuva';
 import Paaotsikko from '../otsikot/Paaotsikko';
 import { Link } from 'react-router-dom';
 
@@ -87,10 +86,10 @@ const Palveluitamme = () => {
 <StyledAvatar>
 
             <Stack direction={'column'}  gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={() => setopen(true)} 
-          onKeyUp={() => setopen(true)} role='button' tabIndex='0'>
+          onKeyUp={() => setopen(true)} role='button' aria-labelledby='LVIA-suunnittelua' tabIndex='0'>
          
 
-                <Typography variant='h4' fontWeight={600}  >
+                <Typography variant='h4' fontWeight={600} id='LVIA-suunnittelua' >
                     LVIA-suunnittelu
                 </Typography>
                 <Typography>
@@ -103,8 +102,8 @@ const Palveluitamme = () => {
 <ThemeProvider theme={customTheme}>
 <StyledAvatar>
 
-            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenProjekti} role='button' tabIndex='0'>
-                <Typography variant='h4'  fontWeight={600} >
+            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenProjekti} role='button' aria-labelledby='ja valvonta tehtävät' tabIndex='0'>
+                <Typography variant='h4'  fontWeight={600} id='ja valvonta tehtävät'>
                 Projektijohto- ja valvonta tehtävät
                 </Typography>
                 <Typography >
@@ -116,12 +115,12 @@ const Palveluitamme = () => {
 
 <ThemeProvider theme={customTheme}>
 <StyledAvatar>
-            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenKVV} role='button' tabIndex='0'>
-                <Typography variant='h4'fontWeight={600} >
-                KVV/IV vastaavan työnjohtajan palvelut
+            <Stack direction={'column'} gap={{xs:2, sm:10}} p={5} minWidth={'27%'} onClick={handleOpenKVV} role='button' tabIndex='0' aria-labelledby='KVV/IV työnjohtajan palvelut'>
+                <Typography variant='h4' fontWeight={600} id='KVV/IV työnjohtajan palvelut'>
+                KVV/IV työnjohtajan palvelut
                 </Typography>
                 <Typography >
-                Tilaamalla meidän KVV/IV vastaavan työnjohtajan palvelut saat ammattilaiset rinnallasi, joka huolehtii siitä, että kaikki sujuu suunnitelmien mukaisesti ja lopputulos on juuri sellainen kuin odotit. Ota yhteyttä ja säästä itsesi turhilta huolilta ja kustannuksilta.
+                Tilaamalla meidän KVV/IV työnjohtajan palvelut saat ammattilaiset rinnallasi, joka huolehtii siitä, että kaikki sujuu suunnitelmien mukaisesti ja lopputulos on juuri sellainen kuin odotit. Ota yhteyttä ja säästä itsesi turhilta huolilta ja kustannuksilta.
                 </Typography>
             </Stack>
 
@@ -155,14 +154,14 @@ const Palveluitamme = () => {
       behavior: "instant",
     });
   }}>
-<Typography variant='body2'sx={{backgroundColor: COLORS.vihrea, fontWeight:'bold'}} >Lisää palveluita</Typography>
+<Typography variant='body2'sx={{backgroundColor: COLORS.vihrea, fontWeight:'bold'}}>Lisää palveluita</Typography>
 </Link>
 </Box>
 
 </StyledButton>
 </ThemeProvider>
 </Box>
-<Talokuva/>
+
 
 {/* <Modal>
   <ModalDialog
@@ -195,7 +194,7 @@ const Palveluitamme = () => {
 >
  <ModalClose />
 
-          <Typography id="modal-modal-titleLVI-suunnittelu" variant="h5" component="h2">
+          <Typography id="modal-modal-titleLVI-suunnittelu" variant="h5">
           LVI-suunnittelu
           </Typography>
           <Box id="modal-dialog-overflowLVI-suunnittelu" sx={{ mt: 2 }}>
@@ -308,7 +307,7 @@ const Palveluitamme = () => {
 >
  <ModalClose />
 
-          <Typography id="modal-modal-titleProjektijohto" variant="h5" component="h2">
+          <Typography id="modal-modal-titleProjektijohto" variant="h5">
           Projektijohto- ja valvontatehtävät
           </Typography>
           <Box id="modal-dialog-Projektijohto21" sx={{ mt: 2 }}>
@@ -439,16 +438,17 @@ const Palveluitamme = () => {
           KVV/IV Työnjohto
           </Typography>
           <Box id="modal-dialog-KVV1" sx={{ mt: 2 }}>
-            <Typography>
-            KVV- ja IV- vastaava työnjohtaja toimii rakennuttajan edunvalvojana varmistaen, että suunnitelmat ja määräykset toteutetaan työmaalla asianmukaisesti.
+            <Stack sx={{gap:2}}>
+              <Typography>
+              KVV- ja IV- työnjohtaja toimii rakennuttajan edunvalvojana varmistaen, että suunnitelmat ja määräykset toteutetaan työmaalla asianmukaisesti.
+              
+              </Typography>
+              <Typography>
+              KVV- ja IV- työnjohtajamme pätevyys on erityisvaativa. Toimeksiannoissamme noudatamme konsulttialan yleisiä sopimusehtoja KSE 2013.
+              </Typography>
             
-            </Typography>
-            <Typography>
-          
-            KVV- ja IV- vastaava työnjohtajamme pätevyys on erityisvaativa. Toimeksiannoissamme noudatamme konsulttialan yleisiä sopimusehtoja KSE 2013. 
-            </Typography>
-            <Typography>KVV- ja IV- vastaava työnjohtajan tehtävä on:</Typography>
-         
+            <Typography>KVV- ja IV- työnjohtajan tehtävä on:</Typography>
+         </Stack>
 
             <List dense={true}>
             

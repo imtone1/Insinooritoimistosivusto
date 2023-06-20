@@ -14,7 +14,9 @@ const Lupaus = ({teksti, otsikko1, otsikko2}) => {
   
           <Stack direction={{xs:'column', sm:'row'}}>
   
-              <Rivitys osa1={otsikko1} osa2={otsikko2} varianti={'h4'}/>
+             <Typography variant={'h5'} sx={{fontWeight:'bold', fontSize:'200%', alignSelf:'center'}}>
+              {otsikko1}{otsikko2}
+              </Typography>
   
       </Stack>
       <Typography sx={{width:'100%'}}>

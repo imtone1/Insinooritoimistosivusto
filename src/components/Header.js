@@ -21,8 +21,8 @@ const Header = () => {
     <div className="layers__item layer-1" role='img' aria-labelledby='LVI-suunnittelu' style={{backgroundImage: `url(${talo})`}}></div>
     
     <div className="layers__item layer-3">
-      <div className="hero-content" id='LVI-suunnittelu'>
-        <h1>LVI - SUUNNITELU</h1>
+      <div className="hero-content" >
+        <h1 id='LVI-suunnittelu'>LVI - SUUNNITELU</h1>
         <h2 className="hero-content__p">AMMATTITAITOISESTI, SELKEÄSTI, LUOTETTAVASTI</h2>
         <Link to={'/yhteystiedot'} onClick={() => {
     window.scroll({
