@@ -18,6 +18,9 @@
 	position: absolute;
 	left: -9999px;
 	z-index: 999;
+	height: 1px;
+	width: 1px;	
+	display:block;
 	padding: 1em;
 	background-color: black;
 	color: white;
@@ -88,6 +91,132 @@
 	
 }
 
+.boxicontainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* .boxi{
+	padding:100px;
+} */
+.boxicontainer .boxi{
+	position: relative;
+	width: calc(var(--index) * 30);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+}
+.boxicontainer .boxi::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 24px;
+	height: 100%;
+	background: linear-gradient(#fff, #fff, #e3e3e3);
+	filter: blur(1px);
+	z-index: 1;
+}
+
+.boxicontainer .boxi::after{
+	content: '';
+	position: absolute;
+	top: 1;
+	right: -1px;
+	width: 25px;
+	height: 100%;
+	background:  #9d9d9d;
+	filter: blur(1px);
+	z-index: 1;
+}
+
+.boxicontainer .boxi .shadow{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background: #eee;
+
+}
+/* .tekstiboxi{
+	padding:20px
+} */
+
+/* .boxicontainer .boxi .shadow::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: calc(100% + 100px);
+	width:120%;
+	height: 240%;
+	/* muista poistaa sitten 
+	background-color: black; 
+	
+	background: linear-gradient(rgba(0,0,0,0.075, transparent));
+	transform:skewX(45deg)
+} */
+/* .boxicontainer .boxi .shadow::after{
+	content: '';
+	position: absolute;
+	bottom: -200%;
+	left: calc(100% + 80px);
+	width:100%;
+	height: 200%;
+	/* muista poistaa sitten 
+	background-color: black; 
+
+	background: linear-gradient(rgba(0,0,0,0.075, transparent));
+	transform:skewX(45deg)
+} */
+/* .coverboxi
+{
+	position: absolute;
+	top: 0;
+	left: -100px;
+	width: 100px;
+	height: 100px;
+	background: #cfd1e1;
+	z-index: 10;
+} */
+.sisalto{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(#dbdae1, #F2F2F2);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.1),
+	15px 15px 15px rgba(0,0,0,0.1),
+	20px 10px 20px rgba(0,0,0,0.1),
+	50px 50px 80px rgba(0,0,0,0.25),
+	inset 3px 3px 2px #fff;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+
+
+}
+.sisalto .tekstiboxi{
+	position:relative;
+	max-width: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding:50px;
+}
+
+.sisalto .tekstiboxi h3{
+	font-size: calc(var(--index) * 1.8);
+	color: #0D0D0D;
+	margin-bottom: 20px;
+	font-family: kamerik-3d, Courier, monospace;
+	padding:10px
+
+}
+.tekstiboxi p{
+	padding:20px
+}
+	
 
 .paddingi{
 	padding-left: 9px;
