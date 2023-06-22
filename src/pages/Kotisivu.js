@@ -5,10 +5,11 @@ import Lupauksemme from '../components/Lupauksemme'
 
 
 import Meistasanottua from '../components/Meistasanottua'
-import Otayhteytta from '../components/Otayhteytta'
+
 import Palvelupolkusteps from '../components/Palvelupolkusteps'
 import Referenssimaara from '../components/Referenssimaara'
 import Videoesittely from '../components/Videoesittely'
+import Otayhteyttanappulassa from '../components/Otayhteyttanappulassa'
 
 
 const Kotisivu = () => {
@@ -25,7 +26,7 @@ const Kotisivu = () => {
       
       <Palvelupolkusteps/>
       <Meistasanottua/>
-      <Otayhteytta/>
+      <Otayhteyttanappulassa/>
     </main>
 
     <div hidden>

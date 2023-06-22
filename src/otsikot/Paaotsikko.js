@@ -13,7 +13,7 @@ const Paaotsikko = ({otsikko, teksti}) => {
               <div className='sisalto'>
                 <div className='tekstiboxi'>
                   <Typography variant='h3' sx={{textShadow: '1px 1px rgb(99, 99, 99)', textTransform:'uppercase', fontWeight:'600' , fontSize:'200%', pb:'20px'}}>{otsikko}</Typography>
-                  <Typography p={{md:3, xs:2}} maxWidth={800}  >
+                  <Typography p={{md:3, xs:2}} maxWidth={800} textAlign={'center'} >
                   {teksti}
                   </Typography>
                 </div>

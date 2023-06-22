@@ -55,7 +55,7 @@ const Yhteystiedot = () => {
               044 019 09 87
               </Typography>
               </Stack></a>
-              <a href="mailto:konsta.sappinen@sapair.fi &subject=Tarjouspyyntö SapAir Oy"><Stack direction={'row'} gap={1} >
+              <a href="mailto:konsta.sappinen@sapair.fi"><Stack direction={'row'} gap={1} >
               <MailIcon/>
               <Typography >
               konsta.sappinen@sapair.fi
@@ -79,7 +79,7 @@ const Yhteystiedot = () => {
               040 677 24 00
               </Typography>
               </Stack></a> 
-              <a href="mailto:info@sapair.fi &subject=Tarjouspyyntö SapAir Oy">  <Stack direction={'row'} gap={1} >
+              <a href="mailto:info@sapair.fi">  <Stack direction={'row'} gap={1} >
               <MailIcon/>
               <Typography >
               info@sapair.fi

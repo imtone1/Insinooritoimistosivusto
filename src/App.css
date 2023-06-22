@@ -95,13 +95,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 20px;
 }
 /* .boxi{
 	padding:100px;
 } */
 .boxicontainer .boxi{
 	position: relative;
-	width: calc(var(--index) * 30);
+	width: calc(var(--index) * 40);
 	
 	display: flex;
 	justify-content: center;
@@ -197,7 +198,7 @@
 }
 .sisalto .tekstiboxi{
 	position:relative;
-	max-width: 500px;
+	/* max-width: 500px; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -216,7 +217,34 @@
 .tekstiboxi p{
 	padding:20px
 }
+.blobcontainer{
 	
+	max-width: 550px;
+}
+
+.blob {
+	border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+    width: 100%;
+    padding:35px;
+    /* background: #f09; */
+    background-color: linear-gradient(45deg, #e5e6e8 0%, #BFBFBF 100%);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1), 15px 15px 15px rgba(0,0,0,0.1),
+	20px 10px 20px rgba(0,0,0,0.1),
+	50px 50px 80px rgba(0,0,0,0.25),
+	inset 3px 3px 2px #fff;
+	
+	animation: morph 10s linear infinite alternate;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
 
 .paddingi{
 	padding-left: 9px;

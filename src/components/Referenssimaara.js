@@ -35,30 +35,35 @@ for (let i = 0; i < PROJECTS.length; i++) {
 }
 
   return (
-   <Stack sx={{ backgroundColor:COLORS.harmaa, py:5}}>
+   <Stack sx={{ backgroundColor:COLORS.harmaa, py:5,boxShadow:`5px 5px 5px rgba(0,0,0,0.1), 15px 15px 15px rgba(0,0,0,0.1),
+   20px 10px 20px rgba(0,0,0,0.1),
+   50px 50px 80px rgba(0,0,0,0.25),
+   inset 3px 3px 2px #fff`,}}>
 <Typography sx={{textShadow: '1px 1px rgb(99, 99, 99)', textTransform:'uppercase', fontWeight:'600' , fontSize:'200%', pb:'20px', textAlign:'center'}}>Lukuja projekteistamme</Typography>
-<Stack component={'div'} direction={{xs:'column',md:'row'}} sx={{textAlign:'center', alignItems:'center', justifyContent: 'space-evenly', padding:5, gap:3}}id="counter">
+<Stack component={'div'} direction={{xs:'column',md:'row'}} sx={{textAlign:'center', alignItems:'center', justifyContent: 'space-around', padding:5, gap:3}}id="counter">
     
-    <Stack sx={{gap:3}}>
-      <Stack  direction={'row'}>
+    <div className='blobcontainer'>
+      <div className='blob '>
       
-      <CountUp className='referenssiotsikko' aria-describedby="Kokonaislaajuus"
-          end={sum}
-          duration="3"
-          scrollSpyOnce={true}
-        enableScrollSpy={true}
-        />
-        m2</Stack>
-              
-            <p id='Kokonaislaajuus'>
-            Kokonaislaajuus
-              </p>
+          <Stack  direction={'row'}>
       
-       
-    </Stack>
+          <CountUp className='referenssiotsikko' aria-describedby="Kokonaislaajuus"
+              end={sum}
+              duration="3"
+              scrollSpyOnce={true}
+            enableScrollSpy={true}
+            />
+            m2</Stack>
+      
+                <p id='Kokonaislaajuus'>
+                Kokonaislaajuus
+                  </p>
+      
+      </div>
+    </div>
     
-    <Stack sx={{gap:3, width:250}} >
-   
+    <div className='blobcontainer'>
+      <div className='blob'>
     <CountUp className='referenssiotsikko'
         end={215}
         duration="3"
@@ -72,9 +77,11 @@ for (let i = 0; i < PROJECTS.length; i++) {
           Omakotitaloja
             </p>
             
-   
-    </Stack>
-    <Stack sx={{gap:3, width:250}}>
+            </div>
+    </div>
+            <div className='blobcontainer'>
+      <div className='blob'>
+     
    
     <CountUp className='referenssiotsikko'
         end={370}
@@ -87,8 +94,9 @@ for (let i = 0; i < PROJECTS.length; i++) {
           Tehtyjä projekteja
             </p>
         
+     </div>
+    </div>
     
-    </Stack>  
 </Stack>
 <Link to={'/meista'} onClick={() => {
     window.scroll({
@@ -98,8 +106,11 @@ for (let i = 0; i < PROJECTS.length; i++) {
     });
   }} style={{ alignSelf:'center', textDecoration:'none', justifyContent:'space-between', padding:10, paddingTop:20}}>
  <Stack direction={'row'}>
-  <Typography sx={{fontWeight:900}}>Referenssit</Typography>
-  <ArrowForwardIosIcon /><ArrowForwardIosIcon style={{transform:'translateX(-15px)'}}/>
+  <Typography sx={{fontWeight:900, boxShadow:`5px 5px 5px rgba(0,0,0,0.1), 15px 15px 15px rgba(0,0,0,0.1),
+   20px 10px 20px rgba(0,0,0,0.1),
+   50px 50px 80px rgba(0,0,0,0.25),
+   inset 3px 3px 2px #fff`, padding:3, paddingRight:5, borderRadius:4, backgroundColor: COLORS.vihrea}}>Referenssit</Typography>
+  <ArrowForwardIosIcon style={{transform:'translateX(-38px) translateY(25px)'}} /><ArrowForwardIosIcon style={{transform:'translateX(-55px) translateY(25px)'}}/>
 </Stack>
 </Link>
 </Stack> 

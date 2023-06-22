@@ -9,8 +9,9 @@ import { Box, Stack, Typography, List, ListItem, ListItemText, ListItemIcon} fro
 import coffee from '../images/coffee.png'
 
 import RoofingIcon from '@mui/icons-material/Roofing';
-import Otayhteytta from '../components/Otayhteytta';
+
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import Otayhteyttanappulassa from '../components/Otayhteyttanappulassa';
 
 
 const Palvelut = () => {
@@ -158,7 +159,7 @@ const Palvelut = () => {
         </List>
     </Stack>
         
-  <Otayhteytta/>
+ <Otayhteyttanappulassa/>
   <Modal
         open={open}
       

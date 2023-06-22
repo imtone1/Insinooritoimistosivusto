@@ -7,9 +7,9 @@ import Lupaus from './Lupaus'
 const Lupauksemme = () => {
   return (
    <Box className="boxit" sx={{backgroundColor: COLORS.beige1, paddingBottom:0 }}>
-
+<Box sx={{ maxWidth: 900 , margin:'auto'}}>
 <Paaotsikko otsikko={'Miksi valita meidät?'} teksti={'Asiakkaiden luottamus on arvokkain voimavaramme! Sitoudumme tinkimättömään laatuun ja asiakkaan tyytyväisyyteen jokaisessa kohtaamisessa.'} />
-
+</Box>
 
 <Stack direction={{xs:'column-reverse', md:'row'}} justifyContent="space-between"
   alignItems="center" maxWidth={900} margin={'auto'}>
