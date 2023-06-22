@@ -24,7 +24,7 @@ const Otayhteytta = () => {
           040 677 24 00
           </Typography>
           </Stack></a>
-          <a href="mailto:info@sapair.fi &subject=Tarjouspyyntö SapAir Oy">  <Stack direction={'column'} gap={2} justifyContent="center" alignItems={'center'} sx={{
+          <a href="mailto:info@sapair.fi">  <Stack direction={'column'} gap={2} justifyContent="center" alignItems={'center'} sx={{
            backgroundColor:{xs:'#ececee', md:'transparent'}, boxShadow:'3px 5px 8px #888888',borderRadius:4, padding:1}}>
           <MailIcon sx={{fontSize:'50px'}}/>
           <Typography sx={{fontWeight:700}}>

@@ -35,29 +35,23 @@ export default function Koulutusaccordion() {
         </AccordionSummary>
         <AccordionDetails >
 
-          <Stack sx={{gap:5}}>
+       
            
-          <Stack>
+          
   <Typography>
-  Kone- ja tuotantotekniikan insinööri (AMK), suuntautuminen LVI-tekniikkaan, Turun AMK
+  Kone- ja tuotantotekniikan insinööri (AMK), suuntautuminen LVI-tekniikkaan, Turun AMK, 2013-2016
   </Typography>
-  <Typography>
-  2013-2016
-  </Typography>
-  </Stack>
+ 
 
-  <Stack>
-  <Typography>
-  Työteknikko, RastorCollege
+  <Typography >
+  Työteknikko, RastorCollege, 2011-2013
   </Typography>
-  <Typography>
-  2011-2013
-  </Typography>
-  </Stack>
-          </Stack> 
+  
+
+        
         </AccordionDetails>
       </Accordion>
-      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}  sx={{backgroundColor:COLORS.grey  }}>
+      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}  sx={{backgroundColor:COLORS.grey}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2bh-content"

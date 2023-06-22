@@ -14,6 +14,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import MailIcon from '@mui/icons-material/Mail';
 
+
 const Meista = () => {
   return (
     <Box sx={{backgroundColor:COLORS.grey, overflow:'hidden'}}>
@@ -61,7 +62,14 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
 
     </Stack>
 <Stack direction={'column'} sx={{gap:3, justifyContent:'center', alignItems:'center', pt:6}}>
-<Stack direction={'row'} sx={{ justifyContent:'center', alignItems:'center',p:{xs:2}}}>
+
+<div className='boxicontainer'style={{margin:0, maxWidth:900}}>
+            <div className='boxi'>
+              <div className='coverboxi'></div>
+              <div className='shadow'></div>
+              <div className='sisalto' >
+                <div className='tekstiboxi'>
+                <Stack direction={'row'} sx={{ justifyContent:'center', alignItems:'center',p:{xs:2}}}>
   <Typography variant='h3' >
     Konsta Sappinen
   </Typography>
@@ -71,36 +79,56 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
         Vastaava LVIA-suunnittelija, Toimitusjohtaja
           </Typography>
           <Stack direction={{xs:'column',md:'row'}} gap={2}>
-              <Stack direction={'row'} gap={1}>
+          <a href="tel:0440190987">  <Stack direction={'row'} gap={1}>
               <PhoneInTalkIcon/>
               <Typography >
               044 019 09 87
               </Typography>
-              </Stack>
-              <Stack direction={'row'} gap={1} >
+              </Stack></a>
+              <a href="mailto:info@sapair.fi">  <Stack direction={'row'} gap={1}  >
               <MailIcon/>
               <Typography >
               konsta.sappinen@sapair.fi
               </Typography>
-              </Stack>
+              </Stack></a>
     
           </Stack>
-<Box sx={{maxwidth:400}} className='konstakuva'>
+          <Box sx={{maxwidth:400}} className='konstakuva'>
   <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} height={'auto'}/>
-</Box>
-<Koulutusaccordion/>
+</Box><Koulutusaccordion/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
 
 </Stack>
 
 <Stack direction={'column'} sx={{ gap:3, pt:5}}>
-  <Stack sx={{ justifyContent:'center', alignItems:'center', p:2, gap:3}}>
-    <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center'}} >
+
+<div className='boxicontainer' style={{maxWidth:900, margin:'auto'}}>
+            <div className='boxi'>
+              <div className='coverboxi'></div>
+              <div className='shadow'></div>
+              <div className='sisalto'>
+                <div className='tekstiboxi'>
+                <Stack sx={{ justifyContent:'center', alignItems:'center', p:2}}>
+    <Typography variant='h3' sx={{ textAlign:'center'}} >
     Suunnittelijan referenssit
     </Typography>
     <Typography sx={{ justifySelf:'center', alignSelf:'center'}}>
       Puhutkoon työnjälki puolestaan. Tutustu alla oleviin suunnittelijan referensseihin ja vakuutu laadusta.
     </Typography>
   </Stack>
+
+  
+                </div>
+              </div>
+            </div>
+          </div>
+  
  
   <Box sx={{width:{xs:'100%',lg:'85%'}, margin:'auto'}}>
   <DataTable/>
@@ -108,11 +136,27 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
 
 </Stack>
   
-<Stack sx={{width:{xs:'100%', lg:'900px'}, margin: 'auto'}}>
-  <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
+<Stack sx={{width:{xs:'100%', lg:'900px'}, margin: 'auto' , marginTop:5}}>
+  {/* <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
   Arvojamme
-</Typography>
-  <Accordions/>
+</Typography> */}
+ <div className='boxicontainer'>
+            <div className='boxi'>
+              <div className='coverboxi'></div>
+              <div className='shadow'></div>
+              <div className='sisalto'>
+                <div className='tekstiboxi'>
+                  <Typography variant='h3' sx={{textShadow: '1px 1px rgb(99, 99, 99)', textTransform:'uppercase', fontWeight:'600' , fontSize:'200%', pb:'20px'}}>Arvojamme</Typography>
+                  <Typography p={{md:3, xs:2}} maxWidth={800} textAlign={'center'} >
+                
+                  </Typography>
+                  <Accordions/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+ 
 </Stack>
 
   </Box>
