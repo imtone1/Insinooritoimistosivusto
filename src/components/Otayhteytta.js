@@ -12,7 +12,7 @@ import table from '../images/table3.png'
 const Otayhteytta = () => {
   return (
     <Box aria-describedby='otayhteytta' className="boxit" sx={{backgroundImage: `url(${table})`, backgroundRepeat: 'no-repeat', backgroundSize:'contain' }}>
-        
+    
        
           <Paaotsikko id='otayhteytta' otsikko={'Ota yhteyttä'} teksti={'Voit ottaa yhteyttä sinulle sopivammalla tavalla. Vastaamme päivästä riippumatta.'}/>
           <Stack direction={{xs:'column', md:'row'}} sx={{gap:5}} justifyContent="center" alignItems={'center'}>

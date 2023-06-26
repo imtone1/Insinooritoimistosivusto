@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Palveluitamme from '../components/Palveluitamme'
 import Lupauksemme from '../components/Lupauksemme'
-
+import SEO from '../components/SEO'
 
 import Meistasanottua from '../components/Meistasanottua'
 
@@ -15,6 +15,7 @@ import Otayhteyttanappulassa from '../components/Otayhteyttanappulassa'
 const Kotisivu = () => {
   return (
     <div style={{overflow:'hidden' }}>
+      <SEO title={'Instinööritoimisto SapAir Oy'} description={'Selkeä valinta, kun etsit LVIA-ammattilaista.Säästä itseäsi turhilta huolilta ja kustannuksilta, ota yhteyttä jo tänään.'}/>
       <a href="#main" className="skip-to-main-content-link">Siirry sisältöön</a>
     <Header/>
     <main id='main'>

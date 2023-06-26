@@ -1,5 +1,6 @@
 import './App.css';
 import {Route, Routes} from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Kotisivu from './pages/Kotisivu';
 import Yhteystiedot from './pages/Yhteystiedot';
 import Navbar from './components/Navbar';
@@ -10,6 +11,7 @@ import Palvelut from './pages/Palvelut';
 function App() {
   return (
     <>
+    <HelmetProvider>
     <Navbar/>
     <Routes>
     <Route >
@@ -20,6 +22,7 @@ function App() {
     </Route>
   </Routes>
   <Footer/>
+  </HelmetProvider>
    </> 
   );
 }

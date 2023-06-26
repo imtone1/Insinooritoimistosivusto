@@ -1,5 +1,5 @@
 import React from 'react'
-
+import SEO from '../components/SEO'
 
 import {COLORS} from '../values/colors'
 
@@ -14,6 +14,7 @@ import coffee from '../images/coffee.png'
 const Yhteystiedot = () => {
   return (
     <Box  sx={{backgroundColor:COLORS.grey}}>
+      <SEO title={'SapAir Oy - Yhteystiedot'} description={'SapAir Oy:n yhteystiedot. Säästä itseäsi turhilta huolilta ja kustannuksilta, ota yhteyttä jo tänään.'}/>
    
     <section className="layers" >
   <div className="layers__container" style={{height:'30vh', minHeight:200}} >

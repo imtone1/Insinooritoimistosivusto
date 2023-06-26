@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Stack, Typography } from '@mui/material'
 
-
+import SEO from '../components/SEO'
 import {COLORS} from '../values/colors'
 import Konsta from '../images/Konsta-Sappinen.png'
 import Accordions from '../components/Accordions'
@@ -18,7 +18,7 @@ import MailIcon from '@mui/icons-material/Mail';
 const Meista = () => {
   return (
     <Box sx={{backgroundColor:COLORS.grey, overflow:'hidden'}}>
- 
+ <SEO title={'SapAir Oy - Meistä'} description={'SapAir Oy:n esittelysivu. Katso tärkeimmät referenssimme ja arvomme.'}/>
  <section className="layers" >
   <Box className="layers__container" sx={{height:'20vh', minHeight:200}} >
     <div className="layers__item layer-1" style={{backgroundImage: `url(${coffee})`, transform: 'translateZ(95px) scale(0.90)'}}></div>
