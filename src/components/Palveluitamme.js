@@ -62,7 +62,7 @@ const Palveluitamme = () => {
   const handleCloseKVV = () => setOpenKVV(false);
 
   return (
-    <Box className="boxit" sx={{backgroundColor:COLORS.grey, zindex:100, position:'relative'}}>
+    <Box  sx={{backgroundColor:COLORS.grey, zindex:100, position:'relative'}}>
 <Box sx={{ maxWidth: 1100 , margin:'auto'}}>
       <Paaotsikko otsikko={'Palveluitamme'} teksti={'Olemme pieni ja ketterä suunnittelutoimisto, jossa asiointi on sujuvaa ja nopeaa. Palvelemme asiakkaita niin tavanomaisissa, kuin vaativissakin projekteissa.'} />
   

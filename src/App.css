@@ -43,8 +43,9 @@
 	z-index: 1;
 }
 .layers {
-	perspective: 1000px;
+	perspective: 800px;
 	overflow: hidden;
+
 }
 .layers__container {
 	height: 70vh;
