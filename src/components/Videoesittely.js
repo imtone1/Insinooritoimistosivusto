@@ -1,5 +1,5 @@
 import React from 'react'
-import mainos from '../videos/mainos.webm'
+import mainos from '../videos/mainosvideolopullinen.mp4'
 import { Box } from '@mui/system'
 import {COLORS} from '../values/colors'
 
