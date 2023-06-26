@@ -19,9 +19,9 @@ const Meista = () => {
   return (
     <Box sx={{backgroundColor:COLORS.grey, overflow:'hidden'}}>
  <SEO title={'SapAir Oy - Meistä'} description={'SapAir Oy:n esittelysivu. Katso tärkeimmät referenssimme ja arvomme.'}/>
- <section className="layers" >
+ <section className="layers" >  <div className="layers__item" style={{backgroundImage: `url(${coffee})`, transform: 'translateZ(95px) scale(0.90)'}}></div>
   <Box className="layers__container" sx={{height:'20vh', minHeight:200}} >
-    <div className="layers__item layer-1" style={{backgroundImage: `url(${coffee})`, transform: 'translateZ(95px) scale(0.90)'}}></div>
+  
     
     <div className="layers__item layer-3" style={{transform: 'translateZ(180px) scale(.8)'}}>
       <div className="otsikko2-content">

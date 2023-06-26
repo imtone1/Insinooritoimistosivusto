@@ -16,9 +16,9 @@ const Yhteystiedot = () => {
     <Box  sx={{backgroundColor:COLORS.grey}}>
       <SEO title={'SapAir Oy - Yhteystiedot'} description={'SapAir Oy:n yhteystiedot. Säästä itseäsi turhilta huolilta ja kustannuksilta, ota yhteyttä jo tänään.'}/>
    
-    <section className="layers" >
+    <section className="layers" ><div className="layers__item layer-1" style={{backgroundImage: `url(${coffee})`, transform: 'translateZ(95px) scale(0.90)'}}></div>
   <div className="layers__container" style={{height:'30vh', minHeight:200}} >
-    <div className="layers__item layer-1" style={{backgroundImage: `url(${coffee})`, transform: 'translateZ(95px) scale(0.90)'}}></div>
+    
     
     <div className="layers__item layer-3" style={{transform: 'translateZ(180px) scale(.8)'}}>
       <div className="otsikko2-content">

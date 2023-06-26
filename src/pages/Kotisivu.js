@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
-import Palveluitamme from '../components/Palveluitamme'
+// import Palveluitamme from '../components/Palveluitamme'
 import Lupauksemme from '../components/Lupauksemme'
 import SEO from '../components/SEO'
 
@@ -10,6 +10,7 @@ import Palvelupolkusteps from '../components/Palvelupolkusteps'
 import Referenssimaara from '../components/Referenssimaara'
 import Videoesittely from '../components/Videoesittely'
 import Otayhteyttanappulassa from '../components/Otayhteyttanappulassa'
+import Palvelutcard from '../components/Palvelutcard'
 
 
 const Kotisivu = () => {
@@ -19,7 +20,8 @@ const Kotisivu = () => {
       <a href="#main" className="skip-to-main-content-link">Siirry sisältöön</a>
     <Header/>
     <main id='main'>
-      <Palveluitamme/>
+      {/* <Palveluitamme/> */}
+      <Palvelutcard/>
       <Referenssimaara/>
       <Lupauksemme/>
       <Videoesittely/>

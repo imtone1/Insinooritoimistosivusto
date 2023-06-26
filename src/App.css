@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: kamerik-3d, sans-serif;
-
+scroll-behavior: smooth;
   color:#22171D;
 }
 :root {
@@ -362,6 +362,121 @@
 }
 
 
+.palvelutcontainer{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 60px 0;
+
+}
+
+.palvelutcontainer .palvelutbox{
+	position: relative;
+	max-width:300px;
+	height: 480px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.palvelutcontainer .palvelutbox::before{
+	content: '';
+	position: absolute;
+	inset: -5px 50px;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	transform:skewY(15deg);
+	transition: 0.8s ease-in-out;
+	
+
+}
+.palvelutcontainer .palvelutbox:hover::before{
+	transform:skewY(0deg);
+	
+	
+}
+
+.palvelutcontainer .palvelutbox .palvelutcontent{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	/* background: #fff; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	overflow: hidden;
+}
+
+.palvelutcontainer .palvelutbox .palvelutcontent .palveluticon{
+	/* color: 'red'; */
+	padding:10px;
+	width: 100px;
+	background: #F2F2F2;
+	transition:0.9s ease-in-out;
+	box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px #C8D9A3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:auto;
+
+}
+
+
+
+.palvelutcontainer .palvelutbox:hover .palvelutcontent .palveluticon{
+	box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 500px #C8D9A3;
+	
+	
+}
+
+.palveluticon{
+	text-decoration: none;
+	
+}
+
+/* Styling for fullscreen overlay */
+.fullscreen-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+  }
+  
+  /* Styling for fullscreen image */
+  .fullscreen-image {
+	max-width: 90%;
+	max-height: 90%;
+  }
+  
+  /* Styling for close button */
+  .close-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+  }
+  
+  /* Styling for image in its original size */
+  /* .imagefull2 {
+	width: 100%;
+	max-width:600px;
+  } */
 
 /* 
 .App-logo {
