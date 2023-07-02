@@ -19,7 +19,7 @@ const Polkuitem = ({kuva, numero, otsikko1, otsikko2, teksti}) => {
 
     </Stack>
     <Box sx={{width:{xs:'50%', sm:'30%',lg:'100%'}, alignSelf:'center', pb:2}}>
-<img src={kuva} alt="meeting" width={'100%'} height={'auto'} />
+<img src={kuva} alt="meeting" width={150} height={150} />
 </Box>
 </Stack>
   )
