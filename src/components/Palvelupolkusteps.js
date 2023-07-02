@@ -1,12 +1,6 @@
 import * as React from 'react';
-import {Box, Stack} from '@mui/material';
-import Stepper from '@mui/material/Stepper';
-import Step from '@mui/material/Step';
-import StepLabel from '@mui/material/StepLabel';
-import StepContent from '@mui/material/StepContent';
-import Button from '@mui/material/Button';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
+import {Box, Stack, Stepper, Step, StepLabel, Button, StepContent, Typography, Paper} from '@mui/material';
+
 import finish from '../images/finishflag.png'
 import Polkuitem from './Polkuitem';
 import meeting from '../images/communication_employee_conference_conversation_meeting_discussion_icon.png'

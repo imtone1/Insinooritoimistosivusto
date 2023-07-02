@@ -35,7 +35,7 @@ const Palvelupolku = () => {
     
     <Stack direction={'column'} >
     
-    <Typography variant='h5' sx={{ fontWeight:'600' , pb:'20px' }}>
+    <Typography variant='body1' sx={{ fontWeight:'600' , pb:'20px' }}>
     Työ valmis
     </Typography>
     <Typography>

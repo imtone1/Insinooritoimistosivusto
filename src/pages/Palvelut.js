@@ -7,7 +7,9 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import { Box, Stack, Typography, List, ListItem, ListItemText, ListItemIcon} from '@mui/material'
 import coffee from '../images/coffee.png'
-
+import kaksiD from '../images/Dokumentaatio.jpg'
+import kolmeD from '../images/Dokumentaatio3D.jpg'
+import FullImage from '../components/Fullimage';
 import RoofingIcon from '@mui/icons-material/Roofing';
 
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
@@ -49,7 +51,7 @@ const Palvelut = () => {
 
               <List dense={true}>
           
-          <ListItem onClick={() => setopen(true)} role='button' >
+          <ListItem onClick={() => setopen(true)} role='button' sx={{cursor:'pointer'}}>
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>
@@ -62,12 +64,12 @@ const Palvelut = () => {
             </ListItemIcon>
           </ListItem>
            
-          <ListItem  onClick={handleOpenKVV} role='button'>
+          <ListItem  onClick={handleOpenKVV} role='button' sx={{cursor:'pointer'}}>
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={'IV / KVV vastaavan työnjohtajapalvelut'}
+              primary={'KVV- /IV- työnjohtajapalvelut'}
               secondary={'tavanomaisista eritysvaativiin kohteisiin'}
             />
              <ListItemIcon>
@@ -76,12 +78,12 @@ const Palvelut = () => {
            
           </ListItem>
           
-          <ListItem onClick={handleOpenProjekti} role='button'>
+          <ListItem onClick={handleOpenProjekti} role='button' sx={{cursor:'pointer'}}>
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={'Projektinjohto ja valvontatehtävät'}
+              primary={'Projektinjohto- ja valvontatehtävät'}
              
             />
              <ListItemIcon>
@@ -98,7 +100,7 @@ const Palvelut = () => {
               
             />
              <ListItemIcon>
-              <ArrowForwardIosIcon />
+              {/* <ArrowForwardIosIcon /> */}
             </ListItemIcon>
           </ListItem>
 
@@ -165,7 +167,7 @@ const Palvelut = () => {
         open={open}
       
         onClose={handleClose}
-        onClick={handleClose}
+        
        
         aria-labelledby="modal-dialog-LVI-suunnittelu"
 
@@ -175,100 +177,107 @@ const Palvelut = () => {
       <ModalOverflow>
         <ModalDialog
  
- layout="fullscreen"
+ layout="center"
  size="lg"
  variant="soft"
 >
  <ModalClose />
-
-          <Typography id="modal-modal-title1" variant="h5" component="h2">
-          LVI-suunnittelu
-          </Typography>
-          <Box id="modal-dialog-LVI-suunnittelu" sx={{ mt: 2 }}>
-            <Stack sx={{gap:2}}>
-              <Typography>
-              LVI-suunnittelu on olennainen osa rakennuksen talotekniikkaa ja keskeinen tekijä sen elinkaaren aikaisen suorituskyvyn ja asumismukavuuden kannalta. Meidän insinööritoimistossamme panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi energiankulutuksen, parantaa sisäilman laatua ja takaa kustannustehokkaan toiminnan. 
+ <Box sx={{maxWidth:900}}>
+              <Typography id="modal-modal-titleLVI-suunnittelu" variant="h5">
+              LVI-suunnittelu
               </Typography>
-              <Typography>
-              Talotekniikan suunnittelussa kiinnitämme erityistä huomiota energiakustannuksiin rakennuksen koko elinkaaren aikana, erityisesti lämmitysjärjestelmissä. Pyrimme suunnittelemaan yksinkertaisia ja toimintavarmoja järjestelmiä, mikä vähentää huollon tarvetta ja parantaa energiatehokkuutta.
-              </Typography>
-              <Typography>Suunnitelmiimme sisältyy mm.</Typography>
-            </Stack> 
-         
-
-            <List dense={true}>
-            
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Asemapiirustus"
-                    
-                  />
-                </ListItem>
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Ilmanvaihto"
-                    
-                  />
-                </ListItem>
-                <ListItem>
-                <ListItemIcon>
-                    <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Vesi- ja viemärijärjestelmät"
-                    
-                  />
-                </ListItem>
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Lämmitys"
-                    
-                  />
-                </ListItem>
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Jäähdytys"
-                    
-                  />
-                </ListItem>
-
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Lämpökaivojen ja lämpöpumppujen mitoitus"
-                    
-                  />
-                </ListItem>
-            </List>
-            <Stack sx={{gap:2}}>
-              <Typography>
-              Suosittelemme aloittamaan LVI-suunnittelun jo ennen rakennusluvan hakemista, sillä useilla paikkakunnilla lupa-asiakirjojen liitteenä vaaditaan suunnitelma ulkopuolisesta LVI-tekniikasta. Tämän lisäksi on tärkeää huomioida tarvittavat tilavaraukset laitteille, teknisille tiloille ja pääreiteille jo rakennusprojektin alkuvaiheessa.
-              </Typography>
-              <Typography>
-               Olemme vastuullinen insinööritoimisto, joka huolehtii siitä, että LVI-suunnitelmat täyttävät rakennusvalvontaviranomaisten vaatimukset. Suunnitelmat toteutetaan aina asiakkaan tarpeiden ja toiveiden pohjalta, mutta tuomme myös omat näkemyksemme esiin, jotta lopputulos on toimiva ja energiatehokas.
-              </Typography>
-              <Typography>
-              Hyödynnämme asiakkaan toiveesta suunnittelussamme tietomallinnusta (BIM, Building Information Model), joka mahdollistaa rakennuskohteen kolmiulotteisen digitaalisen esittämisen. Tietomallinnus tehostaa LVI-suunnitteluprosessia ja parantaa suunnittelun kustannustehokkuutta. Se mahdollistaa myös jatkuvan päivityksen työmaalta saatujen tietojen perusteella, jolloin asiakkaalle voidaan luovuttaa ajantasainen ja täysin toteutusta vastaava tietomalli rakennuksen valmistuttua.
-              </Typography>
-            </Stack>
+              <Box id="modal-dialog-overflowLVI-suunnittelu" sx={{ mt: 2 }}>
+                <Stack sx={{gap:2}}>
+                  <Typography>
+                  LVI-suunnittelu on olennainen osa rakennuksen talotekniikkaa ja keskeinen tekijä sen elinkaaren aikaisen suorituskyvyn ja asumismukavuuden kannalta. Meidän insinööritoimistossamme panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi energiankulutuksen, parantaa sisäilman laatua ja takaa kustannustehokkaan toiminnan.
+                  </Typography>
+                  <Typography>
+                  Talotekniikan suunnittelussa kiinnitämme erityistä huomiota energiakustannuksiin rakennuksen koko elinkaaren aikana, erityisesti lämmitysjärjestelmissä. Pyrimme suunnittelemaan yksinkertaisia ja toimintavarmoja järjestelmiä, mikä vähentää huollon tarvetta ja parantaa energiatehokkuutta.
+                  </Typography>
+                  <Typography>Suunnitelmiimme sisältyy mm.</Typography>
+                </Stack>
+                <Stack direction={{xs:'column', md:'row'}} sx={{gap:2}}>
+                    <List dense={true}>
+              
+                        <ListItem>
+                        <ListItemIcon>
+                        <CheckCircleOutlineIcon/>
+                          </ListItemIcon>
+                          <ListItemText
+                            primary="Asemapiirustus"
+              
+                          />
+                        </ListItem>
+                        <ListItem>
+                        <ListItemIcon>
+                        <CheckCircleOutlineIcon/>
+                          </ListItemIcon>
+                          <ListItemText
+                            primary="Ilmanvaihto"
+              
+                          />
+                        </ListItem>
+                        <ListItem>
+                        <ListItemIcon>
+                            <CheckCircleOutlineIcon/>
+                          </ListItemIcon>
+                          <ListItemText
+                            primary="Vesi- ja viemärijärjestelmät"
+              
+                          />
+                        </ListItem>
+                        <ListItem>
+                        <ListItemIcon>
+                        <CheckCircleOutlineIcon/>
+                          </ListItemIcon>
+                          <ListItemText
+                            primary="Lämmitys"
+              
+                          />
+                        </ListItem>
+                        <ListItem>
+                        <ListItemIcon>
+                        <CheckCircleOutlineIcon/>
+                          </ListItemIcon>
+                          <ListItemText
+                            primary="Jäähdytys"
+              
+                          />
+                        </ListItem>
+                        <ListItem>
+                        <ListItemIcon>
+                        <CheckCircleOutlineIcon/>
+                          </ListItemIcon>
+                          <ListItemText
+                            primary="Lämpökaivojen ja lämpöpumppujen mitoitus"
+              
+                          />
+                        </ListItem>
+                    </List>
+                  <Stack>
+                    {/* <img src={kaksiD} alt="talo_piirustus" width={'300'} height={'auto'} /> */}
+                  <FullImage imagePath={kaksiD} alt="2D suunnitelma" width={'300'} height={'auto'}  />
+                  <Typography>2D suunnitelma</Typography>
+                  </Stack>
+                  <Stack>
+                      {/* <img src={kolmeD} alt="talo_piirustus" width={'300'} height={'auto'} /> */}
+                      <FullImage imagePath={kolmeD} alt="3D suunnitelma"   width={'300'} height={'auto'} />
+                      <Typography>3D suunnitelma</Typography>
+                  </Stack>
+                </Stack>
+                <Stack sx={{gap:2}}>
+                  <Typography>
+                  Suosittelemme aloittamaan LVI-suunnittelun jo ennen rakennusluvan hakemista, sillä useilla paikkakunnilla lupa-asiakirjojen liitteenä vaaditaan suunnitelma ulkopuolisesta LVI-tekniikasta. Tämän lisäksi on tärkeää huomioida tarvittavat tilavaraukset laitteille, teknisille tiloille ja pääreiteille jo rakennusprojektin alkuvaiheessa.
+                  </Typography>
+                  <Typography>
+                   Olemme vastuullinen insinööritoimisto, joka huolehtii siitä, että LVI-suunnitelmat täyttävät rakennusvalvontaviranomaisten vaatimukset. Suunnitelmat toteutetaan aina asiakkaan tarpeiden ja toiveiden pohjalta, mutta tuomme myös omat näkemyksemme esiin, jotta lopputulos on toimiva ja energiatehokas.
+                  </Typography>
+                  <Typography>
+                  Hyödynnämme asiakkaan toiveesta suunnittelussamme tietomallinnusta (BIM, Building Information Model), joka mahdollistaa rakennuskohteen kolmiulotteisen digitaalisen esittämisen. Tietomallinnus tehostaa LVI-suunnitteluprosessia ja parantaa suunnittelun kustannustehokkuutta. Se mahdollistaa myös jatkuvan päivityksen työmaalta saatujen tietojen perusteella, jolloin asiakkaalle voidaan luovuttaa ajantasainen ja täysin toteutusta vastaava tietomalli rakennuksen valmistuttua.
+                  </Typography>
+                </Stack>
+              </Box>
           </Box>
-        
-       
-  
   </ModalDialog>
   </ModalOverflow>
       </Modal>
@@ -278,7 +287,7 @@ const Palvelut = () => {
         open={openProjekti}
       id='Projektijohto modal'
         onClose={handleCloseProjekti}
-        onClick={handleCloseProjekti}
+       
        
         aria-labelledby="modal-dialog-Projektijohto"
 
@@ -288,12 +297,12 @@ const Palvelut = () => {
       <ModalOverflow>
         <ModalDialog
  
- layout="fullscreen"
+ layout="center"
  size="lg"
  variant="soft"
 >
  <ModalClose />
-
+ <Box sx={{maxWidth:900}}>
           <Typography id="modal-modal-title2" variant="h5" component="h2">
           Projektijohto- ja valvontatehtävät
           </Typography>
@@ -392,7 +401,7 @@ const Palvelut = () => {
               </Typography>
             </Stack>
           </Box>
-        
+          </Box>
        
   
   </ModalDialog>
@@ -405,7 +414,7 @@ const Palvelut = () => {
         open={openKVV}
       id='KVV/IV modal'
         onClose={handleCloseKVV}
-        onClick={handleCloseKVV}
+      
        
         aria-labelledby="modal-dialog-KVV"
 
@@ -415,12 +424,12 @@ const Palvelut = () => {
       <ModalOverflow>
         <ModalDialog
  
- layout="fullscreen"
+ layout="center"
  size="lg"
  variant="soft"
 >
  <ModalClose />
-
+ <Box sx={{maxWidth:900}}>
           <Typography id="modal-modal-title3" variant="h5" component="h2">
           KVV/IV Työnjohto
           </Typography>
@@ -482,7 +491,7 @@ const Palvelut = () => {
           </Box>
         
        
-  
+  </Box>
   </ModalDialog>
   </ModalOverflow>
       </Modal>

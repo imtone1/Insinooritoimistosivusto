@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Box, Stack, Typography, Collapse, IconButton } from '@mui/material'
-import logo_SA1 from '../images/logo_SA1.png'
-import jasenyritys from '../images/jasenyritys_2022.png'
-import LK_valkoinen from '../images/LK_valkoinen.png'
-import tietosuoja from '../documents/Tietosuojaseloste.pdf'
+import {ReactComponent as SAlogo} from '../images/logo_SA1.svg'
+
 import {ReactComponent as Asiakastietologo}  from '../images/LOGO_SILVER_STANDING_BLACK_FI_433955.svg'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import MailIcon from '@mui/icons-material/Mail';
 import { styled } from '@mui/material/styles';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import {ReactComponent as Yrittajalogo} from '../images/jasenyritys_23.svg';
+import {ReactComponent as LKlogo} from '../images/LK_valkoinen_rgb_1.svg';
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -38,17 +38,18 @@ const Footer = () => {
     <Box className='boxit' sx={{backgroundColor: COLORS.beige1, overflow:'hidden', margin:'auto'}} role='navigation' aria-label='footer'>
 
         <Stack direction={{xs:'column', md:'row'}} gap={{xs: 5,md:10,lg:20}} alignItems={'center'} justifyContent={'center'}>
-        <Link to={'/'} aria-label='Linkki SapAir Oy etusivulle' onClick={() => {
+        <Link to={'/'} aria-label='Linkki SapAir Oy etusivulle'  onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
       behavior: "instant",
     });
-  }}><Box sx={{padding:{xs:2, lg:10}}}>
-            <img src={logo_SA1} alt="SapAir Oy logo" style={{width:'200px'}}/>
+  }}><Box sx={{padding:{xs:2, lg:10}}} >
+          
+            <SAlogo style={{width:'200px'}}/>
         </Box></Link>
         <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5} >
-        <Link to={'/meista'} aria-describedby='Meista' onClick={() => {
+        <Link to={'/meista'} style={{textDecoration:'none'}} aria-describedby='Meista' onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
@@ -60,7 +61,7 @@ const Footer = () => {
             </Typography>
         </Link>
 
-        <Link to={'/meista'} aria-describedby='Referenssit' onClick={() => {
+        <Link to={'/meista'} style={{textDecoration:'none'}} aria-describedby='Referenssit' onClick={() => {
     window.scroll({
       top: 120,
       left: 0,
@@ -71,7 +72,7 @@ const Footer = () => {
             Referenssit
         </Typography>
         </Link>
-        <Link to={'/yhteystiedot'} aria-describedby='Yhteystiedot' onClick={() => {
+        <Link to={'/yhteystiedot'} style={{textDecoration:'none'}} aria-describedby='Yhteystiedot' onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
@@ -84,7 +85,7 @@ const Footer = () => {
         </Link>
         </Stack>
         <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5}>
-        <Link to={'/palvelut'} aria-describedby='Palvelut' onClick={() => {
+        <Link to={'/palvelut'} style={{textDecoration:'none'}} aria-describedby='Palvelut' onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
@@ -96,7 +97,7 @@ const Footer = () => {
             </Typography>
         </Link>
       
-        <Link to={'yhteystiedot'}  aria-describedby='Laskutus' onClick={() => {
+        <Link to={'yhteystiedot'} style={{textDecoration:'none'}} aria-describedby='Laskutus' onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
@@ -110,10 +111,11 @@ const Footer = () => {
         </Stack>
         <Stack direction={{xs:'column',sm:'row', md:'column'}} gap={5}>
           <Box sx={{width:'150px'}}>
-            <img src={jasenyritys} alt="jasenyritys" style={{width:'100%', height:'auto'}}/>
+            <Yrittajalogo style={{width:'100%', height:'auto'}}/>
            </Box>
            <Box sx={{width:'150px'}}>
-           <img src={LK_valkoinen} alt="LK_valkoinen" style={{width:'100%', height:'auto'}} />
+      
+           <LKlogo alt="Luotettava kumppani-logo" style={{width:'100%', height:'auto'}}/>
           </Box>  <Asiakastietologo style={{width:'150px'}}/>
             </Stack>
 
@@ -121,8 +123,9 @@ const Footer = () => {
      
         </Stack>
      
+       
           <Stack direction={{xs:'column', sm:'row'}} sx={{alignItems:'center', justifyContent:'center', gap:2, p:2}} aria-hidden="false">
-             <a href="tel:0406772400"> <Stack direction={'row'} gap={1}>
+             <a href="tel:0406772400" > <Stack direction={'row'} gap={1}>
                 <PhoneInTalkIcon/><Typography >
                 040 677 24 00
                 </Typography>
@@ -134,12 +137,12 @@ const Footer = () => {
                 </Typography>
                 </Stack></a>
             </Stack>
-            <a href={tietosuoja} target="_blank"
-                    rel="noreferrer" aria-describedby="new-window-1"> 
-                     <Typography sx={{textAlign:'center', paddingTop:2}} >
-                Tietosuojaseloste
-            </Typography>
-                </a>
+
+            <Box  sx={{textAlign:'center', paddingTop:2, cursor:'pointer'}} >
+              <LinkedInIcon aria-label="Linkki SapAir Oy Linkedin-sivulle"  aria-describedby="new-window-Linkedin" aria-hidden="false" focusable="true" fontSize='large' tabIndex="0" role="button" onClick={event =>  window.location.href='https://www.linkedin.com/company/insin%C3%B6%C3%B6ritoimisto-sapair-oy/'} />
+              
+            </Box>
+           
                 <Stack direction={{ xs: 'column', sm: 'row' }} gap={2} sx={{textAlign:'center', paddingTop:2, alignItems:'center', justifyContent:'center'}} >
             <Stack direction={'row' } >
               
@@ -159,6 +162,9 @@ const Footer = () => {
 
         <Collapse in={expanded} timeout="auto" unmountOnExit aria-hidden="false">
         <Stack direction='column' p={1} pt={3} gap={2} sx={{ alignItems:'flex-start',justifyContent:'flex-start'}}>
+          <Typography sx={{pr:1}}>
+            Sivustolla ei käytetä evästeitä eikä kerätä tietoja käyttäjistä.
+          </Typography>
             <Stack direction={{xs:'column', md:'row'}}>
               <Typography sx={{pr:1}}>
                   Sivuston suunnitellut ja luonut 

@@ -1,12 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import {AppBar,Toolbar, Typography,Stack, Box} from "@mui/material"
-
+import {ReactComponent as SAlogo} from '../images/logo_SA1.svg'
 
 import Menu from './Menuni'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
-import logo_SA1 from '../images/logo_SA1.png'
 
 const Navbar = () => {
   return (
@@ -15,8 +14,9 @@ const Navbar = () => {
         <Toolbar>
      
       <Box sx={{ flexGrow: 1}} >
-           <Link to="/">   
- <img src={logo_SA1} alt="SapAir logo" width="150" height={'auto'} />
+           <Link to="/" aria-label="SapAir Oy Etusivu">   
+
+ <SAlogo style={{width:'150px'}}/>
 
             </Link>
            
@@ -35,7 +35,7 @@ const Navbar = () => {
                 Ammattilaisille
             </Typography> */}
 
-            <Link to={'/palvelut'} onClick={() => {
+            <Link to={'/palvelut'} style={{textDecoration:'none'}} onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
@@ -46,7 +46,7 @@ const Navbar = () => {
                     Palvelut
                 </Typography>
             </Link>
-            <Link to={'/meista'} onClick={() => {
+            <Link to={'/meista'} style={{textDecoration:'none'}} onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
@@ -57,7 +57,7 @@ const Navbar = () => {
                     Meistä
                 </Typography>
             </Link>
-            <Link to={'/yhteystiedot'} onClick={() => {
+            <Link to={'/yhteystiedot'} style={{textDecoration:'none'}} onClick={() => {
     window.scroll({
       top: 0,
       left: 0,
@@ -68,7 +68,7 @@ const Navbar = () => {
                     Yhteystiedot
                 </Typography>
             </Link>
-            <a href="tel:0406772400">  <Stack direction={'row'} gap={2} display={{xs:'none', sm:'flex'}} alignItems={'center'} aria-labelledby="SapAir Oy puhelinnumero">
+            <a href="tel:0406772400" style={{textDecoration:'none'}}>  <Stack direction={'row'} gap={2} display={{xs:'none', sm:'flex'}} alignItems={'center'} aria-labelledby="SapAir Oy puhelinnumero">
             <PhoneInTalkIcon />
 
             <Typography variant='body1' component='div' sx={{flexGrow:1, fontWeight:600, fontSize:'120%'}} id='SapAir Oy puhelinnumero'  >

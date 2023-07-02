@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import { Box, Stack, Typography, List, ListItem, ListItemText, ListItemIcon} from '@mui/material'
 import { Modal, ModalDialog, ModalClose, ModalOverflow } from '@mui/joy'
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import RoofingIcon from '@mui/icons-material/Roofing';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import {COLORS} from '../values/colors'
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
@@ -10,6 +15,7 @@ import kaksiD from '../images/Dokumentaatio.jpg'
 import kolmeD from '../images/Dokumentaatio3D.jpg'
 import FullImage from './Fullimage';
 import Paaotsikko from '../otsikot/Paaotsikko';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 
 const Palvelutcard = () => {
@@ -21,6 +27,14 @@ const Palvelutcard = () => {
   const handleOpenProjekti = () => setOpenProjekti(true);
   const handleOpenKVV = () => setOpenKVV(true);
   const handleCloseKVV = () => setOpenKVV(false);
+
+  // Accordions
+  const [expanded, setExpanded] = React.useState(false);
+
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+
   const customTheme = createTheme({
     palette: {
       primary: {
@@ -45,8 +59,8 @@ const Palvelutcard = () => {
       duration: theme.transitions.duration.standard,
     })};
     &:hover {
-      background-color: ${theme.palette.white.main};
-      transform: scale(1.03) translateX(-20px);
+    
+      transform: scale(1.03) translateX(20px);
     }
     `}
   `;
@@ -54,8 +68,8 @@ const Palvelutcard = () => {
   return (
     <Box  sx={{backgroundColor:COLORS.grey, position:'relative', paddingBottom:4}}>
 <Box sx={{ maxWidth: 1200 , margin:'auto'}}>
-      <Paaotsikko otsikko={'Palveluitamme'} teksti={'Olemme pieni ja ketterä suunnittelutoimisto, jossa asiointi on sujuvaa ja nopeaa. Palvelemme asiakkaita niin tavanomaisissa, kuin vaativissakin projekteissa.'} />
-    <Stack sx={{justifyContent:'center', alignItems:'center', display:'flex', gap:{xs:1,md:9}, backgroundColor:COLORS.grey}} direction={{xs:'column', md:'row'}}>
+      <Paaotsikko otsikko={'Palveluitamme'} teksti={'Olemme asiakaslähtöinen ja ammattitaitoinen suunnittelutoimisto, jossa asiointi on sujuvaa ja nopeaa. Tarjoamme kattavat LVIA-suunnittelu- ja konsultointipalvelut. Palvelemme asiakkaita niin tavanomaisissa, kuin vaativissakin projekteissa.'} />
+    <Stack sx={{justifyContent:'center', alignItems:'center', display:'flex', gap:{xs:0,md:9}, backgroundColor:COLORS.grey}} direction={{xs:'column', md:'row'}}>
         <div className='palvelutcontainer'>
             <div className='palvelutbox'>
                 <div className='palvelutcontent'>
@@ -64,7 +78,7 @@ const Palvelutcard = () => {
                     {/* <div className='palveluticon'><GradeIcon /></div> */}
                         <div className='palveluttext'>
                             <Typography variant='h4' sx={{fontWeight:600, marginBottom:2, height:120}}>LVIA-suunnittelu</Typography>
-                           <Typography variant='body1' sx={{ textAlign:'left', height:200 }}>Meidän insinööritoimistossamme panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi energiankulutuksen, parantaa sisäilman laatua ja takaa kustannustehokkaan toiminnan.</Typography>
+                           <Typography variant='body1' sx={{ textAlign:'left', height:200, paddingLeft:2}}>Meidän insinööritoimistossamme panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi energiankulutuksen, parantaa sisäilman laatua ja takaa kustannustehokkaan toiminnan.</Typography>
                             <button onClick={() => setopen(true)}  onKeyUp={() => setopen(true)} tabIndex='0'
           className='palveluticon' type='button'>Lue lisää</button>
         </div>
@@ -77,7 +91,7 @@ const Palvelutcard = () => {
                     <div className='palveluttext'>
                     <Typography variant='h4' sx={{fontWeight:600, marginBottom:2, height:120}}>
                         Projektijohto- ja valvontatehtävät</Typography>
-                           <Typography variant='body1' sx={{  textAlign:'left', height:200}}>
+                           <Typography variant='body1' sx={{  textAlign:'left', height:200 , paddingLeft:2}}>
                         
                         Tarjoamme projektinjohto- ja rakennuttamistehtäviä, jotka toteutamme hankkeen tarpeiden mukaisesti. Meidän tavoitteenamme on tehdä rakennuttamishanke sinulle mahdollisimman vaivattomaksi vahvalla ammattitaidollamme.</Typography>
                         <button className='palveluticon' onClick={handleOpenProjekti} onKeyUp={handleOpenProjekti}  type='button' tabIndex='0'>Lue lisää</button>
@@ -89,31 +103,182 @@ const Palvelutcard = () => {
                         <div className='palveluttext'>
                         <Typography variant='h4' sx={{fontWeight:600, marginBottom:2 , height:120}}>
                             KVV-/IV-työnjohtajan palvelut</Typography>
-                           <Typography variant='body1' sx={{ textAlign:'left', height:200}}>
+                           <Typography variant='body1' sx={{ textAlign:'left', height:200 , paddingLeft:2}}>
                             Tilaamalla meidän KVV/IV työnjohtajan palvelut saat ammattilaiset rinnallasi, joka huolehtii siitä, että kaikki sujuu suunnitelmien mukaisesti ja lopputulos on juuri sellainen kuin odotit. Ota yhteyttä ja säästä itsesi turhilta huolilta ja kustannuksilta.</Typography>
                             <button className='palveluticon' onClick={handleOpenKVV} onKeyUp={handleOpenKVV} type='button' tabIndex='0'>Lue lisää</button>
         </div></div></div></div></Stack>
 
+     <Box >
+       
+       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{backgroundColor:COLORS.grey }} elevation={0}>
+         
+       <Box sx={{  width:'180px', alignItems:'center', display:'block', margin:'auto', marginTop:2 }}>
+   
+    <Box sx={{boxShadow:'0 0 0 4px #2e2e2e, 0 0 0 6px #C8D9A3', borderRadius:1,  width:'180px', backgroundColor:COLORS.grey,  margin:'auto'}}>
+   
+ <AccordionSummary
+           expandIcon={<ExpandMoreIcon/>}
+           aria-controls="lisaapalveluita-content"
+           id="lisaapalveluita-header"
+          
+         >
 
-        <Box sx={{border:'solid 4px',  p:2, width:'109px', alignItems:'center', display:'block', margin:'auto', marginTop:2 }}>
-<ThemeProvider theme={customTheme}>
-<StyledButton>
 
-<Box sx={{border:'solid 4px', p:2, width:'109px', backgroundColor: COLORS.vihrea,  margin:'auto'}}>
-<Link to={'/palvelut'} role='link' style={{textDecoration:'none'}} onClick={() => {
+         <Typography sx={{fontWeight:700}} >
+              Lisää palveluita
+            </Typography>
+         </AccordionSummary>
+   
+    </Box>
+    
+  
+    </Box>
+        
+         <AccordionDetails >
+         <Stack direction={'column'} sx={{alignItems:'center'}}>
+       
+       <List dense={true}>
+       
+       <ListItem onClick={() => setopen(true)} role='button' sx={{cursor:'pointer'}}>
+       <ListItemIcon>
+       <RoofingIcon />
+       </ListItemIcon>
+       <ListItemText
+       primary={'LVIA-suunnittelu'}
+       
+       />
+       <ListItemIcon>
+       <ArrowForwardIosIcon />
+       </ListItemIcon>
+       </ListItem>
+       
+       <ListItem  onClick={handleOpenKVV} role='button' sx={{cursor:'pointer'}}>
+       <ListItemIcon>
+       <RoofingIcon />
+       </ListItemIcon>
+       <ListItemText
+       primary={'KVV-/IV- työnjohtajapalvelut'}
+       secondary={'tavanomaisista eritysvaativiin kohteisiin'}
+       />
+       <ListItemIcon>
+       <ArrowForwardIosIcon />
+       </ListItemIcon>
+       
+       </ListItem>
+       
+       <ListItem onClick={handleOpenProjekti} role='button' sx={{cursor:'pointer'}}>
+       <ListItemIcon>
+       <RoofingIcon />
+       </ListItemIcon>
+       <ListItemText
+       primary={'Projektinjohto ja valvontatehtävät'}
+       
+       />
+       <ListItemIcon>
+       <ArrowForwardIosIcon />
+       </ListItemIcon>
+       </ListItem>
+       
+       <ListItem  >
+       <ListItemIcon>
+       <RoofingIcon />
+       </ListItemIcon>
+       <ListItemText
+       primary={'Maalämpösuunnittelu, valvonta ja rakennuttaminen'}
+       
+       />
+       <ListItemIcon>
+       
+       </ListItemIcon>
+       </ListItem>
+       
+       <ListItem >
+       <ListItemIcon>
+       <RoofingIcon />
+       </ListItemIcon>
+       <ListItemText
+       primary={'Asiantuntijalausunnot'}
+       
+       />
+       
+       </ListItem>
+       
+       <ListItem >
+       <ListItemIcon>
+       <RoofingIcon />
+       </ListItemIcon>
+       <ListItemText
+       primary={'Selvitykset ja tarkastukset'}
+       
+       />
+       
+       </ListItem>
+       
+       <ListItem >
+       <ListItemIcon>
+       <RoofingIcon />
+       </ListItemIcon>
+       <ListItemText
+       primary={'Huoneistoremonttivalvonta'}
+       
+       />
+       
+       </ListItem>
+       
+       <ListItem >
+       <ListItemIcon>
+       <RoofingIcon />
+       </ListItemIcon>
+       <ListItemText
+       primary={'Asiantuntijalausunnot'}
+       
+       />
+       
+       </ListItem>
+       
+       <ListItem  >
+       <ListItemIcon>
+       <RoofingIcon />
+       </ListItemIcon>
+       <ListItemText
+       primary={'Konsultointipalvelut'}
+       
+       />
+       
+       </ListItem>
+       
+       </List>
+       <ThemeProvider theme={customTheme}>
+    <StyledButton>
+       <Link to={'/palvelut'} onClick={() => {
     window.scroll({
-      top: 0,
+      top: 120,
       left: 0,
       behavior: "instant",
     });
-  }}>
-<Typography variant='body2'sx={{backgroundColor: COLORS.vihrea, fontWeight:'bold'}}>Lisää palveluita</Typography>
+  }} style={{ alignSelf:'center', textDecoration:'none', justifyContent:'space-between', padding:8, paddingTop:20}}>
+ <Stack direction={'row'}>
+  <Typography sx={{fontWeight:700, boxShadow:`5px 5px 5px rgba(0,0,0,0.1), 15px 15px 15px rgba(0,0,0,0.1),
+   20px 10px 20px rgba(0,0,0,0.1),
+   50px 50px 80px rgba(0,0,0,0.25),
+   inset 3px 3px 2px #fff`, padding:2, paddingRight:5, borderRadius:4, backgroundColor: COLORS.vihrea}}>Palveluihin</Typography>
+  <ArrowForwardIosIcon style={{transform:'translateX(-38px) translateY(17px)'}} /><ArrowForwardIosIcon style={{transform:'translateX(-55px) translateY(17px)'}}/>
+</Stack>
 </Link>
-</Box>
 
 </StyledButton>
-</ThemeProvider>
-</Box>
+    </ThemeProvider>
+       </Stack>
+
+       
+
+         </AccordionDetails>
+       </Accordion>
+       
+     </Box>
+
+
+
 
 
         <Modal

@@ -90,8 +90,11 @@ export default function Accordions() {
           </Typography></Stack>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography color={'red'}>
-           KENELLE LAHJOITAMME? Jotain tekstiä siitä kenelle lahjoitamme ja miksi.
+          <Typography >
+          Kaikilla meillä ei ole samoja mahdollisuuksia liikkua ja elää vapaasti. Haluamme tukea heikompia elämässä eteenpäin ja siksi liiketoiminnastamme lahjoitamme osan lasten, nuorten sekä kehitysvammaisten hyväksi.
+Näitä ovat esim. Aivovammaliitto, CP-liitto, Kummit Ry, Sydänlapset ja -aikuiset ry, Sylva Ry sekä muut.
+Osallistumme myös hyväntekeväisyystapahtumiin mahdollisuuksiemme mukaan.
+
           </Typography>
         </AccordionDetails>
       </Accordion>

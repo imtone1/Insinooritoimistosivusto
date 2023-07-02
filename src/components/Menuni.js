@@ -25,6 +25,10 @@ export default function Menuni() {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
+       
+        aria-label="navigation menu"
+        
+        size="medium"
       >
        <MenuIcon/>
       </IconButton>

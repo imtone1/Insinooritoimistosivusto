@@ -15,7 +15,7 @@ const Lupauksemme = () => {
   alignItems="center" maxWidth={900} margin={'auto'}>
   <Lupaus teksti={'Toimintamme on läpinäkyvää ja avointa. Näet kaiken dokumentaation kätevästi samassa paikassa modernin ohjelmiston avulla.'} otsikko1={'Läpinäkyvyys'} otsikko2={''}/>
     <Stack direction={'column'} p={{md:2, xs:2}}  className='lupaukset'>
-    <Typography variant='body2' sx={{border:3, backgroundColor:'#c5e1a5',padding:3, maxWidth:300, boxShadow:'5px 10px 8px #888888'}}>
+    <Typography variant='body2' sx={{border:3, borderRadius:1,backgroundColor:'#c5e1a5',padding:3, maxWidth:300, boxShadow:'5px 10px 8px #888888'}}>
     Asiakkaidemme luottamus on arvokkain voimavaramme! Sitoudumme tinkimättömään laatuun ja asiakkaan tyytyväisyyteen jokaisessa kohtaamisessa.
     </Typography>
     </Stack>
