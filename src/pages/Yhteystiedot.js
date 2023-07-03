@@ -103,8 +103,7 @@ const Yhteystiedot = () => {
               Operaattoritunnus: 003723327487
             </Typography>
             <Typography sx={{ width:200, pt:5 }} >
-              Mikäli verkkolaskun toimitus ei ole mahdollista, voi laskun toimittaa sovitusti myös sähköisesti osoitteeseen info@sapair.fi
-    Emme vastaanota paperilaskuja.
+              Emme vastaanota paperilaskuja. Mikäli verkkolaskun toimitus ei ole mahdollista, voi laskun toimittaa sovitusti myös sähköisesti osoitteeseen info@sapair.fi
             </Typography>
           </Stack>
         </Stack>

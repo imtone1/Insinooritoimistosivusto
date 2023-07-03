@@ -2,13 +2,11 @@ import React from 'react'
 import { Stack, Typography, Box } from '@mui/material'
 import Rivitys from '../otsikot/Rivitys'
 
-const Polkuitem = ({ kuva, numero, otsikko1, otsikko2, teksti }) => {
+const Polkuitem = ({ kuva, otsikko1, otsikko2, teksti }) => {
 
   return (
     <Stack component={'div'} direction={{ xs:'column', md:'row' }} sx={{ width:{ xs:'100%',md:'80%' }, gap:3 }} >
-      {/* <Typography variant="h3" sx={{fontWeight:'800' , fontSize:'400%', borderTop:`3px solid ${COLORS.brown}`, borderLeft:`3px solid ${COLORS.brown}`, padding:3 }}>
-       {numero}
-    </Typography> */}
+
       <Stack direction={'column'} >
         <Rivitys osa1={otsikko1} osa2={otsikko2} varianti={'h5'}/>
 

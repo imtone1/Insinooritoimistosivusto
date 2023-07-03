@@ -1,8 +1,7 @@
 import React from 'react'
 import { DataGrid, GridToolbar, fiFI, gridClasses } from '@mui/x-data-grid'
 import { styled, alpha } from '@mui/material/styles'
-// import Box from '@mui/material/Box';
-// import Link from '@mui/material/Link';
+
 import { COLORS } from '../values/colors'
 import { PROJECTS } from '../values/referenssi'
 
