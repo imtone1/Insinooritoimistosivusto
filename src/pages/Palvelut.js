@@ -16,7 +16,7 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'
 import Otayhteyttanappulassa from '../components/Otayhteyttanappulassa'
 
 
-export default function Palvelut() {
+const Palvelut = () => {
   const [open, setopen] = useState(false)
   const [openProjekti, setOpenProjekti] = useState(false)
   const [openKVV, setOpenKVV] = useState(false)
@@ -500,3 +500,5 @@ export default function Palvelut() {
     </Box>
   )
 }
+
+export default Palvelut

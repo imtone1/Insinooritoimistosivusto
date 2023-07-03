@@ -11,7 +11,7 @@ import ReceiptIcon from '@mui/icons-material/Receipt'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import coffee from '../images/coffee.png'
 
-export default function Yhteystiedot() {
+const Yhteystiedot = () => {
   return (
     <Box  sx={{ backgroundColor:COLORS.grey }}>
       <SEO title={'SapAir Oy - Yhteystiedot'} description={'SapAir Oy:n yhteystiedot. Säästä itseäsi turhilta huolilta ja kustannuksilta, ota yhteyttä jo tänään.'}/>
@@ -114,3 +114,5 @@ export default function Yhteystiedot() {
 
   )
 }
+
+export default Yhteystiedot

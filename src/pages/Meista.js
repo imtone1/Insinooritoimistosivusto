@@ -16,7 +16,7 @@ import MailIcon from '@mui/icons-material/Mail'
 
 
 
-export default function Meista () {
+const Meista = () => {
   return (
     <Box sx={{ backgroundColor:COLORS.grey, overflow:'hidden' }}>
       <SEO title={'SapAir Oy - Meistä'} description={'SapAir Oy:n esittelysivu. Katso tärkeimmät referenssimme ja arvomme.'}/>
@@ -164,4 +164,5 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
   )
 }
 
+export default Meista
 

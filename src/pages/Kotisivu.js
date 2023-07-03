@@ -13,7 +13,7 @@ import Otayhteyttanappulassa from '../components/Otayhteyttanappulassa'
 import Palvelutcard from '../components/Palvelutcard'
 
 
-export default function Kotisivu() {
+const Kotisivu = () => {
   return (
     <div style={{ overflow:'hidden' }}>
       <SEO title={'Instinööritoimisto SapAir Oy'} description={'Selkeä valinta, kun etsit LVIA-ammattilaista.Säästä itseäsi turhilta huolilta ja kustannuksilta, ota yhteyttä jo tänään.'}/>
@@ -41,3 +41,4 @@ export default function Kotisivu() {
   )
 }
 
+export default Kotisivu
