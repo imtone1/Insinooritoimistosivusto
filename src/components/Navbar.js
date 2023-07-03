@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { AppBar,Toolbar, Typography,Stack, Box } from '@mui/material'
-import { ReactComponent as SAlogo } from '../images/logo_SA1.svg'
+import { ReactComponent as SAlogo } from '../kuvat/logo_SA1.svg'
 
 import Menu from './Menuni'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'

@@ -3,7 +3,7 @@ import { Box, Stack, Typography } from '@mui/material'
 
 import SEO from '../components/SEO'
 import { COLORS } from '../values/colors'
-import Konsta from '../images/Konsta-Sappinen.png'
+import Konsta from '../kuvat/Konsta-Sappinen.png'
 import Accordions from '../components/Accordions'
 import Koulutusaccordion from '../components/Koulutusaccordion'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Box, Stack, Typography, Collapse, IconButton } from '@mui/material'
-import { ReactComponent as SAlogo } from '../images/logo_SA1.svg'
+import { ReactComponent as SAlogo } from '../kuvat/logo_SA1.svg'
 
 import { ReactComponent as Asiakastietologo }  from '../images/LOGO_SILVER_STANDING_BLACK_FI_433955.svg'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'

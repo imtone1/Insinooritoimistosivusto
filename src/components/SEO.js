@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
-import suurilogo from '../images/suurilogo.jpg'
-import twitterlogo from '../images/twitter img.jpg'
+import suurilogo from '../kuvat/suurilogo.jpg'
+import twitterlogo from '../kuvat/twitter img.jpg'
 
 const SEO =({ title, description }) => {
   return (

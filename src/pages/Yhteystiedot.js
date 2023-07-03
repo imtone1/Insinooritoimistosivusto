@@ -4,7 +4,7 @@ import SEO from '../components/SEO'
 import { COLORS } from '../values/colors'
 
 import { Box, Stack, Typography } from '@mui/material'
-import Konsta from '../images/Konsta-Sappinen.png'
+import Konsta from '../kuvat/Konsta-Sappinen.png'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
 import MailIcon from '@mui/icons-material/Mail'
 import ReceiptIcon from '@mui/icons-material/Receipt'
