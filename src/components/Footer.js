@@ -139,7 +139,7 @@ const Footer = () => {
       </Stack>
 
       <Box  sx={{ textAlign:'center', paddingTop:2, cursor:'pointer' }} >
-        <LinkedInIcon aria-label="Linkki SapAir Oy Linkedin-sivulle"  aria-describedby="new-window-Linkedin" aria-hidden="false" focusable="true" fontSize='large' tabIndex="0" role="button" onClick={event =>  window.location.href='https://www.linkedin.com/company/insin%C3%B6%C3%B6ritoimisto-sapair-oy/'} />
+        <LinkedInIcon aria-label="Linkki SapAir Oy Linkedin-sivulle"  aria-describedby="new-window-Linkedin" aria-hidden="false" focusable="true" fontSize='large' tabIndex="0" role="button" onClick={() =>  window.location.href='https://www.linkedin.com/company/insin%C3%B6%C3%B6ritoimisto-sapair-oy/'} />
 
       </Box>
 
@@ -173,7 +173,7 @@ const Footer = () => {
                   <Typography variant='h6' sx={{ pr:1 }}>
                     Irina Tatti
                   </Typography>
-                  <LinkedInIcon onClick={event =>  window.open('https://www.linkedin.com/in/irina-tatti/')} aria-describedby="new-window-Linkedin"/>
+                  <LinkedInIcon onClick={() =>  window.open('https://www.linkedin.com/in/irina-tatti/')} aria-describedby="new-window-Linkedin"/>
                 </Stack>
               </Stack>
               <Typography fontSize={'small'}>

@@ -39,7 +39,7 @@ const Yhteystiedot = () => {
             <Typography variant='h3'>
           Konsta Sappinen
             </Typography>
-            <LinkedInIcon fontSize='large'aria-describedby="new-window-Linkedin" onClick={event =>
+            <LinkedInIcon fontSize='large'aria-describedby="new-window-Linkedin" onClick={() =>
               window.open('https://www.linkedin.com/in/konsta-sappinen-364ba575/')} >
             </LinkedInIcon>
           </Stack>
