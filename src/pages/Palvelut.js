@@ -1,70 +1,70 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import SEO from '../components/SEO'
-import {COLORS} from '../values/colors'
+import { COLORS } from '../values/colors'
 import { Modal, ModalDialog, ModalClose, ModalOverflow } from '@mui/joy'
 
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 
-import { Box, Stack, Typography, List, ListItem, ListItemText, ListItemIcon} from '@mui/material'
+import { Box, Stack, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import coffee from '../images/coffee.png'
 import kaksiD from '../images/Dokumentaatio.jpg'
 import kolmeD from '../images/Dokumentaatio3D.jpg'
-import FullImage from '../components/Fullimage';
-import RoofingIcon from '@mui/icons-material/Roofing';
+import FullImage from '../components/Fullimage'
+import RoofingIcon from '@mui/icons-material/Roofing'
 
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-import Otayhteyttanappulassa from '../components/Otayhteyttanappulassa';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'
+import Otayhteyttanappulassa from '../components/Otayhteyttanappulassa'
 
 
 const Palvelut = () => {
-  const [open, setopen] = useState(false);
-  const [openProjekti, setOpenProjekti] = useState(false);
-  const [openKVV, setOpenKVV] = useState(false);
-  const handleClose = () => setopen(false);
- const handleCloseProjekti = () => setOpenProjekti(false);
- const handleOpenProjekti = () => setOpenProjekti(true);
- const handleOpenKVV = () => setOpenKVV(true);
- const handleCloseKVV = () => setOpenKVV(false);
+  const [open, setopen] = useState(false)
+  const [openProjekti, setOpenProjekti] = useState(false)
+  const [openKVV, setOpenKVV] = useState(false)
+  const handleClose = () => setopen(false)
+  const handleCloseProjekti = () => setOpenProjekti(false)
+  const handleOpenProjekti = () => setOpenProjekti(true)
+  const handleOpenKVV = () => setOpenKVV(true)
+  const handleCloseKVV = () => setOpenKVV(false)
 
-       
+
   return (
-    <Box  sx={{backgroundColor:COLORS.grey  }}>
+    <Box  sx={{ backgroundColor:COLORS.grey  }}>
       <SEO title={'SapAir Oy - Palvelut'} description={'Tarjoamme laajat LVIA-palvelut. Katso palvelumme ja ota yhteyttä.'}/>
-      <section className="layers" ><div className="layers__item layer-1" style={{backgroundImage: `url(${coffee})`, transform: 'translateZ(95px) scale(0.90)'}}></div>
-  <div className="layers__container" style={{height:'30vh', minHeight:200}} >
-    
-    
-    <div className="layers__item layer-3" style={{transform: 'translateZ(180px) scale(.8)'}}>
-      <div className="otsikko2-content">
-        <h1>Palvelut</h1>
-        <div className="otsikko2-content__p">Palvelemme asiakkaita niin tavanomaisissa, kuin vaativissakin projekteissa. </div>
-        
-        
-      </div>
-    </div>
-  
-    
-  </div>
-</section>
-   
-    <Stack direction={'column'} sx={{alignItems:'center'}}>
+      <section className="layers" ><div className="layers__item layer-1" style={{ backgroundImage: `url(${coffee})`, transform: 'translateZ(95px) scale(0.90)' }}></div>
+        <div className="layers__container" style={{ height:'30vh', minHeight:200 }} >
 
-              <List dense={true}>
-          
-          <ListItem onClick={() => setopen(true)} role='button' sx={{cursor:'pointer'}}>
+
+          <div className="layers__item layer-3" style={{ transform: 'translateZ(180px) scale(.8)' }}>
+            <div className="otsikko2-content">
+              <h1>Palvelut</h1>
+              <div className="otsikko2-content__p">Palvelemme asiakkaita niin tavanomaisissa, kuin vaativissakin projekteissa. </div>
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+
+      <Stack direction={'column'} sx={{ alignItems:'center' }}>
+
+        <List dense={true}>
+
+          <ListItem onClick={() => setopen(true)} role='button' sx={{ cursor:'pointer' }}>
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
               primary={'LVIA-suunnittelu'}
-             
+
             />
-             <ListItemIcon>
+            <ListItemIcon>
               <ArrowForwardIosIcon />
             </ListItemIcon>
           </ListItem>
-           
-          <ListItem  onClick={handleOpenKVV} role='button' sx={{cursor:'pointer'}}>
+
+          <ListItem  onClick={handleOpenKVV} role='button' sx={{ cursor:'pointer' }}>
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>
@@ -72,21 +72,21 @@ const Palvelut = () => {
               primary={'KVV- /IV- työnjohtajapalvelut'}
               secondary={'tavanomaisista eritysvaativiin kohteisiin'}
             />
-             <ListItemIcon>
+            <ListItemIcon>
               <ArrowForwardIosIcon />
             </ListItemIcon>
-           
+
           </ListItem>
-          
-          <ListItem onClick={handleOpenProjekti} role='button' sx={{cursor:'pointer'}}>
+
+          <ListItem onClick={handleOpenProjekti} role='button' sx={{ cursor:'pointer' }}>
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
               primary={'Projektinjohto- ja valvontatehtävät'}
-             
+
             />
-             <ListItemIcon>
+            <ListItemIcon>
               <ArrowForwardIosIcon />
             </ListItemIcon>
           </ListItem>
@@ -97,9 +97,9 @@ const Palvelut = () => {
             </ListItemIcon>
             <ListItemText
               primary={'Maalämpösuunnittelu, valvonta ja rakennuttaminen'}
-              
+
             />
-             <ListItemIcon>
+            <ListItemIcon>
               {/* <ArrowForwardIosIcon /> */}
             </ListItemIcon>
           </ListItem>
@@ -110,9 +110,9 @@ const Palvelut = () => {
             </ListItemIcon>
             <ListItemText
               primary={'Asiantuntijalausunnot'}
-            
+
             />
-          
+
           </ListItem>
 
           <ListItem >
@@ -121,9 +121,9 @@ const Palvelut = () => {
             </ListItemIcon>
             <ListItemText
               primary={'Selvitykset ja tarkastukset'}
-            
+
             />
-           
+
           </ListItem>
 
           <ListItem >
@@ -132,9 +132,9 @@ const Palvelut = () => {
             </ListItemIcon>
             <ListItemText
               primary={'Huoneistoremonttivalvonta'}
-             
+
             />
-             
+
           </ListItem>
 
           <ListItem >
@@ -143,9 +143,9 @@ const Palvelut = () => {
             </ListItemIcon>
             <ListItemText
               primary={'Asiantuntijalausunnot'}
-             
+
             />
-             
+
           </ListItem>
 
           <ListItem  >
@@ -154,40 +154,40 @@ const Palvelut = () => {
             </ListItemIcon>
             <ListItemText
               primary={'Konsultointipalvelut'}
-            
+
             />
-           
+
           </ListItem>
 
         </List>
-    </Stack>
-        
- <Otayhteyttanappulassa/>
-  <Modal
+      </Stack>
+
+      <Otayhteyttanappulassa/>
+      <Modal
         open={open}
-      
+
         onClose={handleClose}
-        
-       
+
+
         aria-labelledby="modal-dialog-LVI-suunnittelu"
 
         aria-describedby="modal-modal-LVI-suunnittelu"
-      id='LVI-suunnittelu modal'
-      > 
-      <ModalOverflow>
-        <ModalDialog
- 
- layout="center"
- size="lg"
- variant="soft"
->
- <ModalClose />
- <Box sx={{maxWidth:900}}>
+        id='LVI-suunnittelu modal'
+      >
+        <ModalOverflow>
+          <ModalDialog
+
+            layout="center"
+            size="lg"
+            variant="soft"
+          >
+            <ModalClose />
+            <Box sx={{ maxWidth:900 }}>
               <Typography id="modal-modal-titleLVI-suunnittelu" variant="h5">
               LVI-suunnittelu
               </Typography>
               <Box id="modal-dialog-overflowLVI-suunnittelu" sx={{ mt: 2 }}>
-                <Stack sx={{gap:2}}>
+                <Stack sx={{ gap:2 }}>
                   <Typography>
                   LVI-suunnittelu on olennainen osa rakennuksen talotekniikkaa ja keskeinen tekijä sen elinkaaren aikaisen suorituskyvyn ja asumismukavuuden kannalta. Meidän insinööritoimistossamme panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi energiankulutuksen, parantaa sisäilman laatua ja takaa kustannustehokkaan toiminnan.
                   </Typography>
@@ -196,76 +196,76 @@ const Palvelut = () => {
                   </Typography>
                   <Typography>Suunnitelmiimme sisältyy mm.</Typography>
                 </Stack>
-                <Stack direction={{xs:'column', md:'row'}} sx={{gap:2}}>
-                    <List dense={true}>
-              
-                        <ListItem>
-                        <ListItemIcon>
+                <Stack direction={{ xs:'column', md:'row' }} sx={{ gap:2 }}>
+                  <List dense={true}>
+
+                    <ListItem>
+                      <ListItemIcon>
                         <CheckCircleOutlineIcon/>
-                          </ListItemIcon>
-                          <ListItemText
-                            primary="Asemapiirustus"
-              
-                          />
-                        </ListItem>
-                        <ListItem>
-                        <ListItemIcon>
+                      </ListItemIcon>
+                      <ListItemText
+                        primary="Asemapiirustus"
+
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
                         <CheckCircleOutlineIcon/>
-                          </ListItemIcon>
-                          <ListItemText
-                            primary="Ilmanvaihto"
-              
-                          />
-                        </ListItem>
-                        <ListItem>
-                        <ListItemIcon>
-                            <CheckCircleOutlineIcon/>
-                          </ListItemIcon>
-                          <ListItemText
-                            primary="Vesi- ja viemärijärjestelmät"
-              
-                          />
-                        </ListItem>
-                        <ListItem>
-                        <ListItemIcon>
+                      </ListItemIcon>
+                      <ListItemText
+                        primary="Ilmanvaihto"
+
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
                         <CheckCircleOutlineIcon/>
-                          </ListItemIcon>
-                          <ListItemText
-                            primary="Lämmitys"
-              
-                          />
-                        </ListItem>
-                        <ListItem>
-                        <ListItemIcon>
+                      </ListItemIcon>
+                      <ListItemText
+                        primary="Vesi- ja viemärijärjestelmät"
+
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
                         <CheckCircleOutlineIcon/>
-                          </ListItemIcon>
-                          <ListItemText
-                            primary="Jäähdytys"
-              
-                          />
-                        </ListItem>
-                        <ListItem>
-                        <ListItemIcon>
+                      </ListItemIcon>
+                      <ListItemText
+                        primary="Lämmitys"
+
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
                         <CheckCircleOutlineIcon/>
-                          </ListItemIcon>
-                          <ListItemText
-                            primary="Lämpökaivojen ja lämpöpumppujen mitoitus"
-              
-                          />
-                        </ListItem>
-                    </List>
+                      </ListItemIcon>
+                      <ListItemText
+                        primary="Jäähdytys"
+
+                      />
+                    </ListItem>
+                    <ListItem>
+                      <ListItemIcon>
+                        <CheckCircleOutlineIcon/>
+                      </ListItemIcon>
+                      <ListItemText
+                        primary="Lämpökaivojen ja lämpöpumppujen mitoitus"
+
+                      />
+                    </ListItem>
+                  </List>
                   <Stack>
                     {/* <img src={kaksiD} alt="talo_piirustus" width={'300'} height={'auto'} /> */}
-                  <FullImage imagePath={kaksiD} alt="2D suunnitelma" width={'300'} height={'auto'}  />
-                  <Typography>2D suunnitelma</Typography>
+                    <FullImage imagePath={kaksiD} alt="2D suunnitelma" width={'300'} height={'auto'}  />
+                    <Typography>2D suunnitelma</Typography>
                   </Stack>
                   <Stack>
-                      {/* <img src={kolmeD} alt="talo_piirustus" width={'300'} height={'auto'} /> */}
-                      <FullImage imagePath={kolmeD} alt="3D suunnitelma"   width={'300'} height={'auto'} />
-                      <Typography>3D suunnitelma</Typography>
+                    {/* <img src={kolmeD} alt="talo_piirustus" width={'300'} height={'auto'} /> */}
+                    <FullImage imagePath={kolmeD} alt="3D suunnitelma"   width={'300'} height={'auto'} />
+                    <Typography>3D suunnitelma</Typography>
                   </Stack>
                 </Stack>
-                <Stack sx={{gap:2}}>
+                <Stack sx={{ gap:2 }}>
                   <Typography>
                   Suosittelemme aloittamaan LVI-suunnittelun jo ennen rakennusluvan hakemista, sillä useilla paikkakunnilla lupa-asiakirjojen liitteenä vaaditaan suunnitelma ulkopuolisesta LVI-tekniikasta. Tämän lisäksi on tärkeää huomioida tarvittavat tilavaraukset laitteille, teknisille tiloille ja pääreiteille jo rakennusprojektin alkuvaiheessa.
                   </Typography>
@@ -277,227 +277,227 @@ const Palvelut = () => {
                   </Typography>
                 </Stack>
               </Box>
-          </Box>
-  </ModalDialog>
-  </ModalOverflow>
+            </Box>
+          </ModalDialog>
+        </ModalOverflow>
       </Modal>
 
 
       <Modal
         open={openProjekti}
-      id='Projektijohto modal'
+        id='Projektijohto modal'
         onClose={handleCloseProjekti}
-       
-       
+
+
         aria-labelledby="modal-dialog-Projektijohto"
 
         aria-describedby="modal-modal-Projektijohto"
-      
-      > 
-      <ModalOverflow>
-        <ModalDialog
- 
- layout="center"
- size="lg"
- variant="soft"
->
- <ModalClose />
- <Box sx={{maxWidth:900}}>
-          <Typography id="modal-modal-title2" variant="h5" component="h2">
+
+      >
+        <ModalOverflow>
+          <ModalDialog
+
+            layout="center"
+            size="lg"
+            variant="soft"
+          >
+            <ModalClose />
+            <Box sx={{ maxWidth:900 }}>
+              <Typography id="modal-modal-title2" variant="h5" component="h2">
           Projektijohto- ja valvontatehtävät
-          </Typography>
-          <Box id="modal-dialog-Projektijohto" sx={{ mt: 2 }}>
-            <Typography>
-            Tarjoamme projektinjohto- ja rakennuttamistehtäviä, jotka toteutamme hankkeen tarpeiden mukaisesti. 
-            </Typography>
-            <Typography>Näihin tehtäviin kuuluvat mm.</Typography>
-         
+              </Typography>
+              <Box id="modal-dialog-Projektijohto" sx={{ mt: 2 }}>
+                <Typography>
+            Tarjoamme projektinjohto- ja rakennuttamistehtäviä, jotka toteutamme hankkeen tarpeiden mukaisesti.
+                </Typography>
+                <Typography>Näihin tehtäviin kuuluvat mm.</Typography>
 
-            <List dense={true}>
-            
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Hankkeen selvitystyöt"
-                    
-                  />
-                </ListItem>
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Aikaatauluttaminen"
-                    
-                  />
-                </ListItem>
-                <ListItem>
-                <ListItemIcon>
-                    <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Suunnittelijoiden ja urakoitsijoiden kilpailuttaminen ja valinta"
-                    
-                  />
-                </ListItem>
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Suunnittelun ohjaus ja valvonta"
-                    
-                  />
-                </ListItem>
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Tarjouspyyntöasiakirjojen laadinta"
-                    
-                  />
-                </ListItem>
 
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Kustaannusvertailu"
-                    
-                  />
-                </ListItem>
+                <List dense={true}>
 
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Sopimusen laadinta, valvonta sekä vastaanotto"
-                    
-                  />
-                </ListItem>
+                  <ListItem>
+                    <ListItemIcon>
+                      <CheckCircleOutlineIcon/>
+                    </ListItemIcon>
+                    <ListItemText
+                      primary="Hankkeen selvitystyöt"
 
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="käyttöönoton ohjaaminen"
-                    
-                  />
-                </ListItem>
+                    />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemIcon>
+                      <CheckCircleOutlineIcon/>
+                    </ListItemIcon>
+                    <ListItemText
+                      primary="Aikaatauluttaminen"
 
-            </List>
-            <Stack sx={{gap:2}}>
-              <Typography>
+                    />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemIcon>
+                      <CheckCircleOutlineIcon/>
+                    </ListItemIcon>
+                    <ListItemText
+                      primary="Suunnittelijoiden ja urakoitsijoiden kilpailuttaminen ja valinta"
+
+                    />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemIcon>
+                      <CheckCircleOutlineIcon/>
+                    </ListItemIcon>
+                    <ListItemText
+                      primary="Suunnittelun ohjaus ja valvonta"
+
+                    />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemIcon>
+                      <CheckCircleOutlineIcon/>
+                    </ListItemIcon>
+                    <ListItemText
+                      primary="Tarjouspyyntöasiakirjojen laadinta"
+
+                    />
+                  </ListItem>
+
+                  <ListItem>
+                    <ListItemIcon>
+                      <CheckCircleOutlineIcon/>
+                    </ListItemIcon>
+                    <ListItemText
+                      primary="Kustaannusvertailu"
+
+                    />
+                  </ListItem>
+
+                  <ListItem>
+                    <ListItemIcon>
+                      <CheckCircleOutlineIcon/>
+                    </ListItemIcon>
+                    <ListItemText
+                      primary="Sopimusen laadinta, valvonta sekä vastaanotto"
+
+                    />
+                  </ListItem>
+
+                  <ListItem>
+                    <ListItemIcon>
+                      <CheckCircleOutlineIcon/>
+                    </ListItemIcon>
+                    <ListItemText
+                      primary="käyttöönoton ohjaaminen"
+
+                    />
+                  </ListItem>
+
+                </List>
+                <Stack sx={{ gap:2 }}>
+                  <Typography>
               Yksi tällainen esimerkki voi olla maalämpöjärjestelmän hankinta. Tarjoamme konsulttipalvelua, jossa ammattilaisemme vetävät hanketta puolestasi. Me tiedämme, että maalämpöprojekti koostuu monista eri osista ja vaatii huolellista suunnittelua ja projektijohtoa. Siksi lähtökohtamme on nykyisen lämmitysjärjestelmäsi kartoitus ja tulevien remonttien huomioiminen, jotta maalämpöjärjestelmäsi toimii tehokkaasti myös tulevaisuudessa. Meidän tavoitteenamme on tehdä maalämpöjärjestelmän hankinta sinulle mahdollisimman vaivattomaksi. Hoidamme puolestasi urakka-asiakirjojen laadinnan ja kilpailutamme toimijat, jotta sinulle saadaan vertailukelpoisia tarjouksia.
-              </Typography>
-              <Typography>
+                  </Typography>
+                  <Typography>
               Meillä on vahva osaaminen LVI-tekniikasta ja maalämpöjärjestelmistä. Olemme avuksesi koko rakennuttamisprosessin ajan, oli kyseessä sitten pieni tai suuri hanke. Rakennuttamisesta meillä on vankka kokemus, niin pienistä alle 30kW kohteista kuin isoista aina 270 kW saakka. Ota askel kohti kestävää ja tehokasta lämmitysratkaisua. Valitsemalla meidät kumppaniksesi saat ammattitaitoisen ja kokonaisvaltaisen palvelun maalämpöjärjestelmän hankkimiseen. Tarjoamme sinulle ratkaisun, joka tuo säästöjä ja mukavuutta elämääsi. Ota yhteyttä ja anna meidän auttaa sinua maalämpöjärjestelmän hankinnassa.
-              </Typography>
-            </Stack>
-          </Box>
-          </Box>
-       
-  
-  </ModalDialog>
-  </ModalOverflow>
+                  </Typography>
+                </Stack>
+              </Box>
+            </Box>
+
+
+          </ModalDialog>
+        </ModalOverflow>
       </Modal>
 
 
 
       <Modal
         open={openKVV}
-      id='KVV/IV modal'
+        id='KVV/IV modal'
         onClose={handleCloseKVV}
-      
-       
+
+
         aria-labelledby="modal-dialog-KVV"
 
         aria-describedby="modal-modal-KVV"
-      
-      > 
-      <ModalOverflow>
-        <ModalDialog
- 
- layout="center"
- size="lg"
- variant="soft"
->
- <ModalClose />
- <Box sx={{maxWidth:900}}>
-          <Typography id="modal-modal-title3" variant="h5" component="h2">
+
+      >
+        <ModalOverflow>
+          <ModalDialog
+
+            layout="center"
+            size="lg"
+            variant="soft"
+          >
+            <ModalClose />
+            <Box sx={{ maxWidth:900 }}>
+              <Typography id="modal-modal-title3" variant="h5" component="h2">
           KVV/IV Työnjohto
-          </Typography>
-          <Box id="modal-dialog-KVV" sx={{ mt: 2 }}>
-            <Typography>
+              </Typography>
+              <Box id="modal-dialog-KVV" sx={{ mt: 2 }}>
+                <Typography>
             KVV- ja IV- vastaava työnjohtaja toimii rakennuttajan edunvalvojana varmistaen, että suunnitelmat ja määräykset toteutetaan työmaalla asianmukaisesti.
-            
-            </Typography>
-            <Typography>
-          
-            KVV- ja IV- vastaava työnjohtajamme pätevyys on erityisvaativa. Toimeksiannoissamme noudatamme konsulttialan yleisiä sopimusehtoja KSE 2013. 
-            </Typography>
-            <Typography>KVV- ja IV- vastaava työnjohtajan tehtävä on:</Typography>
-         
 
-            <List dense={true}>
-            
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Valvoa työvaiheiden sujumista"
-                    
-                  />
-                </ListItem>
-                <ListItem>
-                <ListItemIcon>
-                <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Laadun varmistamista"
-                    
-                  />
-                </ListItem>
-                <ListItem>
-                <ListItemIcon>
-                    <CheckCircleOutlineIcon/>
-                  </ListItemIcon>
-                  <ListItemText
-                    primary="Työn suorittamista oikein"
-                    
-                  />
-                </ListItem>
-                
+                </Typography>
+                <Typography>
 
-            </List>
-            <Stack sx={{gap:2}}>
-              <Typography>
-              KVV- ja IV- vastaava työnjohtaja ottaa vastuun töistä ja pitää huolen siitä, että kaikki vesi-, viemäri- ja ilmanvaihtotyöt toteutetaan turvallisesti, terveellisesti ja viranomaismääräysten mukaisesti. 
-              </Typography>
-              <Typography>
+            KVV- ja IV- vastaava työnjohtajamme pätevyys on erityisvaativa. Toimeksiannoissamme noudatamme konsulttialan yleisiä sopimusehtoja KSE 2013.
+                </Typography>
+                <Typography>KVV- ja IV- vastaava työnjohtajan tehtävä on:</Typography>
+
+
+                <List dense={true}>
+
+                  <ListItem>
+                    <ListItemIcon>
+                      <CheckCircleOutlineIcon/>
+                    </ListItemIcon>
+                    <ListItemText
+                      primary="Valvoa työvaiheiden sujumista"
+
+                    />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemIcon>
+                      <CheckCircleOutlineIcon/>
+                    </ListItemIcon>
+                    <ListItemText
+                      primary="Laadun varmistamista"
+
+                    />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemIcon>
+                      <CheckCircleOutlineIcon/>
+                    </ListItemIcon>
+                    <ListItemText
+                      primary="Työn suorittamista oikein"
+
+                    />
+                  </ListItem>
+
+
+                </List>
+                <Stack sx={{ gap:2 }}>
+                  <Typography>
+              KVV- ja IV- vastaava työnjohtaja ottaa vastuun töistä ja pitää huolen siitä, että kaikki vesi-, viemäri- ja ilmanvaihtotyöt toteutetaan turvallisesti, terveellisesti ja viranomaismääräysten mukaisesti.
+                  </Typography>
+                  <Typography>
               Hankkimalla työnjohtajan palvelut jo projektin alkuvaiheessa varmistat, että työmaasi etenee sujuvasti, suunnitelmat toteutuvat sovitusti ja kaikki viranomaismääräykset ovat täytetty. Työnjohtajamme pystyy tarjoamaan arvokkaita neuvoja ja ohjausta, jotka auttavat sinua tekemään oikeita päätöksiä ja välttämään mahdolliset sudenkuopat, joita rakennusprosessi saattaa sisältää. Se puolestaan auttaa sinua välttämään mahdolliset sudenkuopat ja ylimääräiset kustannukset myöhemmin.
-              </Typography>
-              <Typography>
+                  </Typography>
+                  <Typography>
               Varmista, että sinulla on ammattilainen rinnallasi, joka huolehtii siitä, että kaikki sujuu suunnitelmien mukaisesti ja lopputulos on juuri sellainen kuin odotit. Ota yhteyttä ja säästä itsesi turhilta huolilta ja kustannuksilta.
-              </Typography>
-            </Stack>
-          </Box>
-        
-       
-  </Box>
-  </ModalDialog>
-  </ModalOverflow>
+                  </Typography>
+                </Stack>
+              </Box>
+
+
+            </Box>
+          </ModalDialog>
+        </ModalOverflow>
       </Modal>
 
 
-  </Box>
+    </Box>
   )
 }
 

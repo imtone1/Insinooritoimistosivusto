@@ -1,23 +1,23 @@
-import * as React from 'react';
-import MenuBasic from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import MenuIcon from '@mui/icons-material/Menu';
-import { Box, IconButton } from '@mui/material';
-import {COLORS} from '../values/colors'
-import { Link } from 'react-router-dom';
+import * as React from 'react'
+import MenuBasic from '@mui/material/Menu'
+import MenuItem from '@mui/material/MenuItem'
+import MenuIcon from '@mui/icons-material/Menu'
+import { Box, IconButton } from '@mui/material'
+import { COLORS } from '../values/colors'
+import { Link } from 'react-router-dom'
 
 export default function Menuni() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
+  const [anchorEl, setAnchorEl] = React.useState(null)
+  const open = Boolean(anchorEl)
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+    setAnchorEl(event.currentTarget)
+  }
   const handleClose = () => {
-    setAnchorEl(null);
-  };
+    setAnchorEl(null)
+  }
 
   return (
-    <Box sx={{display:{md:'none', xs:'flex'}, color:COLORS.brown}} role='menubar'>
+    <Box sx={{ display:{ md:'none', xs:'flex' }, color:COLORS.brown }} role='menubar'>
       <IconButton
         id="MenuButton"
         type='button'
@@ -25,12 +25,12 @@ export default function Menuni() {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-       
+
         aria-label="navigation menu"
-        
+
         size="medium"
       >
-       <MenuIcon/>
+        <MenuIcon/>
       </IconButton>
       <MenuBasic
         id="navigaatio menu"
@@ -41,34 +41,34 @@ export default function Menuni() {
           'aria-labelledby': 'Navigation button',
           role:'menu'
         }}
-        
+
       >
-        <div style={{ backgroundColor: COLORS.beige}}>
-        <Link role='menuitem' to={'/palvelut'} onClick={() => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "instant",
-    });
-  }}><MenuItem onClick={handleClose} >Palvelut</MenuItem></Link> 
-        <Link role='menuitem' to={'/yhteystiedot'} onClick={() => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "instant",
-    });
-  }}><MenuItem onClick={handleClose}>Yhteystiedot</MenuItem></Link> 
-        <Link role='menuitem' to={'/meista'} onClick={() => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "instant",
-    });
-  }}> <MenuItem onClick={handleClose}>Meistä</MenuItem></Link>
-        {/* <MenuItem onClick={handleClose}>Ammattilaisille</MenuItem>
+        <div style={{ backgroundColor: COLORS.beige }}>
+          <Link role='menuitem' to={'/palvelut'} onClick={() => {
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: 'instant',
+            })
+          }}><MenuItem onClick={handleClose} >Palvelut</MenuItem></Link>
+          <Link role='menuitem' to={'/yhteystiedot'} onClick={() => {
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: 'instant',
+            })
+          }}><MenuItem onClick={handleClose}>Yhteystiedot</MenuItem></Link>
+          <Link role='menuitem' to={'/meista'} onClick={() => {
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: 'instant',
+            })
+          }}> <MenuItem onClick={handleClose}>Meistä</MenuItem></Link>
+          {/* <MenuItem onClick={handleClose}>Ammattilaisille</MenuItem>
         <MenuItem onClick={handleClose}>Referenssit</MenuItem> */}
         </div>
       </MenuBasic>
     </Box>
-  );
+  )
 }
