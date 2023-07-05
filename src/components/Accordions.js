@@ -26,32 +26,32 @@ export default function Accordions() {
         >
           <Stack direction={{ xs:'column', sm:'row' }} sx={{ alignItems:'center' }}>
             <RecyclingIcon sx={{ justifySelf:'center', alignSelf:'center', fontSize:'190%' }}/>
-            <Typography sx={{  p:2, fontSize:'190%' }}>
+            <Typography sx={{  p:2, fontSize:'180%' , textAlign:{ xs:'center', md: 'left' } }}>
               Vastuullisuus
             </Typography>
-            <Typography sx={{ color: 'text.secondary' }}>Panostamme hiilineutraalisuuteen liiketoiminnassamme suosien uusiutuvaa energiaa ja pyrkien vähentämään energiankulutusta.</Typography>
+            <Typography sx={{ color: 'text.secondary', maxWidth:'345px'  }}>Panostamme hiilineutraalisuuteen liiketoiminnassamme suosien uusiutuvaa energiaa ja pyrkien vähentämään energiankulutusta.</Typography>
           </Stack>
         </AccordionSummary>
         <AccordionDetails >
 
-          <Stack sx={{ gap:5 }}>
-
-            <Typography>
-
-              Suunnittelemme rakennusten LVI-järjestelmiä ja ilmastointia siten, että ne ovat energiatehokkaita ja hyödyntävät uusiutuvia energialähteitä, kuten aurinko- ja maalämpöä.
-            </Typography>
 
 
-            <Typography>
+          <Typography>
 
-              Suunnittelussa otamme huomioon energiatehokkuus pitkällä tähtäimellä rakennuksen elinkaaren mukaisesti. Esitämme asiakkaalle konkreettisia vaihtoehtoja energiatehokkuuden parantamiseksi.
+            Suunnittelemme rakennusten LVI-järjestelmiä ja ilmastointia siten, että ne ovat energiatehokkaita ja hyödyntävät uusiutuvia energialähteitä, kuten aurinko- ja maalämpöä.
+          </Typography>
 
-            </Typography>
 
-            <Typography>
-            Pyrimme myös vähentämään materiaalihukkaa ja edistämään kestävää rakentamista. Suunnitteluvaiheessa otamme huomioon materiaalien ominaisuudet ja pyrimme käyttämään ympäristöystävällisiä, kierrätettäviä ja kestäviä materiaaleja. Suosimme energiatehokkaita ja ympäristöystävällisiä ratkaisuja, kuten veden ja energian säästöön tähtääviä järjestelmiä.
-            </Typography>
-          </Stack>
+          <Typography>
+
+            Suunnittelussa otamme huomioon energiatehokkuus pitkällä tähtäimellä rakennuksen elinkaaren mukaisesti. Esitämme asiakkaalle konkreettisia vaihtoehtoja energiatehokkuuden parantamiseksi.
+
+          </Typography>
+
+          <Typography>
+          Pyrimme myös vähentämään materiaalihukkaa ja edistämään kestävää rakentamista. Suunnitteluvaiheessa otamme huomioon materiaalien ominaisuudet ja pyrimme käyttämään ympäristöystävällisiä, kierrätettäviä ja kestäviä materiaaleja. Suosimme energiatehokkaita ja ympäristöystävällisiä ratkaisuja, kuten veden ja energian säästöön tähtääviä järjestelmiä.
+          </Typography>
+
         </AccordionDetails>
       </Accordion>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}  sx={{ backgroundColor:COLORS.grey  }}>
@@ -63,14 +63,17 @@ export default function Accordions() {
         >
           <Stack direction={{ xs:'column', sm:'row' }} sx={{ alignItems:'center' }}>
             <HealthAndSafetyIcon sx={{ justifySelf:'center', alignSelf:'center', fontSize:'190%' }}/>
-            <Typography sx={{   p:2 , fontSize:'190%' }}>Terveys</Typography>
-            <Typography sx={{ color: 'text.secondary' }}>
-          Meille on tärkeää myös rakennusten käyttäjien hyvinvointi ja terveys.
+            <Typography sx={{   p:2 , fontSize:'180%', width:'210px' , textAlign:{ xs:'center', md: 'left' } }}>Terveys</Typography>
+            <Typography sx={{ color: 'text.secondary', maxWidth:'345px' }}>
+          Meille on tärkeää niin rakennusten kuin käyttäjien hyvinvointi ja terveys.
             </Typography></Stack>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-          Suunnittelemme ilmanvaihtojärjestelmiä ja sisäilmaratkaisuja, jotka takaavat hyvän ilmanlaadun ja viihtyisän sisäympäristön. Pyrimme minimoimaan haitallisten aineiden päästöt rakennuksista ja luomaan terveellisen ja turvallisen asuinympäristön.
+          Suunnittelemme ilmanvaihtojärjestelmiä ja sisäilmaratkaisuja, jotka takaavat hyvän ilmanlaadun ja viihtyisän sisäympäristön.
+          </Typography>
+          <Typography>
+          Pyrimme minimoimaan haitallisten aineiden päästöt rakennuksista ja luomaan terveellisen ja turvallisen asuinympäristön.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -82,19 +85,24 @@ export default function Accordions() {
         >
           <Stack direction={{ xs:'column', sm:'row' }} sx={{ alignItems:'center' }}>
             <VolunteerActivismIcon sx={{ justifySelf:'center', alignSelf:'center',  fontSize:'190%' }}/>
-            <Typography sx={{  flexShrink: 0 , p:2, fontSize:'190%' }}>
+            <Typography sx={{  flexShrink: 0 , p:2, fontSize:'180%', textAlign:{ xs:'center', md: 'left' } }}>
           Välittäminen
             </Typography>
-            <Typography sx={{ color: 'text.secondary' }}>
+            <Typography sx={{ color: 'text.secondary' , maxWidth:'345px' }}>
           Liiketoimistamme lahjoitamme osan lasten ja nuorten sekä kehitysvammaisten hyväksi.
             </Typography></Stack>
         </AccordionSummary>
         <AccordionDetails>
           <Typography >
-          Kaikilla meillä ei ole samoja mahdollisuuksia liikkua ja elää vapaasti. Haluamme tukea heikompia elämässä eteenpäin ja siksi liiketoiminnastamme lahjoitamme osan lasten, nuorten sekä kehitysvammaisten hyväksi.
-Näitä ovat esim. Aivovammaliitto, CP-liitto, Kummit Ry, Sydänlapset ja -aikuiset ry, Sylva Ry sekä muut.
-Osallistumme myös hyväntekeväisyystapahtumiin mahdollisuuksiemme mukaan.
+          Kaikilla meillä ei ole samoja mahdollisuuksia liikkua ja elää vapaasti.
 
+          </Typography>
+          <Typography>
+          Haluamme tukea heikompia elämässä eteenpäin ja siksi liiketoiminnastamme lahjoitamme osan lasten, nuorten sekä kehitysvammaisten hyväksi.
+          </Typography>
+          <Typography>
+          Näitä ovat esim. Aivovammaliitto, CP-liitto, Kummit Ry, Sydänlapset ja -aikuiset ry, Sylva Ry sekä muut.
+Osallistumme myös hyväntekeväisyystapahtumiin mahdollisuuksiemme mukaan.
           </Typography>
         </AccordionDetails>
       </Accordion>

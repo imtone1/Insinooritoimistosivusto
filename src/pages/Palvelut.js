@@ -14,6 +14,7 @@ import RoofingIcon from '@mui/icons-material/Roofing'
 
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'
 import Otayhteyttanappulassa from '../components/Otayhteyttanappulassa'
+import Sivuotsikko from '../otsikot/Sivuotsikko'
 
 
 const Palvelut = () => {
@@ -30,28 +31,15 @@ const Palvelut = () => {
   return (
     <Box  sx={{ backgroundColor:COLORS.grey  }}>
       <SEO title={'SapAir Oy - Palvelut'} description={'Tarjoamme laajat LVIA-palvelut. Katso palvelumme ja ota yhteyttä.'}/>
-      <section className="layers" ><div className="layers__item layer-1" style={{ backgroundImage: `url(${coffee})`, transform: 'translateZ(95px) scale(0.90)' }}></div>
-        <div className="layers__container" style={{ height:'30vh', minHeight:200 }} >
 
+      <Sivuotsikko otsikko={'Palvelut'} alaotsikko={'Tarjoamme laajat LVIA-palvelut'} alaotsikko2={'Ota yhteyttä ja kysy lisää'}/>
 
-          <div className="layers__item layer-3" style={{ transform: 'translateZ(180px) scale(.8)' }}>
-            <div className="otsikko2-content">
-              <h1>Palvelut</h1>
-              <div className="otsikko2-content__p">Palvelemme asiakkaita niin tavanomaisissa, kuin vaativissakin projekteissa. </div>
-
-
-            </div>
-          </div>
-
-
-        </div>
-      </section>
 
       <Stack direction={'column'} sx={{ alignItems:'center' }}>
 
         <List dense={true}>
 
-          <ListItem onClick={() => setopen(true)} role='button' sx={{ cursor:'pointer' }}>
+          <ListItem onClick={() => setopen(true)} sx={{ cursor:'pointer' }}>
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>
@@ -64,7 +52,7 @@ const Palvelut = () => {
             </ListItemIcon>
           </ListItem>
 
-          <ListItem  onClick={handleOpenKVV} role='button' sx={{ cursor:'pointer' }}>
+          <ListItem  onClick={handleOpenKVV}  sx={{ cursor:'pointer' }}>
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>
@@ -78,7 +66,7 @@ const Palvelut = () => {
 
           </ListItem>
 
-          <ListItem onClick={handleOpenProjekti} role='button' sx={{ cursor:'pointer' }}>
+          <ListItem onClick={handleOpenProjekti} sx={{ cursor:'pointer' }}>
             <ListItemIcon>
               <RoofingIcon />
             </ListItemIcon>

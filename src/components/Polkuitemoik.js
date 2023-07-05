@@ -11,7 +11,7 @@ const Polkuitemoik = ({ kuva, numero,otsikko1, otsikko2, teksti }) => {
 
       <Stack direction={{ xs:'column-reverse', md:'row' }}>
         <Box sx={{ pt:{ xs:2 }, paddingRight:{ xs:0,md:2 } }}>
-          <img src={kuva} alt="meeting" width={150} height={150}/>
+          <img src={kuva} alt="meeting" width={150} height={150} loading='lazy'/>
         </Box>
         <Stack direction={'column'} >
           <Typography variant="h3" sx={{ fontWeight:'800' , fontSize:'400%' , padding:3 }}>

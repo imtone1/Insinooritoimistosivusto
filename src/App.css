@@ -4,11 +4,16 @@
   box-sizing: border-box;
   font-family: kamerik-3d, sans-serif;
 /* scroll-behavior: smooth; */
-  color:#22171D;
+  color:#0D0D0D;
 }
 :root {
 	--index: calc(1vw + 1vh);
 	--transition: 1.5s cubic-bezier(.05, .5, 0, 1);
+	--liila:'#DCE2F2';
+  	--ruskea: '#A6785D';
+  	--vaalea:'#F2F2F2';
+  	--harmaa: '#BFBFBF';
+  	--musta:'#0D0D0D';
 }
 
 .konstakuva{
@@ -22,7 +27,7 @@
 	width: 1px;	
 	display:block;
 	padding: 1em;
-	background-color: black;
+	background-color: #0D0D0D;
 	color: white;
 	opacity: 0;
   }
@@ -48,13 +53,13 @@
 
 }
 .layers__container {
-	height: 70vh;
-	min-height: 500px;
+	
 	transform-style: preserve-3d;
 	transform: rotateX(var(--move-y)) rotateY(var(--move-x));
 	will-change: transform;
 	transition: transform var(--transition);
 }
+
 .layers__item {
 	position: absolute;
 	inset: -5vw;
@@ -131,7 +136,7 @@ transform: translateX(-50%);
 	left: 0;
 	width: 24px;
 	height: 100%;
-	background: linear-gradient(#fff, #fff, #e3e3e3);
+	background: linear-gradient(#fff, #fff, #F2F2F2);
 	filter: blur(1px);
 	z-index: 1;
 }
@@ -223,7 +228,7 @@ transform: translateX(-50%);
 
 .sisalto .tekstiboxi h3{
 	font-size: calc(var(--index) * 1.8);
-	color: #0D0D0D;
+	color: var(--musta);
 	margin-bottom: 20px;
 	font-family: kamerik-3d, Courier, monospace;
 	padding:10px
@@ -288,8 +293,8 @@ transform: translateX(-50%);
 	font-size: calc(var(--index) * .9);
 	letter-spacing: -.02vw;
 	padding: 0 14px;
-	background-color: #C8D9A3;
-	color: 'black';
+	background-color: #DCE2F2;
+	color: var(--musta);
 	border-radius: 1em;
 	/* border: rgb(255 255 255 / .4) 3px solid; */
 	outline: none;
@@ -324,10 +329,12 @@ transform: translateX(-50%);
 	height: 70vh;
 	min-height: 500px;
 	transform-style: preserve-3d;
-	transform: rotateX(var(--move-y)) rotateY(var(--move-x));
-	will-change: transform;
-	transition: transform var(--transition);
+	transform: translateX(-50%);
+  opacity: 0;
+  transition: all 1s ease;
+	animation: move-center 1s ease-in-out forwards;
 }
+
 
  .otsikko2-content {
 	font-size: calc(var(--index) * 2.0);
@@ -355,7 +362,7 @@ transform: translateX(-50%);
 	font-size: calc(var(--index) * 2.70);
   text-transform: uppercase;
   
-  color:'black';
+  color: var(--musta);
   padding:10
 }
 
@@ -415,8 +422,8 @@ transform: translateX(-50%);
 	content: '';
 	position: absolute;
 	inset: -5px 50px;
-	border-top: 4px solid black;
-	border-bottom: 4px solid black;
+	border-top: 4px solid #0D0D0D;
+	border-bottom: 4px solid #0D0D0D;
 	transform:skewY(15deg);
 	transition: 0.8s ease-in-out;
 	border-radius: 4px;
@@ -448,9 +455,9 @@ transform: translateX(-50%);
 	/* color: 'red'; */
 	padding:10px;
 	width: 100px;
-	background: #F2F2F2;
+	background: #e5eaee;
 	transition:0.9s ease-in-out;
-	box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px #C8D9A3;
+	box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 6px #DCE2F2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -461,7 +468,7 @@ border-radius: 1px;
 
 
 .palvelutcontainer .palvelutbox:hover .palvelutcontent .palveluticon{
-	box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 500px #C8D9A3;
+	box-shadow: 0 0 0 4px #2e2e2e, 0 0 0 500px #DCE2F2;
 	
 }
 

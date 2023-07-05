@@ -49,11 +49,11 @@ const Otayhteyttanappulassa = () => {
             <div className='tekstiboxi'>
               <Typography variant='h3' id='otayhteytta' sx={{ textShadow: '1px 1px rgb(99, 99, 99)', textTransform:'uppercase', fontWeight:'600' , fontSize:'200%', pb:'20px' }}>Ota yhteyttä</Typography>
               <Typography p={{ md:3, xs:2 }} >
-          Voit ottaa yhteyttä sinulle sopivammalla tavalla. Vastaamme päivästä riippumatta.
+          Voit ottaa yhteyttä sinulle sopivimmalla tavalla. Vastaamme viikkopäivästä riippumatta.
               </Typography>
               <Stack direction={{ xs:'column', md:'row' }} sx={{ gap:5 }} justifyContent="center" alignItems={'center'}>
                 <ThemeProvider theme={customTheme}>
-                  <StyledButton>
+                  <StyledButton aria-label='SapAir Oy puhelinnumero'>
                     <a href="tel:0406772400" style={{ textDecoration:'none' }}><Stack direction={'column'} gap={2} justifyContent="center" alignItems={'center'} sx={{
                       backgroundColor:{ xs:'#ececee', md:'transparent' }, padding:1,  boxShadow:`5px 5px 5px rgba(0,0,0,0.1), 15px 15px 15px rgba(0,0,0,0.1),
    20px 10px 20px rgba(0,0,0,0.1),
@@ -69,7 +69,7 @@ const Otayhteyttanappulassa = () => {
                 </ThemeProvider>
 
                 <ThemeProvider theme={customTheme}>
-                  <StyledButton>
+                  <StyledButton aria-label='SapAir Oy sähköposti'>
                     <a href="mailto:info@sapair.fi" style={{ textDecoration:'none' }}>  <Stack direction={'column'} gap={2} justifyContent="center" alignItems={'center'} sx={{
                       backgroundColor:{ xs:'#ececee', md:'transparent' }, padding:1, boxShadow:`5px 5px 5px rgba(0,0,0,0.1), 15px 15px 15px rgba(0,0,0,0.1),
    20px 10px 20px rgba(0,0,0,0.1),
@@ -83,7 +83,7 @@ const Otayhteyttanappulassa = () => {
                   </StyledButton>
                 </ThemeProvider>
                 <ThemeProvider theme={customTheme}>
-                  <StyledButton>
+                  <StyledButton aria-label='SapAir Oy whatsapp-numero'>
                     <a href="tel:0440190987" style={{ textDecoration:'none' }}> <Stack direction={'column'} gap={2} justifyContent="center" alignItems={'center'} sx={{
                       backgroundColor:{ xs:'#ececee', md:'transparent' }, boxShadow:`5px 5px 5px rgba(0,0,0,0.1), 15px 15px 15px rgba(0,0,0,0.1),
    20px 10px 20px rgba(0,0,0,0.1),

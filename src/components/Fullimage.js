@@ -13,7 +13,7 @@ const Fullimage = ({ imagePath, alt, classn , width, height }) => {
   }
   return (
     <>
-      <img className={classn} src={imagePath} alt={alt} width={width} height={height} onClick={openFullscreen} />
+      <img className={classn} src={imagePath} alt={alt} width={width} height={height} onClick={openFullscreen} loading='lazy' />
 
       {isOpen && (
         <div className="fullscreen-overlay" onClick={closeFullscreen}>

@@ -123,7 +123,7 @@ const Referenssimaara = () => {
               aria-describedby="Tehtyjä projekteja"
             />
             <p id='Tehtyjä projekteja'>
-          Tehtyjä projekteja
+          Projektien määrä
             </p>
 
           </div>

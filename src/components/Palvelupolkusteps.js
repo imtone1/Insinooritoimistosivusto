@@ -30,25 +30,25 @@ export default function Palvelupolkusteps() {
   }
 
   const ColorButton = styled(Button)(({ theme }) => ({
-    color: theme.palette.getContrastText(lightGreen[300]),
-    backgroundColor: lightGreen[300],
+    color: theme.palette.getContrastText('#BFBFBF'),
+    backgroundColor: '#BFBFBF',
     '&:hover': {
-      backgroundColor: lightGreen[500],
+      backgroundColor: '#e5eaee',
     },
   }))
 
   const ColorButtonBack = styled(Button)(({ theme }) => ({
-    color: theme.palette.getContrastText(lightGreen[500]),
+    color: theme.palette.getContrastText('#D9D9D9'),
 
     '&:hover': {
-      backgroundColor: lightGreen[50],
+      backgroundColor: '#D9D9D9',
     },
   }))
 
   return (
     <Box className="boxit" sx={{ backgroundColor:COLORS.grey }}  >
       <Box sx={{ maxWidth: 800 , margin:'auto' }}>
-        <Paaotsikko otsikko={'Palvelupolku'} teksti={'Palvelupolkumme on suunniteltu niin, että asiakkaan tavoite pysyy aina kaikille kirkkaana mielessä.'}/>
+        <Paaotsikko otsikko={'Palvelupolku'} teksti={'Palvelupolkumme on suunniteltu niin, että asiakkaan tavoite seuraa punaisena lankana vaiheelta toiseeen.'}/>
         <Stepper activeStep={activeStep} orientation="vertical" completed={true.toString()} sx={{ paddingLeft:2 }}>
 
           <Step>
@@ -111,7 +111,7 @@ export default function Palvelupolkusteps() {
                   Totetutussuunnitelma
             </StepLabel>
             <StepContent>
-              <Polkuitem kuva={geardoc} numero={'3.'} otsikko1={'Toteutus'}  otsikko2={'suunnitelma'} teksti={'Kun rakennusvalvonta on laittanut leimat suunnitelmiin, voidaan aloittaa työt. On muistettava, että ennen töiden aloitusta, kun kyseessä on rakennuslupa, LVI-töille on oltava KVV/IV-työnjohtaja. Tarjoamme tämänkin palvelun.'}/>
+              <Polkuitem kuva={geardoc} numero={'3.'} otsikko1={'Toteutus'}  otsikko2={'suunnitelma'} teksti={'Kun rakennusvalvonta on laittanut leimat suunnitelmiin, voidaan aloittaa työt. On muistettava, että ennen töiden aloitusta, kun kyseessä on rakennuslupa, LVI-töille on nimettävä KVV-/IV-työnjohtaja. Tarjoamme tämänkin palvelun.'}/>
               <Box sx={{ mb: 2 }}>
                 <div>
                   <ColorButton
@@ -166,7 +166,7 @@ export default function Palvelupolkusteps() {
                   Työ etenee
             </StepLabel>
             <StepContent>
-              <Polkuitem kuva={gearapp} numero={'5.'} otsikko1={'Työ etenee'} otsikko2={''} teksti={'Työn sujuvoimisesta raportoidaan asiakkaan toiveen mukaisesti sähköpostitse ja/tai ohjelmiston kautta. Ohjelmiston hyvänä puolena on, että kaikki dokumentaatio säilyy yhdessä paikassa eikä ole huolta, että jokin tärkeä dokumentti häviää sähköpostitulvaan.  '}/>
+              <Polkuitem kuva={gearapp} numero={'5.'} otsikko1={'Työ etenee'} otsikko2={''} teksti={'Työn sujumisesta raportoidaan asiakkaan toiveen mukaisesti sähköpostitse ja/tai ohjelmiston kautta. Ohjelmiston hyvänä puolena on, että kaikki dokumentaatio säilyy pilvipohjaisessa ohjelmistossa eikä ole huolta, että jokin tärkeä dokumentti häviää sähköpostitulvaan.'}/>
               <Box sx={{ mb: 2 }}>
                 <div>
                   <ColorButton
@@ -202,7 +202,7 @@ export default function Palvelupolkusteps() {
         Työ valmis
                 </Typography>
                 <Typography>
-        Suunnitelmat toimitetaan 2D/3D suunnitelmina modernilla mallinnussuunnitelluohjelmalla tehtynä. 3D:n etuna on tarkempi suunnitelma, jossa esimerkiksi törmäilyt on helpompi minimoida ja materiaalilaskenta on tarkka. Kun suunnitelmat on tehty 3D:na asennukset on helppo tehdä jopa rakentajan itse, josta tulee säästöjä.
+        Suunnitelmat toimitetaan 2D/3D suunnitelmina modernilla mallinnussuunnitelluohjelmalla tehtynä. 3D:n etuna on tarkempi suunnitelma, jossa esimerkiksi &quot;törmäilyt&quot; on helpompi minimoida ja materiaalilaskenta on tarkka. Kun suunnitelmat on tehty 3D:na asennukset on helppo tehdä jopa rakentajan itse, mikä tuo säästöjä.
                 </Typography>
               </Stack>
 

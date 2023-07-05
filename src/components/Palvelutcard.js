@@ -78,7 +78,7 @@ const Palvelutcard = () => {
                 {/* <div className='palveluticon'><GradeIcon /></div> */}
                 <div className='palveluttext'>
                   <Typography variant='h4' sx={{ fontWeight:600, marginBottom:2, height:120 }}>LVIA-suunnittelu</Typography>
-                  <Typography variant='body1' sx={{ textAlign:'left', height:200, paddingLeft:2 }}>Meidän insinööritoimistossamme panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi energiankulutuksen, parantaa sisäilman laatua ja takaa kustannustehokkaan toiminnan.</Typography>
+                  <Typography variant='body1' sx={{ textAlign:'left', height:200, paddingLeft:2 }}>Panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi kohteen energiankulutuksen, parantaa sen sisäilman laatua ja takaa kustannustehokkaan toiminnan.</Typography>
                   <button onClick={() => setopen(true)}  onKeyUp={() => setopen(true)} tabIndex='0'
                     className='palveluticon' type='button'>Lue lisää</button>
                 </div>
@@ -93,7 +93,7 @@ const Palvelutcard = () => {
                         Projektijohto- ja valvontatehtävät</Typography>
                   <Typography variant='body1' sx={{  textAlign:'left', height:200 , paddingLeft:2 }}>
 
-                        Tarjoamme projektinjohto- ja rakennuttamistehtäviä, jotka toteutamme hankkeen tarpeiden mukaisesti. Meidän tavoitteenamme on tehdä rakennuttamishanke sinulle mahdollisimman vaivattomaksi vahvalla ammattitaidollamme.</Typography>
+                        Otamme vastaan projektinjohto- ja rakennuttamistehtäviä, jotka toteutamme hankkeen tarpeiden mukaisesti. Meidän tavoitteenamme on tehdä rakennuttamishanke sinulle mahdollisimman vaivattomaksi vahvalla ammattitaidollamme.</Typography>
                   <button className='palveluticon' onClick={handleOpenProjekti} onKeyUp={handleOpenProjekti}  type='button' tabIndex='0'>Lue lisää</button>
                 </div></div></div></div>
           <div className='palvelutcontainer'>
@@ -104,7 +104,7 @@ const Palvelutcard = () => {
                   <Typography variant='h4' sx={{ fontWeight:600, marginBottom:2 , height:120 }}>
                             KVV-/IV-työnjohtajan palvelut</Typography>
                   <Typography variant='body1' sx={{ textAlign:'left', height:200 , paddingLeft:2 }}>
-                            Tilaamalla meidän KVV/IV työnjohtajan palvelut saat ammattilaiset rinnallasi, joka huolehtii siitä, että kaikki sujuu suunnitelmien mukaisesti ja lopputulos on juuri sellainen kuin odotit. Ota yhteyttä ja säästä itsesi turhilta huolilta ja kustannuksilta.</Typography>
+                            Tilaamalla meiltä KVV-/IVtyönjohtajan palvelut saat ammattilaiset rinnallasi, jotka huolehtivat siitä, että kaikki sujuu suunnitelmien mukaisesti ja lopputulos on juuri sellainen kuin odotit. Ota yhteyttä ja säästä itsesi turhilta huolilta ja kustannuksilta.</Typography>
                   <button className='palveluticon' onClick={handleOpenKVV} onKeyUp={handleOpenKVV} type='button' tabIndex='0'>Lue lisää</button>
                 </div></div></div></div></Stack>
 
@@ -114,7 +114,7 @@ const Palvelutcard = () => {
 
             <Box sx={{  width:'180px', alignItems:'center', display:'block', margin:'auto', marginTop:2 }}>
 
-              <Box sx={{ boxShadow:'0 0 0 4px #2e2e2e, 0 0 0 6px #C8D9A3', borderRadius:1,  width:'180px', backgroundColor:COLORS.grey,  margin:'auto' }}>
+              <Box sx={{ boxShadow:'0 0 0 4px #0D0D0D, 0 0 0 6px #DCE2F2', borderRadius:1,  width:'180px', backgroundColor:COLORS.grey,  margin:'auto' }}>
 
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon/>}
@@ -261,7 +261,7 @@ const Palvelutcard = () => {
                         <Typography sx={{ fontWeight:700, boxShadow:`5px 5px 5px rgba(0,0,0,0.1), 15px 15px 15px rgba(0,0,0,0.1),
    20px 10px 20px rgba(0,0,0,0.1),
    50px 50px 80px rgba(0,0,0,0.25),
-   inset 3px 3px 2px #fff`, padding:2, paddingRight:5, borderRadius:4, backgroundColor: COLORS.vihrea }}>Palveluihin</Typography>
+   inset 3px 3px 2px #fff`, padding:2, paddingRight:5, borderRadius:4, backgroundColor: COLORS.liila }}>Palveluihin</Typography>
                         <ArrowForwardIosIcon style={{ transform:'translateX(-38px) translateY(17px)' }} /><ArrowForwardIosIcon style={{ transform:'translateX(-55px) translateY(17px)' }}/>
                       </Stack>
                     </Link>

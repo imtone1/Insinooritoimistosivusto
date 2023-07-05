@@ -36,18 +36,6 @@ const StyledButton = styled(Box)`
   `}
 `
 
-const Styledheader = styled(Box)`
-  ${({ theme }) => `
-
- 
-  transition: ${theme.transitions.create(['background-color', 'transform'], {
-    duration: theme.transitions.duration.standard,
-  })}
- 
-  `}
-`
-
-
 const Header = () => {
   document.addEventListener('mousemove', e => {
     Object.assign(document.documentElement, {
@@ -59,18 +47,16 @@ const Header = () => {
   })
   return (
 
-    <section role='banner' aria-label='header' className="layers" style={{ backgroundColor:COLORS.grey }}><div className="layers__item" role='img' aria-labelledby='LVI-suunnittelu' style={{ backgroundImage: `url(${talo})` }}></div>
+    <section aria-label='header' className="layers" style={{ backgroundColor:COLORS.grey }}><div role='img' className="layers__item" aria-label='LVIA-suunnittelu' style={{ backgroundImage: `url(${talo})` }}></div>
       <div className="layers__container" style={{ height:'50vh', minHeight:'70vh' }}>
 
 
         <div className="layers__item layer-2">
           <div className="hero-content" >
-            <ThemeProvider theme={customTheme}>
-              <Styledheader>
-                <h1 className='paddingi' id='LVI-suunnittelu'>LVI - SUUNNITTELU</h1>
-              </Styledheader>
-            </ThemeProvider>
-            <h2 className="hero-content__p paddingi">Selkeä valinta, kun etsit LVIA-ammattilaista</h2>
+
+            <h1 className='paddingi'>LVIA - SUUNNITTELU</h1>
+
+            <h2 className="hero-content__p paddingi">Ammattilaitoisesti, selkeästi ja kustannustehokkaasti</h2>
             <ThemeProvider theme={customTheme}>
               <StyledButton>
                 <Link to={'/yhteystiedot'} style={{ textDecoration:'none' }} onClick={() => {

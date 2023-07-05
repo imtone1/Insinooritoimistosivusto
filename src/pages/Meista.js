@@ -7,12 +7,12 @@ import Konsta from '../kuvat/Konsta-Sappinen.png'
 import Accordions from '../components/Accordions'
 import Koulutusaccordion from '../components/Koulutusaccordion'
 
-import coffee from '../images/coffee.png'
 import DataTable from '../components/Datatable'
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
 import MailIcon from '@mui/icons-material/Mail'
+import Sivuotsikko from '../otsikot/Sivuotsikko'
 
 
 
@@ -20,22 +20,8 @@ const Meista = () => {
   return (
     <Box sx={{ backgroundColor:COLORS.grey, overflow:'hidden' }}>
       <SEO title={'SapAir Oy - Meistä'} description={'SapAir Oy:n esittelysivu. Katso tärkeimmät referenssimme ja arvomme.'}/>
-      <section className="layers" >  <div className="layers__item" style={{ backgroundImage: `url(${coffee})`, transform: 'translateZ(95px) scale(0.90)' }}></div>
-        <Box className="layers__container" sx={{ height:'20vh', minHeight:200 }} >
 
-
-          <div className="layers__item layer-3" style={{ transform: 'translateZ(180px) scale(.8)' }}>
-            <div className="otsikko2-content">
-              <h2>SapAir Oy</h2>
-              <h3 className="otsikko2-content__p">Asiantunteva LVIA-suunnittelija palveluksessasi</h3>
-
-
-            </div>
-          </div>
-
-
-        </Box>
-      </section>
+      <Sivuotsikko otsikko={'SapAir Oy'} alaotsikko={'Selkeä valinta, kun etsit LVIA-ammattilaista'}/>
 
       <Stack direction={'column'} sx={{ gap:2, justifyContent:'center', alignItems:'center', width:'70%', margin:'auto' }}>
         <Stack sx={{ paddingTop:5, gap:3, paddingBottom:5 }}>
@@ -70,32 +56,32 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
             <div className='shadow'></div>
             <div className='sisalto' >
               <div className='tekstiboxi'>
-                <Stack direction={'row'} sx={{ justifyContent:'center', alignItems:'center',p:{ xs:2 } }}>
-                  <Typography variant='h3' >
+                <Stack direction={'row'} sx={{ justifyContent:'center', alignItems:'center', p:{ xs:2 } }}>
+                  <Typography variant='h3' sx={{ textAlign:{ xl: 'center' } }}>
     Konsta Sappinen
                   </Typography>
-                  <LinkedInIcon fontSize='large' onClick={event =>  window.location.href='https://www.linkedin.com/in/konsta-sappinen-364ba575/'} aria-label="Linkki Konsta Sappisen Linkedin-sivulle"/>
+                  <LinkedInIcon fontSize='large' onClick={() =>  window.location.href='https://www.linkedin.com/in/konsta-sappinen-364ba575/'} aria-label="Linkki Konsta Sappisen Linkedin-sivulle"/>
                 </Stack>
                 <Typography variant='h5' sx={{ textAlign:'center' }}>
         Vastaava LVIA-suunnittelija, Toimitusjohtaja
                 </Typography>
                 <Stack direction={{ xs:'column',md:'row' }} gap={2}>
-                  <a href="tel:0440190987">  <Stack direction={'row'} gap={1}>
-                    <PhoneInTalkIcon/>
+                  <a href="tel:0440190987" >  <Stack direction={'row'} >
+                    <PhoneInTalkIcon sx={{ justifySelf:'center', alignSelf:'center' }}/>
                     <Typography >
               044 019 09 87
                     </Typography>
                   </Stack></a>
-                  <a href="mailto:info@sapair.fi">  <Stack direction={'row'} gap={1}  >
-                    <MailIcon/>
+                  <a href="mailto:info@sapair.fi">  <Stack direction={'row'} >
+                    <MailIcon sx={{ justifySelf:'center', alignSelf:'center' }}/>
                     <Typography >
               konsta.sappinen@sapair.fi
                     </Typography>
                   </Stack></a>
 
                 </Stack>
-                <Box sx={{ maxwidth:400 }} className='konstakuva'>
-                  <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} height={'auto'}/>
+                <Box sx={{ maxWidth:200 }} className='konstakuva'>
+                  <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} height={'auto'} loading='lazy'/>
                 </Box><Koulutusaccordion/>
               </div>
             </div>
@@ -120,7 +106,7 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
     Suunnittelijan referenssit
                   </Typography>
                   <Typography sx={{ justifySelf:'center', alignSelf:'center' }}>
-      Puhutkoon työnjälki puolestaan. Tutustu alla oleviin suunnittelijan referensseihin ja vakuutu laadusta.
+      Puhutkoon työnjälki puolestaan. Tutustu alla oleviin suunnittelijan referensseihin.
                   </Typography>
                 </Stack>
 

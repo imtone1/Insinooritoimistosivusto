@@ -10,33 +10,21 @@ import MailIcon from '@mui/icons-material/Mail'
 import ReceiptIcon from '@mui/icons-material/Receipt'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import coffee from '../images/coffee.png'
+import Sivuotsikko from '../otsikot/Sivuotsikko'
 
 const Yhteystiedot = () => {
   return (
     <Box  sx={{ backgroundColor:COLORS.grey }}>
       <SEO title={'SapAir Oy - Yhteystiedot'} description={'SapAir Oy:n yhteystiedot. Säästä itseäsi turhilta huolilta ja kustannuksilta, ota yhteyttä jo tänään.'}/>
 
-      <section className="layers" ><div className="layers__item layer-1" style={{ backgroundImage: `url(${coffee})`, transform: 'translateZ(95px) scale(0.90)' }}></div>
-        <div className="layers__container" style={{ height:'30vh', minHeight:200 }} >
+
+      <Sivuotsikko otsikko={'Yhteystiedot'} alaotsikko={'Voit ottaa yhteyttä sinulle sopivammalla tavalla'} alaotsikko2={'Vastaamme päivästä riippumatta'}/>
 
 
-          <div className="layers__item layer-3" style={{ transform: 'translateZ(180px) scale(.8)' }}>
-            <div className="otsikko2-content">
-              <h1>Yhteystiedot</h1>
-              <div className="otsikko2-content__p">Voit ottaa yhteyttä sinulle sopivammalla tavalla. </div>
-              <div className="otsikko2-content__p">Vastaamme päivästä riippumatta.</div>
-
-            </div>
-          </div>
-
-
-        </div>
-      </section>
-
-      <Stack direction={{ xs:'column-reverse', sm:'row' }} justifyContent={'center'} alignItems={'center'}>
-        <Stack direction={'column'} gap={3} p={2}>
+      <Stack role='article' direction={{ xs:'column-reverse', sm:'row' }} justifyContent={'center'} alignItems={'center'}>
+        <Stack direction={'column'} sx={{ gap:3, p:2 }}>
           <Stack direction={'row'} alignItems='center'>
-            <Typography variant='h3'>
+            <Typography variant='body1' sx={{ fontSize:'190%' }}>
           Konsta Sappinen
             </Typography>
             <LinkedInIcon fontSize='large'aria-describedby="new-window-Linkedin" onClick={() =>
@@ -66,10 +54,10 @@ const Yhteystiedot = () => {
           </Stack>
 
         </Stack>
-        <Box  className='konstakuva'>
-          <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} height={'auto'}/>
+        <Box  className='konstakuva' sx={{ maxWidth:200, alignSelf:'center', justifySelf:'center' , marginX:{ lg: 5 } }}>
+          <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} height={'auto'} loading='lazy'/>
         </Box>
-        <Stack direction={'column'} gap={3} p={2}>
+        <Stack direction={'column'} sx={{ gap:3, p:2 }}>
           <Typography variant='body1' sx={{ fontSize:'190%' }}>
           Toimisto
           </Typography>
@@ -102,7 +90,7 @@ const Yhteystiedot = () => {
             <Typography >
               Operaattoritunnus: 003723327487
             </Typography>
-            <Typography sx={{ width:200, pt:5 }} >
+            <Typography sx={{ maxWidth:300, pt:5 }} >
               Emme vastaanota paperilaskuja. Mikäli verkkolaskun toimitus ei ole mahdollista, voi laskun toimittaa sovitusti myös sähköisesti osoitteeseen info@sapair.fi
             </Typography>
           </Stack>

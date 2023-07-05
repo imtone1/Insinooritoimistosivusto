@@ -17,7 +17,7 @@ export default function Menuni() {
   }
 
   return (
-    <Box sx={{ display:{ md:'none', xs:'flex' }, color:COLORS.brown }} role='menubar'>
+    <Box sx={{ display:{ md:'none', xs:'flex' }, color:COLORS.brown }}>
       <IconButton
         id="MenuButton"
         type='button'

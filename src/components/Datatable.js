@@ -71,8 +71,8 @@ const projectsWithId = PROJECTS.map((project, index) => {
 //   );
 // }
 const columns1 = [
-  { field: 'Kiinteiston_nimi',  headerClassName: 'super-app-theme--header',headerName: 'Kiinteiston_nimi', width: 200,  filterable: false },
-  { field: 'Tehtava',  headerClassName: 'super-app-theme--header',headerName: 'Tehtava', width: 250 },
+  { field: 'Kiinteiston_nimi',  headerClassName: 'super-app-theme--header',headerName: 'Kiinteistö', width: 200,  filterable: false },
+  { field: 'Tehtava',  headerClassName: 'super-app-theme--header',headerName: 'Tehtävä', width: 250 },
   { field: 'Vaativuusluokka', headerClassName: 'super-app-theme--header', headerName: 'Vaativuusluokka', width: 150 },
   { field: 'Rakennustyyppi', headerClassName: 'super-app-theme--header', headerName: 'Rakennustyyppi', width: 150 },
   { field: 'Laajuus', headerClassName: 'super-app-theme--header', headerName: 'Laajuus', type: 'number', width: 120 ,  filterable: false },
