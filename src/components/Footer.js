@@ -35,7 +35,7 @@ const Footer = () => {
 
   }
   return (
-    <Box className='boxit' sx={{ backgroundColor: COLORS.beige1, overflow:'hidden', margin:'auto' }} role='navigation' aria-label='footer'>
+    <Box className='boxit' sx={{ overflow:'hidden', margin:'auto' }} role='navigation' aria-label='footer'>
 
       <Stack direction={{ xs:'column', md:'row' }} gap={{ xs: 5,md:10,lg:20 }} alignItems={'center'} justifyContent={'center'}>
         <Link to={'/'} aria-label='Linkki SapAir Oy etusivulle'  onClick={() => {

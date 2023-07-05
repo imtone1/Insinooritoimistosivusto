@@ -9,7 +9,6 @@ import geardoc from '../images/doc.png'
 import building from '../images/building.png'
 import gearapp from '../images/mobile-development.png'
 import { styled } from '@mui/material/styles'
-import { lightGreen } from '@mui/material/colors'
 import Paaotsikko from '../otsikot/Paaotsikko'
 import { COLORS } from '../values/colors'
 
@@ -30,10 +29,10 @@ export default function Palvelupolkusteps() {
   }
 
   const ColorButton = styled(Button)(({ theme }) => ({
-    color: theme.palette.getContrastText('#BFBFBF'),
-    backgroundColor: '#BFBFBF',
+    color: theme.palette.getContrastText(COLORS.liila),
+    backgroundColor: COLORS.liila,
     '&:hover': {
-      backgroundColor: '#e5eaee',
+      backgroundColor: COLORS.tummanharmaa,
     },
   }))
 

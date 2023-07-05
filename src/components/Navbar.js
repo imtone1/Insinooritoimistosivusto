@@ -12,7 +12,7 @@ import { COLORS } from '../values/colors'
 const Navbar = () => {
   return (
 
-    <AppBar position='sticky' style={{ background: COLORS.grey, height:70, width:'100%,' ,justifyContent:'center', color:'black' }}>
+    <AppBar position='sticky' style={{ background: COLORS.creamy, height:60, width:'100%,' ,justifyContent:'center', color:'black' }}>
       <Toolbar>
 
         <Box sx={{ flexGrow: 1 }} >
@@ -23,15 +23,6 @@ const Navbar = () => {
           </Link>
 
         </Box>
-        {/* <Box sx={{display:{xs:'none', md:'flex', mr: '2%'}}}>
-          <IconButton component={Link} to="/" size='large' edge='start' color="inherit"
-          aria-label="menu"
-          >
-
-
-              <HouseIcon/>
-          </IconButton>
-          </Box> */}
         <Stack direction={'row'} gap={2} display={{ xs:'none', md:'flex' }} alignItems={'center'}  >
           {/* <Typography variant='h6' component='div' sx={{flexGrow:1}} >
               Ammattilaisille

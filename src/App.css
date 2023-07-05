@@ -3,7 +3,7 @@
 	margin:0;
 	box-sizing:border-box;
 	font-family:kamerik-3d,sans-serif;
-	color:#0D0D0D
+	color:#0D0D0D;
 	}
 	
 	:root {
@@ -13,7 +13,7 @@
 	--ruskea:#A6785D;
 	--vaalea:#F2F2F2;
 	--harmaa:#BFBFBF;
-	--musta:#0D0D0D
+	--musta:#0D0D0D;
 	}
 	
 	.konstakuva {
@@ -30,13 +30,13 @@
 	padding:1em;
 	background-color:#0D0D0D;
 	color:#fff;
-	opacity:0
+	opacity:0;
 	}
 	
 	.skip-to-main-content-link:focus {
 	left:50%;
 	transform:translateX(-50%);
-	opacity:1
+	opacity:1;
 	}
 	
 	.logo {
@@ -47,7 +47,7 @@
 	position:absolute;
 	left:calc(51% - calc(var(--logo-size) / 2));
 	top:calc(var(--index) * 2.8);
-	z-index:1
+	z-index:1;
 	}
 	
 	.layers {
@@ -93,6 +93,8 @@
 	margin-top:calc(var(--index) * 4.5);
 	transform:translateX(-50%);
 	opacity:0;
+	align-items: center;
+	justify-items: center;
 	transition:all 1s ease;
 	animation:move-center 1s ease-in-out forwards
 	}
@@ -159,7 +161,7 @@
 	position:relative;
 	width:100%;
 	height:100%;
-	background:linear-gradient(#dbdae1,#F2F2F2);
+	background:linear-gradient(#dddcda,#EFEEEC);
 	box-shadow:5px 5px 5px rgba(0,0,0,0.1),15px 15px 15px rgba(0,0,0,0.1),20px 10px 20px rgba(0,0,0,0.1),50px 50px 80px rgba(0,0,0,0.25),inset 3px 3px 2px #fff;
 	display:flex;
 	justify-content:center;
@@ -203,11 +205,6 @@
 	box-shadow:5px 5px 5px rgba(0,0,0,0.1),15px 15px 15px rgba(0,0,0,0.1),20px 10px 20px rgba(0,0,0,0.1),50px 50px 80px rgba(0,0,0,0.25),inset 3px 3px 2px #fff
 	}
 	
-	.paddingi {
-	padding-left:9px;
-	padding-right:9px
-	}
-	
 	.hero-content__p {
 	padding-top:10px;
 	text-transform:none;
@@ -219,6 +216,7 @@
 	
 	.button-start {
 	font-family:Arial;
+	width: calc(var(--index) * 11);
 	font-weight:600;
 	text-transform:uppercase;
 	font-size:calc(var(--index) * .9);
@@ -227,9 +225,10 @@
 	background-color:#DCE2F2;
 	color:var(--musta);
 	border-radius:1em;
-	outline:none;
 	cursor:pointer;
 	margin-top:calc(var(--index) * 1.5);
+	margin-left: auto;
+	margin-right: auto;
 	box-shadow:5px 5px 5px rgba(0,0,0,0.1),15px 15px 15px rgba(0,0,0,0.1),20px 10px 20px rgba(0,0,0,0.1),50px 50px 80px rgba(0,0,0,0.25),inset 3px 3px 2px #fff
 	}
 	
@@ -368,22 +367,22 @@
 	.palvelutcontainer .palvelutbox .palvelutcontent .palveluticon {
 	padding:10px;
 	width:100px;
-	background:#e5eaee;
+	background: #DCE2F2;
 	transition:.9s ease-in-out;
 	box-shadow:0 0 0 4px #2e2e2e,0 0 0 6px #DCE2F2;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	margin:auto;
-	border-radius:1px
+	border-radius:1px;
 	}
 	
 	.palvelutcontainer .palvelutbox:hover .palvelutcontent .palveluticon {
-	box-shadow:0 0 0 4px #2e2e2e,0 0 0 500px #DCE2F2
+	box-shadow:0 0 0 4px #2e2e2e,0 0 0 500px #DCE2F2;
 	}
 	
 	.palveluticon {
-	text-decoration:none
+	text-decoration:none;
 	}
 	
 	.fullscreen-overlay {

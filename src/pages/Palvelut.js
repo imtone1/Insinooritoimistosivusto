@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import SEO from '../components/SEO'
-import { COLORS } from '../values/colors'
 import { Modal, ModalDialog, ModalClose, ModalOverflow } from '@mui/joy'
 
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 
 import { Box, Stack, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
-import coffee from '../images/coffee.png'
 import kaksiD from '../images/Dokumentaatio.jpg'
 import kolmeD from '../images/Dokumentaatio3D.jpg'
 import FullImage from '../components/Fullimage'
@@ -29,7 +27,7 @@ const Palvelut = () => {
 
 
   return (
-    <Box  sx={{ backgroundColor:COLORS.grey  }}>
+    <>
       <SEO title={'SapAir Oy - Palvelut'} description={'Tarjoamme laajat LVIA-palvelut. Katso palvelumme ja ota yhteyttä.'}/>
 
       <Sivuotsikko otsikko={'Palvelut'} alaotsikko={'Tarjoamme laajat LVIA-palvelut'} alaotsikko2={'Ota yhteyttä ja kysy lisää'}/>
@@ -485,7 +483,7 @@ const Palvelut = () => {
       </Modal>
 
 
-    </Box>
+    </>
   )
 }
 

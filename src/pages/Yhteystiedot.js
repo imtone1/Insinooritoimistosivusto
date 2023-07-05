@@ -1,20 +1,18 @@
 import React from 'react'
 import SEO from '../components/SEO'
 
-import { COLORS } from '../values/colors'
-
 import { Box, Stack, Typography } from '@mui/material'
 import Konsta from '../kuvat/Konsta-Sappinen.png'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
 import MailIcon from '@mui/icons-material/Mail'
 import ReceiptIcon from '@mui/icons-material/Receipt'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import coffee from '../images/coffee.png'
+
 import Sivuotsikko from '../otsikot/Sivuotsikko'
 
 const Yhteystiedot = () => {
   return (
-    <Box  sx={{ backgroundColor:COLORS.grey }}>
+    <>
       <SEO title={'SapAir Oy - Yhteystiedot'} description={'SapAir Oy:n yhteystiedot. Säästä itseäsi turhilta huolilta ja kustannuksilta, ota yhteyttä jo tänään.'}/>
 
 
@@ -98,7 +96,7 @@ const Yhteystiedot = () => {
       </Stack>
 
 
-    </Box>
+    </>
 
   )
 }
