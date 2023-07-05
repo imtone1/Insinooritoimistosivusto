@@ -1,6 +1,5 @@
 import React from 'react'
-import { Box, Stack, Typography } from '@mui/material'
-import { COLORS } from '../values/colors'
+import { Box, Stack } from '@mui/material'
 import Paaotsikko from '../otsikot/Paaotsikko'
 import Lupaus from './Lupaus'
 
@@ -19,9 +18,9 @@ const Lupauksemme = () => {
         <Lupaus teksti={'Meidän LVI-suunnittelupalvelumme takaavat nopean reagoinnin ja tehokkaan työnkulun. Ammattitaitoinen tiimimme kykenee toimittamaan korkealaatuiset suunnitelmat lyhyessä ajassa, jotta voit aloittaa rakennusprojektisi nopeasti. Säästä aikaa ja vaivaa valitsemalla meidät nopeuden ja laadun tinkimättömyyden vuoksi.'} otsikko1={'Nopeus'} otsikko2={''}/>
 
 
-        <Lupaus teksti={'Säästä rahaa pitkällä tähtäimellä valitsemalla kustannustehokas LVI-suunnittelu. Meidän palvelumme keskittyvät energiatehokkuuteen ja resurssien optimaaliseen hyödyntämiseen. Suunnittelemme LVI-järjestelmät siten, että ne tarjoavat tehokkaan energiankulutuksen ja alhaiset käyttökustannukset. Näin voit säästää rahaa rakennuksen koko elinkaaren ajan. Olemme kumppanisi kohti taloudellisesti kannattavia ratkaisuja.'} otsikko1={'Kustannus'} otsikko2={'tehokkuus'}/>
+        <Lupaus teksti={'Säästä rahaa pitkällä tähtäimellä valitsemalla kustannustehokas LVI-suunnittelu. Meidän palvelumme keskittyvät energiatehokkuuteen ja resurssien optimaaliseen hyödyntämiseen. Suunnittelemme LVI-järjestelmät siten, että ne tarjoavat tehokkaan energiankulutuksen ja alhaiset käyttökustannukset. Näin voit säästää rahaa rakennuksen koko elinkaaren ajan. Olemme kumppanisi kohti taloudellisesti kannattavia ratkaisuja.'} otsikko1={'Kustannustehokkuus'} otsikko2={''}/>
 
-        <Lupaus teksti={'Asiakkaitemme tarpeet ovat meille ensisijaisia. Asiakaslähtöinen LVI-suunnittelu on vahvuutemme, ja tavoitteenamme on toteuttaa visiosi sellaisena kuin haluat. Käytämme aikaa kuunnellaksemme tarpeitasi ja ymmärtääksemme projektisi vaatimukset. Tämän avulla pystymme suunnittelemaan LVI-ratkaisuja, jotka vastaavat täysin odotuksiasi.'} otsikko1={'Asiakas'} otsikko2={'lähtöisyys'}/>
+        <Lupaus teksti={'Asiakkaitemme tarpeet ovat meille ensisijaisia. Asiakaslähtöinen LVI-suunnittelu on vahvuutemme, ja tavoitteenamme on toteuttaa visiosi sellaisena kuin haluat. Käytämme aikaa kuunnellaksemme tarpeitasi ja ymmärtääksemme projektisi vaatimukset. Tämän avulla pystymme suunnittelemaan LVI-ratkaisuja, jotka vastaavat täysin odotuksiasi.'} otsikko1={'Asiakaslähtöisyys'} otsikko2={''}/>
       </Stack>
 
     </Box>

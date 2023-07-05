@@ -16,7 +16,7 @@ const Header = () => {
     <>
       <Box role='img' className="layers__item" aria-label='LVIA-suunnittelu' sx={{ backgroundImage: `url(${talo})`, backgroundPosition: { xs:'bottom', md:'left top', xl:'center' } ,height:{ xs:'50vh',md:'1000px', xl:'155vh' } }}></Box>
       <section aria-label='header' className="layers">
-        <Box className="layers__container" sx={{ height:{ xs:'40vh',md:'50vh' }, minHeight:{ xs:'50vh',md:'70vh' } }}>
+        <Box className="layers__container" sx={{ height:{ xs:'40vh',md:'50vh' }, minHeight:{ xs:'50vh',md:'70vh' }, maxHeigh:'2000px' }}>
 
 
           <div className="layers__item layer-2">

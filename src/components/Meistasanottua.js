@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel'
 import Paaotsikko from '../otsikot/Paaotsikko'
 import {  Box } from '@mui/material'
 import Palaute from './Palaute'
-import tablelasit from '../images/tablelasit.jpg'
+import tablelasit from '../images/tablelasit.png'
 
 
 
@@ -12,7 +12,9 @@ import tablelasit from '../images/tablelasit.jpg'
 const Meistasanottua = () => {
   return (
 
-    <Box className="boxit"  sx={{ backgroundImage: `url(${tablelasit})`, backgroundRepeat: 'no-repeat', backgroundSize:'cover' ,alignItems:'center', justifyContent:'center' }}>
+    <Box className="boxit"  sx={{ alignItems:'center', justifyContent:'center' , position:'relative' }}>
+      <Box sx={{ position:'absolute', top:{ xs:'30%', md:'20%', xl:'-20%' }, right:{ xs:-20, xl:'5%' }, width:'80vh', transform: 'rotate(25deg)' }} >
+        <img src={tablelasit} alt='kannettava tietokone harmaalla taustalla' style={{ width: '100%' }}/></Box>
       <Box sx={{ margin:{ xs:'auto', sm:5, lg:'auto' }, width:{ xs:'80%', md:500, lg:800 } }} className='palautebox'>
 
         <Paaotsikko otsikko={'Meistä sanottua'} teksti={'Asiakastyytyväisyys on meille kunnia-asia.'} />
