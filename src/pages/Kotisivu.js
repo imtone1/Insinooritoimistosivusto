@@ -18,7 +18,7 @@ const Kotisivu = () => {
       <SEO title={'Instinööritoimisto SapAir Oy'} description={'Selkeä valinta, kun etsit LVIA-ammattilaista.Säästä itseäsi turhilta huolilta ja kustannuksilta, ota yhteyttä jo tänään.'}/>
       <a href="#main" className="skip-to-main-content-link">Siirry sisältöön</a>
       <Header/>
-      <main id='main'>
+      <main id='main' style={{ overflow:'hidden' }}>
         <Palvelutcard/>
         <Referenssimaara/>
         <Lupauksemme/>
