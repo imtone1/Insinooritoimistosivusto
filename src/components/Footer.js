@@ -139,8 +139,8 @@ const Footer = () => {
       </Stack>
 
       <Box  sx={{ textAlign:'center', paddingTop:2, cursor:'pointer' }} >
-        <LinkedInIcon aria-label="Linkki SapAir Oy Linkedin-sivulle"  aria-describedby="new-window-Linkedin" aria-hidden="false" focusable="true" fontSize='large' tabIndex="0" role="button" onClick={() =>  window.location.href='https://www.linkedin.com/company/insin%C3%B6%C3%B6ritoimisto-sapair-oy/'} />
-
+        <a href='https://www.linkedin.com/company/insin%C3%B6%C3%B6ritoimisto-sapair-oy/' tabIndex="0" aria-describedby="new-window-Linkedin" aria-label="Linkedin" target="_blank" rel="noreferrer"><LinkedInIcon fontSize='large'  />
+        </a>
       </Box>
 
       <Stack direction={{ xs: 'column', sm: 'row' }} gap={2} sx={{ textAlign:'center', paddingTop:2, alignItems:'center', justifyContent:'center' }} >
@@ -173,7 +173,7 @@ const Footer = () => {
                   <Typography variant='h6' sx={{ pr:1 }}>
                     Irina Tatti
                   </Typography>
-                  <LinkedInIcon onClick={() =>  window.open('https://www.linkedin.com/in/irina-tatti/')} aria-describedby="new-window-Linkedin"/>
+                  <a href='https://www.linkedin.com/in/irina-tatti/' aria-describedby="new-window-Linkedin" aria-label="Linkedin" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
                 </Stack>
               </Stack>
               <Typography fontSize={'small'}>

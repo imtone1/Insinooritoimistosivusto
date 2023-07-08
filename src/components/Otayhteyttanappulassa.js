@@ -40,7 +40,7 @@ const StyledButton = styled(Box)`
 const Otayhteyttanappulassa = () => {
   return (
 
-    <Box aria-describedby='otayhteytta' className="boxit" sx={{ backgroundImage: { xs:'none', md:`url(${table})` }, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', maxWidth:2000, margin:'auto' }}>
+    <Box aria-describedby='otayhteytta' className="boxit" sx={{ backgroundImage: { xs:'none', md:`url(${table})` }, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', maxWidth:2000, margin:'auto', marginBottom:10 }}>
       <div className='boxicontainer' style={{ marginTop:5, marginBottom:10, maxWidth:800, margin:'auto' }}>
         <div className='boxi'>
           <div className='coverboxi'></div>

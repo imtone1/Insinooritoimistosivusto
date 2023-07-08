@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Box } from '@mui/material'
-import talo from '../images/poyta2.jpg'
+import talo from '../images/poyta3.jpg'
 
 const Header = () => {
   document.addEventListener('mousemove', e => {
@@ -14,7 +14,7 @@ const Header = () => {
   })
   return (
     <>
-      <Box role='img' className="layers__item" aria-label='LVIA-suunnittelu' sx={{ backgroundImage: `url(${talo})`, backgroundPosition: { xs:'bottom', md:'left top', xl:'center' } ,height:{ xs:'50vh',md:'1000px', xl:'155vh' } }}></Box>
+      <Box role='img' className="layers__item" aria-label='LVIA-suunnittelu' sx={{ backgroundImage: `url(${talo})`, backgroundPosition: { xs:'bottom', sm:'top', md:'left bottom', xl:'center' } ,height:{ xs:'50vh', sm:'800px',md:'1000px', xl:'155vh' } }}></Box>
       <section aria-label='header' className="layers">
         <Box className="layers__container" sx={{ height:{ xs:'40vh',md:'50vh' }, minHeight:{ xs:'50vh',md:'70vh' }, maxHeigh:'2000px' }}>
 

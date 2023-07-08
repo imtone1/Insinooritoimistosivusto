@@ -65,7 +65,7 @@ const Palvelutcard = () => {
   return (
     <Box  sx={{  position:'relative', paddingBottom:4 , maxWidth: 1200 , margin:'auto' }}>
 
-      <Paaotsikko otsikko={'Palveluitamme'} teksti={'Olemme asiakaslähtöinen ja ammattitaitoinen suunnittelutoimisto, jossa asiointi on sujuvaa ja nopeaa. Tarjoamme kattavat LVIA-suunnittelu- ja konsultointipalvelut. Palvelemme asiakkaita niin tavanomaisissa, kuin vaativissakin projekteissa.'} />
+      <Paaotsikko otsikko={'Palveluitamme'} teksti={'Olemme asiakaslähtöinen ja ammattitaitoinen suunnittelutoimisto, jossa asiointi on sujuvaa ja nopeaa. Tarjoamme kattavat LVIA-suunnittelu- ja konsultointipalvelut. Palvelemme asiakkaita niin tavanomaisissa kuin vaativissakin projekteissa.'} />
       <Stack sx={{ justifyContent:'center', alignItems:'center', display:'flex', gap:{ xs:0,md:9 } }} direction={{ xs:'column', md:'row' }}>
         <div className='palvelutcontainer'>
           <div className='palvelutbox'>
@@ -99,7 +99,7 @@ const Palvelutcard = () => {
                 <Typography variant='h4' sx={{ fontWeight:600, marginBottom:2 , height:120 }}>
                           KVV-/IV-työnjohtajan palvelut</Typography>
                 <Typography variant='body1' sx={{ textAlign:'left', height:200 , paddingLeft:2 }}>
-                          Tilaamalla meiltä KVV-/IVtyönjohtajan palvelut saat ammattilaiset rinnallasi, jotka huolehtivat siitä, että kaikki sujuu suunnitelmien mukaisesti ja lopputulos on juuri sellainen kuin odotit. Ota yhteyttä ja säästä itsesi turhilta huolilta ja kustannuksilta.</Typography>
+                          Tilaamalla meiltä KVV-/IV-työnjohtajan palvelut saat ammattilaiset rinnallasi, jotka huolehtivat siitä, että kaikki sujuu suunnitelmien mukaisesti ja lopputulos on juuri sellainen kuin odotit. Ota yhteyttä ja säästä itsesi turhilta huolilta ja kustannuksilta.</Typography>
                 <button className='palveluticon' onClick={handleOpenKVV} onKeyUp={handleOpenKVV} type='button' tabIndex='0'><Typography sx={{ cursor:'pointer' }}>Lue lisää</Typography></button>
               </div></div></div></div></Stack>
 
@@ -133,46 +133,6 @@ const Palvelutcard = () => {
             <Stack direction={'column'} sx={{ alignItems:'center' }}>
 
               <List dense={true}>
-
-                {/* <ListItem onClick={() => setopen(true)} role='button' sx={{ cursor:'pointer' }}>
-                  <ListItemIcon>
-                    <RoofingIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={'LVIA-suunnittelu'}
-
-                  />
-                  <ListItemIcon>
-                    <ArrowForwardIosIcon />
-                  </ListItemIcon>
-                </ListItem> */}
-
-                {/* <ListItem  onClick={handleOpenKVV} role='button' sx={{ cursor:'pointer' }}>
-                  <ListItemIcon>
-                    <RoofingIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={'KVV-/IV- työnjohtajapalvelut'}
-                    secondary={'tavanomaisista eritysvaativiin kohteisiin'}
-                  />
-                  <ListItemIcon>
-                    <ArrowForwardIosIcon />
-                  </ListItemIcon>
-
-                </ListItem> */}
-
-                {/* <ListItem onClick={handleOpenProjekti} role='button' sx={{ cursor:'pointer' }}>
-                  <ListItemIcon>
-                    <RoofingIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={'Projektinjohto ja valvontatehtävät'}
-
-                  />
-                  <ListItemIcon>
-                    <ArrowForwardIosIcon />
-                  </ListItemIcon>
-                </ListItem> */}
 
                 <ListItem onClick={handleOpenMaa} role='button' sx={{ cursor:'pointer' }} >
                   <ListItemIcon>
@@ -303,7 +263,7 @@ const Palvelutcard = () => {
               <Box id="modal-dialog-overflowLVI-suunnittelu" sx={{ mt: 2 }}>
                 <Stack sx={{ gap:2 }}>
                   <Typography>
-                LVI-suunnittelu on olennainen osa rakennuksen talotekniikkaa ja keskeinen tekijä sen elinkaaren aikaisen suorituskyvyn ja asumismukavuuden kannalta. Meidän insinööritoimistossamme panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi energiankulutuksen, parantaa sisäilman laatua ja takaa kustannustehokkaan toiminnan.
+                LVI-suunnittelu on olennainen osa rakennuksen talotekniikkaa ja keskeinen tekijä sen elinkaaren aikaisen suorituskyvyn ja asumismukavuuden kannalta.
                   </Typography>
                   <Typography>
                 Talotekniikan suunnittelussa kiinnitämme erityistä huomiota energiakustannuksiin rakennuksen koko elinkaaren aikana, erityisesti lämmitysjärjestelmissä. Pyrimme suunnittelemaan yksinkertaisia ja toimintavarmoja järjestelmiä, mikä vähentää huollon tarvetta ja parantaa energiatehokkuutta.
@@ -381,13 +341,13 @@ const Palvelutcard = () => {
                 </Stack>
                 <Stack sx={{ gap:2 }}>
                   <Typography>
-                Suosittelemme aloittamaan LVI-suunnittelun jo ennen rakennusluvan hakemista, sillä useilla paikkakunnilla lupa-asiakirjojen liitteenä vaaditaan suunnitelma ulkopuolisesta LVI-tekniikasta. Tämän lisäksi on tärkeää huomioida tarvittavat tilavaraukset laitteille, teknisille tiloille ja pääreiteille jo rakennusprojektin alkuvaiheessa.
+                Suosittelemme aloittamaan LVI-suunnittelun jo ennen rakennusluvan hakemista, sillä useilla paikkakunnilla lupa-asiakirjojen liitteenä vaaditaan suunnitelma ulkopuolen LVI-tekniikasta. Tämän lisäksi on tärkeää huomioida tarvittavat tilavaraukset laitteille, teknisille tiloille ja pääreiteille jo rakennusprojektin alkuvaiheessa.
                   </Typography>
                   <Typography>
                   Olemme vastuullinen insinööritoimisto, joka huolehtii siitä, että LVI-suunnitelmat täyttävät rakennusvalvontaviranomaisten vaatimukset. Suunnitelmat toteutetaan aina asiakkaan tarpeiden ja toiveiden pohjalta, mutta tuomme myös omat näkemyksemme esiin, jotta lopputulos on toimiva ja energiatehokas.
                   </Typography>
                   <Typography>
-                Hyödynnämme asiakkaan toiveesta suunnittelussamme tietomallinnusta (BIM, Building Information Model), joka mahdollistaa rakennuskohteen kolmiulotteisen digitaalisen esittämisen. Tietomallinnus tehostaa LVI-suunnitteluprosessia ja parantaa suunnittelun kustannustehokkuutta. Se mahdollistaa myös jatkuvan päivityksen työmaalta saatujen tietojen perusteella, jolloin asiakkaalle voidaan luovuttaa ajantasainen ja täysin toteutusta vastaava tietomalli rakennuksen valmistuttua.
+                Asiakkaan niin halutessa hyödynnämme suunnittelussamme tietomallinnusta (BIM, Building Information Model), joka mahdollistaa rakennuskohteen kolmiulotteisen esittämisen digitaalisti. Tietomallinnus tehostaa LVI-suunnitteluprosessia ja parantaa suunnittelun kustannustehokkuutta. Se mahdollistaa myös jatkuvan päivityksen työmaalta saatujen tietojen perusteella, jolloin asiakkaalle voidaan luovuttaa ajantasainen ja täysin toteutusta vastaava tietomalli rakennuksen valmistuttua.
                   </Typography>
                 </Stack>
               </Box>
@@ -426,7 +386,7 @@ const Palvelutcard = () => {
               </Typography>
               <Box id="modal-dialog-Projektijohto21" sx={{ mt: 2 }}>
                 <Typography>
-              Tarjoamme projektinjohto- ja rakennuttamistehtäviä, jotka toteutamme hankkeen tarpeiden mukaisesti.
+              Otamme vastaan projektinjohto- ja rakennuttamistehtäviä, jotka toteutamme hankkeen tarpeiden mukaisesti.
                 </Typography>
                 <Typography>Näihin tehtäviin kuuluvat mm.</Typography>
                 <List dense={true}>
@@ -551,11 +511,7 @@ const Palvelutcard = () => {
                 KVV- ja IV- työnjohtaja toimii rakennuttajan edunvalvojana varmistaen, että suunnitelmat ja määräykset toteutetaan työmaalla asianmukaisesti.
 
                   </Typography>
-                  <Typography>
-                KVV- ja IV- työnjohtajamme pätevyys on erityisvaativa. Toimeksiannoissamme noudatamme konsulttialan yleisiä sopimusehtoja KSE 2013.
-                  </Typography>
-
-                  <Typography>KVV- ja IV- työnjohtajan tehtävä on:</Typography>
+                  <Typography>KVV- ja IV- työnjohtajan tehtävänä on valvoa:</Typography>
                 </Stack>
                 <List dense={true}>
 
@@ -565,6 +521,7 @@ const Palvelutcard = () => {
                     </ListItemIcon>
                     <ListItemText
                       primary="Valvoa työvaiheiden sujumista"
+                      secondary='KVV- ja IV- vastaava työnjohtaja ottaa vastuun töistä ja pitää huolen siitä, että kaikki vesi-, viemäri- ja ilmanvaihtotyöt toteutetaan turvallisesti, terveellisesti ja viranomaismääräysten mukaisesti.'
 
                     />
                   </ListItem>
@@ -574,7 +531,7 @@ const Palvelutcard = () => {
                     </ListItemIcon>
                     <ListItemText
                       primary="Laadun varmistamista"
-
+                      secondary='Hankkimalla työnjohtajan palvelut jo projektin alkuvaiheessa varmistat, että työmaasi etenee sujuvasti, suunnitelmat toteutuvat sovitusti ja kaikki viranomaismääräykset ovat täytetty.'
                     />
                   </ListItem>
                   <ListItem>
@@ -583,20 +540,17 @@ const Palvelutcard = () => {
                     </ListItemIcon>
                     <ListItemText
                       primary="Työn suorittamista oikein"
-
+                      secondary='Työnjohtajamme pystyy tarjoamaan arvokkaita neuvoja ja ohjausta, jotka auttavat sinua tekemään oikeita päätöksiä ja välttämään mahdolliset sudenkuopat, joita rakennusprosessi saattaa sisältää. Se puolestaan auttaa sinua välttämään mahdolliset ongelmat ja ylimääräiset kustannukset myöhemmin.'
                     />
                   </ListItem>
 
                 </List>
                 <Stack sx={{ gap:2 }}>
                   <Typography>
-                KVV- ja IV- vastaava työnjohtaja ottaa vastuun töistä ja pitää huolen siitä, että kaikki vesi-, viemäri- ja ilmanvaihtotyöt toteutetaan turvallisesti, terveellisesti ja viranomaismääräysten mukaisesti.
-                  </Typography>
-                  <Typography>
-                Hankkimalla työnjohtajan palvelut jo projektin alkuvaiheessa varmistat, että työmaasi etenee sujuvasti, suunnitelmat toteutuvat sovitusti ja kaikki viranomaismääräykset ovat täytetty. Työnjohtajamme pystyy tarjoamaan arvokkaita neuvoja ja ohjausta, jotka auttavat sinua tekemään oikeita päätöksiä ja välttämään mahdolliset sudenkuopat, joita rakennusprosessi saattaa sisältää. Se puolestaan auttaa sinua välttämään mahdolliset sudenkuopat ja ylimääräiset kustannukset myöhemmin.
-                  </Typography>
-                  <Typography>
                 Varmista, että sinulla on ammattilainen rinnallasi, joka huolehtii siitä, että kaikki sujuu suunnitelmien mukaisesti ja lopputulos on juuri sellainen kuin odotit. Ota yhteyttä ja säästä itsesi turhilta huolilta ja kustannuksilta.
+                  </Typography>
+                  <Typography>
+                KVV- ja IV- työnjohtajamme pätevyys on erityisvaativa. Toimeksiannoissamme noudatamme konsulttialan yleisiä sopimusehtoja KSE 2013.
                   </Typography>
                 </Stack>
               </Box>

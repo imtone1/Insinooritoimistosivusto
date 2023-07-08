@@ -83,7 +83,7 @@ export default function Palvelupolkusteps() {
                   Luonnossuunnitelma
             </StepLabel>
             <StepContent>
-              <Polkuitem kuva={doc} numero={'2.'} otsikko1={'Luonnos'} otsikko2={'suunnitelma'} teksti={'Projektipalaverin pohjalta laadimme luonnossuunnitelmia, jotka esittelemme asiakkaalle. Tämä vaihe on erittäin tärkeä, koska haluamme varmistaa, että suunnitelmat vastaavat asiakkaan toiveita ja tarpeita. Keräämme palautetta ja kuuntelemme huolellisesti, jos heillä on muutostoiveita.'}/>
+              <Polkuitem kuva={doc} numero={'2.'} otsikko1={'Luonnos'} otsikko2={'suunnitelma'} teksti={'Projektipalaverin pohjalta laadimme luonnossuunnitelmia, jotka esittelemme asiakkaalle. Tämä vaihe on erittäin tärkeä, koska haluamme varmistaa, että suunnitelmat vastaavat asiakkaan toiveita ja tarpeita. Keräämme palautetta ja kuuntelemme huolellisesti mahdollisia muutostoiveita.'}/>
               <Box sx={{ mb: 2 }}>
                 <div>
                   <ColorButton
@@ -138,7 +138,7 @@ export default function Palvelupolkusteps() {
             </StepLabel>
             <StepContent>
               <Polkuitem kuva={building} numero={'4.'} otsikko1={'Rakennus'} otsikko2={'valvonta'}
-                teksti={'Kun rakennusvalvonta on laittanut leimat suunnitelmiin, voidaan aloittaa työt. On muistettava, että ennen töiden aloitusta, kun kyseessä on rakennuslupa, LVI-töille on oltava KVV/IV-työnjohtaja. Tarjoamme tämänkin palvelun.'}/>
+                teksti={'Kun rakennusvalvonta on laittanut leimat suunnitelmiin, voidaan aloittaa työt. Toimimme asiakkaan näin halutessa KVV-/IV-työnjohtajan ominaisuudessa tai hoidamme rakennusvalvontaan liittyvät velvotteemme.'}/>
               <Box sx={{ mb: 2 }}>
                 <div>
                   <ColorButton
