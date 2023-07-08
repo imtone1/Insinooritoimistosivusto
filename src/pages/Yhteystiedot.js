@@ -1,6 +1,6 @@
 import React from 'react'
 import SEO from '../components/SEO'
-
+import { Helmet } from 'react-helmet-async'
 import { Box, Stack, Typography } from '@mui/material'
 import Konsta from '../kuvat/Konsta-Sappinen.png'
 import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
@@ -11,11 +11,32 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import Sivuotsikko from '../otsikot/Sivuotsikko'
 
 const Yhteystiedot = () => {
+
+  const schema=
+{
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  'address': {
+    '@type': 'PostalAddress',
+    'addressLocality': 'Vahto',
+    'streetAddress': 'Helmikuja 3'
+  },
+  'description': 'LVI-suunnittelu, KVV- /IV-työnjohto, projektinjohto- ja valvontatehtävät.',
+  'name': 'SapAir Oy - LVIA-suunnittelu',
+  'telephone': '+358406772400',
+  'slogan': 'Selkeä valinta, kun etsit LVIA-ammattilaista.',
+  'email': 'info@sapair.fi',
+}
+
+  const JSONschema = JSON.stringify(schema)
+
   return (
     <>
-      <SEO title={'SapAir Oy - Yhteystiedot'} description={'SapAir Oy:n yhteystiedot. Säästä itseäsi turhilta huolilta ja kustannuksilta, ota yhteyttä jo tänään.'}/>
+      <SEO title={'Insinööritoimisto SapAir Oy - Yhteystiedot'} description={'SapAir Oy:n yhteystiedot. Säästä itseäsi turhilta huolilta ja kustannuksilta, ota yhteyttä jo tänään.'}/>
 
-
+      <Helmet>
+        <script type="application/ld+json">{JSONschema}</script>
+      </Helmet>
       <Sivuotsikko otsikko={'Yhteystiedot'} alaotsikko={'Voit ottaa yhteyttä sinulle sopivammalla tavalla'} alaotsikko2={'Vastaamme päivästä riippumatta'}/>
 
 
@@ -53,7 +74,7 @@ const Yhteystiedot = () => {
 
         </Stack>
         <Box  className='konstakuva' sx={{ maxWidth:200, alignSelf:'center', justifySelf:'center' , marginX:{ lg: 5 } }}>
-          <img src={Konsta} alt="Konsta-Sappinen" width={'100%'} height={'auto'} loading='lazy'/>
+          <img src={Konsta} alt="Konsta-Sappinen vastaava LVIA-suunnittelija" width={'100%'} height={'auto'} loading='lazy'/>
         </Box>
         <Stack direction={'column'} sx={{ gap:3, p:2 }}>
           <Typography variant='body1' sx={{ fontSize:'190%' }}>

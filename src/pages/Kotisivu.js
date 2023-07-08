@@ -15,7 +15,7 @@ import Palvelutcard from '../components/Palvelutcard'
 const Kotisivu = () => {
   return (
     <>
-      <SEO title={'Instinööritoimisto SapAir Oy'} description={'Selkeä valinta, kun etsit LVIA-ammattilaista.Säästä itseäsi turhilta huolilta ja kustannuksilta, ota yhteyttä jo tänään.'}/>
+      <SEO title={'Instinööritoimisto SapAir Oy - LVI -suunnittelu'} description={'Selkeä valinta, kun etsit LVIA-ammattilaista. LVIA-palvelut, KVV- /IV-työnjohto, projektinjohto- ja valvontatehtävät. Ota yhteyttä jo tänään.'}/>
       <a href="#main" className="skip-to-main-content-link">Siirry sisältöön</a>
       <Header/>
       <main id='main' style={{ overflow:'hidden' }}>

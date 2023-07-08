@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SEO from '../components/SEO'
+import { Helmet } from 'react-helmet-async'
 import { Modal, ModalDialog, ModalClose, ModalOverflow } from '@mui/joy'
 
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
@@ -25,11 +26,97 @@ const Palvelut = () => {
   const handleOpenKVV = () => setOpenKVV(true)
   const handleCloseKVV = () => setOpenKVV(false)
 
+  const schema=
+{
+  '@context': 'https://schema.org/',
+  '@type': 'Service',
+  'serviceType': 'Weekly home cleaning',
+  'provider': {
+    '@type': 'LocalBusiness',
+    'name': 'Insinööritoimisto SapAir Oy -LVI-suunnittelu',
+  },
+  'areaServed': {
+    '@type': 'State',
+    'name': 'Koko Suomi'
+  },
+  'hasOfferCatalog': {
+    '@type': 'OfferCatalog',
+    'name': 'LVIA-palvelut',
+    'itemListElement': [
+      {
+        '@type': 'OfferCatalog',
+        'name': 'LVIA-suunnittelupalvelut',
+        'itemListElement': [
+          {
+            '@type': 'Offer',
+            'itemOffered': {
+              '@type': 'Service',
+              'name': 'LVIA-suunnittelu'
+            }
+          },
+          {
+            '@type': 'Offer',
+            'itemOffered': {
+              '@type': 'Service',
+              'name': 'KVV- /IV- työnjohtajapalvelut'
+            }
+          },
+          {
+            '@type': 'Offer',
+            'itemOffered': {
+              '@type': 'Service',
+              'name': 'Maalämpösuunnittelu, valvonta ja rakennuttaminen'
+            }
+          },
+          {
+            '@type': 'Offer',
+            'itemOffered': {
+              '@type': 'Service',
+              'name': 'Asiantuntijalausunnot'
+            }
+          },
+          {
+            '@type': 'Offer',
+            'itemOffered': {
+              '@type': 'Service',
+              'name': 'Selvitykset ja tarkastukset'
+            }
+          },
+          {
+            '@type': 'Offer',
+            'itemOffered': {
+              '@type': 'Service',
+              'name': 'Huoineistoremonttivalvonta'
+            }
+          },
+          {
+            '@type': 'Offer',
+            'itemOffered': {
+              '@type': 'Service',
+              'name': 'Asianuntijalausunnot'
+            }
+          },
+          {
+            '@type': 'Offer',
+            'itemOffered': {
+              '@type': 'Service',
+              'name': 'Konsultointipalvelut'
+            }
+          }
+        ]
+      },
+    ]
+  }
+}
+
+  const JSONschema = JSON.stringify(schema)
 
   return (
     <>
-      <SEO title={'SapAir Oy - Palvelut'} description={'Tarjoamme laajat LVIA-palvelut. Katso palvelumme ja ota yhteyttä.'}/>
-
+      <SEO title={'SapAir Oy - LVI-palvelut'} description={'Tarjoamme laajat LVIA-palvelut. Katso palvelumme ja ota yhteyttä.'}/>
+      <Helmet>
+        <script type="application/ld+json">{JSONschema}</script>
+      </Helmet>
       <Sivuotsikko otsikko={'Palvelut'} alaotsikko={'Tarjoamme laajat LVIA-palvelut'} alaotsikko2={'Ota yhteyttä ja kysy lisää'}/>
 
 
@@ -42,7 +129,7 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={'LVIA-suunnittelu'}
+              primary={ <Typography variant="h2" sx={{ fontSize:'100%' }}>LVIA-suunnittelu</Typography> }
 
             />
             <ListItemIcon>
@@ -55,7 +142,7 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={'KVV- /IV- työnjohtajapalvelut'}
+              primary={<Typography variant="h2" sx={{ fontSize:'100%' }}>KVV- /IV- työnjohtajapalvelut</Typography> }
               secondary={'tavanomaisista eritysvaativiin kohteisiin'}
             />
             <ListItemIcon>
@@ -69,8 +156,7 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={'Projektinjohto- ja valvontatehtävät'}
-
+              primary={<Typography variant="h2" sx={{ fontSize:'100%' }}>Projektinjohto- ja valvontatehtävät</Typography>}
             />
             <ListItemIcon>
               <ArrowForwardIosIcon />
@@ -82,7 +168,7 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={'Maalämpösuunnittelu, valvonta ja rakennuttaminen'}
+              primary={ <Typography variant="h2" sx={{ fontSize:'100%' }}>Maalämpösuunnittelu, valvonta ja rakennuttaminen</Typography>}
 
             />
             <ListItemIcon>
@@ -95,7 +181,7 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={'Asiantuntijalausunnot'}
+              primary={<Typography variant="h2" sx={{ fontSize:'100%' }}>Asiantuntijalausunnot</Typography> }
 
             />
 
@@ -106,7 +192,7 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={'Selvitykset ja tarkastukset'}
+              primary={ <Typography variant="h2" sx={{ fontSize:'100%' }}>Selvitykset ja tarkastukset</Typography>}
 
             />
 
@@ -117,7 +203,7 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={'Huoneistoremonttivalvonta'}
+              primary={<Typography variant="h2" sx={{ fontSize:'100%' }}>Huoneistoremonttivalvonta</Typography>}
 
             />
 
@@ -128,7 +214,7 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={'Asiantuntijalausunnot'}
+              primary={<Typography variant="h2" sx={{ fontSize:'100%' }}>Asiantuntijalausunnot</Typography>}
 
             />
 
@@ -139,7 +225,7 @@ const Palvelut = () => {
               <RoofingIcon />
             </ListItemIcon>
             <ListItemText
-              primary={'Konsultointipalvelut'}
+              primary={ <Typography variant="h2" sx={{ fontSize:'100%' }}>Konsultointipalvelut</Typography>}
 
             />
 
