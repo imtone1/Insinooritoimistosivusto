@@ -67,7 +67,7 @@ const Referenssimaara = () => {
   }
 
   return (
-    <Stack sx={{ backgroundColor:COLORS.beige1, py:5,boxShadow:`5px 5px 5px rgba(0,0,0,0.1), 15px 15px 15px rgba(0,0,0,0.1),
+    <Stack sx={{ backgroundColor:COLORS.beige1, py:5, mb:5,boxShadow:`5px 5px 5px rgba(0,0,0,0.1), 15px 15px 15px rgba(0,0,0,0.1),
    20px 10px 20px rgba(0,0,0,0.1),
    50px 50px 80px rgba(0,0,0,0.25),
    inset 3px 3px 2px #fff`, }}>

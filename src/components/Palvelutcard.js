@@ -72,7 +72,7 @@ const Palvelutcard = () => {
             <div className='palvelutcontent'>
 
               <div className='palveluttext'>
-                <Typography variant='h4' sx={{ fontWeight:600, marginBottom:2, height:120 }}>LVIA-suunnittelu</Typography>
+                <Typography variant='h2' sx={{ fontWeight:600, fontSize:'200%', height:120 }}>LVIA-suunnittelu</Typography>
                 <Typography variant='body1' sx={{ textAlign:'left', height:200, paddingLeft:2 }}>Panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi kohteen energiankulutuksen, parantaa sen sisäilman laatua ja takaa kustannustehokkaan toiminnan.</Typography>
                 <button onClick={() => setopen(true)}  onKeyUp={() => setopen(true)} tabIndex='0'
                   className='palveluticon' type='button'><Typography sx={{ cursor:'pointer' }}>Lue lisää</Typography></button>
@@ -84,7 +84,7 @@ const Palvelutcard = () => {
             <div className='palvelutcontent'>
 
               <div className='palveluttext'>
-                <Typography variant='h4' sx={{ fontWeight:600, marginBottom:2, height:120 }}>
+                <Typography variant='h2' sx={{ fontWeight:600, fontSize:'200%', height:120 }}>
                       Projektijohto- ja valvontatehtävät</Typography>
                 <Typography variant='body1' sx={{  textAlign:'left', height:200 , paddingLeft:2 }}>
 
@@ -96,7 +96,7 @@ const Palvelutcard = () => {
             <div className='palvelutcontent'>
               {/* <div className='palveluticon'><GradeIcon /></div> */}
               <div className='palveluttext'>
-                <Typography variant='h4' sx={{ fontWeight:600, marginBottom:2 , height:120 }}>
+                <Typography variant='h2' sx={{ fontWeight:600, fontSize:'200%', marginBottom:1, height:120 }}>
                           KVV-/IV-työnjohtajan palvelut</Typography>
                 <Typography variant='body1' sx={{ textAlign:'left', height:200 , paddingLeft:2 }}>
                           Tilaamalla meiltä KVV-/IV-työnjohtajan palvelut saat ammattilaiset rinnallasi, jotka huolehtivat siitä, että kaikki sujuu suunnitelmien mukaisesti ja lopputulos on juuri sellainen kuin odotit. Ota yhteyttä ja säästä itsesi turhilta huolilta ja kustannuksilta.</Typography>

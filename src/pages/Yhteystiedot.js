@@ -43,17 +43,16 @@ const Yhteystiedot = () => {
       <Stack role='article' direction={{ xs:'column-reverse', sm:'row' }} justifyContent={'center'} alignItems={'center'}>
         <Stack direction={'column'} sx={{ gap:3, p:2 }}>
           <Stack direction={'row'} alignItems='center'>
-            <Typography variant='body1' sx={{ fontSize:'190%' }}>
+            <Typography variant='h2' sx={{ fontSize:'200%' }}>
           Konsta Sappinen
             </Typography>
-            <LinkedInIcon fontSize='large'aria-describedby="new-window-Linkedin" onClick={() =>
-              window.open('https://www.linkedin.com/in/konsta-sappinen-364ba575/')} >
+            <a href='https://www.linkedin.com/in/konsta-sappinen-364ba575/' tabIndex="0" aria-describedby="new-window-Linkedin" aria-label="Linkedin" target="_blank" rel="noreferrer"></a><LinkedInIcon fontSize='large' >
             </LinkedInIcon>
           </Stack>
-          <Typography variant='h5'>
+          <Typography variant='h2' sx={{ fontSize:'200%' }}>
         Vastaava LVIA-suunnittelija
           </Typography>
-          <Typography variant='h5'>
+          <Typography variant='h2' sx={{ fontSize:'200%' }}>
         Toimitusjohtaja
           </Typography>
           <Stack direction={'column'} gap={2}>
@@ -77,7 +76,7 @@ const Yhteystiedot = () => {
           <img src={Konsta} alt="Konsta-Sappinen vastaava LVIA-suunnittelija" width={'100%'} height={'auto'} loading='lazy'/>
         </Box>
         <Stack direction={'column'} sx={{ gap:3, p:2 }}>
-          <Typography variant='body1' sx={{ fontSize:'190%' }}>
+          <Typography variant='h2' sx={{ fontSize:'200%' }}>
           Toimisto
           </Typography>
           <Typography>Helmikuja 3, 21310 Vahto</Typography>

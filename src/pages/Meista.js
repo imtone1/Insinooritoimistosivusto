@@ -19,7 +19,7 @@ import Sivuotsikko from '../otsikot/Sivuotsikko'
 const Meista = () => {
   return (
     <Box sx={{ overflow:'hidden' }}>
-      <SEO title={'SapAir Oy - Meistä'} description={'SapAir Oy:n esittelysivu. Katso tärkeimmät referenssimme ja arvomme.'}/>
+      <SEO title={'Insinööritoimisto SapAir Oy - Meistä'} description={'SapAir Oy:n esittelysivu. Katso LVIA-ammattilaistemme tärkeimmät referenssit ja arvomme.'}/>
 
       <Sivuotsikko otsikko={'SapAir Oy'} alaotsikko={'Selkeä valinta, kun etsit LVIA-ammattilaista'}/>
 
@@ -57,13 +57,16 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
             <div className='sisalto' >
               <div className='tekstiboxi'>
                 <Stack direction={'row'} sx={{ justifyContent:'center', alignItems:'center', p:{ xs:2 } }}>
-                  <Typography variant='h3' sx={{ textAlign:{ xl: 'center' } }}>
+                  <Typography variant='h2' sx={{ textAlign:{ xl: 'center' }, fontSize:'220%' }}>
     Konsta Sappinen
                   </Typography>
                   <LinkedInIcon fontSize='large' onClick={() =>  window.location.href='https://www.linkedin.com/in/konsta-sappinen-364ba575/'} aria-label="Linkki Konsta Sappisen Linkedin-sivulle"/>
                 </Stack>
-                <Typography variant='h5' sx={{ textAlign:'center' }}>
-        Vastaava LVIA-suunnittelija, Toimitusjohtaja
+                <Typography variant='h2' sx={{ textAlign:'center', fontSize:'180%' }}>
+        Vastaava LVIA-suunnittelija
+                </Typography>
+                <Typography variant='h2' sx={{ textAlign:'center', fontSize:'180%' }}>
+        Toimitusjohtaja
                 </Typography>
                 <Stack direction={{ xs:'column',md:'row' }} gap={2}>
                   <a href="tel:0440190987" >  <Stack direction={'row'} >
@@ -102,7 +105,7 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
             <div className='sisalto'>
               <div className='tekstiboxi'>
                 <Stack sx={{ justifyContent:'center', alignItems:'center', p:2 }}>
-                  <Typography variant='h3' sx={{ textAlign:'center' }} >
+                  <Typography variant='h2' sx={{ textAlign:'center', fontSize:'260%' }} >
     Suunnittelijan referenssit
                   </Typography>
                   <Typography sx={{ justifySelf:'center', alignSelf:'center' }}>
@@ -133,7 +136,7 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
             <div className='shadow'></div>
             <div className='sisalto'>
               <div className='tekstiboxi'>
-                <Typography variant='h3' sx={{ textShadow: '1px 1px rgb(99, 99, 99)', textTransform:'uppercase', fontWeight:'600' , fontSize:'200%', pb:'20px' }}>Arvojamme</Typography>
+                <Typography variant='h2' sx={{ textShadow: '1px 1px rgb(99, 99, 99)', textTransform:'uppercase', fontWeight:'600' , fontSize:'200%', pb:'20px' }}>Arvojamme</Typography>
                 <Typography p={{ md:3, xs:2 }} maxWidth={800} textAlign={'center'} >
 
                 </Typography>

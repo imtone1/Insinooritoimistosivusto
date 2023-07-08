@@ -14,9 +14,9 @@ const Sivuotsikko = ({ otsikko, alaotsikko, alaotsikko2 }) => {
         <div className="layers__item layer-3" style={{ transform: 'translateZ(180px) scale(.8)' }}>
 
           <div className="otsikko2-content">
-            <h2>{otsikko}</h2>
-            <div className="otsikko2-content__p">{alaotsikko}</div>
-            <div className="otsikko2-content__p">{alaotsikko2}</div>
+            <h1>{otsikko}</h1>
+            <p className="otsikko2-content__p">{alaotsikko}</p>
+            <p className="otsikko2-content__p">{alaotsikko2}</p>
 
           </div>
 

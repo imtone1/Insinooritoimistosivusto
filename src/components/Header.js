@@ -24,7 +24,7 @@ const Header = () => {
 
               <h1>LVIA - SUUNNITTELU</h1>
 
-              <h2 className="hero-content__p" >Ammattilaitoisesti, selkeästi ja kustannustehokkaasti</h2>
+              <p className="hero-content__p" >Ammattilaitoisesti, selkeästi ja kustannustehokkaasti</p>
 
               <Link to={'/yhteystiedot'} style={{ textDecoration:'none' }} onClick={() => {
                 window.scroll({

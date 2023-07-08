@@ -211,7 +211,8 @@
 	font-family:merriweather-italic-3d;
 	letter-spacing:calc(var(--index) * 0.08);
 	font-size:calc(var(--index) * 1.15);
-	line-height:2
+	line-height:2;
+	font-weight:600;
 	}
 	
 	.button-start {
