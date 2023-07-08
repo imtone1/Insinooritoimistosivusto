@@ -29,7 +29,7 @@ export default function Palvelupolkusteps() {
   }
 
   const ColorButton = styled(Button)(({ theme }) => ({
-    color: theme.palette.getContrastText(COLORS.liila),
+    color: theme.palette.getContrastText('#EFEEEC'),
     backgroundColor: COLORS.liila,
     '&:hover': {
       backgroundColor: COLORS.tummanharmaa,
@@ -37,7 +37,7 @@ export default function Palvelupolkusteps() {
   }))
 
   const ColorButtonBack = styled(Button)(({ theme }) => ({
-    color: theme.palette.getContrastText('#D9D9D9'),
+    color: theme.palette.getContrastText('#EFEEEC'),
 
     '&:hover': {
       backgroundColor: '#D9D9D9',

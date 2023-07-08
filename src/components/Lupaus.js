@@ -8,12 +8,12 @@ const Lupaus = ({ teksti, otsikko1, otsikko2 }) => {
   return (
     <>
       <Stack direction={'row'} sx={{}}>
-        <DoneOutlineIcon sx={{ alignSelf:'center' ,color:'success' }}/>
+
         <Stack component={'div'} direction={'column'} p={{ md:2, xs:2 }}>
 
 
-          <Stack direction={{ xs:'column', sm:'row' }}>
-
+          <Stack direction={'row' } sx={{ gap:2 }}>
+            <DoneOutlineIcon sx={{ alignSelf:'center' }}/>
             {/* <Typography variant={'h5'} sx={{fontWeight:'bold', fontSize:'200%', alignSelf:'center'}}>
               {otsikko1}{otsikko2}
               </Typography> */}

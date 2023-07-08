@@ -19,42 +19,42 @@ const Videoesittely = () => {
   'uploadDate': '2023-07-08T08:00:00+03:00',
   'contentUrl': mainos,
   'duration': 'PT0M43S',
-  'hasPart': {
+  'hasPart':[ {
     '@type': 'Clip',
     'name': 'Insinööritoimiston valtit',
     'startOffset': 5,
     'url': `${mainos}?t=5`
   },
-  'hasPart': {
+  {
     '@type': 'Clip',
     'name': 'LVI-suunnittelupalvelut',
     'startOffset': 12,
     'url': `${mainos}?t=12`
   },
-  'hasPart': {
+  {
     '@type': 'Clip',
     'name': 'Referenssit',
     'startOffset': 19,
     'url': `${mainos}?t=19`
   },
-  'hasPart': {
+  {
     '@type': 'Clip',
     'name': 'Nykyaikaiset ohjelmistot',
     'startOffset': 25,
     'url': `${mainos}?t=25`
   },
-  'hasPart': {
+  {
     '@type': 'Clip',
     'name': 'Dokumentaatio kätevästi ja reaaliaikaisesti',
     'startOffset': 30,
     'url': `${mainos}?t=30`
   },
-  'hasPart': {
+  {
     '@type': 'Clip',
     'name': 'Ota yhteyttä jo tänään',
     'startOffset': 35,
     'url': `${mainos}?t=35`
-  }
+  }]
 }
 
   const JSONschema = JSON.stringify(schema)

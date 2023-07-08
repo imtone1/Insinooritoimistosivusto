@@ -27,6 +27,9 @@ const Palvelutcard = () => {
   const handleOpenProjekti = () => setOpenProjekti(true)
   const handleOpenKVV = () => setOpenKVV(true)
   const handleCloseKVV = () => setOpenKVV(false)
+  const [openMaa, setOpenMaa] = useState(false)
+  const handleOpenMaa = () => setOpenMaa(true)
+  const handleCloseMaa = () => setOpenMaa(false)
 
   // Accordions
   const [expanded, setExpanded] = React.useState(false)
@@ -72,7 +75,7 @@ const Palvelutcard = () => {
                 <Typography variant='h4' sx={{ fontWeight:600, marginBottom:2, height:120 }}>LVIA-suunnittelu</Typography>
                 <Typography variant='body1' sx={{ textAlign:'left', height:200, paddingLeft:2 }}>Panostamme laadukkaaseen ja asiakaslähtöiseen LVI-suunnitteluun, joka optimoi kohteen energiankulutuksen, parantaa sen sisäilman laatua ja takaa kustannustehokkaan toiminnan.</Typography>
                 <button onClick={() => setopen(true)}  onKeyUp={() => setopen(true)} tabIndex='0'
-                  className='palveluticon' type='button'><Typography>Lue lisää</Typography></button>
+                  className='palveluticon' type='button'><Typography sx={{ cursor:'pointer' }}>Lue lisää</Typography></button>
               </div>
 
             </div></div></div>
@@ -86,7 +89,7 @@ const Palvelutcard = () => {
                 <Typography variant='body1' sx={{  textAlign:'left', height:200 , paddingLeft:2 }}>
 
                       Otamme vastaan projektinjohto- ja rakennuttamistehtäviä, jotka toteutamme hankkeen tarpeiden mukaisesti. Meidän tavoitteenamme on tehdä rakennuttamishanke sinulle mahdollisimman vaivattomaksi vahvalla ammattitaidollamme.</Typography>
-                <button className='palveluticon' onClick={handleOpenProjekti} onKeyUp={handleOpenProjekti}  type='button' tabIndex='0'><Typography>Lue lisää</Typography></button>
+                <button className='palveluticon' onClick={handleOpenProjekti} onKeyUp={handleOpenProjekti}  type='button' tabIndex='0'><Typography sx={{ cursor:'pointer' }}>Lue lisää</Typography></button>
               </div></div></div></div>
         <div className='palvelutcontainer'>
           <div className='palvelutbox'>
@@ -97,7 +100,7 @@ const Palvelutcard = () => {
                           KVV-/IV-työnjohtajan palvelut</Typography>
                 <Typography variant='body1' sx={{ textAlign:'left', height:200 , paddingLeft:2 }}>
                           Tilaamalla meiltä KVV-/IVtyönjohtajan palvelut saat ammattilaiset rinnallasi, jotka huolehtivat siitä, että kaikki sujuu suunnitelmien mukaisesti ja lopputulos on juuri sellainen kuin odotit. Ota yhteyttä ja säästä itsesi turhilta huolilta ja kustannuksilta.</Typography>
-                <button className='palveluticon' onClick={handleOpenKVV} onKeyUp={handleOpenKVV} type='button' tabIndex='0'><Typography>Lue lisää</Typography></button>
+                <button className='palveluticon' onClick={handleOpenKVV} onKeyUp={handleOpenKVV} type='button' tabIndex='0'><Typography sx={{ cursor:'pointer' }}>Lue lisää</Typography></button>
               </div></div></div></div></Stack>
 
       <Box >
@@ -131,7 +134,7 @@ const Palvelutcard = () => {
 
               <List dense={true}>
 
-                <ListItem onClick={() => setopen(true)} role='button' sx={{ cursor:'pointer' }}>
+                {/* <ListItem onClick={() => setopen(true)} role='button' sx={{ cursor:'pointer' }}>
                   <ListItemIcon>
                     <RoofingIcon />
                   </ListItemIcon>
@@ -142,9 +145,9 @@ const Palvelutcard = () => {
                   <ListItemIcon>
                     <ArrowForwardIosIcon />
                   </ListItemIcon>
-                </ListItem>
+                </ListItem> */}
 
-                <ListItem  onClick={handleOpenKVV} role='button' sx={{ cursor:'pointer' }}>
+                {/* <ListItem  onClick={handleOpenKVV} role='button' sx={{ cursor:'pointer' }}>
                   <ListItemIcon>
                     <RoofingIcon />
                   </ListItemIcon>
@@ -156,9 +159,9 @@ const Palvelutcard = () => {
                     <ArrowForwardIosIcon />
                   </ListItemIcon>
 
-                </ListItem>
+                </ListItem> */}
 
-                <ListItem onClick={handleOpenProjekti} role='button' sx={{ cursor:'pointer' }}>
+                {/* <ListItem onClick={handleOpenProjekti} role='button' sx={{ cursor:'pointer' }}>
                   <ListItemIcon>
                     <RoofingIcon />
                   </ListItemIcon>
@@ -169,9 +172,9 @@ const Palvelutcard = () => {
                   <ListItemIcon>
                     <ArrowForwardIosIcon />
                   </ListItemIcon>
-                </ListItem>
+                </ListItem> */}
 
-                <ListItem  >
+                <ListItem onClick={handleOpenMaa} role='button' sx={{ cursor:'pointer' }} >
                   <ListItemIcon>
                     <RoofingIcon />
                   </ListItemIcon>
@@ -180,7 +183,7 @@ const Palvelutcard = () => {
 
                   />
                   <ListItemIcon>
-
+                    <ArrowForwardIosIcon />
                   </ListItemIcon>
                 </ListItem>
 
@@ -503,10 +506,7 @@ const Palvelutcard = () => {
                 </List>
                 <Stack sx={{ gap:2 }}>
                   <Typography>
-                Yksi tällainen esimerkki voi olla maalämpöjärjestelmän hankinta. Tarjoamme konsulttipalvelua, jossa ammattilaisemme vetävät hanketta puolestasi. Me tiedämme, että maalämpöprojekti koostuu monista eri osista ja vaatii huolellista suunnittelua ja projektijohtoa. Siksi lähtökohtamme on nykyisen lämmitysjärjestelmäsi kartoitus ja tulevien remonttien huomioiminen, jotta maalämpöjärjestelmäsi toimii tehokkaasti myös tulevaisuudessa. Meidän tavoitteenamme on tehdä maalämpöjärjestelmän hankinta sinulle mahdollisimman vaivattomaksi. Hoidamme puolestasi urakka-asiakirjojen laadinnan ja kilpailutamme toimijat, jotta sinulle saadaan vertailukelpoisia tarjouksia.
-                  </Typography>
-                  <Typography>
-                Meillä on vahva osaaminen LVI-tekniikasta ja maalämpöjärjestelmistä. Olemme avuksesi koko rakennuttamisprosessin ajan, oli kyseessä sitten pieni tai suuri hanke. Rakennuttamisesta meillä on vankka kokemus, niin pienistä alle 30kW kohteista kuin isoista aina 270 kW saakka. Ota askel kohti kestävää ja tehokasta lämmitysratkaisua. Valitsemalla meidät kumppaniksesi saat ammattitaitoisen ja kokonaisvaltaisen palvelun maalämpöjärjestelmän hankkimiseen. Tarjoamme sinulle ratkaisun, joka tuo säästöjä ja mukavuutta elämääsi. Ota yhteyttä ja anna meidän auttaa sinua maalämpöjärjestelmän hankinnassa.
+                Tarjoamme konsulttipalvelua, jossa ammattilaisemme vetävät hanketta puolestasi.
                   </Typography>
                 </Stack>
               </Box>
@@ -517,6 +517,7 @@ const Palvelutcard = () => {
           </ModalDialog>
         </ModalOverflow>
       </Modal>
+
 
 
 
@@ -542,7 +543,7 @@ const Palvelutcard = () => {
 
             <Box sx={{ maxWidth:900 }}>
               <Typography id="modal-modal-title21" variant="h5" component="h2">
-            KVV/IV Työnjohto
+            KVV/IV- Työnjohto
               </Typography>
               <Box id="modal-dialog-KVV1" sx={{ mt: 2 }}>
                 <Stack sx={{ gap:2 }}>
@@ -600,6 +601,52 @@ const Palvelutcard = () => {
                 </Stack>
               </Box>
             </Box>
+
+
+          </ModalDialog>
+        </ModalOverflow>
+      </Modal>
+
+      <Modal
+        open={openMaa}
+
+        onClose={handleCloseMaa}
+
+
+        aria-labelledby="modal-dialog-Maalampo21"
+
+        aria-describedby="modal-modal-descriptionMaalampo"
+
+      >
+        <ModalOverflow>
+          <ModalDialog
+
+            layout="center"
+            size="lg"
+            variant="soft"
+          >
+            <ModalClose />
+
+            <Box sx={{ maxWidth:900 }}>
+              <Typography id="modal-modal-titleMaalampo" variant="h5">
+            Maalämpösuunnittelu, valvonta ja rakennuttaminen
+              </Typography>
+              <Box id="modal-dialog-Maalampo21" sx={{ mt: 2 }}>
+                <Typography>
+              Tarjoamme projektinjohto- ja rakennuttamistehtäviä, jotka toteutamme hankkeen tarpeiden mukaisesti.
+                </Typography>
+
+                <Stack sx={{ gap:2 }}>
+                  <Typography>
+                Me tiedämme, että maalämpöprojekti koostuu monista eri osista ja vaatii huolellista suunnittelua ja projektijohtoa. Tarjoamme konsulttipalvelua, jossa ammattilaisemme vetävät hanketta puolestasi. Lähtökohtamme on nykyisen lämmitysjärjestelmäsi kartoitus ja tulevien remonttien huomioiminen, jotta maalämpöjärjestelmäsi toimii tehokkaasti myös tulevaisuudessa. Meidän tavoitteenamme on tehdä maalämpöjärjestelmän hankinta sinulle mahdollisimman vaivattomaksi. Hoidamme puolestasi urakka-asiakirjojen laadinnan ja kilpailutamme toimijat, jotta sinulle saadaan vertailukelpoisia tarjouksia.
+                  </Typography>
+                  <Typography>
+                Meillä on vahva osaaminen LVI-tekniikasta ja maalämpöjärjestelmistä. Olemme avuksesi koko rakennuttamisprosessin ajan, oli kyseessä sitten pieni tai suuri hanke. Rakennuttamisesta meillä on vankka kokemus, niin pienistä alle 30kW kohteista kuin isoista aina 270 kW saakka. Ota askel kohti kestävää ja tehokasta lämmitysratkaisua. Valitsemalla meidät kumppaniksesi saat ammattitaitoisen ja kokonaisvaltaisen palvelun maalämpöjärjestelmän hankkimiseen. Tarjoamme sinulle ratkaisun, joka tuo säästöjä ja mukavuutta elämääsi. Ota yhteyttä ja anna meidän auttaa sinua maalämpöjärjestelmän hankinnassa.
+                  </Typography>
+                </Stack>
+              </Box>
+            </Box>
+
 
 
           </ModalDialog>

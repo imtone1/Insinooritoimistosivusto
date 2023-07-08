@@ -1,9 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
 import suurilogo from '../kuvat/suurilogo.jpg'
-import twitterlogo from '../kuvat/twitter img.jpg'
+import twitterlogo from '../kuvat/twitterimg.jpg'
 
-const SEO =({ title, description }) => {
+const SEO =({ title, description } ) => {
   return (
     <Helmet>
       { /* Standard metadata tags */ }
@@ -18,8 +18,8 @@ const SEO =({ title, description }) => {
       {/* <meta property="og:image" content="URL"/>*/}
       <meta property="og:url" content="https://sapair.fi"/>
       {/* A tag that denotes the name of the Web site in which the shared page resides: */}
-      <meta property="og:site_name" content="Insinööritoimisto SapAir Oy"/>
-      <meta property="og:image" content={suurilogo}/>
+      <meta property="og:site_name" content="Insinööritoimisto SapAir Oy - LVI-suunnittelu"/>
+      {/* <meta property="og:image" content={process.env.PUBLIC_URL + suurilogo}/> */}
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       { /* End Facebook tags */ }
@@ -35,8 +35,8 @@ Player Card: A Card that can display video/audio/media. */}
 
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={twitterlogo} />
-      <meta name="twitter:image:alt" content="Insinööritoimisto SapAir Oy"/>
+      {/* <meta name="twitter:image" content={process.env.PUBLIC_URL + twitterlogo} /> */}
+      <meta name="twitter:image:alt" content="Insinööritoimisto SapAir Oy - LVI-suunnittelu"/>
       { /* End Twitter tags */ }
     </Helmet>
   )
