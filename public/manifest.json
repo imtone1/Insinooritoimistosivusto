@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Irina Tatti",
+  "short_name": "SapAir Oy",
+  "name": "Insinööritoimisto SapAir Oy",
+  "description": "LVIA-suunnittelua ja -konsultointia",
+  "manifest_version": 2,
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,6 +23,12 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#EFEEEC"
+  "background_color": "#EFEEEC",
+
+  "theme": {
+    "colors": {
+       "frame": "#EFEEEC",
+       "tab_background_text": "#0D0D0D"
+    }
+  }
 }

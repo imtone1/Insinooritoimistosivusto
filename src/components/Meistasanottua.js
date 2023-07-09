@@ -13,7 +13,7 @@ const Meistasanottua = () => {
   return (
 
     <Box className="boxit"  sx={{ alignItems:'center', justifyContent:'center' , position:'relative' }}>
-      <Box sx={{ position:'absolute', top:{ xs:'25%', md:'20%', xl:'20%' }, right:{ xs:-70, xl:'25%' }, width:'80vh', maxWidth:600 }} >
+      <Box sx={{ position:'absolute', top:{ xs:'25%', md:'15%', xl:'20%' }, right:{ xs:-70, xl:'25%' }, width:'80vh', maxWidth:600 }} >
         <img src={tablelasit} alt='kannettava tietokone harmaalla taustalla' style={{ width: '100%' }}/></Box>
       <Box sx={{ margin:{ xs:'auto', sm:5, lg:'auto' }, width:{ xs:'80%', md:500, lg:800 } }} className='palautebox'>
 

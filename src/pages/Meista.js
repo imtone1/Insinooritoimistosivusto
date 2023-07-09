@@ -56,26 +56,26 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
             <div className='shadow'></div>
             <div className='sisalto' >
               <div className='tekstiboxi'>
-                <Stack direction={'row'} sx={{ justifyContent:'center', alignItems:'center', p:{ xs:2 } }}>
-                  <Typography variant='h2' sx={{ textAlign:{ xl: 'center' }, fontSize:'220%' }}>
+                <Stack direction={{ xs:'column',md:'row' }} sx={{ justifyContent:'center', alignItems:'center', p:{ xs:2 }, gap:1 }}>
+                  <Typography variant='h2' sx={{ textAlign:'center', fontSize:'220%' }}>
     Konsta Sappinen
                   </Typography>
                   <LinkedInIcon fontSize='large' onClick={() =>  window.location.href='https://www.linkedin.com/in/konsta-sappinen-364ba575/'} aria-label="Linkki Konsta Sappisen Linkedin-sivulle"/>
                 </Stack>
-                <Typography variant='h2' sx={{ textAlign:'center', fontSize:'180%' }}>
+                <Typography variant='h2' sx={{ textAlign:'center', fontSize:'150%', marginBottom:1 }}>
         Vastaava LVIA-suunnittelija
                 </Typography>
-                <Typography variant='h2' sx={{ textAlign:'center', fontSize:'180%' }}>
+                <Typography variant='h2' sx={{ textAlign:'center', fontSize:'150%' , marginBottom:2 }}>
         Toimitusjohtaja
                 </Typography>
-                <Stack direction={{ xs:'column',md:'row' }} gap={2}>
+                <Stack direction={{ xs:'column',md:'row' }}  sx={{ gap:{ xs:0, md:2 } }}>
                   <a href="tel:0440190987" >  <Stack direction={'row'} >
                     <PhoneInTalkIcon sx={{ justifySelf:'center', alignSelf:'center' }}/>
                     <Typography >
               044 019 09 87
                     </Typography>
                   </Stack></a>
-                  <a href="mailto:info@sapair.fi">  <Stack direction={'row'} >
+                  <a href="mailto:info@sapair.fi" style={{ marginBottom:5 }}>  <Stack direction={'row'} >
                     <MailIcon sx={{ justifySelf:'center', alignSelf:'center' }}/>
                     <Typography >
               konsta.sappinen@sapair.fi
@@ -105,7 +105,7 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
             <div className='sisalto'>
               <div className='tekstiboxi'>
                 <Stack sx={{ justifyContent:'center', alignItems:'center', p:2 }}>
-                  <Typography variant='h2' sx={{ textAlign:'center', fontSize:'260%' }} >
+                  <Typography variant='h3' sx={{ textAlign:'center', fontSize:'260%', textShadow: '1px 1px rgb(99, 99, 99)', textTransform:'uppercase', fontWeight:'600' , fontSize:'200%', pb:'20px' }} >
     Suunnittelijan referenssit
                   </Typography>
                   <Typography sx={{ justifySelf:'center', alignSelf:'center' }}>
@@ -126,7 +126,7 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
 
       </Stack>
 
-      <Stack sx={{ width:{ xs:'100%', lg:'900px' }, margin: 'auto' , marginTop:5 }}>
+      <Stack sx={{ width:{ xs:'100%', lg:'900px' }, margin: 'auto' , marginTop:5, marginBottom:12 }}>
         {/* <Typography variant='h3' sx={{ justifySelf:'center', alignSelf:'center', p:10}}>
   Arvojamme
 </Typography> */}
@@ -136,7 +136,7 @@ Suunnittelemme energiatehokkaita rakennuksia yksityisille, yrityksille ja taloyh
             <div className='shadow'></div>
             <div className='sisalto'>
               <div className='tekstiboxi'>
-                <Typography variant='h2' sx={{ textShadow: '1px 1px rgb(99, 99, 99)', textTransform:'uppercase', fontWeight:'600' , fontSize:'200%', pb:'20px' }}>Arvojamme</Typography>
+                <Typography variant='h3' sx={{ textShadow: '1px 1px rgb(99, 99, 99)', textTransform:'uppercase', fontWeight:'600' , fontSize:'200%', pb:'20px' }}>Arvojamme</Typography>
                 <Typography p={{ md:3, xs:2 }} maxWidth={800} textAlign={'center'} >
 
                 </Typography>

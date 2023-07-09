@@ -18,8 +18,8 @@ export default function Koulutusaccordion() {
   }
 
   return (
-    <Box  >
-      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{ backgroundColor:COLORS.grey  }} >
+    < >
+      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{ backgroundColor:COLORS.grey , maxWidth:'92%' }} >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"
@@ -27,7 +27,7 @@ export default function Koulutusaccordion() {
         >
           <Stack direction={{ xs:'column', sm:'row' }} sx={{ margin:'auto' }}>
             <SchoolIcon sx={{ justifySelf:'center', alignSelf:'center' }}/>
-            <Typography sx={{  p:2, textAlign:'center' , fontSize:'190%' }}>
+            <Typography sx={{  p:2, justifySelf:'center', alignSelf:'center' , fontSize:'120%' }}>
             Koulutus
             </Typography>
 
@@ -51,7 +51,7 @@ export default function Koulutusaccordion() {
 
         </AccordionDetails>
       </Accordion>
-      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}  sx={{ backgroundColor:COLORS.grey }}>
+      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}  sx={{ backgroundColor:COLORS.grey, maxWidth:'92%' }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2bh-content"
@@ -147,6 +147,6 @@ export default function Koulutusaccordion() {
       </Accordion>
 
 
-    </Box>
+    </>
   )
 }

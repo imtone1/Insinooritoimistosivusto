@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { Box, Stack, Typography, List, ListItem, ListItemText, ListItemIcon } from '@mui/material'
 import { Modal, ModalDialog, ModalClose, ModalOverflow } from '@mui/joy'
@@ -19,6 +20,22 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 
 
 const Palvelutcard = () => {
+
+  const schema=
+{
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  'name': 'KVV- ja IV- työnjohtajan tehtävät',
+  'description': 'KVV- ja IV- työnjohtaja toimii rakennuttajan edunvalvojana varmistaen, että suunnitelmat ja määräykset toteutetaan työmaalla asianmukaisesti.',
+  'itemListOrder': 'https://schema.org/ItemListUnordered',
+  'numberOfItems': 3,
+  'itemListElement': [
+    'Valvoa työvaiheiden sujumista','Laadun varmistamista','Työn suorittamista oikein'
+  ]
+}
+
+  const JSONschema = JSON.stringify(schema)
+
   const [open, setopen] = useState(false)
   const [openProjekti, setOpenProjekti] = useState(false)
   const [openKVV, setOpenKVV] = useState(false)
@@ -64,7 +81,9 @@ const Palvelutcard = () => {
 
   return (
     <Box  sx={{  position:'relative', paddingBottom:4 , maxWidth: 1200 , margin:'auto' }}>
-
+      <Helmet>
+        <script type="application/ld+json">{JSONschema}</script>
+      </Helmet>
       <Paaotsikko otsikko={'Palveluitamme'} teksti={'Olemme asiakaslähtöinen ja ammattitaitoinen suunnittelutoimisto, jossa asiointi on sujuvaa ja nopeaa. Tarjoamme kattavat LVIA-suunnittelu- ja konsultointipalvelut. Palvelemme asiakkaita niin tavanomaisissa kuin vaativissakin projekteissa.'} />
       <Stack sx={{ justifyContent:'center', alignItems:'center', display:'flex', gap:{ xs:0,md:9 } }} direction={{ xs:'column', md:'row' }}>
         <div className='palvelutcontainer'>
@@ -175,17 +194,6 @@ const Palvelutcard = () => {
                   </ListItemIcon>
                   <ListItemText
                     primary={'Huoneistoremonttivalvonta'}
-
-                  />
-
-                </ListItem>
-
-                <ListItem >
-                  <ListItemIcon>
-                    <RoofingIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={'Asiantuntijalausunnot'}
 
                   />
 

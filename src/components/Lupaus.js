@@ -18,7 +18,7 @@ const Lupaus = ({ teksti, otsikko1 }) => {
               {otsikko1}{otsikko2}
               </Typography> */}
           {/* <Rivitys osa1={otsikko1} osa2={otsikko2} varianti={'h5'}/> */}
-          <Typography variant={'h5'}>{otsikko1}</Typography>
+          <Typography variant={'h4'}>{otsikko1}</Typography>
         </Stack>
         <Typography sx={{ pt:1 }}>
 

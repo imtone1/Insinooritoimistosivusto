@@ -17,7 +17,7 @@ export default function Accordions() {
   }
 
   return (
-    <Box  sx={{ maxwidth:900, margin:'auto', pb:10 }}>
+    <Box  sx={{ maxwidth:900, margin:'auto', pb:5 }}>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{ backgroundColor:COLORS.grey  }} >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

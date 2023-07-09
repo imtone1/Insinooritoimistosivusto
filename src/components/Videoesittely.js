@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
-import mainos from '../videos/mainosvideolopullinen.mp4'
+import mainos from '../videos/mainosvideoHD.mp4'
 import { Box } from '@mui/material'
 
 import thumbnail from '../images/thumbnail.jpg'
