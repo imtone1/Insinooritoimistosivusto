@@ -5,7 +5,7 @@ import Paaotsikko from '../otsikot/Paaotsikko'
 import {  Box } from '@mui/material'
 import Palaute from './Palaute'
 import tablelasit from '../images/tablelasit.png'
-
+import tablelasitmobile from '../images/tablelasitmobile.png'
 
 
 
@@ -14,7 +14,14 @@ const Meistasanottua = () => {
 
     <Box className="boxit"  sx={{ alignItems:'center', justifyContent:'center' , position:'relative' }}>
       <Box sx={{ position:'absolute', top:{ xs:'25%', md:'15%', xl:'20%' }, right:{ xs:-70, xl:'25%' }, width:'80vh', maxWidth:600 }} >
-        <img src={tablelasit} alt='kannettava tietokone harmaalla taustalla' style={{ width: '100%' }}/></Box>
+        {/* <img src={tablelasit} alt='kannettava tietokone harmaalla taustalla' style={{ width: '100%' }}/> */}
+
+        <picture>
+          <source media="(max-width: 480px)" srcSet={tablelasitmobile} alt='3d-kuva saarikaupungista' />
+          <source media="(min-width: 800px)" srcSet={tablelasit} alt='3d-kuva saarikaupungista' />
+          <img src={tablelasit} alt='kannettava tietokone harmaalla taustalla' style={{ width: '100%' }} />
+        </picture>
+      </Box>
       <Box sx={{ margin:{ xs:'auto', sm:5, lg:'auto' }, width:{ xs:'80%', md:500, lg:800 } }} className='palautebox'>
 
         <Paaotsikko otsikko={'Meistä sanottua'} teksti={'Asiakastyytyväisyys on meille kunnia-asia.'} />
