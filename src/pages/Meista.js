@@ -19,7 +19,7 @@ import Sivuotsikko from '../otsikot/Sivuotsikko'
 const Meista = () => {
   return (
     <Box sx={{ overflow:'hidden' }}>
-      <SEO title={'Insinööritoimisto SapAir Oy - Meistä'} description={'SapAir Oy:n esittelysivu. Katso LVIA-ammattilaistemme tärkeimmät referenssit ja arvomme.'}/>
+      <SEO title={'Insinööritoimisto SapAir Oy - Meistä'} description={'Katso LVIA-ammattilaistemme tärkeimmät referenssit ja arvomme.'}/>
 
       <Sivuotsikko otsikko={'SapAir Oy'} alaotsikko={'Selkeä valinta, kun etsit LVIA-ammattilaista'}/>
 

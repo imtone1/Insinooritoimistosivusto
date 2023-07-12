@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes,  Navigate } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import Kotisivu from './pages/Kotisivu'
 import Yhteystiedot from './pages/Yhteystiedot'
@@ -17,13 +17,12 @@ function App() {
       <HelmetProvider>
         <Navbar/>
         <Routes>
-          <Route >
-            <Route path="/" element={<Kotisivu/>}/>
-            <Route path="/yhteystiedot" element={<Yhteystiedot/>}/>
-            <Route path="/meista" element={<Meista/>}/>
-            <Route path='/palvelut' element={<Palvelut/>}/>
-            <Route path='*' element={<NotFound />}/>
-          </Route>
+          <Route path="/" element={<Kotisivu/>}/>
+          <Route path="/yhteystiedot" element={<Yhteystiedot/>}/>
+          <Route path="/meista" element={<Meista/>}/>
+          <Route path='/palvelut' element={<Palvelut/>}/>
+          <Route path='/404.html' element={<NotFound />}/>
+          <Route path="*" element={<Navigate to="/404.html" />} />
         </Routes>
         <Footer/>
       </HelmetProvider>

@@ -178,7 +178,7 @@
 	}
 	
 	.sisalto .tekstiboxi h3 {
-	font-size:calc(var(--index) * 1.8);
+	font-size:calc(var(--index) * 2.2);
 	color:var(--musta);
 	margin-bottom:20px;
 	font-family:kamerik-3d,Courier,monospace;

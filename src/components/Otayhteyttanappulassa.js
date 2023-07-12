@@ -51,7 +51,7 @@ const Otayhteyttanappulassa = () => {
               <Typography p={{ md:3, xs:2 }} >
           Voit ottaa yhteyttä sinulle sopivimmalla tavalla. Vastaamme viikkopäivästä riippumatta.
               </Typography>
-              <Stack direction={{ xs:'column', md:'row' }} sx={{ gap:5 }} justifyContent="center" alignItems={'center'}>
+              <Stack direction={{ xs:'column', md:'row' }} sx={{ gap:5, paddingTop:5 }} justifyContent="center" alignItems={'center'}>
                 <ThemeProvider theme={customTheme}>
                   <StyledButton aria-label='SapAir Oy puhelinnumero'>
                     <a href="tel:0406772400" style={{ textDecoration:'none' }}><Stack direction={'column'} gap={2} justifyContent="center" alignItems={'center'} sx={{

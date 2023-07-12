@@ -1,10 +1,10 @@
 import React from 'react'
 import { Stack, Typography } from '@mui/material'
-// import Rivitys from '../otsikot/Rivitys'
+import Rivitys from '../otsikot/Rivitys'
 import DoneOutlineIcon from '@mui/icons-material/DoneOutline'
 
 
-const Lupaus = ({ teksti, otsikko1 }) => {
+const Lupaus = ({ teksti, otsikko1, otsikko2 }) => {
   return (
 
     <Stack direction={'row'}>
@@ -17,8 +17,8 @@ const Lupaus = ({ teksti, otsikko1 }) => {
           {/* <Typography variant={'h5'} sx={{fontWeight:'bold', fontSize:'200%', alignSelf:'center'}}>
               {otsikko1}{otsikko2}
               </Typography> */}
-          {/* <Rivitys osa1={otsikko1} osa2={otsikko2} varianti={'h5'}/> */}
-          <Typography variant={'h4'}>{otsikko1}</Typography>
+          {otsikko2 === undefined ? <Typography variant='h4' sx={{ fontWeight:'600' }}>{otsikko1}</Typography> : <Rivitys osa1={otsikko1} osa2={otsikko2} varianti={'h4'}/> }
+          {/* <Typography variant={'h4'}>{otsikko1}</Typography> */}
         </Stack>
         <Typography sx={{ pt:1 }}>
 
