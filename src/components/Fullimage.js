@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-const Fullimage = ({ imagePath, alt, classn , width, height }) => {
+const Fullimage = ({ imagePath, alt, classn , width, height, imagePathMobile }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const openFullscreen = () => {
@@ -13,11 +13,20 @@ const Fullimage = ({ imagePath, alt, classn , width, height }) => {
   }
   return (
     <>
-      <img className={classn} src={imagePath} alt={alt} width={width} height={height} onClick={openFullscreen} loading='lazy' />
-
+      {/* <img className={classn} src={imagePath} alt={alt} width={width} height={height} onClick={openFullscreen} loading='lazy' /> */}
+      <picture>
+        <source media="(max-width: 480px)" srcSet={imagePathMobile} alt={alt} />
+        <source media="(min-width: 800px)" srcSet={imagePath} alt={alt} />
+        <img className={classn} src={imagePath} alt={alt} width={width} height={height} onClick={openFullscreen} loading='lazy' />
+      </picture>
       {isOpen && (
         <div className="fullscreen-overlay" onClick={closeFullscreen}>
-          <img className="fullscreen-image" src={imagePath} alt={alt} />
+          {/* <img className="fullscreen-image" src={imagePath} alt={alt} /> */}
+          <picture>
+            <source className="fullscreen-image" media="(max-width: 480px)" srcSet={imagePathMobile} alt={alt} />
+            <source className="fullscreen-image" media="(min-width: 800px)" srcSet={imagePath} alt={alt} />
+            <img className="fullscreen-image" src={imagePath} alt={alt} width={width} height={height} onClick={openFullscreen} loading='lazy' />
+          </picture>
           <span className="close-button" onClick={closeFullscreen}>&times;</span>
         </div>
       )}

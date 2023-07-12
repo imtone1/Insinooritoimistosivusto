@@ -4,6 +4,7 @@ import { Box, Stack, Stepper, Step, StepLabel, Button, StepContent, Typography, 
 import finish from '../images/finishflag.png'
 import Polkuitem from './Polkuitem'
 import meeting from '../images/communication_employee_conference_conversation_meeting_discussion_icon.png'
+import meetingmobile from '../images/communicationmobile.png'
 import doc from '../images/editdocument.png'
 import geardoc from '../images/doc.png'
 import building from '../images/building.png'
@@ -56,7 +57,7 @@ export default function Palvelupolkusteps() {
                   Projektipalaveri
             </StepLabel>
             <StepContent>
-              <Polkuitem kuva={meeting} numero={'1.'} otsikko1={'Projekti'} otsikko2={'palaveri'} teksti={'Aloitamme aina projektipalaverilla. Istumme alas asiakkaan kanssa ja kuuntelemme tarkasti heidän ajatuksiaan käyttötarkoituksesta rakennukselle. Haluamme ymmärtää, millaisia tavoitteita heillä on ja mitä he haluavat saavuttaa.'}/>
+              <Polkuitem kuva={meeting} kuvamobile={meetingmobile} alt={'projektipalaveri'} numero={'1.'} otsikko1={'Projekti'} otsikko2={'palaveri'} teksti={'Aloitamme aina projektipalaverilla. Istumme alas asiakkaan kanssa ja kuuntelemme tarkasti heidän ajatuksiaan käyttötarkoituksesta rakennukselle. Haluamme ymmärtää, millaisia tavoitteita heillä on ja mitä he haluavat saavuttaa.'}/>
               <Box sx={{ mb: 2 }}>
                 <div>
                   <ColorButton
@@ -83,7 +84,7 @@ export default function Palvelupolkusteps() {
                   Luonnossuunnitelma
             </StepLabel>
             <StepContent>
-              <Polkuitem kuva={doc} numero={'2.'} otsikko1={'Luonnos'} otsikko2={'suunnitelma'} teksti={'Projektipalaverin pohjalta laadimme luonnossuunnitelmia, jotka esittelemme asiakkaalle. Tämä vaihe on erittäin tärkeä, koska haluamme varmistaa, että suunnitelmat vastaavat asiakkaan toiveita ja tarpeita. Keräämme palautetta ja kuuntelemme huolellisesti mahdollisia muutostoiveita.'}/>
+              <Polkuitem kuva={doc} numero={'2.'} alt={'luonnossuunnitelma'} otsikko1={'Luonnos'} otsikko2={'suunnitelma'} teksti={'Projektipalaverin pohjalta laadimme luonnossuunnitelmia, jotka esittelemme asiakkaalle. Tämä vaihe on erittäin tärkeä, koska haluamme varmistaa, että suunnitelmat vastaavat asiakkaan toiveita ja tarpeita. Keräämme palautetta ja kuuntelemme huolellisesti mahdollisia muutostoiveita.'}/>
               <Box sx={{ mb: 2 }}>
                 <div>
                   <ColorButton
@@ -110,7 +111,7 @@ export default function Palvelupolkusteps() {
                   Totetutussuunnitelma
             </StepLabel>
             <StepContent>
-              <Polkuitem kuva={geardoc} numero={'3.'} otsikko1={'Toteutus'}  otsikko2={'suunnitelma'} teksti={'Kun rakennusvalvonta on laittanut leimat suunnitelmiin, voidaan aloittaa työt. On muistettava, että ennen töiden aloitusta, kun kyseessä on rakennuslupa, LVI-töille on nimettävä KVV-/IV-työnjohtaja. Tarjoamme tämänkin palvelun.'}/>
+              <Polkuitem kuva={geardoc} numero={'3.'} alt={'toteutussuunnittelma'} otsikko1={'Toteutus'}  otsikko2={'suunnitelma'} teksti={'Kun rakennusvalvonta on laittanut leimat suunnitelmiin, voidaan aloittaa työt. On muistettava, että ennen töiden aloitusta, kun kyseessä on rakennuslupa, LVI-töille on nimettävä KVV-/IV-työnjohtaja. Tarjoamme tämänkin palvelun.'}/>
               <Box sx={{ mb: 2 }}>
                 <div>
                   <ColorButton
@@ -137,7 +138,7 @@ export default function Palvelupolkusteps() {
                   Rakennusvalvonta
             </StepLabel>
             <StepContent>
-              <Polkuitem kuva={building} numero={'4.'} otsikko1={'Rakennus'} otsikko2={'valvonta'}
+              <Polkuitem kuva={building} numero={'4.'} alt={'rakennusvalvonta'} otsikko1={'Rakennus'} otsikko2={'valvonta'}
                 teksti={'Kun rakennusvalvonta on laittanut leimat suunnitelmiin, voidaan aloittaa työt. Toimimme asiakkaan näin halutessa KVV-/IV-työnjohtajan ominaisuudessa tai hoidamme rakennusvalvontaan liittyvät velvotteemme.'}/>
               <Box sx={{ mb: 2 }}>
                 <div>
@@ -165,7 +166,7 @@ export default function Palvelupolkusteps() {
                   Työ etenee
             </StepLabel>
             <StepContent>
-              <Polkuitem kuva={gearapp} numero={'5.'} otsikko1={'Työ etenee'} otsikko2={''} teksti={'Työn sujumisesta raportoidaan asiakkaan toiveen mukaisesti sähköpostitse ja/tai ohjelmiston kautta. Ohjelmiston hyvänä puolena on, että kaikki dokumentaatio säilyy pilvipohjaisessa ohjelmistossa eikä ole huolta, että jokin tärkeä dokumentti häviää sähköpostitulvaan.'}/>
+              <Polkuitem kuva={gearapp} numero={'5.'} otsikko1={'Työ etenee'} alt={'työ etenee'} otsikko2={''} teksti={'Työn sujumisesta raportoidaan asiakkaan toiveen mukaisesti sähköpostitse ja/tai ohjelmiston kautta. Ohjelmiston hyvänä puolena on, että kaikki dokumentaatio säilyy pilvipohjaisessa ohjelmistossa eikä ole huolta, että jokin tärkeä dokumentti häviää sähköpostitulvaan.'}/>
               <Box sx={{ mb: 2 }}>
                 <div>
                   <ColorButton

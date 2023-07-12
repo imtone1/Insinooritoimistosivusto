@@ -14,6 +14,8 @@ import { COLORS } from '../values/colors'
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline'
 import kaksiD from '../images/Dokumentaatio.jpg'
 import kolmeD from '../images/Dokumentaatio3D.jpg'
+import kaksiDmobile from '../images/Dokumentaatiomobile.jpg'
+import kolmeDmobile from '../images/Dokumentaatio3Dmobile.jpg'
 import FullImage from './Fullimage'
 import Paaotsikko from '../otsikot/Paaotsikko'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
@@ -338,12 +340,12 @@ const Palvelutcard = () => {
                   </List>
                   <Stack>
                     {/* <img src={kaksiD} alt="talo_piirustus" width={'300'} height={'auto'} /> */}
-                    <FullImage imagePath={kaksiD} alt="2D suunnitelma" width={'300'} height={'auto'}  />
+                    <FullImage imagePath={kaksiD} imagePathMobile={kaksiDmobile} alt="2D LVI-suunnitelma" width={'300'} height={'auto'}  />
                     <Typography>2D suunnitelma</Typography>
                   </Stack>
                   <Stack>
                     {/* <img src={kolmeD} alt="talo_piirustus" width={'300'} height={'auto'} /> */}
-                    <FullImage imagePath={kolmeD} alt="3D suunnitelma"   width={'300'} height={'auto'} />
+                    <FullImage imagePath={kolmeD} imagePathMobile={kolmeDmobile} alt="3D LVI-suunnitelma"   width={'300'} height={'auto'} />
                     <Typography>3D suunnitelma</Typography>
                   </Stack>
                 </Stack>
