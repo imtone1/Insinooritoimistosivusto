@@ -278,7 +278,10 @@
 	text-align:center;
 	text-transform:uppercase;
 	letter-spacing:calc(var(--index) * -.15);
-	line-height:1.35em
+	line-height:1.35em;
+	background-color: #EFEEEC;
+	border-radius: 4px;
+	padding:4px;
 	}
 	
 	.otsikko2-content span {
@@ -290,7 +293,8 @@
 	text-transform:none;
 	font-family:merriweather-italic-3d;
 	letter-spacing:normal;
-	font-size:calc(var(--index) * 1.00);
+	/* font-size:calc(var(--index) * 1.00); */
+	font-size: medium;
 	line-height:1
 	}
 	

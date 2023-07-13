@@ -19,7 +19,7 @@ export default function Koulutusaccordion() {
 
   return (
     < >
-      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{ backgroundColor:COLORS.grey , maxWidth:'92%' }} >
+      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} sx={{ backgroundColor:COLORS.grey , maxWidth:'92%', marginBottom:1 }} >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1bh-content"

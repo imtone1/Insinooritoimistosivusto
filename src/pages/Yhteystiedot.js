@@ -32,7 +32,7 @@ const Yhteystiedot = () => {
 
   return (
     <>
-      <SEO title={'Insinööritoimisto SapAir Oy - Yhteystiedot'} description={'SapAir Oy:n yhteystiedot. Säästä itseäsi turhilta huolilta ja kustannuksilta, ota yhteyttä jo tänään.'}/>
+      <SEO title={'Insinööritoimisto SapAir Oy - Yhteystiedot'} description={'SapAir Oy:n LVIA-ammattilaisen yhteystiedot. Säästä itseäsi turhilta huolilta ja kustannuksilta, ota yhteyttä jo tänään.'}/>
 
       <Helmet>
         <script type="application/ld+json">{JSONschema}</script>
