@@ -21,12 +21,7 @@ const Fullimage = ({ imagePath, alt, classn , width, height, imagePathMobile }) 
       </picture>
       {isOpen && (
         <div className="fullscreen-overlay" onClick={closeFullscreen}>
-          {/* <img className="fullscreen-image" src={imagePath} alt={alt} /> */}
-          <picture>
-            <source className="fullscreen-image" media="(max-width: 480px)" srcSet={imagePathMobile} alt={alt} />
-            <source className="fullscreen-image" media="(min-width: 800px)" srcSet={imagePath} alt={alt} />
-            <img className="fullscreen-image" src={imagePath} alt={alt} width={width} height={height} onClick={openFullscreen} loading='lazy' />
-          </picture>
+          <img className="fullscreen-image" src={imagePath} alt={alt} />
           <span className="close-button" onClick={closeFullscreen}>&times;</span>
         </div>
       )}

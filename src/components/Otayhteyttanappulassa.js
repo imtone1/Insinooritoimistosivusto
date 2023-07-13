@@ -4,6 +4,8 @@ import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk'
 import MailIcon from '@mui/icons-material/Mail'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import table from '../images/table3.png'
+import tablemobile from '../images/tablemobile.png'
+// import tablemobilemini from '../images/tablemobilemini.png'
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles'
 import { COLORS } from '../values/colors'
 
@@ -40,7 +42,9 @@ const StyledButton = styled(Box)`
 const Otayhteyttanappulassa = () => {
   return (
 
-    <Box aria-describedby='otayhteytta' className="boxit" sx={{ backgroundImage: { xs:'none', md:`url(${table})` }, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', maxWidth:2000, margin:'auto', marginBottom:10 }}>
+    // <Box aria-describedby='otayhteytta' className="boxit" sx={{ backgroundImage: { xs:'none', md:`url(${table})` }, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', maxWidth:2000, margin:'auto', marginBottom:10 }}>
+    <Box aria-describedby='otayhteytta' sx={{ maxWidth:2000, margin:'auto', marginBottom:20, position:'relative', paddingBottom: 20 }}>
+
       <div className='boxicontainer' style={{ marginTop:5, marginBottom:10, maxWidth:800, margin:'auto' }}>
         <div className='boxi'>
           <div className='coverboxi'></div>
@@ -88,7 +92,7 @@ const Otayhteyttanappulassa = () => {
                       backgroundColor:{ xs:'#ececee', md:'transparent' }, boxShadow:`5px 5px 5px rgba(0,0,0,0.1), 15px 15px 15px rgba(0,0,0,0.1),
    20px 10px 20px rgba(0,0,0,0.1),
    50px 50px 80px rgba(0,0,0,0.25),
-   inset 3px 3px 2px #fff`,borderRadius:2, padding:1 }}>
+   inset 3px 3px 2px #fff`,borderRadius:2, padding:1, zIndex:200 }}>
                       <WhatsAppIcon sx={{ fontSize:'50px', marginTop:2 }}/>
                       <Typography sx={{ fontWeight:700 }}>
   044 019 09 87
@@ -98,11 +102,16 @@ const Otayhteyttanappulassa = () => {
                 </ThemeProvider>
               </Stack>
             </div>
+
           </div>
         </div>
       </div>
 
-
+      <picture>
+        <source media="(max-width: 800px)" srcSet={tablemobile} />
+        <source media="(min-width: 1250px)" srcSet={table} />
+        <img src={tablemobile} alt='kynät purkissa kirjojen päällä' style={{ position:'absolute', width:'auto', overflow:'hidden', bottom:-100, right:0 , zIndex:10 }} loading='lazy' />
+      </picture>
 
 
     </Box>

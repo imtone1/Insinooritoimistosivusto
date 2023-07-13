@@ -5,7 +5,7 @@ import { COLORS } from '../values/colors'
 
 const Palaute = ({ teksti, rating }) => {
   return (
-    <Box sx={{ maxWidth:400, margin:'auto', marginTop:2, textAlign:'center', backgroundColor: COLORS.creamy, borderRadius:1 }}>
+    <Box sx={{ maxWidth:400, margin:'auto', marginTop:{ xs: 10, md:12 }, textAlign:'center', backgroundColor: COLORS.creamy, borderRadius:1 }}>
       <Box sx={{ textAlign:'left' }}>
         <FormatQuoteIcon/>
       </Box>

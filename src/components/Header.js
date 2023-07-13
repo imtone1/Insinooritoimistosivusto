@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Box } from '@mui/material'
 import talo from '../images/poyta3.jpg'
+import talomobile from '../images/LVIsuunnittelupoytamobile.jpg'
+import talo1200 from '../images/LVIsuunnittelupoyta1200.jpg'
 
 const Header = () => {
   document.addEventListener('mousemove', e => {
@@ -14,8 +16,15 @@ const Header = () => {
   })
   return (
     <>
-      <Box role='img' className="layers__item" aria-label='LVIA-suunnittelu' sx={{ backgroundImage: `url(${talo})`, backgroundPosition: { xs:'bottom', sm:'top', md:'left bottom', xl:'center' } ,height:{ xs:'50vh', sm:'800px',md:'1000px', xl:'155vh' } }}></Box>
-      <section aria-label='header' className="layers">
+      {/* <Box role='img' className="layers__item" aria-label='LVIA-suunnittelu' sx={{ backgroundImage: `url(${talo})`, backgroundPosition: { xs:'bottom', sm:'top', md:'left bottom', xl:'center' } ,height:{ xs:'50vh', sm:'800px',md:'1000px', xl:'155vh' } }}></Box> */}
+      {/* <Box  sx={{ height:{ xs:'50vh', sm:'800px',md:'1000px', xl:'155vh', position:'relative' } }} >
+        <picture>
+          <source className="layers__item" media="(max-width: 480px)" srcSet={talomobile} />
+          <source className="layers__item" media="(min-width: 800px)" srcSet={talo} />
+          <img className="layers__item" style={{ width:'100%', height:'auto', top:0 }} src={talo} alt='LVIA-suunnittelu työpöytä' />
+        </picture>
+      </Box> */}
+      <section aria-label='header' className="layers" style={{ position:'relative' }}>
         <Box className="layers__container" sx={{ height:{ xs:'40vh',md:'50vh' }, minHeight:{ xs:'50vh',md:'70vh' }, maxHeigh:'2000px' }}>
 
 
@@ -43,6 +52,14 @@ const Header = () => {
 
         </Box>
       </section>
+      <Box className="layers__item" sx={{ height:{ xs:'50vh', sm:'800px',md:'1000px', xl:'155vh', position:'absolute', top:0 } }} >
+        <picture>
+          <source className="layers__item" media="(max-width: 480px)" srcSet={talomobile} />
+          <source className="layers__item" media="(max-width: 800px)" srcSet={talo1200} />
+          <source className="layers__item" media="(min-width: 900px)" srcSet={talo} />
+          <img className="layers__item" style={{ width:'100%'  }} src={talo} alt='LVIA-suunnittelu työpöytä' />
+        </picture>
+      </Box>
     </>
   )
 }

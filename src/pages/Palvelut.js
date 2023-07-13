@@ -116,7 +116,7 @@ const Palvelut = () => {
       <Sivuotsikko otsikko={'Palvelut'} alaotsikko={'Tarjoamme laajat LVIA-palvelut'} alaotsikko2={'Ota yhteyttä ja kysy lisää'}/>
 
 
-      <Stack direction={'column'} sx={{ alignItems:'center' }}>
+      <Stack direction={'column'} sx={{ alignItems:'center', py:5 }}>
 
         <List dense={true}>
 

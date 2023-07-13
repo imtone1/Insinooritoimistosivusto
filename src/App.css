@@ -58,7 +58,8 @@
 	
 	.layers {
 	perspective:800px;
-	overflow:hidden
+	overflow:hidden;
+
 	}
 	
 	.layers__container {
@@ -71,11 +72,12 @@
 	.layers__item {
 	position:absolute;
 	inset:-0vw;
-	background-size:cover;
-	background-position:center;
+	/* background-size:cover;
+	background-position:center; */
 	display:flex;
 	align-items:center;
-	justify-content:center
+	justify-content:center;
+	z-index:-1;
 	}
 	
 	.layer-1 {
@@ -153,7 +155,7 @@
 	height:100%;
 	background:#9d9d9d;
 	filter:blur(1px);
-	z-index:1
+	z-index:1;
 	}
 	
 	.boxicontainer .boxi .shadow {
