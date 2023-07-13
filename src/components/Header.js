@@ -26,7 +26,7 @@ const Header = () => {
 
               <p className="hero-content__p" >Ammattilaitoisesti, selkeästi ja kustannustehokkaasti</p>
 
-              <Link to={'/yhteystiedot'} style={{ textDecoration:'none' }} onClick={() => {
+              <Link reloadDocument to={'/yhteystiedot'} style={{ textDecoration:'none' }} onClick={() => {
                 window.scroll({
                   top: 0,
                   left: 0,

@@ -16,7 +16,7 @@ const Navbar = () => {
       <Toolbar>
 
         <Box sx={{ flexGrow: 1 }} >
-          <Link to="/" aria-label="SapAir Oy Etusivu">
+          <Link reloadDocument to="/" aria-label="SapAir Oy Etusivu">
 
             <SAlogo style={{ width:'150px' }}/>
 
@@ -27,12 +27,12 @@ const Navbar = () => {
           {/* <Typography variant='h6' component='div' sx={{flexGrow:1}} >
               Ammattilaisille
           </Typography> */}
-          <Link to="/" aria-label="SapAir Oy Etusivu">
+          <Link reloadDocument to="/" aria-label="SapAir Oy Etusivu">
 
             <HomeIcon/>
 
           </Link>
-          <Link to={'/palvelut'} style={{ textDecoration:'none' }} onClick={() => {
+          <Link reloadDocument to={'/palvelut'} style={{ textDecoration:'none' }} onClick={() => {
             window.scroll({
               top: 0,
               left: 0,
@@ -43,7 +43,7 @@ const Navbar = () => {
                   Palvelut
             </Typography>
           </Link>
-          <Link to={'/meista'} style={{ textDecoration:'none' }} onClick={() => {
+          <Link reloadDocument to={'/meista'} style={{ textDecoration:'none' }} onClick={() => {
             window.scroll({
               top: 0,
               left: 0,
@@ -54,7 +54,7 @@ const Navbar = () => {
                   Meistä
             </Typography>
           </Link>
-          <Link to={'/yhteystiedot'} style={{ textDecoration:'none' }} onClick={() => {
+          <Link reloadDocument to={'/yhteystiedot'} style={{ textDecoration:'none' }} onClick={() => {
             window.scroll({
               top: 0,
               left: 0,

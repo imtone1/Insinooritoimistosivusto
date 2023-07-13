@@ -38,7 +38,7 @@ const Footer = () => {
     <Box className='boxit' sx={{ overflow:'hidden', margin:'auto' }} role='navigation' aria-label='footer'>
 
       <Stack direction={{ xs:'column', md:'row' }} gap={{ xs: 5,md:10,lg:20 }} alignItems={'center'} justifyContent={'center'}>
-        <Link to={'/'} aria-label='Linkki SapAir Oy etusivulle'  onClick={() => {
+        <Link reloadDocument to={'/'} aria-label='Linkki SapAir Oy etusivulle'  onClick={() => {
           window.scroll({
             top: 0,
             left: 0,
@@ -49,7 +49,7 @@ const Footer = () => {
             <SAlogo style={{ width:'200px' }}/>
           </Box></Link>
         <Stack direction={{ xs:'column',sm:'row', md:'column' }} gap={5} >
-          <Link to={'/meista'} style={{ textDecoration:'none' }} aria-describedby='Meista' onClick={() => {
+          <Link reloadDocument to={'/meista'} style={{ textDecoration:'none' }} aria-describedby='Meista' onClick={() => {
             window.scroll({
               top: 0,
               left: 0,
@@ -61,7 +61,7 @@ const Footer = () => {
             </Typography>
           </Link>
 
-          <Link to={'/meista'} style={{ textDecoration:'none' }} aria-describedby='Referenssit' onClick={() => {
+          <Link reloadDocument to={'/meista'} style={{ textDecoration:'none' }} aria-describedby='Referenssit' onClick={() => {
             window.scroll({
               top: 120,
               left: 0,
@@ -72,7 +72,7 @@ const Footer = () => {
             Referenssit
             </Typography>
           </Link>
-          <Link to={'/yhteystiedot'} style={{ textDecoration:'none' }} aria-describedby='Yhteystiedot' onClick={() => {
+          <Link reloadDocument to={'/yhteystiedot'} style={{ textDecoration:'none' }} aria-describedby='Yhteystiedot' onClick={() => {
             window.scroll({
               top: 0,
               left: 0,
@@ -85,7 +85,7 @@ const Footer = () => {
           </Link>
         </Stack>
         <Stack direction={{ xs:'column',sm:'row', md:'column' }} gap={5}>
-          <Link to={'/palvelut'} style={{ textDecoration:'none' }} aria-describedby='Palvelut' onClick={() => {
+          <Link reloadDocument to={'/palvelut'} style={{ textDecoration:'none' }} aria-describedby='Palvelut' onClick={() => {
             window.scroll({
               top: 0,
               left: 0,
@@ -97,7 +97,7 @@ const Footer = () => {
             </Typography>
           </Link>
 
-          <Link to={'yhteystiedot'} style={{ textDecoration:'none' }} aria-describedby='Laskutus' onClick={() => {
+          <Link reloadDocument to={'yhteystiedot'} style={{ textDecoration:'none' }} aria-describedby='Laskutus' onClick={() => {
             window.scroll({
               top: 0,
               left: 0,

@@ -44,21 +44,21 @@ export default function Menuni() {
 
       >
         <div style={{ backgroundColor: COLORS.beige }}>
-          <Link role='menuitem' to={'/palvelut'} onClick={() => {
+          <Link reloadDocument role='menuitem' to={'/palvelut'} onClick={() => {
             window.scroll({
               top: 0,
               left: 0,
               behavior: 'instant',
             })
           }}><MenuItem onClick={handleClose} >Palvelut</MenuItem></Link>
-          <Link role='menuitem' to={'/yhteystiedot'} onClick={() => {
+          <Link reloadDocument role='menuitem' to={'/yhteystiedot'} onClick={() => {
             window.scroll({
               top: 0,
               left: 0,
               behavior: 'instant',
             })
           }}><MenuItem onClick={handleClose}>Yhteystiedot</MenuItem></Link>
-          <Link role='menuitem' to={'/meista'} onClick={() => {
+          <Link reloadDocument role='menuitem' to={'/meista'} onClick={() => {
             window.scroll({
               top: 0,
               left: 0,
