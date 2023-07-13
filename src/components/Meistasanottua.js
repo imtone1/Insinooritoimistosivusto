@@ -31,6 +31,10 @@ const Meistasanottua = () => {
               <Palaute teksti={'Oikein hyvää ja asiantuntevaa palvelua. Iso suositus.'} rating={5}/>
               <Palaute teksti={'Nopeaa ja asiantuntevaa osaamista, suosittelen! 👍'} rating={5}/>
               <Palaute teksti={'Asiallinen toimija, suosittelen lämpimästi!'} rating={5}/>
+              <Palaute teksti={'OKT + Rantasaunan LVI-suunnittelu ja valvonta. Ystävällinen ja nopea asiakaspalvelu. Ammattimaiset ja laadukkaat suunnitelmat.'} rating={5}/>
+              <Palaute teksti={'Asiakasta kuunnellaan ja suunnitelmiin pystyy tilaajakin vaikuttamaan ja ohjaamaan, hyvät suunnitelmat aikataulussa, suosittelen. Määräykset ja ohjeet hyvin tiedossa ammattilainen!'} rating={4}/>
+              <Palaute teksti={'Erittäin auttavainen ja ammattitaioinen. Paljon vastinetta rahalle, suosittelen.'} rating={5}/>
+              <Palaute teksti={'Nopea ja asiantunteva palvelu. Hyvä suunnittelu sekä huippuhyvät piirustukset. Suosittelen👍'} rating={5}/>
             </Carousel>
           </Box>
 
