@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { Box, Stack, Stepper, Step, StepLabel, Button, StepContent, Typography, Paper } from '@mui/material'
 
 import finish from '../images/finishflag.png'

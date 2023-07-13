@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import MenuBasic from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
 import MenuIcon from '@mui/icons-material/Menu'

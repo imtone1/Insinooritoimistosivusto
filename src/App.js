@@ -8,16 +8,17 @@ import { HelmetProvider } from 'react-helmet-async'
 import Kotisivu from './pages/Kotisivu'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-
+import NotFound from './pages/NotFound'
 import Skelet from './components/Skelet'
 
 const Palvelut = lazy(() => import('./pages/Palvelut'))
 const Yhteystiedot = lazy(() => import('./pages/Yhteystiedot'))
 const Meista = lazy(() => import('./pages/Meista'))
-const NotFound = lazy(() => import('./pages/NotFound'))
+// const NotFound = lazy(() => import('./pages/NotFound'))
 
 function App() {
   const navigate =useNavigate()
+
   return (
     <>
       <HelmetProvider>
@@ -25,7 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Kotisivu/>}/>
           <Route path="/yhteystiedot" element={
-            <ErrorBoundary FallbackComponent={<div>Yritä ladata sivu uudelleen..</div>}
+            <ErrorBoundary fallback={<div>Yritä ladata sivu uudelleen..</div>}
               onReset={() => navigate('/')}>
               <Suspense fallback={<Skelet/>}>
                 <Yhteystiedot/>
@@ -49,15 +50,10 @@ function App() {
             </ErrorBoundary>
           }/>
           <Route path='/404.html' element={
-            <ErrorBoundary fallback={<div>Yritä ladata sivu uudelleen..</div>}
-              onReset={() => navigate('/')}>
-              <Suspense fallback={<Skelet/>}>
-                <NotFound />
-              </Suspense>
-            </ErrorBoundary>
+            <NotFound />
 
           }/>
-          <Route path="*" element={<Navigate to="/404.html" />} />
+          <Route path="*" element={<Navigate to="/404.html"/>} />
         </Routes>
         <Footer/>
       </HelmetProvider>
