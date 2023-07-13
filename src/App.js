@@ -6,12 +6,10 @@ import { ErrorBoundary } from 'react-error-boundary'
 import { Route, Routes,  Navigate, useNavigate } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import Kotisivu from './pages/Kotisivu'
-// import Yhteystiedot from './pages/Yhteystiedot'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-// import Meista from './pages/Meista'
-// import Palvelut from './pages/Palvelut'
-// import NotFound from './pages/NotFound'
+
+import Skelet from './components/Skelet'
 
 const Palvelut = lazy(() => import('./pages/Palvelut'))
 const Yhteystiedot = lazy(() => import('./pages/Yhteystiedot'))
@@ -27,9 +25,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Kotisivu/>}/>
           <Route path="/yhteystiedot" element={
-            <ErrorBoundary fallback={<div>Yritä ladata sivu uudelleen..</div>}
+            <ErrorBoundary FallbackComponent={<div>Yritä ladata sivu uudelleen..</div>}
               onReset={() => navigate('/')}>
-              <Suspense fallback={<div>Sivu latautuu, odota hetki...</div>}>
+              <Suspense fallback={<Skelet/>}>
                 <Yhteystiedot/>
               </Suspense>
             </ErrorBoundary>
@@ -37,7 +35,7 @@ function App() {
           <Route path="/meista" element={
             <ErrorBoundary fallback={<div>Yritä ladata sivu uudelleen..</div>}
               onReset={() => navigate('/')}>
-              <Suspense fallback={<div>Sivu latautuu, odota hetki...</div>}>
+              <Suspense fallback={<Skelet/>}>
                 <Meista/>
               </Suspense>
             </ErrorBoundary>
@@ -45,7 +43,7 @@ function App() {
           <Route path='/palvelut' element={
             <ErrorBoundary fallback={<div>Yritä ladata sivu uudelleen..</div>}
               onReset={() => navigate('/')}>
-              <Suspense fallback={<div>Sivu latautuu, odota hetki...</div>}>
+              <Suspense fallback={<Skelet/>}>
                 <Palvelut/>
               </Suspense>
             </ErrorBoundary>
@@ -53,7 +51,7 @@ function App() {
           <Route path='/404.html' element={
             <ErrorBoundary fallback={<div>Yritä ladata sivu uudelleen..</div>}
               onReset={() => navigate('/')}>
-              <Suspense fallback={<div>Sivu latautuu, odota hetki...</div>}>
+              <Suspense fallback={<Skelet/>}>
                 <NotFound />
               </Suspense>
             </ErrorBoundary>
