@@ -5,7 +5,6 @@ import MailIcon from '@mui/icons-material/Mail'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import table from '../images/table3.png'
 import tablemobile from '../images/tablemobile.png'
-// import tablemobilemini from '../images/tablemobilemini.png'
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles'
 import { COLORS } from '../values/colors'
 
@@ -108,8 +107,8 @@ const Otayhteyttanappulassa = () => {
       </div>
 
       <picture>
-        <source media="(max-width: 800px)" srcSet={tablemobile} />
-        <source media="(min-width: 1250px)" srcSet={table} />
+        <source media="(max-width: 800px)" srcSet={tablemobile}  alt='kynät purkissa kirjojen päällä' />
+        <source media="(min-width: 1250px)" srcSet={table} alt='kynät purkissa kirjojen päällä' />
         <img src={tablemobile} alt='kynät purkissa kirjojen päällä' style={{ position:'absolute', width:'auto', overflow:'hidden', bottom:-100, right:0 , zIndex:10 }} loading='lazy' />
       </picture>
 

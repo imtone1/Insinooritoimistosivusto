@@ -4,10 +4,7 @@ import { Carousel } from 'react-responsive-carousel'
 import Paaotsikko from '../otsikot/Paaotsikko'
 import {  Box } from '@mui/material'
 import Palaute from './Palaute'
-import tablelasit from '../images/tablelasit.png'
-import tablelasitmobile from '../images/tablelasitmobile.png'
 import laptop from '../images/laptop.png'
-import phone from '../images/phone.png'
 import phonesvg from '../images/phone.svg'
 
 
@@ -39,9 +36,9 @@ const Meistasanottua = () => {
 
 
           <picture>
-            <source media="(max-width: 576px)" srcSet={phonesvg} />
-            <source media="(min-width: 800px)" srcSet={laptop}  />
-            <img src={laptop} style={{ width:'100%', position:'absolute', top:0 }}/>
+            <source media="(max-width: 576px)" srcSet={phonesvg} alt='palautteet näytöllä LVIA-palveluista' />
+            <source media="(min-width: 800px)" srcSet={laptop}  alt='palautteet näytöllä LVIA-palveluista' />
+            <img src={laptop} alt='palautteet näytöllä LVIA-palveluista' style={{ width:'100%', position:'absolute', top:0 }}/>
           </picture>
         </Box>
 

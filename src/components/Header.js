@@ -54,9 +54,9 @@ const Header = () => {
       </section>
       <Box className="layers__item" sx={{ height:{ xs:'50vh', sm:'800px',md:'1000px', xl:'155vh', position:'absolute', top:0 } }} >
         <picture>
-          <source className="layers__item" media="(max-width: 480px)" srcSet={talomobile} />
-          <source className="layers__item" media="(max-width: 800px)" srcSet={talo1200} />
-          <source className="layers__item" media="(min-width: 900px)" srcSet={talo} />
+          <source className="layers__item" media="(max-width: 480px)" srcSet={talomobile} alt='LVIA-suunnittelu työpöytä' />
+          <source className="layers__item" media="(max-width: 800px)" srcSet={talo1200}  alt='LVIA-suunnittelu työpöytä' />
+          <source className="layers__item" media="(min-width: 900px)" srcSet={talo} alt='LVIA-suunnittelu työpöytä' />
           <img className="layers__item" style={{ width:'100%'  }} src={talo} alt='LVIA-suunnittelu työpöytä' />
         </picture>
       </Box>
