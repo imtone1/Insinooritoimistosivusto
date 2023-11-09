@@ -12,8 +12,7 @@ Projekti sisältää jo olemassa olevan sivuston tutkimisen, empatiakartan luonn
 
 ---
 
-![sapair sivu](https://github.com/imtone1/Insinooritoimistosivusto/assets/88165529/95c942fd-2d49-4b36-b62b-8dc476e0727a)
-
+![sapair sivu](https://github.com/imtone1/Insinooritoimistosivusto/assets/88165529/8a34d0d0-5197-483a-8b40-e5e0320cb582)
 
 ## Analyysi
 
