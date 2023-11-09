@@ -1,1277 +1,1330 @@
-export const PROJECTS = [ 
+export const PROJECTS = [
 
- 
+  {
 
-  { 
+    Vuosi: 2023,
 
-    Vuosi: 2021, 
+    Kiinteiston_nimi: 'Uudenkaupungin sivistys ja hyvinvointikeskus',
 
-    Kiinteiston_nimi: 'Wiklund, S-Market Herkku', 
+    Tehtava: ' KVV työnjohtajan palvelut',
 
-    Tehtava: 'LVIA-suunnittelu', 
+    Vaativuusluokka: 'Poikkeuksellisen vaativa',
 
-    Vaativuusluokka: 'Vaativa', 
+    Rakennustyyppi: 'Hyvinvointikeskus',
 
-    Rakennustyyppi: 'Liikerakennus', 
+    Laajuus: 56163,
 
-    Laajuus: 1355, 
+    Paikka: 'Uusikaupunki'
 
-    Paikka: 'Turku' 
+  },
 
-  }, 
+  {
 
-{ 
+    Vuosi: 2023,
 
-    Vuosi: 2021, 
+    Kiinteiston_nimi: 'As Oy Skanssin Polaris',
 
-    Kiinteiston_nimi: 'Wiklund, S-Market Herkku', 
+    Tehtava: ' KVV työnjohtajan palvelut',
 
-    Tehtava: 'LVIA-suunnittelu', 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Vaativuusluokka: 'Vaativa', 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Rakennustyyppi: 'Liikerakennus', 
+    Laajuus: 2098,
 
-    Laajuus: 3500, 
+    Paikka: 'Turku'
 
-    Paikka: 'Turku' 
+  },
 
-  }, 
+  {
 
-{ 
+    Vuosi: 2023,
 
-    Vuosi: 2019, 
+    Kiinteiston_nimi: ' TA-Asumiskeskus Oy',
 
-    Kiinteiston_nimi: 'Hotelli Doha Lusail, Kelluva hotelli', 
+    Tehtava: ' KVV työnjohtajan palvelut',
 
-    Tehtava: 'LVIA-suunnittelu + jäähdytysjärjestelmä 620kW', 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Vaativuusluokka: 'Vaativa', 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Rakennustyyppi: 'Liikerakennus', 
+    Laajuus: 3902,
 
-    Laajuus: 3772, 
+    Paikka: 'Naantali'
 
-    Paikka: 'Qatar' 
+  },
 
-  }, 
+  {
 
-{ 
+    Vuosi: 2021,
 
-    Vuosi: 2019, 
+    Kiinteiston_nimi: 'Wiklund, S-Market Herkku',
 
-    Kiinteiston_nimi: 'As Oy Puubyygeli', 
+    Tehtava: 'LVIA-suunnittelu',
 
-    Tehtava: 'LVIA-suunnittelu', 
+    Vaativuusluokka: 'Vaativa',
 
-    Vaativuusluokka: 'Vaativa', 
+    Rakennustyyppi: 'Liikerakennus',
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Laajuus: 1355,
 
-    Laajuus: 3379, 
+    Paikka: 'Turku'
 
-    Paikka: 'Turku' 
+  },
 
-  }, 
+  {
 
-{ 
+    Vuosi: 2021,
 
-    Vuosi: 2019, 
+    Kiinteiston_nimi: 'Wiklund, S-Market Herkku',
 
-    Kiinteiston_nimi: 'Ruissalo Leppäniemi, (Suojeltu rakennus)', 
+    Tehtava: 'LVIA-suunnittelu',
 
-    Tehtava: 'LVIA-suunnittelu + maalämpöjärjestelmä 16kW', 
+    Vaativuusluokka: 'Vaativa',
 
-    Vaativuusluokka: 'Vaativa', 
+    Rakennustyyppi: 'Liikerakennus',
 
-    Rakennustyyppi: 'Huvila', 
+    Laajuus: 3500,
 
-    Laajuus: 320, 
+    Paikka: 'Turku'
 
-    Paikka: 'Turku' 
+  },
 
-  }, 
+  {
 
-{ 
+    Vuosi: 2019,
 
-    Vuosi: 2019, 
+    Kiinteiston_nimi: 'Hotelli Doha Lusail, Kelluva hotelli',
 
-    Kiinteiston_nimi: 'Kurjenmäki (Suojeltu rakennus, Tietomalli)', 
+    Tehtava: 'LVIA-suunnittelu + jäähdytysjärjestelmä 620kW',
 
-    Tehtava: 'Lämmitys ja lämpöpumppujärjestelmä 520kW', 
+    Vaativuusluokka: 'Vaativa',
 
-    Vaativuusluokka: 'Vaativa', 
+    Rakennustyyppi: 'Liikerakennus',
 
-    Rakennustyyppi: 'Toimisto- ja asuinrakennus', 
+    Laajuus: 3772,
 
-    Laajuus: 8000, 
+    Paikka: 'Qatar'
 
-    Paikka: 'Turku' 
+  },
 
-  }, 
+  {
 
-{ 
+    Vuosi: 2019,
 
-  Vuosi: 2019, 
+    Kiinteiston_nimi: 'As Oy Puubyygeli',
 
-  Kiinteiston_nimi: 'Rauman seurakuntavirastotalo (Suojeltu rakennus)', 
+    Tehtava: 'LVIA-suunnittelu',
 
-  Tehtava: 'LVIA-suunnittelu', 
+    Vaativuusluokka: 'Vaativa',
 
-  Vaativuusluokka: 'Vaativa', 
+    Rakennustyyppi: 'Asuinrakennus',
 
-  Rakennustyyppi: 'Toimistorakennus', 
+    Laajuus: 3379,
 
-  Laajuus: 2400, 
+    Paikka: 'Turku'
 
-  Paikka: 'Rauma' 
+  },
 
-}, 
+  {
 
-{ 
+    Vuosi: 2019,
 
-  Vuosi: 2018, 
+    Kiinteiston_nimi: 'Ruissalo Leppäniemi, (Suojeltu rakennus)',
 
-  Kiinteiston_nimi: 'SOK / TOK: Hotelli Seurahuone (Suojeltu rakennus)', 
+    Tehtava: 'LVIA-suunnittelu + maalämpöjärjestelmä 16kW',
 
-  Tehtava: 'Lämmitys ja jäähdytys', 
+    Vaativuusluokka: 'Vaativa',
 
-  Vaativuusluokka: 'Vaativa', 
+    Rakennustyyppi: 'Huvila',
 
-  Rakennustyyppi: 'Hotelli', 
+    Laajuus: 320,
 
-  Laajuus: 7730, 
+    Paikka: 'Turku'
 
-  Paikka: 'Turku' 
+  },
 
-}, 
+  {
 
- 
+    Vuosi: 2019,
 
-{ 
+    Kiinteiston_nimi: 'Kurjenmäki (Suojeltu rakennus, Tietomalli)',
 
-  Vuosi: 2018, 
+    Tehtava: 'Lämmitys ja lämpöpumppujärjestelmä 520kW',
 
-  Kiinteiston_nimi: 'Kårkulla Samkommun Senioriyksikkö', 
+    Vaativuusluokka: 'Vaativa',
 
-  Tehtava: 'LVIA-suunnittelu + maalämpöjärjestelmä 60kW', 
+    Rakennustyyppi: 'Toimisto- ja asuinrakennus',
 
-  Vaativuusluokka: 'Vaativa', 
+    Laajuus: 8000,
 
-  Rakennustyyppi: 'Hoitoalan rakennus', 
+    Paikka: 'Turku'
 
-  Laajuus: 1053, 
+  },
 
-  Paikka: 'Parainen' 
+  {
 
-} 
+    Vuosi: 2019,
 
-,{ 
+    Kiinteiston_nimi: 'Rauman seurakuntavirastotalo (Suojeltu rakennus)',
 
-  Vuosi: 2018, 
+    Tehtava: 'LVIA-suunnittelu',
 
-  Kiinteiston_nimi: 'Kårkulla Samkommun Kriisi- ja tutkimusyksikkö (Tietomalli)', 
+    Vaativuusluokka: 'Vaativa',
 
-  Tehtava: 'LVIA-suunnittelu + maalämpöjärjestelmä 540kW', 
+    Rakennustyyppi: 'Toimistorakennus',
 
-  Vaativuusluokka: 'Vaativa', 
+    Laajuus: 2400,
 
-  Rakennustyyppi: 'Hoitoalan rakennus', 
+    Paikka: 'Rauma'
 
-  Laajuus: 1935, 
+  },
 
-  Paikka: 'Parainen' 
+  {
 
-}, 
+    Vuosi: 2018,
 
- 
+    Kiinteiston_nimi: 'SOK / TOK: Hotelli Seurahuone (Suojeltu rakennus)',
 
-{ 
+    Tehtava: 'Lämmitys ja jäähdytys',
 
-  Vuosi: 2018, 
+    Vaativuusluokka: 'Vaativa',
 
-  Kiinteiston_nimi: 'Kårkulla Samkommun Uusi ryhmäasuntola', 
+    Rakennustyyppi: 'Hotelli',
 
-  Tehtava: 'LVIA-suunnittelu + maalämpöjärjestelmä 60kW', 
+    Laajuus: 7730,
 
-  Vaativuusluokka: 'Vaativa', 
+    Paikka: 'Turku'
 
-  Rakennustyyppi: 'Hoitoalan rakennus', 
+  },
 
-  Laajuus: 1209, 
 
-  Paikka: 'Parainen' 
 
-}, 
+  {
 
- 
+    Vuosi: 2018,
 
-  { 
+    Kiinteiston_nimi: 'Kårkulla Samkommun Senioriyksikkö',
 
-    Vuosi: 2022, 
+    Tehtava: 'LVIA-suunnittelu + maalämpöjärjestelmä 60kW',
 
-    Kiinteiston_nimi: 'Raision kaupungintalo', 
+    Vaativuusluokka: 'Vaativa',
 
-    Tehtava: 'Kiinteistönvalvontakeskuksen IV-suunnittelu', 
+    Rakennustyyppi: 'Hoitoalan rakennus',
 
-    Vaativuusluokka: 'Tavanomainen', 
+    Laajuus: 1053,
 
-    Rakennustyyppi: 'Huoltorakennus', 
+    Paikka: 'Parainen'
 
-    Laajuus: 60, 
+  }
 
-    Paikka: 'Raisio' 
+  ,{
 
-  }, 
+    Vuosi: 2018,
 
-  { 
+    Kiinteiston_nimi: 'Kårkulla Samkommun Kriisi- ja tutkimusyksikkö (Tietomalli)',
 
-    Vuosi: 2022, 
+    Tehtava: 'LVIA-suunnittelu + maalämpöjärjestelmä 540kW',
 
-    Kiinteiston_nimi: 'Kerttulan huoltorakennus', 
+    Vaativuusluokka: 'Vaativa',
 
-   Tehtava: 'Lämmityksen suunnittelu', 
+    Rakennustyyppi: 'Hoitoalan rakennus',
 
-    Vaativuusluokka: 'Tavanomainen', 
+    Laajuus: 1935,
 
-    Rakennustyyppi: 'Huoltorakennus', 
+    Paikka: 'Parainen'
 
-    Laajuus: 510, 
+  },
 
-    Paikka: 'Raisio' 
 
-  }, 
 
-  { 
+  {
 
-    Vuosi: 2022, 
+    Vuosi: 2018,
 
-    Kiinteiston_nimi: 'Koulukeskuksen väestösuoja', 
+    Kiinteiston_nimi: 'Kårkulla Samkommun Uusi ryhmäasuntola',
 
-    Tehtava: 'Maalämpöselvitys', 
+    Tehtava: 'LVIA-suunnittelu + maalämpöjärjestelmä 60kW',
 
-    Vaativuusluokka: 'Tavanomainen', 
+    Vaativuusluokka: 'Vaativa',
 
-    Rakennustyyppi: 'Koulu', 
+    Rakennustyyppi: 'Hoitoalan rakennus',
 
-    Laajuus: 400, 
+    Laajuus: 1209,
 
-    Paikka: 'Raisio' 
+    Paikka: 'Parainen'
 
-  }, 
+  },
 
-  { 
 
-    Vuosi: 2022, 
 
-    Kiinteiston_nimi: 'Metsäaron päiväkoti', 
+  {
 
-    Tehtava: 'LJK-suunnittelu', 
+    Vuosi: 2022,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Kiinteiston_nimi: 'Raision kaupungintalo',
 
-    Rakennustyyppi: 'Päiväkoti', 
+    Tehtava: 'Kiinteistönvalvontakeskuksen IV-suunnittelu',
 
-    Laajuus: null, 
+    Vaativuusluokka: 'Tavanomainen',
 
-    Paikka: 'Raisio' 
+    Rakennustyyppi: 'Huoltorakennus',
 
-  }, 
+    Laajuus: 60,
 
-  { 
+    Paikka: 'Raisio'
 
-    Vuosi: 2022, 
+  },
 
-    Kiinteiston_nimi: 'Raision Kerttulakoti', 
+  {
 
-    Tehtava: 'Tilamuutos', 
+    Vuosi: 2022,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Kiinteiston_nimi: 'Kerttulan huoltorakennus',
 
-    Rakennustyyppi: 'Hoitoalan rakennus', 
+    Tehtava: 'Lämmityksen suunnittelu',
 
-    Laajuus: 256, 
+    Vaativuusluokka: 'Tavanomainen',
 
-    Paikka: 'Raisio' 
+    Rakennustyyppi: 'Huoltorakennus',
 
-  }, 
+    Laajuus: 510,
 
-  { 
+    Paikka: 'Raisio'
 
-    Vuosi: 2022, 
+  },
 
-    Kiinteiston_nimi: 'Varppeen päiväkoti', 
+  {
 
-    Tehtava: 'Ulkopuoliset putkistot', 
+    Vuosi: 2022,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Kiinteiston_nimi: 'Koulukeskuksen väestösuoja',
 
-    Rakennustyyppi: 'Päiväkoti', 
+    Tehtava: 'Maalämpöselvitys',
 
-    Laajuus: 510, 
+    Vaativuusluokka: 'Tavanomainen',
 
-    Paikka: 'Raisio' 
+    Rakennustyyppi: 'Koulu',
 
-  }, 
+    Laajuus: 400,
 
-  { 
+    Paikka: 'Raisio'
 
-    Vuosi: 2022, 
+  },
 
-    Kiinteiston_nimi: 'Onnenpenni Sote-asema', 
+  {
 
-    Tehtava: 'LVIA-suunnittelu', 
+    Vuosi: 2022,
 
-    Vaativuusluokka: 'Vaativa', 
+    Kiinteiston_nimi: 'Metsäaron päiväkoti',
 
-    Rakennustyyppi: 'Terveyskeskus', 
+    Tehtava: 'LJK-suunnittelu',
 
-    Laajuus: 764, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Paikka: 'Marttila' 
+    Rakennustyyppi: 'Päiväkoti',
 
-  }, 
+    Laajuus: null,
 
-  { 
+    Paikka: 'Raisio'
 
-    Vuosi: 2022, 
+  },
 
-    Kiinteiston_nimi: 'As Oy Pennimäki', 
+  {
 
-    Tehtava: 'Linjasaneeraus', 
+    Vuosi: 2022,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Kiinteiston_nimi: 'Raision Kerttulakoti',
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Tehtava: 'Tilamuutos',
 
-    Laajuus: 747, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Paikka: 'Turku' 
+    Rakennustyyppi: 'Hoitoalan rakennus',
 
-  }, 
+    Laajuus: 256,
 
-  { 
+    Paikka: 'Raisio'
 
-    Vuosi: 2022, 
+  },
 
-    Kiinteiston_nimi: 'As Oy Skanssin Polaris', 
+  {
 
-    Tehtava: 'KVV-vastaava työnjohtaja', 
+    Vuosi: 2022,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Kiinteiston_nimi: 'Varppeen päiväkoti',
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Tehtava: 'Ulkopuoliset putkistot',
 
-    Laajuus: 2261, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Paikka: 'Turku' 
+    Rakennustyyppi: 'Päiväkoti',
 
-  }, 
+    Laajuus: 510,
 
-  { 
+    Paikka: 'Raisio'
 
-    Vuosi: 2022, 
+  },
 
-    Kiinteiston_nimi: 'KOY Ruskon Viherkulma', 
+  {
 
-    Tehtava: 'LVI-suunnittelu', 
+    Vuosi: 2022,
 
-    Vaativuusluokka: 'Tavanomainen', 
+    Kiinteiston_nimi: 'Onnenpenni Sote-asema',
 
-    Rakennustyyppi: 'Autopesula', 
+    Tehtava: 'LVIA-suunnittelu',
 
-    Laajuus: 240, 
+    Vaativuusluokka: 'Vaativa',
 
-    Paikka: 'Rusko' 
+    Rakennustyyppi: 'Terveyskeskus',
 
-  }, 
+    Laajuus: 764,
 
-  { 
+    Paikka: 'Marttila'
 
-    Vuosi: 2022, 
+  },
 
-    Kiinteiston_nimi: 'Kaupungintalon sote-siiven muutokset', 
+  {
 
-    Tehtava: 'IV-suunnittelu', 
+    Vuosi: 2022,
 
-    Vaativuusluokka:  'Tavanomainen +', 
+    Kiinteiston_nimi: 'As Oy Pennimäki',
 
-    Rakennustyyppi: 'Toimistorakennus', 
+    Tehtava: 'Linjasaneeraus',
 
-    Laajuus: null, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Paikka: 'Raisio' 
+    Rakennustyyppi: 'Asuinrakennus',
 
-  }, 
+    Laajuus: 747,
 
-  { 
+    Paikka: 'Turku'
 
-    Vuosi: 2022, 
+  },
 
-    Kiinteiston_nimi: 'KOy Sortintie', 
+  {
 
-    Tehtava: 'LVI-suunnittelu', 
+    Vuosi: 2022,
 
-    Vaativuusluokka: 'Tavanomainen', 
+    Kiinteiston_nimi: 'As Oy Skanssin Polaris',
 
-    Rakennustyyppi: 'ATOY huoltorakennus', 
+    Tehtava: 'KVV-vastaava työnjohtaja',
 
-    Laajuus: 358, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Paikka: 'Raisio' 
+    Rakennustyyppi: 'Asuinrakennus',
 
-  }, 
+    Laajuus: 2261,
 
-  { 
+    Paikka: 'Turku'
 
-    Vuosi: 2022, 
+  },
 
-    Kiinteiston_nimi: 'Koy Orikedon Liikekeskus', 
+  {
 
-    Tehtava: 'Tuotantohallin IV-suunnittelu', 
+    Vuosi: 2022,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Kiinteiston_nimi: 'KOY Ruskon Viherkulma',
 
-    Rakennustyyppi: 'Tuotantotila', 
+    Tehtava: 'LVI-suunnittelu',
 
-    Laajuus: 1919, 
+    Vaativuusluokka: 'Tavanomainen',
 
-    Paikka: 'Turku' 
+    Rakennustyyppi: 'Autopesula',
 
-  }, 
+    Laajuus: 240,
 
-  { 
+    Paikka: 'Rusko'
 
-    Vuosi: 2021, 
+  },
 
-    Kiinteiston_nimi: 'Valmet Automotive', 
+  {
 
-    Tehtava: 'Kaasuputkiston suunnittelu 18MW', 
+    Vuosi: 2022,
 
-    Vaativuusluokka: 'Vaativa', 
+    Kiinteiston_nimi: 'Kaupungintalon sote-siiven muutokset',
 
-    Rakennustyyppi: 'Tuotantotila', 
+    Tehtava: 'IV-suunnittelu',
 
-    Laajuus: null, 
+    Vaativuusluokka:  'Tavanomainen +',
 
-    Paikka: 'Uusikaupunki' 
+    Rakennustyyppi: 'Toimistorakennus',
 
-  },  
+    Laajuus: null,
 
-  { 
+    Paikka: 'Raisio'
 
-    Vuosi: 2021, 
+  },
 
-    Kiinteiston_nimi: 'Koy Metro', 
+  {
 
-    Tehtava: 'LVIA-suunnittelu', 
+    Vuosi: 2022,
 
-    Vaativuusluokka: 'Vaativa', 
+    Kiinteiston_nimi: 'KOy Sortintie',
 
-    Rakennustyyppi: 'Varasto/sosiaalitilat', 
+    Tehtava: 'LVI-suunnittelu',
 
-    Laajuus: 533, 
+    Vaativuusluokka: 'Tavanomainen',
 
-    Paikka: 'Turku' 
+    Rakennustyyppi: 'ATOY huoltorakennus',
 
-  }, 
+    Laajuus: 358,
 
- 
+    Paikka: 'Raisio'
 
-  { 
+  },
 
-    Vuosi: 2021, 
+  {
 
-    Kiinteiston_nimi: 'TVT Miikkulankuja', 
+    Vuosi: 2022,
 
-    Tehtava: 'Maalämpöjärjestelmän hankkeen suunnittelu 90kW ja valvonta', 
+    Kiinteiston_nimi: 'Koy Orikedon Liikekeskus',
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Tehtava: 'Tuotantohallin IV-suunnittelu',
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Laajuus: 1315, 
+    Rakennustyyppi: 'Tuotantotila',
 
-    Paikka: 'Turku' 
+    Laajuus: 1919,
 
-  }, 
+    Paikka: 'Turku'
 
-  { 
+  },
 
-    Vuosi: 2021, 
+  {
 
-    Kiinteiston_nimi: 'Cargotec/FSPCORP', 
+    Vuosi: 2021,
 
-    Tehtava: 'Kaukolämmön suunnittelu 110kW', 
+    Kiinteiston_nimi: 'Valmet Automotive',
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Tehtava: 'Kaasuputkiston suunnittelu 18MW',
 
-    Rakennustyyppi: 'Maalauslinja', 
+    Vaativuusluokka: 'Vaativa',
 
-    Laajuus: null, 
+    Rakennustyyppi: 'Tuotantotila',
 
-    Paikka: 'Raisio' 
+    Laajuus: null,
 
-  }, 
+    Paikka: 'Uusikaupunki'
 
-  { 
+  },
 
-    Vuosi: 2021, 
+  {
 
-    Kiinteiston_nimi: 'As Oy Pernotupa', 
+    Vuosi: 2021,
 
-    Tehtava: 'Kaukolämmön suunnittelu 215kW', 
+    Kiinteiston_nimi: 'Koy Metro',
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Tehtava: 'LVIA-suunnittelu',
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Vaativuusluokka: 'Vaativa',
 
-    Laajuus: null, 
+    Rakennustyyppi: 'Varasto/sosiaalitilat',
 
-    Paikka: 'Turku' 
+    Laajuus: 533,
 
-  }, 
+    Paikka: 'Turku'
 
-  { 
+  },
 
-    Vuosi: 2021, 
 
-    Kiinteiston_nimi: 'Koy Turun Metro', 
 
-    Tehtava: 'LVIA-suunnittelu', 
+  {
 
-    Vaativuusluokka: 'Vaativa', 
+    Vuosi: 2021,
 
-    Rakennustyyppi: 'Varasto/myymälätila', 
+    Kiinteiston_nimi: 'TVT Miikkulankuja',
 
-    Laajuus: 18978, 
+    Tehtava: 'Maalämpöjärjestelmän hankkeen suunnittelu 90kW ja valvonta',
 
-    Paikka: 'Turku' 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  }, 
+    Rakennustyyppi: 'Asuinrakennus',
 
-  { 
+    Laajuus: 1315,
 
-    Vuosi: 2021, 
+    Paikka: 'Turku'
 
-    Kiinteiston_nimi: 'Tarvasjoen palloiluhalli', 
+  },
 
-    Tehtava: 'LVIA-suunnittelu+MLP 60kW', 
+  {
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Vuosi: 2021,
 
-    Rakennustyyppi: 'Liikuntarakennus', 
+    Kiinteiston_nimi: 'Cargotec/FSPCORP',
 
-    Laajuus: 757, 
+    Tehtava: 'Kaukolämmön suunnittelu 110kW',
 
-    Paikka: 'Lieto' 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  }, 
+    Rakennustyyppi: 'Maalauslinja',
 
-  { 
+    Laajuus: null,
 
-    Vuosi: 2021, 
+    Paikka: 'Raisio'
 
-    Kiinteiston_nimi: 'Wiklund ravintola', 
+  },
 
-    Tehtava: 'LVIA-suunnittelu', 
+  {
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Vuosi: 2021,
 
-    Rakennustyyppi: 'Ravintola', 
+    Kiinteiston_nimi: 'As Oy Pernotupa',
 
-    Laajuus: 199, 
+    Tehtava: 'Kaukolämmön suunnittelu 215kW',
 
-    Paikka: 'Turku' 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  }, 
+    Rakennustyyppi: 'Asuinrakennus',
 
-  { 
+    Laajuus: null,
 
-    Vuosi: 2021, 
+    Paikka: 'Turku'
 
-    Kiinteiston_nimi: 'Wiklund ravintola', 
+  },
 
-    Tehtava: 'LVIA-suunnittelu', 
+  {
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Vuosi: 2021,
 
-    Rakennustyyppi: 'Ravintola', 
+    Kiinteiston_nimi: 'Koy Turun Metro',
 
-    Laajuus: 123, 
+    Tehtava: 'LVIA-suunnittelu',
 
-    Paikka: 'Turku' 
+    Vaativuusluokka: 'Vaativa',
 
-  }, 
+    Rakennustyyppi: 'Varasto/myymälätila',
 
- 
+    Laajuus: 18978,
 
-  { 
+    Paikka: 'Turku'
 
-    Vuosi: 2021, 
+  },
 
-    Kiinteiston_nimi: 'TVT Anniitunkatu', 
+  {
 
-    Tehtava: 'Maalämpöjärjestelmän hankkeen suunnittelu 90kW ja valvonta', 
+    Vuosi: 2021,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Kiinteiston_nimi: 'Tarvasjoen palloiluhalli',
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Tehtava: 'LVIA-suunnittelu+MLP 60kW',
 
-    Laajuus: 1621, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Paikka: 'Turku' 
+    Rakennustyyppi: 'Liikuntarakennus',
 
-  }, 
+    Laajuus: 757,
 
-{    Vuosi: 2020, 
+    Paikka: 'Lieto'
 
-    Kiinteiston_nimi: 'Ollikkalan päiväkoti', 
+  },
 
-    Tehtava: 'LVIA-suunnittelu', 
+  {
 
-    Vaativuusluokka: 'Vaativa', 
+    Vuosi: 2021,
 
-    Rakennustyyppi: 'Päiväkoti', 
+    Kiinteiston_nimi: 'Wiklund ravintola',
 
-    Laajuus: 1144, 
+    Tehtava: 'LVIA-suunnittelu',
 
-    Paikka: 'Salo' 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  }, 
+    Rakennustyyppi: 'Ravintola',
 
-  { 
+    Laajuus: 199,
 
-    Vuosi: 2020, 
+    Paikka: 'Turku'
 
-    Kiinteiston_nimi: 'TVT asunnot Oy, Lampolankatu', 
+  },
 
-    Tehtava: 'LVIA-suunnittelu+Maalämpö+LTO 148kW', 
+  {
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Vuosi: 2021,
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Kiinteiston_nimi: 'Wiklund ravintola',
 
-    Laajuus: 2500, 
+    Tehtava: 'LVIA-suunnittelu',
 
-    Paikka: 'Turku' 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  }, 
+    Rakennustyyppi: 'Ravintola',
 
-  { 
+    Laajuus: 123,
 
-    Vuosi: 2020, 
+    Paikka: 'Turku'
 
-    Kiinteiston_nimi: 'TVT asunnot Oy, Varusmestarintie', 
+  },
 
-    Tehtava: 'LVIA-suunnittelu', 
 
-    Vaativuusluokka: 'Tavanomainen +', 
 
-    Rakennustyyppi: 'Asuinrakennus', 
+  {
 
-    Laajuus: 7085, 
+    Vuosi: 2021,
 
-    Paikka: 'Turku' 
+    Kiinteiston_nimi: 'TVT Anniitunkatu',
 
-  }, 
+    Tehtava: 'Maalämpöjärjestelmän hankkeen suunnittelu 90kW ja valvonta',
 
-  { 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Vuosi: 2020, 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Kiinteiston_nimi: 'TVT asunnot Oy, Ymmyrsuonkatu', 
+    Laajuus: 1621,
 
-    Tehtava: 'LVIA-suunnittelu', 
+    Paikka: 'Turku'
 
-    Vaativuusluokka: 'Tavanomainen +', 
+  },
 
-    Rakennustyyppi: 'Asuinrakennus', 
+  {    Vuosi: 2020,
 
-    Laajuus: 6023, 
+    Kiinteiston_nimi: 'Ollikkalan päiväkoti',
 
-    Paikka: 'Turku' 
+    Tehtava: 'LVIA-suunnittelu',
 
-  }, 
+    Vaativuusluokka: 'Vaativa',
 
-  { 
+    Rakennustyyppi: 'Päiväkoti',
 
-    Vuosi: 2020, 
+    Laajuus: 1144,
 
-    Kiinteiston_nimi: 'Piiparinpolku 20', 
+    Paikka: 'Salo'
 
-    Tehtava: 'Maalämpö+LTO 280kW', 
+  },
 
-    Vaativuusluokka: 'Tavanomainen +', 
+  {
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Vuosi: 2020,
 
-    Laajuus: 6480, 
+    Kiinteiston_nimi: 'TVT asunnot Oy, Lampolankatu',
 
-    Paikka: 'Turku' 
+    Tehtava: 'LVIA-suunnittelu+Maalämpö+LTO 148kW',
 
-  }, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  { 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Vuosi: 2020, 
+    Laajuus: 2500,
 
-    Kiinteiston_nimi: 'PriimaNappulat', 
+    Paikka: 'Turku'
 
-    Tehtava: 'LVIA-suunnittelu', 
+  },
 
-    Vaativuusluokka: 'Vaativa', 
+  {
 
-    Rakennustyyppi: 'Päiväkoti', 
+    Vuosi: 2020,
 
-    Laajuus: 1110, 
+    Kiinteiston_nimi: 'TVT asunnot Oy, Varusmestarintie',
 
-    Paikka: 'Turku' 
+    Tehtava: 'LVIA-suunnittelu',
 
-  }, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  { 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Vuosi: 2020, 
+    Laajuus: 7085,
 
-    Kiinteiston_nimi: 'Wäinö Aaltosen koulu', 
+    Paikka: 'Turku'
 
-    Tehtava: 'Öljylämmityksen muutos kaukolämpöön 1400kW', 
+  },
 
-    Vaativuusluokka: 'Tavanomainen +', 
+  {
 
-    Rakennustyyppi: 'Koulu', 
+    Vuosi: 2020,
 
-    Laajuus: null, 
+    Kiinteiston_nimi: 'TVT asunnot Oy, Ymmyrsuonkatu',
 
-    Paikka: 'Turku' 
+    Tehtava: 'LVIA-suunnittelu',
 
-  }, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  { 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Vuosi: 2020, 
+    Laajuus: 6023,
 
-    Kiinteiston_nimi: 'TVT Killivuorenkatu', 
+    Paikka: 'Turku'
 
-    Tehtava: 'Maalämpöjärjestelmän hankkeen suunnittelu ja valvonta 70kW', 
+  },
 
-    Vaativuusluokka: 'Tavanomainen +', 
+  {
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Vuosi: 2020,
 
-    Laajuus: 1328, 
+    Kiinteiston_nimi: 'Piiparinpolku 20',
 
-    Paikka: 'Turku' 
+    Tehtava: 'Maalämpö+LTO 280kW',
 
-  }, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  { 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Vuosi: 2020, 
+    Laajuus: 6480,
 
-    Kiinteiston_nimi: 'TVT Talviseisaus', 
+    Paikka: 'Turku'
 
-    Tehtava: 'Maalämpöjärjestelmän hankkeen suunnittelu ja valvonta 70kW', 
+  },
 
-    Vaativuusluokka: 'Tavanomainen +', 
+  {
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Vuosi: 2020,
 
-    Laajuus: 1098, 
+    Kiinteiston_nimi: 'PriimaNappulat',
 
-    Paikka: 'Turku' 
+    Tehtava: 'LVIA-suunnittelu',
 
-  }, 
+    Vaativuusluokka: 'Vaativa',
 
-  { 
+    Rakennustyyppi: 'Päiväkoti',
 
-    Vuosi: 2019, 
+    Laajuus: 1110,
 
-    Kiinteiston_nimi: 'Mesaani-Kiinteistöt Oy, Kannuskatu', 
+    Paikka: 'Turku'
 
-    Tehtava: 'LVIA-suunnittelu + maalämpöjärjestelmä 60kW', 
+  },
 
-    Vaativuusluokka: 'Tavanomainen', 
+  {
 
-    Rakennustyyppi: 'Liikerakennus', 
+    Vuosi: 2020,
 
-    Laajuus: 309, 
+    Kiinteiston_nimi: 'Wäinö Aaltosen koulu',
 
-    Paikka: 'Turku' 
+    Tehtava: 'Öljylämmityksen muutos kaukolämpöön 1400kW',
 
-  }, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  { 
+    Rakennustyyppi: 'Koulu',
 
-    Vuosi: 2019, 
+    Laajuus: null,
 
-    Kiinteiston_nimi: 'TVT asunnot Oy, Heinikonkatu', 
+    Paikka: 'Turku'
 
-    Tehtava: 'LVIA-suunnittelu', 
+  },
 
-    Vaativuusluokka: 'Tavanomainen +', 
+  {
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Vuosi: 2020,
 
-    Laajuus: 2194, 
+    Kiinteiston_nimi: 'TVT Killivuorenkatu',
 
-    Paikka: 'Turku' 
+    Tehtava: 'Maalämpöjärjestelmän hankkeen suunnittelu ja valvonta 70kW',
 
-  }, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  { 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Vuosi: 2018, 
+    Laajuus: 1328,
 
-    Kiinteiston_nimi: 'Palmorata Oy, Friskinkatu', 
+    Paikka: 'Turku'
 
-    Tehtava: 'LVIA-suunnittelun valvonta', 
+  },
 
-    Vaativuusluokka: 'Tavanomainen +', 
+  {
 
-    Rakennustyyppi: 'Kuntosali', 
+    Vuosi: 2020,
 
-    Laajuus: 1100, 
+    Kiinteiston_nimi: 'TVT Talviseisaus',
 
-    Paikka: 'Turku' 
+    Tehtava: 'Maalämpöjärjestelmän hankkeen suunnittelu ja valvonta 70kW',
 
-  }, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  { 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Vuosi: 2018, 
+    Laajuus: 1098,
 
-    Kiinteiston_nimi: 'Kårkulla Samkommun Norrgårdsboende', 
+    Paikka: 'Turku'
 
-    Tehtava: 'LVIA-suunnittelu', 
+  },
 
-    Vaativuusluokka: 'Vaativa', 
+  {
 
-    Rakennustyyppi: 'Hoitoalan rakennus', 
+    Vuosi: 2019,
 
-    Laajuus: 686, 
+    Kiinteiston_nimi: 'Mesaani-Kiinteistöt Oy, Kannuskatu',
 
-    Paikka: 'Parainen' 
+    Tehtava: 'LVIA-suunnittelu + maalämpöjärjestelmä 60kW',
 
-  }, 
+    Vaativuusluokka: 'Tavanomainen',
 
-  { 
+    Rakennustyyppi: 'Liikerakennus',
 
-    Vuosi: 2018, 
+    Laajuus: 309,
 
-    Kiinteiston_nimi: 'KM Runos', 
+    Paikka: 'Turku'
 
-    Tehtava: 'IV-suunnittelu', 
+  },
 
-    Vaativuusluokka: 'Tavanomainen', 
+  {
 
-    Rakennustyyppi: 'Elintarvikekauppa', 
+    Vuosi: 2019,
 
-    Laajuus: 1100, 
+    Kiinteiston_nimi: 'TVT asunnot Oy, Heinikonkatu',
 
-    Paikka: 'Turku' 
+    Tehtava: 'LVIA-suunnittelu',
 
-  }, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  { 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Vuosi: 2018, 
+    Laajuus: 2194,
 
-    Kiinteiston_nimi: 'Palmorata Oy, Friskinkatu', 
+    Paikka: 'Turku'
 
-    Tehtava: 'Savunpoiston suunnittelu', 
+  },
 
-    Vaativuusluokka: 'Tavanomainen', 
+  {
 
-    Rakennustyyppi: 'Liikerakennus', 
+    Vuosi: 2018,
 
-    Laajuus: 1100, 
+    Kiinteiston_nimi: 'Palmorata Oy, Friskinkatu',
 
-    Paikka: 'Turku' 
+    Tehtava: 'LVIA-suunnittelun valvonta',
 
-  }, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  { 
+    Rakennustyyppi: 'Kuntosali',
 
-    Vuosi: 2018, 
+    Laajuus: 1100,
 
-    Kiinteiston_nimi: 'Turun Yliopisto: Macciavelli', 
+    Paikka: 'Turku'
 
-    Tehtava: 'LVIA-suunnittelu', 
+  },
 
-    Vaativuusluokka: 'Vaativa', 
+  {
 
-    Rakennustyyppi: 'Keskuskeittiö', 
+    Vuosi: 2018,
 
-    Laajuus: 313, 
+    Kiinteiston_nimi: 'Kårkulla Samkommun Norrgårdsboende',
 
-    Paikka: 'Turku' 
+    Tehtava: 'LVIA-suunnittelu',
 
-  }, 
+    Vaativuusluokka: 'Vaativa',
 
-  { 
+    Rakennustyyppi: 'Hoitoalan rakennus',
 
-    Vuosi: 2018, 
+    Laajuus: 686,
 
-    Kiinteiston_nimi: 'As Oy Westerholmi', 
+    Paikka: 'Parainen'
 
-    Tehtava: 'Maalämpöjärjestelmän + LTO hankkeen valvonta 90kW', 
+  },
 
-    Vaativuusluokka: 'Tavanomainen+', 
+  {
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Vuosi: 2018,
 
-    Laajuus: 2100, 
+    Kiinteiston_nimi: 'KM Runos',
 
-    Paikka: 'Turku' 
+    Tehtava: 'IV-suunnittelu',
 
-  }, 
+    Vaativuusluokka: 'Tavanomainen',
 
-  { 
+    Rakennustyyppi: 'Elintarvikekauppa',
 
-    Vuosi: 2018, 
+    Laajuus: 1100,
 
-    Kiinteiston_nimi: 'As Oy Paimalanrivi', 
+    Paikka: 'Turku'
 
-     Tehtava: 'Maalämpöjärjestelmän hankkeen valvonta 70kW', 
+  },
 
-    Vaativuusluokka: 'Tavanomainen +', 
+  {
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Vuosi: 2018,
 
-    Laajuus: 1000, 
+    Kiinteiston_nimi: 'Palmorata Oy, Friskinkatu',
 
-    Paikka: 'Turku' 
+    Tehtava: 'Savunpoiston suunnittelu',
 
-  }, 
+    Vaativuusluokka: 'Tavanomainen',
 
- 
+    Rakennustyyppi: 'Liikerakennus',
 
-{ 
+    Laajuus: 1100,
 
-    Vuosi: 2018, 
+    Paikka: 'Turku'
 
-    Kiinteiston_nimi: 'As Oy Puolikonmäki', 
+  },
 
-    Tehtava: 'Maalämpöjärjestelmän hankesuunnittelu 540kW', 
+  {
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Vuosi: 2018,
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Kiinteiston_nimi: 'Turun Yliopisto: Macciavelli',
 
-    Laajuus: 6216, 
+    Tehtava: 'LVIA-suunnittelu',
 
-Paikka: 'Turku' 
+    Vaativuusluokka: 'Vaativa',
 
-  }, 
+    Rakennustyyppi: 'Keskuskeittiö',
 
- 
+    Laajuus: 313,
 
-  { 
+    Paikka: 'Turku'
 
-    Vuosi: 2018, 
+  },
 
-    Kiinteiston_nimi: 'As Oy Varkkametsä', 
+  {
 
-    Tehtava: 'Maalämpöjärjestelmän hankesuunnittelu 540kW', 
+    Vuosi: 2018,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Kiinteiston_nimi: 'As Oy Westerholmi',
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Tehtava: 'Maalämpöjärjestelmän + LTO hankkeen valvonta 90kW',
 
-    Laajuus: 9012, 
+    Vaativuusluokka: 'Tavanomainen+',
 
-    Paikka: 'Turku' 
+    Rakennustyyppi: 'Asuinrakennus',
 
-  }, 
+    Laajuus: 2100,
 
-  { 
+    Paikka: 'Turku'
 
-    Vuosi: 2018, 
+  },
 
-    Kiinteiston_nimi: 'As Oy Paimalanrivi', 
+  {
 
-    Tehtava: 'Maalämpöjärjestelmän hankesuunnittelu 60kW', 
+    Vuosi: 2018,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Kiinteiston_nimi: 'As Oy Paimalanrivi',
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Tehtava: 'Maalämpöjärjestelmän hankkeen valvonta 70kW',
 
-Laajuus: 1000, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Paikka: 'Turku' 
+    Rakennustyyppi: 'Asuinrakennus',
 
-  }, 
+    Laajuus: 1000,
 
-  { 
+    Paikka: 'Turku'
 
-    Vuosi: 2018, 
+  },
 
-    Kiinteiston_nimi: 'As Oy Westerholmi', 
 
-    Tehtava: 'MLP + AU hankesuunnittelu 90kW', 
 
-    Vaativuusluokka: 'Tavanomainen +', 
+  {
 
-    Rakennustyyppi: 'Asuinrakennus', 
+    Vuosi: 2018,
 
-    Laajuus: 2100, 
+    Kiinteiston_nimi: 'As Oy Puolikonmäki',
 
-    Paikka: 'Turku' 
+    Tehtava: 'Maalämpöjärjestelmän hankesuunnittelu 540kW',
 
-  }, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-  { 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Vuosi: 2018, 
+    Laajuus: 6216,
 
-    Kiinteiston_nimi: 'As Oy Sydänsimpukka', 
+    Paikka: 'Turku'
 
-    Tehtava: 'MLP + AU hankesuunnittelu 90kW', 
+  },
 
-    Vaativuusluokka: 'Tavanomainen', 
 
-    Rakennustyyppi: 'Asuinrakennus', 
 
-Laajuus: null, 
+  {
 
-    Paikka: 'Turku' 
+    Vuosi: 2018,
 
-  }, 
+    Kiinteiston_nimi: 'As Oy Varkkametsä',
 
-  { 
+    Tehtava: 'Maalämpöjärjestelmän hankesuunnittelu 540kW',
 
-    Vuosi: 2017, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Kiinteiston_nimi: 'Sale Nauvo', 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Tehtava: 'Ilmalämpöpumppujärjestelmän suunnittelu 28kW', 
+    Laajuus: 9012,
 
-    Vaativuusluokka: 'Tavanomainen', 
+    Paikka: 'Turku'
 
-    Rakennustyyppi: 'Liikerakennus', 
+  },
 
-    Laajuus: 560, 
+  {
 
-    Paikka: 'Nauvo' 
+    Vuosi: 2018,
 
-  }, 
+    Kiinteiston_nimi: 'As Oy Paimalanrivi',
 
-  { 
+    Tehtava: 'Maalämpöjärjestelmän hankesuunnittelu 60kW',
 
-    Vuosi: 2017, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Kiinteiston_nimi: 'KSM Koivula', 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Tehtava: 'LVIA-suunnittelu', 
+    Laajuus: 1000,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Paikka: 'Turku'
 
-    Rakennustyyppi: 'Elintarvikekauppa', 
+  },
 
-    Laajuus: 1890, 
+  {
 
-    Paikka: 'Turku' 
+    Vuosi: 2018,
 
-  }, 
+    Kiinteiston_nimi: 'As Oy Westerholmi',
 
-  { 
+    Tehtava: 'MLP + AU hankesuunnittelu 90kW',
 
-    Vuosi: 2017, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Kiinteiston_nimi: 'TS Salon Kauppakeskus', 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Tehtava: 'IV-suunnittelu', 
+    Laajuus: 2100,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Paikka: 'Turku'
 
-    Rakennustyyppi: 'Liikerakennus', 
+  },
 
-    Laajuus: 670, 
+  {
 
-    Paikka: 'Salo' 
+    Vuosi: 2018,
 
-  }, 
+    Kiinteiston_nimi: 'As Oy Sydänsimpukka',
 
-  { 
+    Tehtava: 'MLP + AU hankesuunnittelu 90kW',
 
-    Vuosi: 2017, 
+    Vaativuusluokka: 'Tavanomainen',
 
-    Kiinteiston_nimi: 'Piikkiö Works', 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Tehtava: 'LVIA-suunnittelu', 
+    Laajuus: null,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Paikka: 'Turku'
 
-    Rakennustyyppi: 'Teollisuuden rakennus', 
+  },
 
-    Laajuus: 24800, 
+  {
 
-    Paikka: 'Kaarina' 
+    Vuosi: 2017,
 
-  }, 
+    Kiinteiston_nimi: 'Sale Nauvo',
 
-  { 
+    Tehtava: 'Ilmalämpöpumppujärjestelmän suunnittelu 28kW',
 
-    Vuosi: 2017, 
+    Vaativuusluokka: 'Tavanomainen',
 
-    Kiinteiston_nimi: 'Teollisuuslaitos (Ulvila)', 
+    Rakennustyyppi: 'Liikerakennus',
 
-    Tehtava: 'Kuntoarviointi', 
+    Laajuus: 560,
 
-    Vaativuusluokka: 'Vaativa', 
+    Paikka: 'Nauvo'
 
-    Rakennustyyppi: 'Teollisuuden rakennus', 
+  },
 
-    Laajuus: 9800, 
+  {
 
-    Paikka: 'Ulvila' 
+    Vuosi: 2017,
 
-  }, 
+    Kiinteiston_nimi: 'KSM Koivula',
 
-  { 
+    Tehtava: 'LVIA-suunnittelu',
 
-    Vuosi: 2017, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Kiinteiston_nimi: 'Turun Yliopisto: Quantum', 
+    Rakennustyyppi: 'Elintarvikekauppa',
 
-    Tehtava: 'LVIA-suunnittelu', 
+    Laajuus: 1890,
 
-    Vaativuusluokka: 'Vaativa', 
+    Paikka: 'Turku'
 
-    Rakennustyyppi: 'Opetusrakennus', 
+  },
 
-Laajuus: null, 
+  {
 
-    Paikka: 'Turku' 
+    Vuosi: 2017,
 
-  }, 
+    Kiinteiston_nimi: 'TS Salon Kauppakeskus',
 
-  { 
+    Tehtava: 'IV-suunnittelu',
 
-    Vuosi: 2017, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Kiinteiston_nimi: 'As Oy Vihtaportti', 
+    Rakennustyyppi: 'Liikerakennus',
 
-    Tehtava: 'MLP + AU hankesuunnittelu 540kW', 
+    Laajuus: 670,
 
-    Vaativuusluokka: 'Tavanomainen', 
+    Paikka: 'Salo'
 
-    Rakennustyyppi: 'Asuinrakennus', 
+  },
 
-    Laajuus: 6000, 
+  {
 
-    Paikka: 'Jyväskylä' 
+    Vuosi: 2017,
 
-  }, 
+    Kiinteiston_nimi: 'Piikkiö Works',
 
-  { 
+    Tehtava: 'LVIA-suunnittelu',
 
-    Vuosi: 2017, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Kiinteiston_nimi: 'Tarvasjoen paloasema', 
+    Rakennustyyppi: 'Teollisuuden rakennus',
 
-    Tehtava: 'LVI-suunnitelmien päivitys', 
+    Laajuus: 24800,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Paikka: 'Kaarina'
 
-    Rakennustyyppi: 'Pelastustoimen rakennus', 
+  },
 
-    Laajuus: 570, 
+  {
 
-    Paikka: 'Tarvasjoki' 
+    Vuosi: 2017,
 
-  }, 
+    Kiinteiston_nimi: 'Teollisuuslaitos (Ulvila)',
 
-  { 
+    Tehtava: 'Kuntoarviointi',
 
-    Vuosi: 2017, 
+    Vaativuusluokka: 'Vaativa',
 
-    Kiinteiston_nimi: 'Neste-K Maariankatu', 
+    Rakennustyyppi: 'Teollisuuden rakennus',
 
-    Tehtava: 'Kuntoarviointi', 
+    Laajuus: 9800,
 
-    Vaativuusluokka: 'Tavanomainen', 
+    Paikka: 'Ulvila'
 
-    Rakennustyyppi: 'Liikenteen rakennus', 
+  },
 
-    Laajuus: 570, 
+  {
 
-    Paikka: 'Salo' 
+    Vuosi: 2017,
 
-  }, 
+    Kiinteiston_nimi: 'Turun Yliopisto: Quantum',
 
-  { 
+    Tehtava: 'LVIA-suunnittelu',
 
-    Vuosi: 2016, 
+    Vaativuusluokka: 'Vaativa',
 
-    Kiinteiston_nimi: 'Jokipaja Oy', 
+    Rakennustyyppi: 'Opetusrakennus',
 
-    Tehtava: 'KVV-suunnittelu', 
+    Laajuus: null,
 
-    Vaativuusluokka: 'Tavanomainen', 
+    Paikka: 'Turku'
 
-    Rakennustyyppi: 'Tuotantotilat', 
+  },
 
-    Laajuus: 3100, 
+  {
 
-    Paikka: 'Raisio' 
+    Vuosi: 2017,
 
-  }, 
+    Kiinteiston_nimi: 'As Oy Vihtaportti',
 
-  { 
+    Tehtava: 'MLP + AU hankesuunnittelu 540kW',
 
-    Vuosi: 2016, 
+    Vaativuusluokka: 'Tavanomainen',
 
-    Kiinteiston_nimi: 'Kokoushotelli Elohovi', 
+    Rakennustyyppi: 'Asuinrakennus',
 
-    Tehtava: 'Jätevedenpuhdistamon suunnittelu', 
+    Laajuus: 6000,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Paikka: 'Jyväskylä'
 
-    Rakennustyyppi: 'Liikerakennus', 
+  },
 
-    Laajuus: 1900, 
+  {
 
-    Paikka: 'Vihti' 
+    Vuosi: 2017,
 
-  }, 
+    Kiinteiston_nimi: 'Tarvasjoen paloasema',
 
-  { 
+    Tehtava: 'LVI-suunnitelmien päivitys',
 
-    Vuosi: 2016, 
+    Vaativuusluokka: 'Tavanomainen +',
 
-    Kiinteiston_nimi: 'As Oy Iso-Heikkilänrivi', 
+    Rakennustyyppi: 'Pelastustoimen rakennus',
 
-    Tehtava: 'MLP suunnittelu, AU urakointi 90kW', 
+    Laajuus: 570,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Paikka: 'Tarvasjoki'
 
-    Rakennustyyppi: 'Asuinrakennus', 
+  },
 
-Laajuus: null, 
+  {
 
-    Paikka: 'Turku' 
+    Vuosi: 2017,
 
-  }, 
+    Kiinteiston_nimi: 'Neste-K Maariankatu',
 
-  { 
+    Tehtava: 'Kuntoarviointi',
 
-    Vuosi: 2016, 
+    Vaativuusluokka: 'Tavanomainen',
 
-    Kiinteiston_nimi: 'As Oy Kujakoivu', 
+    Rakennustyyppi: 'Liikenteen rakennus',
 
-    Tehtava: 'MLP + LTO suunnittelu 360kW', 
+    Laajuus: 570,
 
-    Vaativuusluokka: 'Tavanomainen +', 
+    Paikka: 'Salo'
 
-    Rakennustyyppi: 'Asuinrakennus', 
+  },
 
-    Laajuus: 5820, 
+  {
 
-    Paikka: 'Turku' 
+    Vuosi: 2016,
 
-  } 
+    Kiinteiston_nimi: 'Jokipaja Oy',
 
-]; 
+    Tehtava: 'KVV-suunnittelu',
+
+    Vaativuusluokka: 'Tavanomainen',
+
+    Rakennustyyppi: 'Tuotantotilat',
+
+    Laajuus: 3100,
+
+    Paikka: 'Raisio'
+
+  },
+
+  {
+
+    Vuosi: 2016,
+
+    Kiinteiston_nimi: 'Kokoushotelli Elohovi',
+
+    Tehtava: 'Jätevedenpuhdistamon suunnittelu',
+
+    Vaativuusluokka: 'Tavanomainen +',
+
+    Rakennustyyppi: 'Liikerakennus',
+
+    Laajuus: 1900,
+
+    Paikka: 'Vihti'
+
+  },
+
+  {
+
+    Vuosi: 2016,
+
+    Kiinteiston_nimi: 'As Oy Iso-Heikkilänrivi',
+
+    Tehtava: 'MLP suunnittelu, AU urakointi 90kW',
+
+    Vaativuusluokka: 'Tavanomainen +',
+
+    Rakennustyyppi: 'Asuinrakennus',
+
+    Laajuus: null,
+
+    Paikka: 'Turku'
+
+  },
+
+  {
+
+    Vuosi: 2016,
+
+    Kiinteiston_nimi: 'As Oy Kujakoivu',
+
+    Tehtava: 'MLP + LTO suunnittelu 360kW',
+
+    Vaativuusluokka: 'Tavanomainen +',
+
+    Rakennustyyppi: 'Asuinrakennus',
+
+    Laajuus: 5820,
+
+    Paikka: 'Turku'
+
+  }
+
+
+]

@@ -1,31 +1,41 @@
 import React from 'react'
 import Header from '../components/Header'
-import Palveluitamme from '../components/Palveluitamme'
 import Lupauksemme from '../components/Lupauksemme'
-import Talopalvelu from '../components/Talopalvelu'
+import SEO from '../components/SEO'
 
 import Meistasanottua from '../components/Meistasanottua'
-import Otayhteytta from '../components/Otayhteytta'
+
 import Palvelupolkusteps from '../components/Palvelupolkusteps'
 import Referenssimaara from '../components/Referenssimaara'
+import Videoesittely from '../components/Videoesittely'
+import Otayhteyttanappulassa from '../components/Otayhteyttanappulassa'
+import Palvelutcard from '../components/Palvelutcard'
 
 
 const Kotisivu = () => {
   return (
-    <div style={{overflow:'hidden' }}>
-    <Header/>
-    <Palveluitamme/>
-    <Referenssimaara/>
-    <Lupauksemme/>
-    <Talopalvelu/>
-    
-    <Palvelupolkusteps/>
+    <>
+      <SEO title={'Instinööritoimisto SapAir Oy - LVI -suunnittelu'} description={'Selkeä valinta, kun etsit LVIA-ammattilaista. LVIA-palvelut, KVV- /IV-työnjohto, projektinjohto- ja valvontatehtävät. Ota yhteyttä jo tänään.'}/>
+      <a href="#main" className="skip-to-main-content-link">Siirry sisältöön</a>
+      <Header/>
+      <main id='main' style={{ overflow:'hidden' }}>
+        <Palvelutcard/>
+        <Referenssimaara/>
+        <Lupauksemme/>
+        <Videoesittely/>
 
-    <Meistasanottua/>
-    <Otayhteytta/>
 
-    
-    </div>
+        <Palvelupolkusteps/>
+        <Meistasanottua/>
+        <Otayhteyttanappulassa/>
+      </main>
+
+      <div hidden>
+        <span id="new-window-Linkedin">Vie Linkedin sivulle uudessa ikkunassa</span>
+        <span id="new-window-1">Avaa pdf tiedoston uudessa ikkunassa</span>
+
+      </div>
+    </>
   )
 }
 
